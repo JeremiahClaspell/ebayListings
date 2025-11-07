@@ -2,49 +2,75 @@
 	<style>
 		.bx-nav-section {
 			font-family: 'Josefin Sans', sans-serif;
+			--accent1: #1b4b66;
+			--accent2: #4bb7ff;
+			--text: #fff;
+			--hover: #eaf6ff;
+			--shadow: rgba(0, 0, 0, 0.15);
 		}
+
 		.bx-nav-section .bx-navwrap {
 			width: 100%;
 			margin: 0 auto;
-			padding: 0 1rem;
+			padding: 0.75rem 0rem;
+			display: flex;
+			justify-content: center;
+			background: linear-gradient(
+				90deg,
+				var(--accent1) 0%,
+				var(--accent2) 100%
+			);
+			box-shadow: 0 4px 18px var(--shadow);
 		}
+
 		.bx-nav-section .bx-nav {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 0.75rem 1rem;
-			justify-content: center;
-			align-items: center;
+			gap: 0.75rem 1.25rem;
 			list-style: none;
 			margin: 0;
-			padding: 0.75rem 1rem;
-			border-radius: 8px;
-			background: linear-gradient(
-					180deg,
-					rgba(0, 0, 0, 0.15) 0%,
-					rgba(255, 255, 255, 0.08) 40%,
-					rgba(0, 0, 0, 0.12) 100%
-				),
-				linear-gradient(
-					90deg,
-					#4bb7ff 0%,
-					#336dff 20%,
-					#336dff 80%,
-					#4bb7ff 100%
-				);
-			color: #fff;
-			font-weight: 600;
-			font-size: 1rem;
-			letter-spacing: 0.2px;
+			padding: 0;
+			align-items: center;
 		}
+
 		.bx-nav-section .bx-nav a {
-			color: #fff;
+			color: var(--text);
 			text-decoration: none;
-			padding: 0.35rem 0.6rem;
+			font-weight: 600;
+			font-size: 1.05rem;
+			padding: 0.45rem 0.9rem;
 			border-radius: 6px;
+			letter-spacing: 0.2px;
+			transition: all 0.25s ease;
+			position: relative;
 		}
+
+		.bx-nav-section .bx-nav a::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%) scaleX(0);
+			transform-origin: center;
+			width: 60%;
+			height: 2px;
+			background: var(--text);
+			transition: transform 0.25s ease;
+			border-radius: 2px;
+		}
+
+		.bx-nav-section .bx-nav a:hover::after {
+			transform: translateX(-50%) scaleX(1);
+		}
+
+		.bx-nav-section .bx-nav a:hover {
+			color: var(--hover);
+			text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+		}
+
 		.bx-nav-section .bx-nav a:focus-visible {
-			outline: 2px solid #fff;
-			outline-offset: 2px;
+			outline: 2px solid var(--hover);
+			outline-offset: 3px;
 		}
 	</style>
 
