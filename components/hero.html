@@ -1,0 +1,112 @@
+<section class="bx-hero-section" aria-label="Key Features">
+	<style>
+		.bx-hero-section {
+			--accent: #1b4b66;
+			--ink: #0e3555;
+			--text: #222;
+			--muted: #56606a;
+			--card: #fff;
+			--radius: 12px;
+			--gap: 1.5rem;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		.bx-hero-section .wrap {
+			width: min(1100px, 100%);
+			margin: 0 auto;
+			padding: 0 1rem;
+		}
+		.bx-hero-section .grid {
+			display: grid;
+			gap: var(--gap);
+			grid-template-columns: 1fr;
+			margin: 1.25rem 0 var(--gap);
+		}
+		@media (min-width: 860px) {
+			.bx-hero-section .grid {
+				grid-template-columns: 0.95fr 1.05fr;
+				align-items: start;
+			}
+		}
+		.bx-hero-section .card {
+			background: var(--card);
+			border-radius: var(--radius);
+			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 10px 30px rgba(0, 0, 0, 0.06);
+		}
+		.bx-hero-section .pad {
+			padding: 1rem;
+		}
+		@media (min-width: 860px) {
+			.bx-hero-section .pad {
+				padding: 1.25rem;
+			}
+		}
+		.bx-hero-section .img {
+			border-radius: var(--radius);
+			object-fit: cover;
+			object-position: center;
+			display: block;
+			height: 375px;
+			margin: auto;
+		}
+		.bx-hero-section .points {
+			display: grid;
+			gap: 1rem;
+		}
+		.bx-hero-section h3 {
+			margin: 0 0 0.25rem;
+			font-size: 1.08rem;
+			color: var(--ink);
+		}
+		.bx-hero-section p {
+			margin: 0;
+			color: var(--muted);
+			line-height: 1.55;
+		}
+		.bx-hero-section .badge {
+			white-space: nowrap;
+		}
+	</style>
+
+	<div class="wrap">
+		<div class="grid">
+			<div class="card pad">
+				<img
+					class="img"
+					loading="lazy"
+					src="https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/481909053_671520315231765_7645254753795905352_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7dPvJusuCn4Q7kNvwHWQErT&_nc_oc=AdkPf7KyvlxE0iDu9szUqG4J6QHIpTUbK1iD7JqCBcgRDU7dk-u57o9jVvJhsZl8Ez9sduNrIzkgbMDY2UGeJ43-&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=-j0ft4vq9v4KXA7lauJNvQ&oh=00_AfilBvESqbGnosYnZgdr6_G9zSxu8GMRw0VmVQ1qy9XiKQ&oe=6913388A"
+					alt="BOROUX lifestyle / product placeholder"
+				/>
+			</div>
+			<div class="card pad">
+				<div class="points">
+					<div>
+						<h3>BEST IN CLASS PERFORMANCE ⭐️⭐️⭐️⭐️⭐️</h3>
+						<p>
+							Independently tested to reduce a wider range of contaminants —
+							including disinfectants, heavy metals, pharmaceuticals, PFAS, and
+							more — while maintaining performance over thousands of gallons.
+						</p>
+					</div>
+					<div>
+						<h3>UP TO 12 MONTHS OF PROTECTION ✅</h3>
+						<p>
+							A full year of dependable filtration — the new standard in lasting
+							water quality.
+						</p>
+					</div>
+					<div>
+						<h3>COMPATIBLE WITH MOST GRAVITY WATER FILTERS 🧩</h3>
+						<p>
+							Fits Boroux, Berkey, ProPur, Alexapure Pro, Doulton, and many more
+							— simple, universal, and effortless.
+						</p>
+					</div>
+					<div>
+						<h3>60-DAY RISK-FREE TRIAL ✅</h3>
+						<p>Try it for 60 days risk-free — love it or your money back.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

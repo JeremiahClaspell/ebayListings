@@ -1,0 +1,134 @@
+<section class="bx-products-section" aria-labelledby="products-title">
+	<style>
+		.bx-products-section {
+			--accent: #1b4b66;
+			--text: #222;
+			--muted: #555;
+			--card: #fff;
+			--radius: 12px;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+		.bx-products-section .wrap {
+			width: min(1100px, 100%);
+			margin: 0 auto;
+			padding: 0 1rem;
+		}
+		.bx-products-section h2 {
+			text-align: center;
+			color: var(--accent);
+			margin: 2rem 0 1.25rem;
+		}
+		.bx-products-section .grid {
+			display: grid;
+			gap: 1.25rem;
+			grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		}
+		.bx-products-section .product {
+			background: var(--card);
+			border-radius: var(--radius);
+			padding: 1.1rem;
+			padding-bottom: 40px;
+			text-align: center;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 0.5rem;
+			transition: transform 0.2s ease;
+			position: relative;
+		}
+		.bx-products-section .product:hover {
+			transform: translateY(-4px);
+		}
+		.bx-products-section .img {
+			width: 100%;
+			max-width: 280px;
+			aspect-ratio: 4/3;
+			object-fit: cover;
+			object-position: center;
+			border-radius: 10px;
+			display: block;
+		}
+		.bx-products-section h3 {
+			margin: 0.25rem 0;
+			font-size: 1.05rem;
+			color: #0e3555;
+		}
+		.bx-products-section p {
+			margin: 0 0.25rem 0.5rem;
+			color: var(--muted);
+		}
+		.bx-products-section .btn {
+			display: inline-block;
+			background: var(--accent);
+			color: #fff;
+			text-decoration: none;
+			font-weight: 700;
+			font-size: 0.92rem;
+			padding: 0.55rem 1rem;
+			border-radius: 8px;
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 5px;
+		}
+	</style>
+
+	<div class="wrap">
+		<h2 id="products-title">Recommended Products</h2>
+		<div class="grid">
+			<article class="product">
+				<img
+					class="img"
+					loading="lazy"
+					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
+					alt="Boroux Foundation Filter Replacement Set placeholder"
+				/>
+				<h3>Boroux Water Filter Systems (from $349)</h3>
+				<p>
+					Every BOROUX system begins with 304 stainless steel—the same material
+					trusted in professional kitchens for its strength, purity, and
+					timeless finish. The Legacy System stands as a countertop centerpiece,
+					combining performance and elegance; the Compact System mirrors that
+					craftsmanship in a travel-friendly form. Both feature Foundation™
+					filtration, independently tested to remove more contaminants and
+					preserve taste and confidence for an entire year.
+				</p>
+				<a class="btn" href="#">Shop Now</a>
+			</article>
+
+			<article class="product">
+				<img
+					class="img"
+					loading="lazy"
+					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
+					alt="Boroux Stainless Gravity System placeholder"
+				/>
+				<h3>Boroux Proactive Fluoride Filter ($139)</h3>
+				<p>
+					The BOROUX Proactive™ Filters are the first alumina-free fluoride
+					filters—a complete redesign of what safe, long-lasting fluoride
+					reduction should be.
+				</p>
+				<a class="btn" href="#">Shop Now</a>
+			</article>
+
+			<article class="product">
+				<img
+					class="img"
+					loading="lazy"
+					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Shower_head_17.webp"
+					alt="Boroux Glass Spigot accessory placeholder"
+				/>
+				<h3>Boroux Shower Filter ($60)</h3>
+				<p>
+					Step into spa-quality water. The BOROUX Shower Filter System removes
+					up to 98% of chlorine using high-grade copper-zinc and calcium sulfite
+					media — balancing water chemistry to leave your skin smoother and your
+					hair noticeably softer. With a sleek chrome finish and quick,
+					tool-free installation, it brings a touch of luxury to every shower.
+				</p>
+				<a class="btn" href="#">Shop Now</a>
+			</article>
+		</div>
+	</div>
+</section>

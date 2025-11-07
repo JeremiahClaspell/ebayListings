@@ -1,0 +1,120 @@
+<section class="bx-lifestyle-mosaic">
+	<style>
+		.bx-lifestyle-mosaic {
+			--gap: 16px;
+			--r: 10px;
+			font-family: 'Josefin Sans', sans-serif;
+			background: #f8fbfd;
+			padding: 1.5rem 0 2rem;
+		}
+
+		.bx-lifestyle-mosaic .wrap {
+			width: min(950px, 100%);
+			margin: 0 auto;
+			padding: 0 1rem;
+			text-align: center;
+		}
+
+		.bx-lifestyle-mosaic h2 {
+			margin: 0 0 1.25rem;
+			color: #1b4b66;
+			font-size: 1.5rem;
+			font-weight: 600;
+		}
+
+		.bx-lifestyle-mosaic .grid {
+			display: flex;
+			justify-content: center;
+			gap: var(--gap);
+			flex-wrap: wrap;
+		}
+
+		.bx-lifestyle-mosaic figure {
+			margin: 0;
+			position: relative;
+			overflow: hidden;
+			border-radius: var(--r);
+			background: #fff;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+			width: 280px;
+			height: 280px;
+			flex: 1 1 280px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: transform 0.25s ease, box-shadow 0.25s ease;
+		}
+
+		.bx-lifestyle-mosaic figure:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+		}
+
+		.bx-lifestyle-mosaic img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			display: block;
+			border-radius: var(--r);
+		}
+
+		.bx-lifestyle-mosaic figcaption {
+			position: absolute;
+			bottom: 8px;
+			left: 8px;
+			right: 8px;
+			background: rgba(0, 0, 0, 0.45);
+			color: #fff;
+			font-weight: 600;
+			padding: 0.35rem 0.6rem;
+			border-radius: 6px;
+			font-size: 0.9rem;
+		}
+
+		@media (max-width: 800px) {
+			.bx-lifestyle-mosaic figure {
+				width: 220px;
+				height: 220px;
+			}
+		}
+
+		@media (max-width: 640px) {
+			.bx-lifestyle-mosaic figure {
+				width: 100%;
+				height: 180px;
+				max-width: 320px;
+			}
+			.bx-lifestyle-mosaic figcaption {
+				font-size: 0.8rem;
+			}
+		}
+	</style>
+
+	<div class="wrap">
+		<div class="grid">
+			<figure>
+				<img
+					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481906871_669985882051875_7834526164071720644_n.webp"
+					alt="Morning coffee with clean water"
+				/>
+			</figure>
+
+			<figure>
+				<img
+					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/559003281_841992691517859_7056607156578405457_n.webp?height=300"
+					height="300"
+					width="300"
+					alt="Kitchen counter setup"
+				/>
+			</figure>
+
+			<figure>
+				<img
+					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/494807247_713705557679907_264792049872702420_n.webp"
+					alt="Pouring water at the dinner table"
+				/>
+			</figure>
+		</div>
+	</div>
+</section>
