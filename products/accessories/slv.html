@@ -40,24 +40,29 @@
 					--shadow: rgba(0, 0, 0, 0.15);
 					--maxw: 1100px;
 				}
-				.bx-navsection .bx-navwrap {
-					/* noop to avoid typos */
-				}
+
 				.bx-nav-section .bx-navwrap {
 					background: linear-gradient(
 						90deg,
-						var(--accent1) 0%,
-						var(--accent2) 100%
+						#545141 0%,
+						#229ee9 20%,
+						#a9f7ff 85%,
+						rgba(255, 255, 255, 0) 100%
 					);
+
+					background-size: 200% 100%;
+
 					box-shadow: 0 3px 12px var(--shadow);
 					width: 100%;
 					margin: 0 auto;
 					overflow: hidden;
 				}
+
 				.bx-nav-section .bx-navmax {
 					width: min(var(--maxw), 100%);
 					margin: 0 auto;
 				}
+
 				.bx-nav-section .bx-nav {
 					display: flex;
 					gap: 0.5rem;
@@ -73,9 +78,11 @@
 				.bx-nav-section .bx-nav::-webkit-scrollbar {
 					display: none;
 				}
+
 				.bx-nav-section .bx-nav li {
 					flex: 0 0 auto;
 				}
+
 				.bx-nav-section .bx-nav a {
 					display: inline-flex;
 					align-items: center;
@@ -91,23 +98,28 @@
 						transform 0.2s ease;
 					white-space: nowrap;
 				}
+
 				.bx-nav-section .bx-nav a:hover {
 					background: var(--pill-bg-hover);
 					color: var(--hover);
 				}
+
 				.bx-nav-section .bx-nav a:focus-visible {
 					outline: 2px solid var(--hover);
 					outline-offset: 3px;
 				}
+
 				.bx-nav-section .bx-nav a.is-active {
 					background: var(--pill-active);
 					color: var(--pill-active-text);
 					box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15),
 						0 1px 8px rgba(0, 0, 0, 0.1) inset;
 				}
+
 				.bx-nav-section .bx-nav a:active {
 					transform: translateY(1px);
 				}
+
 				@media (max-width: 859px) {
 					.bx-nav-section .bx-nav {
 						justify-content: flex-start;
@@ -120,6 +132,7 @@
 						margin-right: 0.25rem;
 					}
 				}
+
 				@media (min-width: 860px) {
 					.bx-nav-section .bx-nav {
 						overflow: visible;
@@ -262,8 +275,9 @@
 						<img
 							class="img"
 							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-hero.webp"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Move_sleeve_2_new.webp"
 							alt="BOROUX Sleeve on BOROUX Glass Bottle, lifestyle image"
+							style="object-fit: scale-down"
 						/>
 					</div>
 
@@ -390,7 +404,7 @@
 				<div class="grid">
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-1.webp"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Sleeve_5.webp"
 							alt="BOROUX Sleeve in use on a hike"
 						/>
 					</figure>
@@ -597,6 +611,7 @@
 					object-position: center;
 					display: block;
 					border-radius: var(--r);
+					object-fit: scale-down;
 				}
 				@media (max-width: 800px) {
 					.bx-lifestyle-mosaic figure {
@@ -619,19 +634,19 @@
 				<div class="grid">
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-5.webp"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Sleeve_3.webp"
 							alt="Commuter using BOROUX Sleeve on a train"
 						/>
 					</figure>
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-6.webp"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Sleeve_4.webp"
 							alt="Desk setup with BOROUX Sleeve preventing condensation ring"
 						/>
 					</figure>
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-7.webp"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Sleeve_Bottle_3.webp"
 							alt="BOROUX Sleeve colorway stacked"
 						/>
 					</figure>

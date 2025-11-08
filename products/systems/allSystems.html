@@ -39,9 +39,14 @@
 				.bx-nav-section .bx-navwrap {
 					background: linear-gradient(
 						90deg,
-						var(--accent1) 0%,
-						var(--accent2) 100%
+						#545141 0%,
+						#229ee9 20%,
+						#a9f7ff 85%,
+						rgba(255, 255, 255, 0) 100%
 					);
+
+					background-size: 200% 100%;
+
 					box-shadow: 0 3px 12px var(--shadow);
 					width: 100%;
 					margin: 0 auto;
@@ -762,6 +767,7 @@
 				<div class="grid">
 					<figure>
 						<img
+							style="object-position: 0px -10px"
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/483524274_671519475231849_1350277120335767838_n.webp"
 						/>
 					</figure>
@@ -779,7 +785,353 @@
 				</div>
 			</div>
 		</section>
+		<!-- 3) DESIGN & CRAFTSMANSHIP (with panel background) -->
+		<section class="bx-design-section" aria-labelledby="design-title">
+			<style>
+				.bx-design-section {
+					--accent: #1b4b66;
+					--text: #222;
+					--muted: #555;
+					--bg: #f5f9fc;
+					--card: #fff;
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+				}
+				.bx-design-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+				}
+				.bx-design-section h2 {
+					text-align: center;
+					margin: 2rem 0 1rem;
+					color: var(--accent);
+					font-size: 1.45rem;
+				}
+				.bx-design-section .panel {
+					background: var(--bg);
+					border-radius: var(--radius);
+					padding: 1rem;
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04),
+						0 8px 24px rgba(0, 0, 0, 0.04);
+				}
+				.bx-design-section .image-card {
+					background: var(--card);
+					border-radius: var(--radius);
+					padding: 0.75rem;
+					margin-bottom: 1rem;
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 10px 30px rgba(0, 0, 0, 0.06);
+				}
+				.bx-design-section .img {
+					width: 100%;
+					border-radius: 10px;
+					aspect-ratio: 16/10;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+				}
+				.bx-design-section .cols {
+					display: grid;
+					grid-template-columns: 1.1fr 0.9fr;
+					gap: 1rem;
+				}
+				.bx-design-section .card {
+					background: var(--card);
+					border-radius: 10px;
+					padding: 1rem;
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 10px 30px rgba(0, 0, 0, 0.06);
+				}
+				.bx-design-section .list {
+					display: grid;
+					gap: 0.9rem;
+				}
+				.bx-design-section .item {
+					border-left: 4px solid var(--accent);
+					padding-left: 0.9rem;
+				}
+				.bx-design-section .item h3 {
+					margin: 0 0 0.25rem;
+					color: var(--accent);
+					font-size: 1.06rem;
+				}
+				.bx-design-section .item p,
+				.bx-design-section .item ul {
+					margin: 0.25rem 0 0;
+					color: var(--text);
+					line-height: 1.55;
+				}
+				.bx-design-section .item ul {
+					padding-left: 1.05rem;
+				}
+				.bx-design-section .muted {
+					color: var(--muted);
+					font-size: 0.95rem;
+					margin-top: 0.5rem;
+				}
+				.bx-design-section .specs h3 {
+					color: #0e3555;
+					margin: 0.1rem 0 0.5rem;
+					font-size: 1.04rem;
+				}
+				.bx-design-section .specs ul {
+					margin: 0;
+					padding-left: 1.05rem;
+					color: #333;
+					line-height: 1.55;
+				}
+				.bx-design-section .summary {
+					background: var(--bg);
+					border-radius: 10px;
+					padding: 1rem;
+					margin-top: 0.75rem;
+					font-weight: 600;
+				}
 
+				/* Mobile tweaks to match your reference */
+				@media (max-width: 760px) {
+					.bx-design-section .wrap {
+						padding: 0;
+					}
+					.bx-design-section .panel {
+						border-radius: 0;
+					}
+					.bx-design-section .cols {
+						grid-template-columns: 1fr;
+					}
+				}
+				@media (max-width: 640px) {
+					.bx-design-section h2 {
+						margin: 1.5rem 1rem 1rem;
+					}
+					.bx-design-section .list {
+						padding: 0 1rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="design-title">
+					Legacy & Compact: Design, Craftsmanship & Materials
+				</h2>
+
+				<div class="panel">
+					<div class="image-card">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481941305_671527778564352_4932945213936566000_n.webp"
+							alt="BOROUX Legacy & Compact stainless gravity systems—detail of lid, handles, and spigot"
+							style="object-fit: scale-down"
+						/>
+					</div>
+
+					<div class="cols">
+						<!-- Left: Craft, Fit, Precision -->
+						<div class="card">
+							<div class="list">
+								<div class="item">
+									<h3>Food-Grade 304 Stainless, Inside & Out</h3>
+									<p>
+										Chambers, lid, and hardware use corrosion-resistant
+										<strong>304 stainless steel</strong> for a clean, neutral
+										taste and exceptional durability. Engineered to
+										<strong>endure a lifetime</strong>, every housing is backed
+										by a <strong>Lifetime Warranty</strong> against leaks, rust,
+										or corrosion — a testament to its uncompromising build
+										quality.
+									</p>
+								</div>
+
+								<div class="item">
+									<h3>Clean Lines, Tight Tolerances</h3>
+									<p>
+										Crisp cylindrical form, smooth rolled edges, and consistent
+										seams give a quietly premium silhouette built for daily use.
+									</p>
+								</div>
+
+								<div class="item">
+									<h3>Ceramic-Core, Metal-Only Spigot</h3>
+									<p>
+										The no-plastic water path pairs a stainless body with a
+										precision-lapped ceramic valve for a smooth, drip-free pour.
+									</p>
+								</div>
+
+								<div class="item">
+									<h3>Balanced Handling</h3>
+									<p>
+										Low center of gravity with stable base geometry; optional
+										stand and Water View Spigot integrate cleanly without fuss.
+									</p>
+								</div>
+
+								<div class="item">
+									<h3>Serviceable by Design</h3>
+									<p>
+										Fast disassembly for rinsing; durable surfaces wipe clean
+										without special polishes or coatings.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Right: Materials callouts & In the Box -->
+						<aside class="card specs">
+							<h3>Material Callouts</h3>
+							<ul>
+								<li>
+									<strong>Chambers, Lid, Hardware:</strong> 304 stainless steel
+								</li>
+								<li>
+									<strong>Spigot Body/Nut/Washers:</strong> 304 stainless steel
+								</li>
+								<li>
+									<strong>Valve Core:</strong> Ceramic disc (precision on/off)
+								</li>
+								<li><strong>Seals/Gaskets:</strong> Food-contact elastomers</li>
+								<li>
+									<strong>Finish:</strong> Brushed stainless for a cohesive look
+								</li>
+							</ul>
+
+							<h3 style="margin-top: 0.9rem">Thoughtful Details</h3>
+							<ul>
+								<li>Smooth pour with excellent shutoff control</li>
+								<li>Comfortable lid pull and easy lift points</li>
+								<li>Tidy alignment of accessories (stand, sight-glass)</li>
+							</ul>
+
+							<div class="summary">
+								From lid to spigot, Legacy & Compact emphasize precision,
+								durability, and taste neutrality—purpose-built stainless where
+								it matters, ceramic where it counts.
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bx-lifestyle-mosaic">
+			<style>
+				.bx-lifestyle-mosaic {
+					--gap: 16px;
+					--r: 10px;
+					font-family: 'Josefin Sans', sans-serif;
+					background: #f8fbfd;
+					padding: 1.5rem 0 2rem;
+				}
+
+				.bx-lifestyle-mosaic .wrap {
+					width: min(950px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					text-align: center;
+				}
+
+				.bx-lifestyle-mosaic h2 {
+					margin: 0 0 1.25rem;
+					color: #1b4b66;
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
+
+				.bx-lifestyle-mosaic .grid {
+					display: flex;
+					justify-content: center;
+					gap: var(--gap);
+					flex-wrap: wrap;
+				}
+
+				.bx-lifestyle-mosaic figure {
+					margin: 0;
+					position: relative;
+					overflow: hidden;
+					border-radius: var(--r);
+					background: #fff;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+					width: 280px;
+					height: 280px;
+					flex: 1 1 280px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: transform 0.25s ease, box-shadow 0.25s ease;
+				}
+
+				.bx-lifestyle-mosaic figure:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+				}
+
+				.bx-lifestyle-mosaic img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+					border-radius: var(--r);
+				}
+
+				.bx-lifestyle-mosaic figcaption {
+					position: absolute;
+					bottom: 8px;
+					left: 8px;
+					right: 8px;
+					background: rgba(0, 0, 0, 0.45);
+					color: #fff;
+					font-weight: 600;
+					padding: 0.35rem 0.6rem;
+					border-radius: 6px;
+					font-size: 0.9rem;
+				}
+
+				@media (max-width: 800px) {
+					.bx-lifestyle-mosaic figure {
+						width: 220px;
+						height: 220px;
+					}
+				}
+
+				@media (max-width: 640px) {
+					.bx-lifestyle-mosaic .wrap {
+						padding: 0;
+					}
+					.bx-lifestyle-mosaic figure {
+						width: 100%;
+						height: 180px;
+						max-width: 320px;
+					}
+					.bx-lifestyle-mosaic figcaption {
+						font-size: 0.8rem;
+					}
+				}
+			</style>
+			<div class="wrap">
+				<div class="grid">
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481816069_671525075231289_5495785893350029269_n.webp"
+							style="object-fit: scale-down"
+						/>
+					</figure>
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Black_legacy_2.webp"
+							style="object-fit: scale-down"
+						/>
+					</figure>
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482089300_671551171895346_5858157712306919252_n.webp"
+							style="object-fit: scale-down"
+						/>
+					</figure>
+				</div>
+			</div>
+		</section>
 		<!-- 4) COMPARISON (table desktop, cards mobile) -->
 		<section class="bx-compare-section" aria-labelledby="compare-title">
 			<style>

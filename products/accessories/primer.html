@@ -40,24 +40,29 @@
 					--shadow: rgba(0, 0, 0, 0.15);
 					--maxw: 1100px;
 				}
-				.bx-navsection .bx-navwrap {
-					/* noop to avoid typos */
-				}
+
 				.bx-nav-section .bx-navwrap {
 					background: linear-gradient(
 						90deg,
-						var(--accent1) 0%,
-						var(--accent2) 100%
+						#545141 0%,
+						#229ee9 20%,
+						#a9f7ff 85%,
+						rgba(255, 255, 255, 0) 100%
 					);
+
+					background-size: 200% 100%;
+
 					box-shadow: 0 3px 12px var(--shadow);
 					width: 100%;
 					margin: 0 auto;
 					overflow: hidden;
 				}
+
 				.bx-nav-section .bx-navmax {
 					width: min(var(--maxw), 100%);
 					margin: 0 auto;
 				}
+
 				.bx-nav-section .bx-nav {
 					display: flex;
 					gap: 0.5rem;
@@ -73,9 +78,11 @@
 				.bx-nav-section .bx-nav::-webkit-scrollbar {
 					display: none;
 				}
+
 				.bx-nav-section .bx-nav li {
 					flex: 0 0 auto;
 				}
+
 				.bx-nav-section .bx-nav a {
 					display: inline-flex;
 					align-items: center;
@@ -91,23 +98,28 @@
 						transform 0.2s ease;
 					white-space: nowrap;
 				}
+
 				.bx-nav-section .bx-nav a:hover {
 					background: var(--pill-bg-hover);
 					color: var(--hover);
 				}
+
 				.bx-nav-section .bx-nav a:focus-visible {
 					outline: 2px solid var(--hover);
 					outline-offset: 3px;
 				}
+
 				.bx-nav-section .bx-nav a.is-active {
 					background: var(--pill-active);
 					color: var(--pill-active-text);
 					box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15),
 						0 1px 8px rgba(0, 0, 0, 0.1) inset;
 				}
+
 				.bx-nav-section .bx-nav a:active {
 					transform: translateY(1px);
 				}
+
 				@media (max-width: 859px) {
 					.bx-nav-section .bx-nav {
 						justify-content: flex-start;
@@ -120,6 +132,7 @@
 						margin-right: 0.25rem;
 					}
 				}
+
 				@media (min-width: 860px) {
 					.bx-nav-section .bx-nav {
 						overflow: visible;
@@ -343,12 +356,6 @@
 					padding: 0 1rem;
 					text-align: center;
 				}
-				.bx-lifestyle-mosaic h2 {
-					margin: 0 0 1.25rem;
-					color: #1b4b66;
-					font-size: 1.5rem;
-					font-weight: 600;
-				}
 				.bx-lifestyle-mosaic .grid {
 					display: flex;
 					justify-content: center;
@@ -369,10 +376,6 @@
 					align-items: center;
 					justify-content: center;
 					transition: transform 0.25s ease, box-shadow 0.25s ease;
-				}
-				.bx-lifestyle-mosaic figure:hover {
-					transform: translateY(-4px);
-					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 				}
 				.bx-lifestyle-mosaic img {
 					width: 100%;
@@ -399,31 +402,31 @@
 					}
 				}
 			</style>
-
 			<div class="wrap">
 				<div class="grid">
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-1.webp"
-							alt="BOROUX Sleeve in use on a hike"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Primer_3.webp"
+							alt="Commuter using BOROUX Sleeve on a train"
 						/>
 					</figure>
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-2.webp"
-							alt="Close-up texture and grip of BOROUX Sleeve"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Primer_7.webp"
+							alt="Desk setup with BOROUX Sleeve preventing condensation ring"
 						/>
 					</figure>
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-3.webp"
-							alt="BOROUX Sleeve color lineup on counter"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Primer_water_level.webp"
+							alt="BOROUX Sleeve colorway stacked"
 						/>
 					</figure>
 				</div>
 			</div>
 		</section>
 
+		<!--Contaminates-->
 		<section
 			class="bx-contaminants-section"
 			aria-labelledby="primer-build-title"
@@ -609,6 +612,12 @@
 					padding: 0 1rem;
 					text-align: center;
 				}
+				.bx-lifestyle-mosaic h2 {
+					margin: 0 0 1.25rem;
+					color: #1b4b66;
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
 				.bx-lifestyle-mosaic .grid {
 					display: flex;
 					justify-content: center;
@@ -629,6 +638,10 @@
 					align-items: center;
 					justify-content: center;
 					transition: transform 0.25s ease, box-shadow 0.25s ease;
+				}
+				.bx-lifestyle-mosaic figure:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 				}
 				.bx-lifestyle-mosaic img {
 					width: 100%;
@@ -655,24 +668,25 @@
 					}
 				}
 			</style>
+
 			<div class="wrap">
 				<div class="grid">
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-5.webp"
-							alt="Commuter using BOROUX Sleeve on a train"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/565094907_840620121655116_7641723886058621623_n.webp"
+							alt="BOROUX Sleeve in use on a hike"
 						/>
 					</figure>
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-6.webp"
-							alt="Desk setup with BOROUX Sleeve preventing condensation ring"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/4.webp"
+							alt="Close-up texture and grip of BOROUX Sleeve"
 						/>
 					</figure>
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-sleeve-7.webp"
-							alt="BOROUX Sleeve colorway stacked"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Primer_6.webp"
+							alt="BOROUX Sleeve color lineup on counter"
 						/>
 					</figure>
 				</div>
@@ -1177,17 +1191,6 @@
 						<p class="quote">“Makes priming so much easier!”</p>
 						<div class="author">Anonymous</div>
 					</li>
-
-					<li class="item">
-						<div class="head">
-							<div class="stars" aria-label="5 out of 5 stars">
-								⭐️⭐️⭐️⭐️⭐️
-							</div>
-							<div class="meta">Cañon City, CO</div>
-						</div>
-						<p class="quote">“Awesome.”</p>
-						<div class="author">Christian Schatz</div>
-					</li>
 				</ul>
 
 				<p class="note">
@@ -1296,7 +1299,7 @@
 						<div class="answer">
 							On a full charge, you can prime **a minimum of 10 filters** before
 							needing to recharge the pump. Each priming cycle takes
-							approximately 90 seconds. :contentReference[oaicite:1]{index=1}
+							approximately 90 seconds.
 						</div>
 					</details>
 
@@ -1315,7 +1318,6 @@
 									recharge immediately.
 								</li>
 							</ul>
-							:contentReference[oaicite:2]{index=2}
 						</div>
 					</details>
 
@@ -1324,7 +1326,6 @@
 						<div class="answer">
 							No — the Primer is **not waterproof**. Do not fully submerge it in
 							water or allow it to sit underwater.
-							:contentReference[oaicite:3]{index=3}
 						</div>
 					</details>
 
@@ -1336,7 +1337,7 @@
 						<div class="answer">
 							On the contrary — using the Primer helps ensure complete and
 							consistent priming, which actually extends the filter’s lifespan
-							and optimizes performance. :contentReference[oaicite:4]{index=4}
+							and optimizes performance.
 						</div>
 					</details>
 
@@ -1348,7 +1349,6 @@
 							Yes — the Primer is compatible with the BOROUX Foundation™
 							Filters, BOROUX Proactive™ Fluoride Filters, and **Black Berkey®
 							Filters** (adapter included for the fluoride filters).
-							:contentReference[oaicite:5]{index=5}
 						</div>
 					</details>
 
@@ -1362,7 +1362,7 @@
 								<li>Uneven filtration and shorter filter lifespan</li>
 							</ul>
 							Using the Primer ensures consistent, proper priming for optimal
-							filter performance. :contentReference[oaicite:6]{index=6}
+							filter performance.
 						</div>
 					</details>
 				</div>

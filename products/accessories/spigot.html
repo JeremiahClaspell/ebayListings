@@ -2,6 +2,156 @@
 <!-- BOROUX: Original Spigot (No Plastic)  -->
 <!-- ===================================== -->
 <div id="bx-original-spigot">
+	<section class="bx-nav-section" aria-label="Primary Navigation">
+		<style>
+			.bx-nav-section {
+				font-family: 'Josefin Sans', sans-serif;
+				--accent1: #1b4b66;
+				--accent2: #4bb7ff;
+				--text: #fff;
+				--hover: #eaf6ff;
+				--pill-bg: rgba(255, 255, 255, 0.12);
+				--pill-bg-hover: rgba(255, 255, 255, 0.2);
+				--pill-active: #ffffff;
+				--pill-active-text: #0f2b45;
+				--shadow: rgba(0, 0, 0, 0.15);
+				--maxw: 1100px;
+			}
+
+			.bx-nav-section .bx-navwrap {
+				background: linear-gradient(
+					90deg,
+					#545141 0%,
+					#229ee9 20%,
+					#a9f7ff 85%,
+					rgba(255, 255, 255, 0) 100%
+				);
+
+				background-size: 200% 100%;
+
+				box-shadow: 0 3px 12px var(--shadow);
+				width: 100%;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+
+			.bx-nav-section .bx-navmax {
+				width: min(var(--maxw), 100%);
+				margin: 0 auto;
+			}
+
+			.bx-nav-section .bx-nav {
+				display: flex;
+				gap: 0.5rem;
+				list-style: none;
+				margin: 0;
+				padding: 0.5rem 1rem;
+				overflow-x: auto;
+				-webkit-overflow-scrolling: touch;
+				scrollbar-width: none;
+				justify-content: center;
+				align-items: center;
+			}
+			.bx-nav-section .bx-nav::-webkit-scrollbar {
+				display: none;
+			}
+
+			.bx-nav-section .bx-nav li {
+				flex: 0 0 auto;
+			}
+
+			.bx-nav-section .bx-nav a {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				color: var(--text);
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 1rem;
+				padding: 0.45rem 0.9rem;
+				border-radius: 999px;
+				background: var(--pill-bg);
+				transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+				white-space: nowrap;
+			}
+
+			.bx-nav-section .bx-nav a:hover {
+				background: var(--pill-bg-hover);
+				color: var(--hover);
+			}
+
+			.bx-nav-section .bx-nav a:focus-visible {
+				outline: 2px solid var(--hover);
+				outline-offset: 3px;
+			}
+
+			.bx-nav-section .bx-nav a.is-active {
+				background: var(--pill-active);
+				color: var(--pill-active-text);
+				box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15),
+					0 1px 8px rgba(0, 0, 0, 0.1) inset;
+			}
+
+			.bx-nav-section .bx-nav a:active {
+				transform: translateY(1px);
+			}
+
+			@media (max-width: 859px) {
+				.bx-nav-section .bx-nav {
+					justify-content: flex-start;
+					padding: 0.6rem 1rem;
+				}
+				.bx-nav-section .bx-nav li:first-child {
+					margin-left: 0.25rem;
+				}
+				.bx-nav-section .bx-nav li:last-child {
+					margin-right: 0.25rem;
+				}
+			}
+
+			@media (min-width: 860px) {
+				.bx-nav-section .bx-nav {
+					overflow: visible;
+					justify-content: center;
+					padding: 0.6rem 1rem;
+					gap: 0.75rem 1rem;
+				}
+			}
+		</style>
+
+		<div class="bx-navwrap">
+			<div class="bx-navmax">
+				<ul class="bx-nav" role="list">
+					<li>
+						<a
+							href="https://www.ebay.com/str/aquatreasuresemporium/Water-Filter-Systems/_i.html?store_cat=52745885012"
+							>Systems</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ebay.com/str/aquatreasuresemporium/Replacement-Filters/_i.html?store_cat=52745886012"
+							>Replacement Filters</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ebay.com/str/aquatreasuresemporium/Accessories/_i.html?store_cat=52745887012"
+							class="is-active"
+							>Accessories</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.ebay.com/itm/266906991579?itmmeta=01K9FP2572D2W454R80S1SPXF9&hash=item3e24e57bdb:g:74cAAOSw9BZmlaLA"
+							>Replacement Parts</a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
 	<!-- 1) HERO / FEATURES -->
 	<section class="bx-hero-section" aria-label="Key Features">
 		<style>
@@ -90,7 +240,7 @@
 					<img
 						class="img"
 						loading="lazy"
-						src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/placeholder-original-spigot-hero.webp"
+						src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Stainless_Compact_6.webp"
 						alt="BOROUX Original Spigot installed on stainless system"
 					/>
 				</div>
