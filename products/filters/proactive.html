@@ -1,1484 +1,2092 @@
 <!-- ===================================== -->
 <!-- BOROUX: Compartmentalized Sections    -->
 <!-- ===================================== -->
-
-<link
-	href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
-	rel="stylesheet"
-/>
-
-<!-- 1) NAV -->
-<section class="bx-nav-section" aria-label="Primary Navigation">
-	<style>
-		.bx-nav-section {
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-nav-section .bx-navwrap {
-			width: 100%;
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-nav-section .bx-nav {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.75rem 1rem;
-			justify-content: center;
-			align-items: center;
-			list-style: none;
-			margin: 0;
-			padding: 0.75rem 1rem;
-			border-radius: 8px;
-			background: linear-gradient(
-					180deg,
-					rgba(0, 0, 0, 0.15) 0%,
-					rgba(255, 255, 255, 0.08) 40%,
-					rgba(0, 0, 0, 0.12) 100%
-				),
-				linear-gradient(
-					90deg,
-					#4bb7ff 0%,
-					#336dff 20%,
-					#336dff 80%,
-					#4bb7ff 100%
-				);
-			color: #fff;
-			font-weight: 600;
-			font-size: 1rem;
-			letter-spacing: 0.2px;
-		}
-		.bx-nav-section .bx-nav a {
-			color: #fff;
-			text-decoration: none;
-			padding: 0.35rem 0.6rem;
-			border-radius: 6px;
-		}
-		.bx-nav-section .bx-nav a:focus-visible {
-			outline: 2px solid #fff;
-			outline-offset: 2px;
-		}
-	</style>
-
-	<div class="bx-navwrap">
-		<ul class="bx-nav" role="list">
-			<li>
-				<a
-					href="https://www.ebay.com/str/aquatreasuresemporium/Water-Filter-Systems/_i.html?store_cat=52745885012"
-					>Systems</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://www.ebay.com/str/aquatreasuresemporium/Replacement-Filters/_i.html?store_cat=52745886012"
-					>Replacement Filters</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://www.ebay.com/str/aquatreasuresemporium/Accessories/_i.html?store_cat=52745887012"
-					>Accessories</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://www.ebay.com/itm/266906991579?itmmeta=01K9FP2572D2W454R80S1SPXF9&hash=item3e24e57bdb:g:74cAAOSw9BZmlaLA"
-					>Replacement Parts</a
-				>
-			</li>
-		</ul>
-	</div>
-</section>
-
-<!-- 2) HERO / FEATURES -->
-<section class="bx-hero-section" aria-label="Key Features">
-	<style>
-		.bx-hero-section {
-			--accent: #1b4b66;
-			--ink: #0e3555;
-			--text: #222;
-			--muted: #56606a;
-			--card: #fff;
-			--radius: 12px;
-			--gap: 1.5rem;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-hero-section .wrap {
-			width: min(1100px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-hero-section .grid {
-			display: grid;
-			gap: var(--gap);
-			grid-template-columns: 1fr;
-			margin: 1.25rem 0 var(--gap);
-		}
-		@media (min-width: 860px) {
-			.bx-hero-section .grid {
-				grid-template-columns: 0.95fr 1.05fr;
-				align-items: start;
+<body style="margin: 0">
+	<!-- ===================================== -->
+	<!-- BOROUX: Compartmentalized Sections    -->
+	<!-- ===================================== -->
+	<div id="bx-div">
+		<style>
+			@media (max-width: 860px) {
+				#bx-div {
+					width: 100vw;
+					margin: 0;
+					box-sizing: border-box;
+					overflow: hidden;
+				}
 			}
-		}
-		.bx-hero-section .card {
-			background: var(--card);
-			border-radius: var(--radius);
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 10px 30px rgba(0, 0, 0, 0.06);
-		}
-		.bx-hero-section .pad {
-			padding: 1rem;
-		}
-		@media (min-width: 860px) {
-			.bx-hero-section .pad {
-				padding: 1.25rem;
+			#bx-div section {
+				margin-bottom: 30px;
 			}
-		}
-		.bx-hero-section .img {
-			border-radius: var(--radius);
-			object-fit: cover;
-			object-position: center;
-			display: block;
-			height: 375px;
-			margin: auto;
-		}
-		.bx-hero-section .points {
-			display: grid;
-			gap: 1rem;
-		}
-		.bx-hero-section h3 {
-			margin: 0 0 0.25rem;
-			font-size: 1.08rem;
-			color: var(--ink);
-		}
-		.bx-hero-section p {
-			margin: 0;
-			color: var(--muted);
-			line-height: 1.55;
-		}
-		.bx-hero-section .badge {
-			white-space: nowrap;
-		}
-	</style>
+		</style>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<div class="wrap">
-		<div class="grid">
-			<div class="card pad">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
-					alt="BOROUX lifestyle / product placeholder"
-				/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- 1) NAV -->
+		<section class="bx-nav-section" aria-label="Primary Navigation">
+			<style>
+				.bx-nav-section {
+					font-family: 'Josefin Sans', sans-serif;
+					--accent1: #1b4b66;
+					--accent2: #4bb7ff;
+					--text: #fff;
+					--hover: #eaf6ff;
+					--pill-bg: rgba(255, 255, 255, 0.12);
+					--pill-bg-hover: rgba(255, 255, 255, 0.2);
+					--pill-active: #ffffff;
+					--pill-active-text: #0f2b45;
+					--shadow: rgba(0, 0, 0, 0.15);
+					--maxw: 1100px;
+				}
+
+				.bx-nav-section .bx-navwrap {
+					background: linear-gradient(
+						90deg,
+						var(--accent1) 0%,
+						var(--accent2) 100%
+					);
+					box-shadow: 0 3px 12px var(--shadow);
+					width: 100%;
+					margin: 0 auto;
+					overflow: hidden;
+				}
+
+				.bx-nav-section .bx-navmax {
+					width: min(var(--maxw), 100%);
+					margin: 0 auto;
+				}
+
+				.bx-nav-section .bx-nav {
+					display: flex;
+					gap: 0.5rem;
+					list-style: none;
+					margin: 0;
+					padding: 0.5rem 1rem;
+					overflow-x: auto;
+					-webkit-overflow-scrolling: touch;
+					scrollbar-width: none;
+					justify-content: center;
+					align-items: center;
+				}
+				.bx-nav-section .bx-nav::-webkit-scrollbar {
+					display: none;
+				}
+
+				.bx-nav-section .bx-nav li {
+					flex: 0 0 auto;
+				}
+
+				.bx-nav-section .bx-nav a {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					color: var(--text);
+					text-decoration: none;
+					font-weight: 700;
+					font-size: 1rem;
+					padding: 0.45rem 0.9rem;
+					border-radius: 999px;
+					background: var(--pill-bg);
+					transition: background 0.25s ease, color 0.25s ease,
+						transform 0.2s ease;
+					white-space: nowrap;
+				}
+
+				.bx-nav-section .bx-nav a:hover {
+					background: var(--pill-bg-hover);
+					color: var(--hover);
+				}
+
+				.bx-nav-section .bx-nav a:focus-visible {
+					outline: 2px solid var(--hover);
+					outline-offset: 3px;
+				}
+
+				.bx-nav-section .bx-nav a.is-active {
+					background: var(--pill-active);
+					color: var(--pill-active-text);
+					box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15),
+						0 1px 8px rgba(0, 0, 0, 0.1) inset;
+				}
+
+				.bx-nav-section .bx-nav a:active {
+					transform: translateY(1px);
+				}
+
+				@media (max-width: 859px) {
+					.bx-nav-section .bx-nav {
+						justify-content: flex-start;
+						padding: 0.6rem 1rem;
+					}
+					.bx-nav-section .bx-nav li:first-child {
+						margin-left: 0.25rem;
+					}
+					.bx-nav-section .bx-nav li:last-child {
+						margin-right: 0.25rem;
+					}
+				}
+
+				@media (min-width: 860px) {
+					.bx-nav-section .bx-nav {
+						overflow: visible;
+						justify-content: center;
+						padding: 0.6rem 1rem;
+						gap: 0.75rem 1rem;
+					}
+				}
+			</style>
+
+			<div class="bx-navwrap">
+				<div class="bx-navmax">
+					<ul class="bx-nav" role="list">
+						<li>
+							<a
+								href="https://www.ebay.com/str/aquatreasuresemporium/Water-Filter-Systems/_i.html?store_cat=52745885012"
+								>Systems</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.ebay.com/str/aquatreasuresemporium/Replacement-Filters/_i.html?store_cat=52745886012"
+								class="is-active"
+								>Replacement Filters</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.ebay.com/str/aquatreasuresemporium/Accessories/_i.html?store_cat=52745887012"
+								>Accessories</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.ebay.com/itm/266906991579?itmmeta=01K9FP2572D2W454R80S1SPXF9&hash=item3e24e57bdb:g:74cAAOSw9BZmlaLA"
+								>Replacement Parts</a
+							>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="card pad">
-				<div class="points">
-					<div>
-						<h3>BEST IN CLASS PERFORMANCE ⭐️⭐️⭐️⭐️⭐️</h3>
-						<p>
-							Independently tested to reduce a wider range of contaminants —
-							including disinfectants, heavy metals, pharmaceuticals, PFAS, and
-							more — while maintaining performance over thousands of gallons.
+		</section>
+
+		<!-- 2) HERO / FEATURES -->
+
+		<section class="bx-hero-section" aria-label="Key Features">
+			<style>
+				.bx-hero-section {
+					--accent: #1b4b66;
+					--ink: #0e3555;
+					--text: #222;
+					--muted: #56606a;
+					--card: #fff;
+					--radius: 12px;
+					--gap: 1.5rem;
+					font-family: 'Josefin Sans', sans-serif;
+					margin-top: 20px;
+				}
+				.bx-hero-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					box-sizing: border-box;
+				}
+				.bx-hero-section .grid {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: stretch;
+					gap: 1.25rem;
+					width: 100%;
+				}
+				.bx-hero-section .card {
+					background: var(--card);
+					border-radius: var(--radius);
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 10px 30px rgba(0, 0, 0, 0.06);
+					flex: 1 1 500px;
+					max-width: 48%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					overflow: hidden;
+				}
+				.bx-hero-section .pad {
+					padding: 1.25rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 100%;
+				}
+				.bx-hero-section .img {
+					border-radius: var(--radius);
+					object-fit: scale-down;
+					object-position: center left;
+					display: block;
+					width: 100%;
+					height: 100%;
+					max-height: 600px;
+					background: #fff;
+				}
+				.bx-hero-section .points {
+					display: grid;
+					gap: 1rem;
+				}
+				.bx-hero-section h3 {
+					margin: 0 0 0.25rem;
+					font-size: 1.08rem;
+					color: var(--ink);
+				}
+				.bx-hero-section p {
+					margin: 0;
+					color: var(--muted);
+					line-height: 1.55;
+					border-bottom: 2px solid #4bb7ff;
+					padding-bottom: 0.6rem;
+				}
+
+				@media (max-width: 859px) {
+					.bx-hero-section .wrap {
+						padding: 0 0.1rem;
+					}
+					.bx-hero-section .grid {
+						flex-direction: column;
+						align-items: center;
+					}
+					.bx-hero-section .card {
+						max-width: 95vw;
+						width: 100%;
+						overflow: unset;
+					}
+					.bx-hero-section .img {
+						max-height: 480px;
+					}
+					.bx-hero-section .pad {
+						box-sizing: border-box;
+					}
+				}
+			</style>
+			<div class="wrap">
+				<div class="grid">
+					<!-- Image Card -->
+					<div class="card">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
+							alt="BOROUX Proactive Fluoride Filter lifestyle image"
+						/>
+					</div>
+
+					<!-- Text Card -->
+					<div class="card pad">
+						<div class="points">
+							<div>
+								<h3>THE NEXT GENERATION OF FLUORIDE FILTRATION 💧</h3>
+								<p>
+									The BOROUX Proactive™ Filters were created to solve what
+									others couldn’t — removing fluoride without using
+									aluminum-based media. Clean water, reimagined for modern
+									families who expect better.
+								</p>
+							</div>
+
+							<div>
+								<h3>ALUMINA-FREE BY DESIGN 🌿</h3>
+								<p>
+									Unlike traditional fluoride filters that rely on activated
+									alumina or bone char, Proactive™ uses a proprietary non-toxic
+									composite that binds fluoride safely and effectively — no
+									metal residues, no aftertaste, no compromise.
+								</p>
+							</div>
+
+							<div>
+								<h3>WORKS SEAMLESSLY WITH FOUNDATION™ FILTERS 🧩</h3>
+								<p>
+									Designed to attach directly beneath each Foundation™ Filter,
+									creating a complete two-stage system that targets both
+									chemical and fluoride reduction in perfect balance.
+								</p>
+							</div>
+							<div>
+								<h3>TESTED FOR WHAT MATTERS MOST 🧪</h3>
+								<p>
+									Independently verified for
+									<strong>fluoride reduction</strong> through third-party
+									laboratory testing — ensuring safe, consistent performance
+									without relying on aluminum-based media. Designed to
+									complement Foundation™ Filters for a complete purification
+									system.
+								</p>
+							</div>
+							<div>
+								<h3>CONSISTENT PROTECTION UP TO 1,000 GALLONS ✅</h3>
+								<p>
+									Provides reliable fluoride reduction through approximately
+									<strong>1,000 gallons</strong> of use — about 10–12 months for
+									most homes. Replace annually to maintain full performance and
+									confidence.
+								</p>
+							</div>
+
+							<div>
+								<h3>BACKED BY THE BOROUX PROMISE 💬</h3>
+								<p>
+									Try it for 60 days, risk-free. If it doesn’t transform the way
+									your water feels, tastes, and supports your home — send it
+									back for a full refund. No questions, just confidence.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /Text Card -->
+				</div>
+			</div>
+		</section>
+
+		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
+		<section class="bx-lifestyle-mosaic">
+			<style>
+				.bx-lifestyle-mosaic {
+					--gap: 16px;
+					--r: 10px;
+					font-family: 'Josefin Sans', sans-serif;
+					background: #f8fbfd;
+					padding: 1.5rem 0 2rem;
+				}
+
+				.bx-lifestyle-mosaic .wrap {
+					width: min(950px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					text-align: center;
+				}
+
+				.bx-lifestyle-mosaic h2 {
+					margin: 0 0 1.25rem;
+					color: #1b4b66;
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
+
+				.bx-lifestyle-mosaic .grid {
+					display: flex;
+					justify-content: center;
+					gap: var(--gap);
+					flex-wrap: wrap;
+				}
+
+				.bx-lifestyle-mosaic figure {
+					margin: 0;
+					position: relative;
+					overflow: hidden;
+					border-radius: var(--r);
+					background: #fff;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+					width: 280px;
+					height: 280px;
+					flex: 1 1 280px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: transform 0.25s ease, box-shadow 0.25s ease;
+				}
+
+				.bx-lifestyle-mosaic figure:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+				}
+
+				.bx-lifestyle-mosaic img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+					border-radius: var(--r);
+				}
+
+				.bx-lifestyle-mosaic figcaption {
+					position: absolute;
+					bottom: 8px;
+					left: 8px;
+					right: 8px;
+					background: rgba(0, 0, 0, 0.45);
+					color: #fff;
+					font-weight: 600;
+					padding: 0.35rem 0.6rem;
+					border-radius: 6px;
+					font-size: 0.9rem;
+				}
+
+				@media (max-width: 800px) {
+					.bx-lifestyle-mosaic figure {
+						width: 220px;
+						height: 220px;
+					}
+				}
+
+				@media (max-width: 640px) {
+					.bx-lifestyle-mosaic figure {
+						width: 100%;
+						height: 180px;
+						max-width: 320px;
+					}
+					.bx-lifestyle-mosaic figcaption {
+						font-size: 0.8rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<div class="grid">
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481906871_669985882051875_7834526164071720644_n.webp"
+							alt="Morning coffee with clean water"
+						/>
+					</figure>
+
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/559003281_841992691517859_7056607156578405457_n.webp?height=300"
+							height="300"
+							width="300"
+							alt="Kitchen counter setup"
+						/>
+					</figure>
+
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/494807247_713705557679907_264792049872702420_n.webp"
+							alt="Pouring water at the dinner table"
+						/>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+		<!-- 3) CONTAMINANTS (with panel background) -->
+		<section
+			class="bx-contaminants-section"
+			aria-labelledby="proactive-contam-title"
+		>
+			<style>
+				.bx-contaminants-section {
+					--accent: #1b4b66;
+					--text: #222;
+					--muted: #555;
+					--bg: #f5f9fc;
+					--card: #fff;
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+				}
+				.bx-contaminants-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+				}
+				.bx-contaminants-section h2 {
+					text-align: center;
+					margin: 2rem 0 1rem;
+					color: var(--accent);
+					font-size: 1.45rem;
+				}
+				.bx-contaminants-section .panel {
+					background: var(--bg);
+					border-radius: var(--radius);
+					padding: 1rem;
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04),
+						0 8px 24px rgba(0, 0, 0, 0.04);
+				}
+				.bx-contaminants-section .image-card {
+					background: var(--card);
+					border-radius: var(--radius);
+					padding: 0.75rem;
+					margin-bottom: 1rem;
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 10px 30px rgba(0, 0, 0, 0.06);
+				}
+				.bx-contaminants-section .img {
+					width: 100%;
+					border-radius: 10px;
+					aspect-ratio: 16/10;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+				}
+				.bx-contaminants-section .list {
+					display: grid;
+					gap: 1rem;
+				}
+				.bx-contaminants-section .item {
+					border-left: 4px solid var(--accent);
+					padding-left: 1rem;
+				}
+				.bx-contaminants-section .item h3 {
+					margin: 0 0 0.35rem;
+					color: var(--accent);
+					font-size: 1.06rem;
+				}
+				.bx-contaminants-section .item p {
+					margin: 0.25rem 0;
+					color: var(--text);
+				}
+				.bx-contaminants-section .summary {
+					background: var(--bg);
+					border-radius: 10px;
+					padding: 1rem;
+					margin-top: 0.75rem;
+					font-weight: 600;
+				}
+
+				@media (max-width: 640px) {
+					.bx-contaminants-section .wrap {
+						padding: 0;
+					}
+					.bx-contaminants-section .panel {
+						border-radius: 0;
+					}
+					.bx-contaminants-section h2 {
+						margin: 1.5rem 1rem 1rem;
+					}
+					.bx-contaminants-section .list {
+						padding: 0 1rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="proactive-contam-title">
+					What the Proactive™ Fluoride Filter Targets — and Why It Matters
+				</h2>
+
+				<div class="panel">
+					<div class="image-card">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Fluoride-filter-testing-desk.webp"
+							alt="BOROUX Proactive fluoride filter testing"
+						/>
+					</div>
+
+					<div class="list">
+						<div class="item">
+							<h3>Fluoride (F⁻)</h3>
+							<p>
+								<strong>Designed to reduce:</strong> Fluoride ions in municipal
+								tap water through a proprietary alumina-free hybrid carbon
+								design.
+							</p>
+							<p>
+								<strong>Why it matters:</strong> Many municipal systems add
+								fluoride intentionally; some households prefer to reduce it for
+								taste, personal choice, or skin sensitivity reasons. The
+								Proactive™ filter gives that control without introducing
+								aluminum-based media.
+							</p>
+						</div>
+
+						<div class="item">
+							<h3>Alumina-Free by Design</h3>
+							<p>
+								<strong>What’s different:</strong> Most fluoride filters rely on
+								activated alumina (a porous aluminum oxide). The Proactive™
+								avoids this entirely, using advanced carbon-based materials
+								instead.
+							</p>
+							<p>
+								<strong>Why it matters:</strong> Aluminum compounds, while
+								widely used, can release trace aluminum under extreme conditions
+								and have been associated with respiratory and systemic effects
+								in high occupational exposures. Proactive™ delivers peace of
+								mind — no aluminum-based media, no compromise on performance.
+							</p>
+						</div>
+
+						<div class="item">
+							<h3>Extended Lifespan</h3>
+							<p>
+								<strong>How it performs longer:</strong> Engineered for
+								consistent flow and high contact time, the Proactive™ filter
+								maintains fluoride reduction over hundreds of gallons — well
+								beyond the lifespan of typical activated alumina cartridges.
+							</p>
+							<p>
+								<strong>Why it matters:</strong> Long life equals less waste,
+								fewer replacements, and steady performance over time.
+							</p>
+						</div>
+
+						<div class="item">
+							<h3>304 Stainless Components</h3>
+							<p>
+								<strong>Built for quality:</strong> Each housing and fitting
+								uses 304 stainless steel — the same corrosion-resistant material
+								trusted in medical, food-service, and architectural
+								applications.
+							</p>
+							<p>
+								<strong>Why it matters:</strong> Clean, durable, and built to
+								last — every part matches the premium craftsmanship of the
+								Foundation™ filters.
+							</p>
+						</div>
+
+						<div class="summary">
+							Proactive™ is an alumina-free fluoride filter that provides
+							powerful reduction without aluminum-based media — crafted for
+							longevity, clarity, and confidence.
+							<div class="note">
+								Pair with the Foundation™ stage for complete protection — from
+								everyday chlorine to advanced fluoride reduction.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
+		<section class="bx-lifestyle-mosaic">
+			<style>
+				.bx-lifestyle-mosaic {
+					--gap: 16px;
+					--r: 10px;
+					font-family: 'Josefin Sans', sans-serif;
+					background: #f8fbfd;
+					padding: 1.5rem 0 2rem;
+				}
+
+				.bx-lifestyle-mosaic .wrap {
+					width: min(950px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					text-align: center;
+				}
+
+				.bx-lifestyle-mosaic h2 {
+					margin: 0 0 1.25rem;
+					color: #1b4b66;
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
+
+				.bx-lifestyle-mosaic .grid {
+					display: flex;
+					justify-content: center;
+					gap: var(--gap);
+					flex-wrap: wrap;
+				}
+
+				.bx-lifestyle-mosaic figure {
+					margin: 0;
+					position: relative;
+					overflow: hidden;
+					border-radius: var(--r);
+					background: #fff;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+					width: 280px;
+					height: 280px;
+					flex: 1 1 280px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: transform 0.25s ease, box-shadow 0.25s ease;
+				}
+
+				.bx-lifestyle-mosaic figure:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+				}
+
+				.bx-lifestyle-mosaic img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+					border-radius: var(--r);
+				}
+
+				.bx-lifestyle-mosaic figcaption {
+					position: absolute;
+					bottom: 8px;
+					left: 8px;
+					right: 8px;
+					background: rgba(0, 0, 0, 0.45);
+					color: #fff;
+					font-weight: 600;
+					padding: 0.35rem 0.6rem;
+					border-radius: 6px;
+					font-size: 0.9rem;
+				}
+
+				@media (max-width: 800px) {
+					.bx-lifestyle-mosaic figure {
+						width: 220px;
+						height: 220px;
+					}
+				}
+
+				@media (max-width: 640px) {
+					.bx-lifestyle-mosaic figure {
+						width: 100%;
+						height: 180px;
+						max-width: 320px;
+					}
+					.bx-lifestyle-mosaic figcaption {
+						font-size: 0.8rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<div class="grid">
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-install-shell_2e410322-e2c2-4080-ba1e-72b1c7caa289.webp"
+							alt="Morning coffee with clean water"
+						/>
+					</figure>
+
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/497546316_18494046550028668_1747607452050442139_n.jpg"
+							alt="Kitchen counter setup"
+						/>
+					</figure>
+
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-filter_67ea786e-008d-425e-b4a6-dda5f21d8fac.webp"
+							alt="Pouring water at the dinner table"
+						/>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+		<!-- 4) COMPARISON (table desktop, cards mobile) -->
+		<section class="bx-compare-section" aria-labelledby="bx-fl-title">
+			<style>
+				.bx-compare-section {
+					--accent: #1b4b66;
+					--text: #222;
+					--muted: #56606a;
+					--bg: #f5f9fc;
+					--card: #fff;
+					--ok: #0f8a5f;
+					--warn: #b96b00;
+					--bad: #b71c1c;
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+				}
+
+				.bx-compare-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+				}
+
+				.bx-compare-section h2 {
+					text-align: center;
+					color: var(--accent);
+					margin: 2rem 0 0.5rem;
+				}
+
+				.bx-compare-section .lead {
+					text-align: center;
+					color: var(--muted);
+					margin: 0 0 1rem;
+				}
+
+				.bx-compare-section .legend {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.5rem 0.75rem;
+					justify-content: center;
+					color: var(--muted);
+					font-size: 0.92rem;
+					margin-bottom: 0.75rem;
+				}
+
+				.bx-compare-section .dot {
+					display: inline-block;
+					width: 0.65rem;
+					height: 0.65rem;
+					border-radius: 50%;
+					margin-right: 0.4rem;
+					transform: translateY(1px);
+				}
+				.bx-compare-section .ok {
+					background: var(--ok);
+				}
+				.bx-compare-section .warn {
+					background: var(--warn);
+				}
+				.bx-compare-section .bad {
+					background: var(--bad);
+				}
+
+				.bx-compare-section .table-wrap {
+					background: transparent;
+					border-radius: 10px;
+					overflow-x: auto;
+					-webkit-overflow-scrolling: touch;
+				}
+				.bx-compare-section .table {
+					min-width: 960px;
+					width: 100%;
+					border-collapse: separate;
+					border-spacing: 0;
+					overflow: hidden;
+					border-radius: 10px;
+					background: var(--card);
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 8px 24px rgba(0, 0, 0, 0.04);
+				}
+				.bx-compare-section thead th {
+					background: var(--bg);
+					color: var(--text);
+					font-weight: 700;
+					font-size: 0.92rem;
+					text-align: left;
+					padding: 12px 14px;
+					border-bottom: 1px solid #e7eef6;
+				}
+				.bx-compare-section td {
+					padding: 14px;
+					border-bottom: 1px solid #eef3f8;
+					vertical-align: top;
+					font-size: 0.95rem;
+				}
+				.bx-compare-section tr:last-child td {
+					border-bottom: none;
+				}
+
+				.bx-compare-section .pill {
+					display: inline-block;
+					padding: 0.15rem 0.5rem;
+					border-radius: 999px;
+					font-size: 0.78rem;
+					font-weight: 700;
+					background: var(--bg);
+					color: var(--accent);
+				}
+				.bx-compare-section .meter {
+					display: inline-flex;
+					gap: 4px;
+					margin-top: 0.25rem;
+				}
+				.bx-compare-section .meter span {
+					width: 9px;
+					height: 9px;
+					border-radius: 2px;
+					background: #e7eef6;
+				}
+				.bx-compare-section .meter .on {
+					background: var(--accent);
+				}
+
+				.bx-compare-section .foot {
+					background: var(--bg);
+					border-left: 4px solid var(--accent);
+					padding: 12px 14px;
+					border-radius: 8px;
+					margin-top: 1rem;
+					font-size: 0.92rem;
+					color: var(--muted);
+				}
+
+				@media (max-width: 640px) {
+					.bx-compare-section .wrap {
+						padding: 0;
+					}
+					.bx-compare-section h2 {
+						margin: 1.5rem 1rem 0.5rem;
+					}
+					.bx-compare-section .lead,
+					.bx-compare-section .legend,
+					.bx-compare-section .foot {
+						margin-left: 1rem;
+						margin-right: 1rem;
+					}
+					.bx-compare-section .table-wrap {
+						padding: 0 1rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="bx-fl-title">
+					Fluoride Reduction: Real-World Performance, Cost & Waste
+				</h2>
+				<p class="lead">
+					Not every filter targets fluoride. This comparison focuses
+					specifically on **fluoride** (and related compounds), using published
+					claims and test windows rather than chlorine-only gallon figures.
+				</p>
+
+				<div class="legend">
+					<span><i class="dot ok"></i>strong</span>
+					<span><i class="dot warn"></i>mixed/limited</span>
+					<span><i class="dot bad"></i>weak/untested</span>
+				</div>
+
+				<div class="table-wrap">
+					<table role="table" aria-describedby="bx-fl-title">
+						<thead>
+							<tr>
+								<th>System</th>
+								<th>Fluoride Reduction Basis</th>
+								<th>Test Depth & Volume</th>
+								<th>Effective Fluoride Window*</th>
+								<th>Approx. Cost / Gallon</th>
+								<th>What This Means</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- BOROUX Proactive (alumina-free) -->
+							<tr>
+								<td>
+									<strong>BOROUX Proactive™ Fluoride Filters</strong><br />
+									<span class="pill">alumina-free, nano-carbon</span>
+								</td>
+								<td>
+									Up to <strong>99–99.9% fluoride reduction</strong> using a
+									dual-layer hybrid nano-carbon, patent-pending up-flow design
+									(no activated alumina).
+									<div class="meter" aria-label="strength">
+										<span class="on"></span><span class="on"></span
+										><span class="on"></span><span class="on"></span
+										><span class="on"></span>
+									</div>
+								</td>
+								<td>
+									Published pair capacity up to <strong>~1,000 gal</strong>;
+									product materials describe high-volume endurance and
+									alumina-free media details.
+									<span class="dot ok" title="strong"></span>
+								</td>
+								<td>
+									Plan around the fluoride window (not chlorine). Example:
+									<strong>~800–1,000 gal per pair</strong> in typical use.
+								</td>
+								<td>
+									If price is $139/set: <strong>~$0.14–$0.17/gal</strong> (at
+									800–1,000 gal).
+								</td>
+								<td>
+									Purpose-built for fluoride without aluminum media; transparent
+									claim set and stainless construction.
+								</td>
+							</tr>
+
+							<!-- Activated alumina add-on filters (generic market) -->
+							<tr>
+								<td><strong>Activated-Alumina Add-On Filters</strong></td>
+								<td>
+									Fluoride adsorption on aluminum-oxide media; effective when
+									sized and maintained correctly.
+									<div class="meter">
+										<span class="on"></span><span class="on"></span
+										><span class="on"></span><span></span><span></span>
+									</div>
+								</td>
+								<td>
+									Test panels and stated gallons vary widely; many listings cite
+									small-volume challenge tests for claims.
+									<span class="dot warn" title="mixed/limited"></span>
+								</td>
+								<td>
+									Often <strong>shorter fluoride windows</strong> per set vs.
+									premium alumina-free designs; replacement frequency depends on
+									source water.
+								</td>
+								<td>
+									Typically low upfront cost; <em>$ per gal</em> rises with more
+									frequent changes.
+								</td>
+								<td>
+									Proven method but aluminum-based; evaluate published test
+									volume and replacement cadence carefully.
+								</td>
+							</tr>
+
+							<!-- Reverse Osmosis (point-of-use) -->
+							<tr>
+								<td><strong>Reverse Osmosis (POU)</strong></td>
+								<td>
+									Membrane separation;
+									<strong>effective for fluoride</strong> when properly
+									maintained.
+									<div class="meter">
+										<span class="on"></span><span class="on"></span
+										><span class="on"></span><span class="on"></span
+										><span></span>
+									</div>
+								</td>
+								<td>
+									Well-documented reduction with standardized testing;
+									multi-stage cartridges + membrane require periodic service.
+									<span class="dot ok"></span>
+								</td>
+								<td>
+									Higher upfront cost and maintenance; cost/gal varies by system
+									and usage.
+								</td>
+								<td>
+									Filter + membrane waste (multi-stage); no single-use bottles.
+								</td>
+								<td>
+									Highly effective, under-sink solution; not gravity-portable.
+								</td>
+							</tr>
+
+							<!-- Pitcher filters (most) -->
+							<tr>
+								<td><strong>Most Pitcher Filters</strong></td>
+								<td>
+									Primarily taste/odor;
+									<strong>many do not reduce fluoride</strong> unless
+									specifically engineered for it.
+									<div class="meter">
+										<span class="on"></span><span></span><span></span
+										><span></span><span></span>
+									</div>
+								</td>
+								<td>
+									Narrow media and small cartridge volumes; short certified life
+									for fluoride (if offered).
+									<span class="dot warn"></span>
+								</td>
+								<td>Frequent swaps → higher $/gal for true fluoride models.</td>
+								<td>Multiple small cartridges/year; plastic adds up.</td>
+								<td>
+									Convenient, but verify fluoride certification—don’t assume
+									standard carbon pitchers remove fluoride.
+								</td>
+							</tr>
+
+							<!-- Bottled water -->
+							<tr>
+								<td><strong>Bottled Water</strong></td>
+								<td>
+									Not a filter; quality varies by brand/source; no control over
+									fluoride at home.
+									<div class="meter">
+										<span></span><span></span><span></span><span></span
+										><span></span>
+									</div>
+								</td>
+								<td>
+									Regulated as a beverage; not a household treatment method.
+									<span class="dot bad"></span>
+								</td>
+								<td>Generally the highest $/gal.</td>
+								<td>Very high (single-use plastics).</td>
+								<td>
+									Convenient, but cost and waste are substantial; doesn’t
+									address your tap.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="foot">
+					<strong>How to read this:</strong>
+					* <em>Effective Fluoride Window</em> = the practical gallon range to
+					plan replacements for <u>fluoride</u> (not chlorine). Use the lowest
+					verified gallon figure among your hardest-to-remove targets to budget
+					honestly. For faucet/under-sink systems, follow manufacturer service
+					intervals to maintain fluoride reduction.
+				</div>
+			</div>
+		</section>
+
+		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
+		<section class="bx-lifestyle-mosaic">
+			<style>
+				.bx-lifestyle-mosaic {
+					--gap: 16px;
+					--r: 10px;
+					font-family: 'Josefin Sans', sans-serif;
+					background: #f8fbfd;
+					padding: 1.5rem 0 2rem;
+				}
+
+				.bx-lifestyle-mosaic .wrap {
+					width: min(950px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					text-align: center;
+				}
+
+				.bx-lifestyle-mosaic h2 {
+					margin: 0 0 1.25rem;
+					color: #1b4b66;
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
+
+				.bx-lifestyle-mosaic .grid {
+					display: flex;
+					justify-content: center;
+					gap: var(--gap);
+					flex-wrap: wrap;
+				}
+
+				.bx-lifestyle-mosaic figure {
+					margin: 0;
+					position: relative;
+					overflow: hidden;
+					border-radius: var(--r);
+					background: #fff;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+					width: 280px;
+					height: 280px;
+					flex: 1 1 280px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: transform 0.25s ease, box-shadow 0.25s ease;
+				}
+
+				.bx-lifestyle-mosaic figure:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+				}
+
+				.bx-lifestyle-mosaic img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+					border-radius: var(--r);
+				}
+
+				.bx-lifestyle-mosaic figcaption {
+					position: absolute;
+					bottom: 8px;
+					left: 8px;
+					right: 8px;
+					background: rgba(0, 0, 0, 0.45);
+					color: #fff;
+					font-weight: 600;
+					padding: 0.35rem 0.6rem;
+					border-radius: 6px;
+					font-size: 0.9rem;
+				}
+
+				@media (max-width: 800px) {
+					.bx-lifestyle-mosaic figure {
+						width: 220px;
+						height: 220px;
+					}
+				}
+
+				@media (max-width: 640px) {
+					.bx-lifestyle-mosaic figure {
+						width: 100%;
+						height: 180px;
+						max-width: 320px;
+					}
+					.bx-lifestyle-mosaic figcaption {
+						font-size: 0.8rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<div class="grid">
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482203878_671536448563485_1590241430208201975_n.webp"
+							alt="Morning coffee with clean water"
+						/>
+					</figure>
+
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/519958646_768320685551727_186831482326535167_n.webp"
+							alt="Pouring water at the dinner table"
+						/>
+					</figure>
+
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482219349_671875495196247_4734281636374861379_n.webp"
+							alt="Kitchen counter setup"
+						/>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+		<!-- 6) REVIEWS -->
+		<section class="bx-reviews-section" aria-labelledby="reviews-title">
+			<style>
+				.bx-reviews-section {
+					--accent: #1b4b66;
+					--text: #222;
+					--muted: #56606a;
+					--card: #fff;
+					--ring: rgba(27, 75, 102, 0.12);
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+				}
+				.bx-reviews-section .wrap {
+					width: min(980px, 100%);
+					margin: 0 auto;
+					padding: 0 clamp(0.75rem, 3vw, 1rem);
+					box-sizing: border-box;
+				}
+				.bx-reviews-section h2 {
+					text-align: center;
+					color: var(--accent);
+					margin: 2rem 0 1rem;
+					font-size: 1.5rem;
+					letter-spacing: 0.2px;
+				}
+				.bx-reviews-section .list {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					display: grid;
+					gap: 14px;
+					grid-template-columns: 1fr;
+				}
+				@media (min-width: 760px) {
+					.bx-reviews-section .list {
+						grid-template-columns: 1fr 1fr;
+					}
+				}
+				.bx-reviews-section .item {
+					background: var(--card);
+					border-radius: var(--radius);
+					padding: 14px 16px;
+					box-shadow: 0 6px 18px -6px var(--ring);
+					border: 1px solid #eef3f8;
+					transition: transform 0.18s ease, box-shadow 0.18s ease,
+						border-color 0.18s ease;
+				}
+				.bx-reviews-section .item:hover {
+					transform: translateY(-2px);
+					box-shadow: 0 10px 26px -8px var(--ring);
+					border-color: #e6eef6;
+				}
+				.bx-reviews-section .head {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					gap: 0.75rem;
+					margin-bottom: 0.4rem;
+					flex-wrap: wrap;
+				}
+				.bx-reviews-section .stars {
+					display: inline-flex;
+					gap: 2px;
+					line-height: 0;
+				}
+				.bx-reviews-section .star {
+					width: 16px;
+					height: 16px;
+					fill: #ffc107;
+					flex: 0 0 16px;
+				}
+				.bx-reviews-section .meta {
+					color: var(--muted);
+					font-size: 0.9rem;
+					text-align: right;
+					white-space: nowrap;
+				}
+				.bx-reviews-section .quote {
+					margin: 0.25rem 0 0.5rem;
+					color: var(--text);
+					line-height: 1.6;
+					font-style: italic;
+				}
+				.bx-reviews-section .author {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+					color: var(--accent);
+					font-weight: 700;
+					font-size: 0.95rem;
+				}
+				.bx-reviews-section .dot {
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					background: #c7d7e6;
+					display: inline-block;
+				}
+				.bx-reviews-section .note {
+					text-align: center;
+					color: var(--muted);
+					font-size: 0.9rem;
+					margin-top: 0.9rem;
+				}
+				@media (max-width: 600px) {
+					.bx-reviews-section .wrap {
+						padding-left: clamp(0.75rem, 4vw, 1rem);
+						padding-right: clamp(0.75rem, 4vw, 1rem);
+					}
+					.bx-reviews-section h2 {
+						font-size: 1.25rem;
+						margin: 1.25rem 0 0.75rem;
+					}
+					.bx-reviews-section .item {
+						padding: 12px 14px;
+						border-radius: 10px;
+						box-shadow: 0 4px 14px -8px var(--ring);
+					}
+					.bx-reviews-section .star {
+						width: 14px;
+						height: 14px;
+					}
+					.bx-reviews-section .meta {
+						font-size: 0.82rem;
+						opacity: 0.9;
+					}
+					.bx-reviews-section .quote {
+						font-size: 0.97rem;
+					}
+					.bx-reviews-section .author {
+						font-size: 0.92rem;
+					}
+					.bx-reviews-section .note {
+						font-size: 0.85rem;
+						margin-top: 0.6rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="reviews-title">What Proactive™ Customers Are Saying</h2>
+
+				<ul class="list">
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Parker, CO • 09/28/2025</div>
+						</div>
+						<p class="quote">
+							“These filters are amazing! After priming a bit longer, the earthy
+							taste went away completely. The water is fresh, pure, and crisp —
+							totally worth it for fluoride-free water.”
 						</p>
-					</div>
-					<div>
-						<h3>UP TO 12 MONTHS OF PROTECTION ✅</h3>
-						<p>
-							A full year of dependable filtration — the new standard in lasting
-							water quality.
+						<div class="author">Kiani K.</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Pueblo, CO • 09/25/2025</div>
+						</div>
+						<p class="quote">
+							“Installed the BOROUX Proactive Fluoride Filters and it’s a clear
+							upgrade. Knowing fluoride is gone gives me confidence in every
+							glass — bright, clean water, better than store-bought.”
 						</p>
-					</div>
-					<div>
-						<h3>COMPATIBLE WITH MOST GRAVITY SYSTEMS 🧩</h3>
-						<p>
-							Designed to thread directly onto standard black filter elements —
-							fits Boroux Foundation™, Berkey Black Elements, ProOne, Alexapure
-							Pro, and other gravity systems using the same format. Simple,
-							universal, and effortless.
+						<div class="author">Lainie O.</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Denver, CO • 09/24/2025</div>
+						</div>
+						<p class="quote">
+							“Protecting my family comes first. After priming a little longer,
+							the taste became perfectly clean — now we’re confident our water
+							is fluoride-free.”
 						</p>
-					</div>
+						<div class="author">Trisha J.</div>
+					</li>
 
-					<div>
-						<h3>60-DAY RISK-FREE TRIAL ✅</h3>
-						<p>Try it for 60 days risk-free — love it or your money back.</p>
-					</div>
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Bradenton, FL • 10/17/2025</div>
+						</div>
+						<p class="quote">
+							“I love that the fluoride filters are enclosed in stainless steel
+							— no plastic. They work great and feel sturdier than other
+							brands.”
+						</p>
+						<div class="author">Immashe</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Springfield, MO • 09/26/2025</div>
+						</div>
+						<p class="quote">
+							“Excellent product! The primer kit made setup super easy. Highly
+							recommend the Proactive Fluoride Filters — the quality shows.”
+						</p>
+						<div class="author">Jennifer S.</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Carrollton, TX • 06/17/2025</div>
+						</div>
+						<p class="quote">
+							“We switched to city water and it tasted chemical. Adding the
+							fluoride filters immediately improved the taste — fresh and pure
+							again.”
+						</p>
+						<div class="author">Renee S.</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Omaha, NE • 08/05/2025</div>
+						</div>
+						<p class="quote">
+							“The stainless steel covers are brilliant — no more plastics!
+							Super excited to finally have fluoride-free water.”
+						</p>
+						<div class="author">Ninette C.</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">St. Louis, MO • 06/19/2025</div>
+						</div>
+						<p class="quote">
+							“Our family loves the metal filters. Easy to install, look great,
+							and we feel better knowing our water is fluoride-free and
+							plastic-free.”
+						</p>
+						<div class="author">Mark R.</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Charlotte, NC • 08/06/2025</div>
+						</div>
+						<p class="quote">
+							“It’s great to not taste the chemicals anymore. Exactly what we
+							were hoping for.”
+						</p>
+						<div class="author">Colleen</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Stafford, VA • 07/13/2025</div>
+						</div>
+						<p class="quote">
+							“Goodbye fluoride! So happy these launched — the stainless design
+							looks great and filters fast. Five stars.”
+						</p>
+						<div class="author">Doc B.</div>
+					</li>
+				</ul>
+				<p class="note">
+					* Verified customer feedback for the
+					<strong>BOROUX Proactive™ Fluoride Filter</strong> (BX-FLU-2). Sourced
+					from Judge.me reviews on boroux.com, June–October 2025.
+				</p>
+			</div>
+		</section>
+
+		<!-- BOROUX FAQ (scoped, no JS) -->
+		<section class="bx-scope-faq" aria-labelledby="faq-title">
+			<style>
+				.bx-scope-faq {
+					--bx-accent: #1b4b66;
+					--bx-text: #222;
+					--bx-muted: #555;
+					--bx-soft: #f5f9fc;
+					font-family: 'Josefin Sans', system-ui, Segoe UI, Roboto, Arial,
+						sans-serif;
+					color: var(--bx-text);
+					line-height: 1.6;
+					width: 100%;
+					margin: 2rem 0;
+					background: var(--bx-soft);
+					overflow-x: hidden;
+				}
+				.bx-scope-faq .inner {
+					width: min(1000px, 100%);
+					margin: 0 auto;
+					padding: 1.75rem clamp(0.75rem, 4vw, 1rem);
+					box-sizing: border-box;
+					border-radius: 12px;
+				}
+				.bx-scope-faq h2 {
+					margin: 0 0 1rem;
+					font-size: 1.6rem;
+					color: var(--bx-accent);
+					text-align: center;
+				}
+				.bx-scope-faq p.lead {
+					margin: 0.25rem auto 1.25rem;
+					text-align: center;
+					color: var(--bx-muted);
+					max-width: 720px;
+				}
+				.bx-scope-faq .faq-list {
+					display: grid;
+					gap: 0.75rem;
+				}
+				.bx-scope-faq details {
+					background: #fff;
+					border-radius: 10px;
+					padding: 0.75rem 1rem;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+				}
+				.bx-scope-faq summary {
+					cursor: pointer;
+					font-weight: 700;
+					color: #0f2748;
+					outline: none;
+					list-style: none;
+				}
+				.bx-scope-faq summary::-webkit-details-marker {
+					display: none;
+				}
+				.bx-scope-faq summary:after {
+					content: '+';
+					float: right;
+					color: var(--bx-accent);
+					font-weight: 700;
+				}
+				.bx-scope-faq details[open] summary:after {
+					content: '–';
+				}
+				.bx-scope-faq .answer {
+					margin: 0.6rem 0 0;
+					color: var(--bx-text);
+				}
+				.bx-scope-faq .muted {
+					color: var(--bx-muted);
+					font-size: 0.95rem;
+				}
+				@media (max-width: 640px) {
+					.bx-scope-faq .inner {
+						padding: 1.25rem clamp(0.75rem, 4vw, 1rem);
+						border-radius: 0;
+					}
+					.bx-scope-faq h2 {
+						font-size: 1.35rem;
+					}
+				}
+			</style>
+
+			<div class="inner">
+				<h2 id="faq-title">
+					Questions &amp; Answers — Proactive™ Fluoride Filter
+				</h2>
+				<p class="lead">
+					Everything you need to know about lifespan, setup, and how Proactive™
+					targets fluoride.
+				</p>
+
+				<div class="faq-list">
+					<details>
+						<summary>
+							How long does the Proactive™ Fluoride Filter last?
+						</summary>
+						<div class="answer">
+							The lifespan depends on your water usage and source-water quality.
+							The manufacturer recommends replacing the set at around
+							<strong>1,000 gallons</strong>, which for many households
+							corresponds roughly to about 6–12 months of use.
+						</div>
+					</details>
+
+					<details>
+						<summary>
+							Does the filter reduce arsenic as well as fluoride?
+						</summary>
+						<div class="answer">
+							At this time, the Proactive™ filter has
+							<strong
+								>not been independently tested for arsenic reduction</strong
+							>. The published data is focused on fluoride removal.
+						</div>
+					</details>
+
+					<details>
+						<summary>
+							Is the stainless steel shell necessary for the filter to work?
+						</summary>
+						<div class="answer">
+							Yes. The stainless steel shell supports the patented up-flow
+							design, which slows flow rate, increases contact time with the
+							nano-carbon media, and helps maintain high fluoride removal
+							efficiency.
+						</div>
+					</details>
+
+					<details>
+						<summary>
+							Do I need one Proactive™ filter per Foundation™ filter?
+						</summary>
+						<div class="answer">
+							Yes. Each Proactive™ Fluoride Filter is designed to attach to one
+							Foundation™ Filter (1-to-1 configuration). This ensures balanced
+							flow and optimal fluoride reduction.
+						</div>
+					</details>
+
+					<details>
+						<summary>
+							Why is the filter described as “alumina-free”? What does that
+							mean?
+						</summary>
+						<div class="answer">
+							Traditional fluoride filters often use activated alumina (aluminum
+							oxide) media. The Proactive™ filter uses a hybrid nano-carbon
+							media instead—avoiding alumina-based media entirely. This is a key
+							design decision to eliminate potential aluminum exposure from the
+							media while achieving high fluoride reduction.
+						</div>
+					</details>
+
+					<details>
+						<summary>
+							Why does new water from the filter sometimes taste slightly
+							mineral or earthy at first?
+						</summary>
+						<div class="answer">
+							You may notice a subtle taste when first using the Proactive™
+							filter. This is normal and temporary. It’s caused by the dense
+							media being flushed for the first time. Prime each filter for at
+							least 10 minutes before first use to eliminate this initial taste.
+						</div>
+					</details>
+				</div>
+
+				<p class="muted" style="margin-top: 1rem">
+					*Performance and lifespan vary with water chemistry and daily use.
+					Replace at ~1,000 gallons to maintain target reduction levels.
+				</p>
+			</div>
+		</section>
+
+		<!-- 7) RECOMMENDED PRODUCTS -->
+		<section class="bx-products-section" aria-labelledby="products-title">
+			<style>
+				.bx-products-section {
+					--accent: #1b4b66;
+					--text: #222;
+					--muted: #555;
+					--card: #fff;
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+					width: 100%;
+					overflow-x: hidden;
+				}
+				.bx-products-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 clamp(12px, 4vw, 16px);
+					box-sizing: border-box;
+				}
+				.bx-products-section h2 {
+					text-align: center;
+					color: var(--accent);
+					margin: 2rem 0 1.25rem;
+				}
+
+				.bx-products-section .grid {
+					display: grid;
+					gap: 1.25rem;
+					grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+				}
+
+				@media (max-width: 420px) {
+					.bx-products-section .grid {
+						grid-template-columns: 1fr;
+					}
+				}
+
+				.bx-products-section .product {
+					background: var(--card);
+					border-radius: var(--radius);
+					padding: 1.1rem;
+					text-align: center;
+					box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 0.6rem;
+					transition: transform 0.2s ease;
+					box-sizing: border-box;
+				}
+				.bx-products-section .product:hover {
+					transform: translateY(-4px);
+				}
+
+				.bx-products-section .img {
+					width: 100%;
+					max-width: 320px;
+					aspect-ratio: 4/3;
+					object-fit: cover;
+					object-position: center;
+					border-radius: 10px;
+					display: block;
+				}
+				.bx-products-section h3 {
+					margin: 0.25rem 0;
+					font-size: 1.05rem;
+					color: #0e3555;
+				}
+				.bx-products-section p {
+					margin: 0 0.25rem 0.5rem;
+					color: var(--muted);
+				}
+
+				.bx-products-section .btn {
+					display: inline-block;
+					background: var(--accent);
+					color: #fff;
+					text-decoration: none;
+					font-weight: 700;
+					font-size: 0.92rem;
+					padding: 0.55rem 1rem;
+					border-radius: 8px;
+					margin-top: auto;
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="products-title">Recommended Products</h2>
+				<div class="grid">
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
+							alt="Boroux Foundation Filter Replacement Set placeholder"
+						/>
+						<h3>Boroux Water Filter Systems (from $349)</h3>
+						<p>
+							Every BOROUX system begins with 304 stainless steel—the same
+							material trusted in professional kitchens for its strength,
+							purity, and timeless finish. The Legacy is a countertop
+							centerpiece; Compact mirrors that craftsmanship in a
+							travel-friendly form. Both feature Foundation™ filtration for a
+							full year of taste and confidence.
+						</p>
+						<a class="btn" href="#">Shop Now</a>
+					</article>
+
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
+							alt="Boroux Stainless Gravity System placeholder"
+						/>
+						<h3>Boroux Proactive Fluoride Filter ($139)</h3>
+						<p>
+							The first alumina-free fluoride filters—a complete re-think of
+							safe, long-lasting fluoride reduction.
+						</p>
+						<a class="btn" href="#">Shop Now</a>
+					</article>
+
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Shower_head_17.webp"
+							alt="Boroux Shower Filter placeholder"
+						/>
+						<h3>Boroux Shower Filter ($60)</h3>
+						<p>
+							Remove up to 98% of chlorine with high-grade media—smoother skin,
+							softer hair, and quick tool-free install.
+						</p>
+						<a class="btn" href="#">Shop Now</a>
+					</article>
 				</div>
 			</div>
-		</div>
+		</section>
 	</div>
-</section>
-
-<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
-<section class="bx-lifestyle-mosaic">
-	<style>
-		.bx-lifestyle-mosaic {
-			--gap: 16px;
-			--r: 10px;
-			font-family: 'Josefin Sans', sans-serif;
-			background: #f8fbfd;
-			padding: 1.5rem 0 2rem;
-		}
-
-		.bx-lifestyle-mosaic .wrap {
-			width: min(950px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-			text-align: center;
-		}
-
-		.bx-lifestyle-mosaic h2 {
-			margin: 0 0 1.25rem;
-			color: #1b4b66;
-			font-size: 1.5rem;
-			font-weight: 600;
-		}
-
-		.bx-lifestyle-mosaic .grid {
-			display: flex;
-			justify-content: center;
-			gap: var(--gap);
-			flex-wrap: wrap;
-		}
-
-		.bx-lifestyle-mosaic figure {
-			margin: 0;
-			position: relative;
-			overflow: hidden;
-			border-radius: var(--r);
-			background: #fff;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-			width: 280px;
-			height: 280px;
-			flex: 1 1 280px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			transition: transform 0.25s ease, box-shadow 0.25s ease;
-		}
-
-		.bx-lifestyle-mosaic figure:hover {
-			transform: translateY(-4px);
-			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-		}
-
-		.bx-lifestyle-mosaic img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-			display: block;
-			border-radius: var(--r);
-		}
-
-		.bx-lifestyle-mosaic figcaption {
-			position: absolute;
-			bottom: 8px;
-			left: 8px;
-			right: 8px;
-			background: rgba(0, 0, 0, 0.45);
-			color: #fff;
-			font-weight: 600;
-			padding: 0.35rem 0.6rem;
-			border-radius: 6px;
-			font-size: 0.9rem;
-		}
-
-		@media (max-width: 800px) {
-			.bx-lifestyle-mosaic figure {
-				width: 220px;
-				height: 220px;
-			}
-		}
-
-		@media (max-width: 640px) {
-			.bx-lifestyle-mosaic figure {
-				width: 100%;
-				height: 180px;
-				max-width: 320px;
-			}
-			.bx-lifestyle-mosaic figcaption {
-				font-size: 0.8rem;
-			}
-		}
-	</style>
-
-	<div class="wrap">
-		<div class="grid">
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481906871_669985882051875_7834526164071720644_n.webp"
-					alt="Morning coffee with clean water"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/559003281_841992691517859_7056607156578405457_n.webp?height=300"
-					height="300"
-					width="300"
-					alt="Kitchen counter setup"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/494807247_713705557679907_264792049872702420_n.webp"
-					alt="Pouring water at the dinner table"
-				/>
-			</figure>
-		</div>
-	</div>
-</section>
-
-<!-- 3) CONTAMINANTS (with panel background) -->
-<section
-	class="bx-proactive-contaminants"
-	aria-labelledby="proactive-contam-title"
->
-	<style>
-		.bx-proactive-contaminants {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #555;
-			--bg: #f5f9fc;
-			--card: #fff;
-			--radius: 12px;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-proactive-contaminants .wrap {
-			width: min(1100px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-proactive-contaminants h2 {
-			text-align: center;
-			margin: 2rem 0 1rem;
-			color: var(--accent);
-			font-size: 1.45rem;
-		}
-		.bx-proactive-contaminants .panel {
-			background: var(--bg);
-			border-radius: var(--radius);
-			padding: 1rem;
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.04);
-		}
-		.bx-proactive-contaminants .image-card {
-			background: var(--card);
-			border-radius: var(--radius);
-			padding: 0.75rem;
-			margin-bottom: 1rem;
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 10px 30px rgba(0, 0, 0, 0.06);
-		}
-		.bx-proactive-contaminants .img {
-			width: 100%;
-			border-radius: 10px;
-			aspect-ratio: 16/10;
-			object-fit: cover;
-			object-position: center;
-			display: block;
-		}
-		.bx-proactive-contaminants .list {
-			display: grid;
-			gap: 1rem;
-		}
-		.bx-proactive-contaminants .item {
-			border-left: 4px solid var(--accent);
-			padding-left: 1rem;
-			background: #ffffff;
-			border-radius: 8px;
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
-		}
-		.bx-proactive-contaminants .item h3 {
-			margin: 0.75rem 0 0.35rem;
-			color: var(--accent);
-			font-size: 1.06rem;
-		}
-		.bx-proactive-contaminants .item p {
-			margin: 0.25rem 0 0.75rem;
-			color: var(--text);
-		}
-		.bx-proactive-contaminants .summary {
-			background: var(--bg);
-			border-radius: 10px;
-			padding: 1rem;
-			margin-top: 0.75rem;
-			font-weight: 600;
-		}
-		.bx-proactive-contaminants .note {
-			color: var(--muted);
-			font-weight: 500;
-			font-size: 0.92rem;
-			margin-top: 0.5rem;
-		}
-	</style>
-
-	<div class="wrap">
-		<h2 id="proactive-contam-title">
-			What the Proactive™ Fluoride Filter Targets — and Why It Matters
-		</h2>
-
-		<div class="panel">
-			<div class="image-card">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Fluoride-filter-testing-desk.webp"
-					alt="BOROUX Proactive fluoride filter testing"
-				/>
-			</div>
-
-			<div class="list">
-				<div class="item">
-					<h3>Fluoride (F⁻)</h3>
-					<p>
-						<strong>Designed to reduce:</strong> Fluoride ions in municipal tap
-						water through a proprietary alumina-free hybrid carbon design.
-					</p>
-					<p>
-						<strong>Why it matters:</strong> Many municipal systems add fluoride
-						intentionally; some households prefer to reduce it for taste,
-						personal choice, or skin sensitivity reasons. The Proactive™ filter
-						gives that control without introducing aluminum-based media.
-					</p>
-				</div>
-
-				<div class="item">
-					<h3>Alumina-Free by Design</h3>
-					<p>
-						<strong>What’s different:</strong> Most fluoride filters rely on
-						activated alumina (a porous aluminum oxide). The Proactive™ avoids
-						this entirely, using advanced carbon-based materials instead.
-					</p>
-					<p>
-						<strong>Why it matters:</strong> Aluminum compounds, while widely
-						used, can release trace aluminum under extreme conditions and have
-						been associated with respiratory and systemic effects in high
-						occupational exposures. Proactive™ delivers peace of mind — no
-						aluminum-based media, no compromise on performance.
-					</p>
-				</div>
-
-				<div class="item">
-					<h3>Extended Lifespan</h3>
-					<p>
-						<strong>How it performs longer:</strong> Engineered for consistent
-						flow and high contact time, the Proactive™ filter maintains fluoride
-						reduction over hundreds of gallons — well beyond the lifespan of
-						typical activated alumina cartridges.
-					</p>
-					<p>
-						<strong>Why it matters:</strong> Long life equals less waste, fewer
-						replacements, and steady performance over time.
-					</p>
-				</div>
-
-				<div class="item">
-					<h3>304 Stainless Components</h3>
-					<p>
-						<strong>Built for quality:</strong> Each housing and fitting uses
-						304 stainless steel — the same corrosion-resistant material trusted
-						in medical, food-service, and architectural applications.
-					</p>
-					<p>
-						<strong>Why it matters:</strong> Clean, durable, and built to last —
-						every part matches the premium craftsmanship of the Foundation™
-						filters.
-					</p>
-				</div>
-
-				<div class="summary">
-					Proactive™ is an alumina-free fluoride filter that provides powerful
-					reduction without aluminum-based media — crafted for longevity,
-					clarity, and confidence.
-					<div class="note">
-						Pair with the Foundation™ stage for complete protection — from
-						everyday chlorine to advanced fluoride reduction.
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
-<section class="bx-lifestyle-mosaic">
-	<style>
-		.bx-lifestyle-mosaic {
-			--gap: 16px;
-			--r: 10px;
-			font-family: 'Josefin Sans', sans-serif;
-			background: #f8fbfd;
-			padding: 1.5rem 0 2rem;
-		}
-
-		.bx-lifestyle-mosaic .wrap {
-			width: min(950px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-			text-align: center;
-		}
-
-		.bx-lifestyle-mosaic h2 {
-			margin: 0 0 1.25rem;
-			color: #1b4b66;
-			font-size: 1.5rem;
-			font-weight: 600;
-		}
-
-		.bx-lifestyle-mosaic .grid {
-			display: flex;
-			justify-content: center;
-			gap: var(--gap);
-			flex-wrap: wrap;
-		}
-
-		.bx-lifestyle-mosaic figure {
-			margin: 0;
-			position: relative;
-			overflow: hidden;
-			border-radius: var(--r);
-			background: #fff;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-			width: 280px;
-			height: 280px;
-			flex: 1 1 280px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			transition: transform 0.25s ease, box-shadow 0.25s ease;
-		}
-
-		.bx-lifestyle-mosaic figure:hover {
-			transform: translateY(-4px);
-			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-		}
-
-		.bx-lifestyle-mosaic img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-			display: block;
-			border-radius: var(--r);
-		}
-
-		.bx-lifestyle-mosaic figcaption {
-			position: absolute;
-			bottom: 8px;
-			left: 8px;
-			right: 8px;
-			background: rgba(0, 0, 0, 0.45);
-			color: #fff;
-			font-weight: 600;
-			padding: 0.35rem 0.6rem;
-			border-radius: 6px;
-			font-size: 0.9rem;
-		}
-
-		@media (max-width: 800px) {
-			.bx-lifestyle-mosaic figure {
-				width: 220px;
-				height: 220px;
-			}
-		}
-
-		@media (max-width: 640px) {
-			.bx-lifestyle-mosaic figure {
-				width: 100%;
-				height: 180px;
-				max-width: 320px;
-			}
-			.bx-lifestyle-mosaic figcaption {
-				font-size: 0.8rem;
-			}
-		}
-	</style>
-
-	<div class="wrap">
-		<div class="grid">
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-install-shell_2e410322-e2c2-4080-ba1e-72b1c7caa289.webp"
-					alt="Morning coffee with clean water"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/497546316_18494046550028668_1747607452050442139_n.jpg"
-					alt="Kitchen counter setup"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-filter_67ea786e-008d-425e-b4a6-dda5f21d8fac.webp"
-					alt="Pouring water at the dinner table"
-				/>
-			</figure>
-		</div>
-	</div>
-</section>
-
-<!-- 4) COMPARISON (table desktop, cards mobile) -->
-<section class="bx-fluoride-compare" aria-labelledby="bx-fl-title">
-	<style>
-		.bx-fluoride-compare {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #56606a;
-			--bg: #f5f9fc;
-			--card: #fff;
-			--ok: #0f8a5f;
-			--warn: #b96b00;
-			--bad: #b71c1c;
-			--r: 12px;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-fluoride-compare .wrap {
-			width: min(1100px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-fluoride-compare h2 {
-			color: var(--accent);
-			text-align: center;
-			margin: 2rem 0 0.5rem;
-		}
-		.bx-fluoride-compare .lead {
-			text-align: center;
-			color: var(--muted);
-			margin: 0 0 1rem;
-		}
-		.bx-fluoride-compare .legend {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.5rem 0.75rem;
-			justify-content: center;
-			color: var(--muted);
-			font-size: 0.92rem;
-			margin-bottom: 0.75rem;
-		}
-		.bx-fluoride-compare .dot {
-			display: inline-block;
-			width: 0.65rem;
-			height: 0.65rem;
-			border-radius: 50%;
-			margin-right: 0.4rem;
-			transform: translateY(1px);
-		}
-		.bx-fluoride-compare .ok {
-			background: var(--ok);
-		}
-		.bx-fluoride-compare .warn {
-			background: var(--warn);
-		}
-		.bx-fluoride-compare .bad {
-			background: var(--bad);
-		}
-
-		.bx-fluoride-compare .table-wrap {
-			overflow-x: auto;
-			-webkit-overflow-scrolling: touch;
-		}
-		.bx-fluoride-compare table {
-			min-width: 980px;
-			width: 100%;
-			border-collapse: separate;
-			border-spacing: 0;
-			border-radius: 10px;
-			background: var(--card);
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.04);
-		}
-		.bx-fluoride-compare thead th {
-			background: var(--bg);
-			color: var(--text);
-			font-weight: 700;
-			font-size: 0.92rem;
-			text-align: left;
-			padding: 12px 14px;
-			border-bottom: 1px solid #e7eef6;
-		}
-		.bx-fluoride-compare td {
-			padding: 14px;
-			border-bottom: 1px solid #eef3f8;
-			vertical-align: top;
-			font-size: 0.95rem;
-		}
-		.bx-fluoride-compare tr:last-child td {
-			border-bottom: none;
-		}
-		.bx-fluoride-compare .pill {
-			display: inline-block;
-			padding: 0.15rem 0.5rem;
-			border-radius: 999px;
-			font-size: 0.78rem;
-			font-weight: 700;
-			background: var(--bg);
-			color: var(--accent);
-		}
-		.bx-fluoride-compare .meter {
-			display: inline-flex;
-			gap: 4px;
-			margin-top: 0.25rem;
-		}
-		.bx-fluoride-compare .meter span {
-			width: 9px;
-			height: 9px;
-			border-radius: 2px;
-			background: #e7eef6;
-		}
-		.bx-fluoride-compare .meter .on {
-			background: var(--accent);
-		}
-		.bx-fluoride-compare .foot {
-			background: var(--bg);
-			border-left: 4px solid var(--accent);
-			padding: 12px 14px;
-			border-radius: 8px;
-			margin-top: 1rem;
-			font-size: 0.92rem;
-			color: var(--muted);
-		}
-	</style>
-
-	<div class="wrap">
-		<h2 id="bx-fl-title">
-			Fluoride Reduction: Real-World Performance, Cost & Waste
-		</h2>
-		<p class="lead">
-			Not every filter targets fluoride. This comparison focuses specifically on
-			**fluoride** (and related compounds), using published claims and test
-			windows rather than chlorine-only gallon figures.
-		</p>
-
-		<div class="legend">
-			<span><i class="dot ok"></i>strong</span>
-			<span><i class="dot warn"></i>mixed/limited</span>
-			<span><i class="dot bad"></i>weak/untested</span>
-		</div>
-
-		<div class="table-wrap">
-			<table role="table" aria-describedby="bx-fl-title">
-				<thead>
-					<tr>
-						<th>System</th>
-						<th>Fluoride Reduction Basis</th>
-						<th>Test Depth & Volume</th>
-						<th>Effective Fluoride Window*</th>
-						<th>Approx. Cost / Gallon</th>
-						<th>What This Means</th>
-					</tr>
-				</thead>
-				<tbody>
-					<!-- BOROUX Proactive (alumina-free) -->
-					<tr>
-						<td>
-							<strong>BOROUX Proactive™ Fluoride Filters</strong><br />
-							<span class="pill">alumina-free, nano-carbon</span>
-						</td>
-						<td>
-							Up to <strong>99–99.9% fluoride reduction</strong> using a
-							dual-layer hybrid nano-carbon, patent-pending up-flow design (no
-							activated alumina).
-							<div class="meter" aria-label="strength">
-								<span class="on"></span><span class="on"></span
-								><span class="on"></span><span class="on"></span
-								><span class="on"></span>
-							</div>
-						</td>
-						<td>
-							Published pair capacity up to <strong>~1,000 gal</strong>; product
-							materials describe high-volume endurance and alumina-free media
-							details.
-							<span class="dot ok" title="strong"></span>
-						</td>
-						<td>
-							Plan around the fluoride window (not chlorine). Example:
-							<strong>~800–1,000 gal per pair</strong> in typical use.
-						</td>
-						<td>
-							If price is $139/set: <strong>~$0.14–$0.17/gal</strong> (at
-							800–1,000 gal).
-						</td>
-						<td>
-							Purpose-built for fluoride without aluminum media; transparent
-							claim set and stainless construction.
-						</td>
-					</tr>
-
-					<!-- Activated alumina add-on filters (generic market) -->
-					<tr>
-						<td><strong>Activated-Alumina Add-On Filters</strong></td>
-						<td>
-							Fluoride adsorption on aluminum-oxide media; effective when sized
-							and maintained correctly.
-							<div class="meter">
-								<span class="on"></span><span class="on"></span
-								><span class="on"></span><span></span><span></span>
-							</div>
-						</td>
-						<td>
-							Test panels and stated gallons vary widely; many listings cite
-							small-volume challenge tests for claims.
-							<span class="dot warn" title="mixed/limited"></span>
-						</td>
-						<td>
-							Often <strong>shorter fluoride windows</strong> per set vs.
-							premium alumina-free designs; replacement frequency depends on
-							source water.
-						</td>
-						<td>
-							Typically low upfront cost; <em>$ per gal</em> rises with more
-							frequent changes.
-						</td>
-						<td>
-							Proven method but aluminum-based; evaluate published test volume
-							and replacement cadence carefully.
-						</td>
-					</tr>
-
-					<!-- Reverse Osmosis (point-of-use) -->
-					<tr>
-						<td><strong>Reverse Osmosis (POU)</strong></td>
-						<td>
-							Membrane separation; <strong>effective for fluoride</strong> when
-							properly maintained.
-							<div class="meter">
-								<span class="on"></span><span class="on"></span
-								><span class="on"></span><span class="on"></span><span></span>
-							</div>
-						</td>
-						<td>
-							Well-documented reduction with standardized testing; multi-stage
-							cartridges + membrane require periodic service.
-							<span class="dot ok"></span>
-						</td>
-						<td>
-							Higher upfront cost and maintenance; cost/gal varies by system and
-							usage.
-						</td>
-						<td>
-							Filter + membrane waste (multi-stage); no single-use bottles.
-						</td>
-						<td>
-							Highly effective, under-sink solution; not gravity-portable.
-						</td>
-					</tr>
-
-					<!-- Pitcher filters (most) -->
-					<tr>
-						<td><strong>Most Pitcher Filters</strong></td>
-						<td>
-							Primarily taste/odor;
-							<strong>many do not reduce fluoride</strong> unless specifically
-							engineered for it.
-							<div class="meter">
-								<span class="on"></span><span></span><span></span><span></span
-								><span></span>
-							</div>
-						</td>
-						<td>
-							Narrow media and small cartridge volumes; short certified life for
-							fluoride (if offered).
-							<span class="dot warn"></span>
-						</td>
-						<td>Frequent swaps → higher $/gal for true fluoride models.</td>
-						<td>Multiple small cartridges/year; plastic adds up.</td>
-						<td>
-							Convenient, but verify fluoride certification—don’t assume
-							standard carbon pitchers remove fluoride.
-						</td>
-					</tr>
-
-					<!-- Bottled water -->
-					<tr>
-						<td><strong>Bottled Water</strong></td>
-						<td>
-							Not a filter; quality varies by brand/source; no control over
-							fluoride at home.
-							<div class="meter">
-								<span></span><span></span><span></span><span></span
-								><span></span>
-							</div>
-						</td>
-						<td>
-							Regulated as a beverage; not a household treatment method.
-							<span class="dot bad"></span>
-						</td>
-						<td>Generally the highest $/gal.</td>
-						<td>Very high (single-use plastics).</td>
-						<td>
-							Convenient, but cost and waste are substantial; doesn’t address
-							your tap.
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-		<div class="foot">
-			<strong>How to read this:</strong>
-			* <em>Effective Fluoride Window</em> = the practical gallon range to plan
-			replacements for <u>fluoride</u> (not chlorine). Use the lowest verified
-			gallon figure among your hardest-to-remove targets to budget honestly. For
-			faucet/under-sink systems, follow manufacturer service intervals to
-			maintain fluoride reduction.
-		</div>
-	</div>
-</section>
-
-<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
-<section class="bx-lifestyle-mosaic">
-	<style>
-		.bx-lifestyle-mosaic {
-			--gap: 16px;
-			--r: 10px;
-			font-family: 'Josefin Sans', sans-serif;
-			background: #f8fbfd;
-			padding: 1.5rem 0 2rem;
-		}
-
-		.bx-lifestyle-mosaic .wrap {
-			width: min(950px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-			text-align: center;
-		}
-
-		.bx-lifestyle-mosaic h2 {
-			margin: 0 0 1.25rem;
-			color: #1b4b66;
-			font-size: 1.5rem;
-			font-weight: 600;
-		}
-
-		.bx-lifestyle-mosaic .grid {
-			display: flex;
-			justify-content: center;
-			gap: var(--gap);
-			flex-wrap: wrap;
-		}
-
-		.bx-lifestyle-mosaic figure {
-			margin: 0;
-			position: relative;
-			overflow: hidden;
-			border-radius: var(--r);
-			background: #fff;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-			width: 280px;
-			height: 280px;
-			flex: 1 1 280px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			transition: transform 0.25s ease, box-shadow 0.25s ease;
-		}
-
-		.bx-lifestyle-mosaic figure:hover {
-			transform: translateY(-4px);
-			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-		}
-
-		.bx-lifestyle-mosaic img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-			display: block;
-			border-radius: var(--r);
-		}
-
-		.bx-lifestyle-mosaic figcaption {
-			position: absolute;
-			bottom: 8px;
-			left: 8px;
-			right: 8px;
-			background: rgba(0, 0, 0, 0.45);
-			color: #fff;
-			font-weight: 600;
-			padding: 0.35rem 0.6rem;
-			border-radius: 6px;
-			font-size: 0.9rem;
-		}
-
-		@media (max-width: 800px) {
-			.bx-lifestyle-mosaic figure {
-				width: 220px;
-				height: 220px;
-			}
-		}
-
-		@media (max-width: 640px) {
-			.bx-lifestyle-mosaic figure {
-				width: 100%;
-				height: 180px;
-				max-width: 320px;
-			}
-			.bx-lifestyle-mosaic figcaption {
-				font-size: 0.8rem;
-			}
-		}
-	</style>
-
-	<div class="wrap">
-		<div class="grid">
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482203878_671536448563485_1590241430208201975_n.webp"
-					alt="Morning coffee with clean water"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/519958646_768320685551727_186831482326535167_n.webp"
-					alt="Pouring water at the dinner table"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482219349_671875495196247_4734281636374861379_n.webp"
-					alt="Kitchen counter setup"
-				/>
-			</figure>
-		</div>
-	</div>
-</section>
-
-<!-- 6) REVIEWS -->
-<section class="bx-reviews-section" aria-labelledby="reviews-title">
-	<style>
-		.bx-reviews-section {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #555;
-			--card: #fff;
-			--radius: 12px;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-reviews-section .wrap {
-			width: min(900px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-reviews-section h2 {
-			text-align: center;
-			color: var(--accent);
-			margin: 2rem 0 1rem;
-			font-size: 1.5rem;
-		}
-		.bx-reviews-section .list {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			display: grid;
-			gap: 1rem;
-		}
-		.bx-reviews-section .item {
-			background: var(--card);
-			border-radius: 10px;
-			padding: 1rem 1.1rem;
-			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-		}
-		.bx-reviews-section .stars {
-			color: #ffc107;
-			margin-bottom: 0.35rem;
-		}
-		.bx-reviews-section .quote {
-			margin: 0 0 0.4rem;
-			font-style: italic;
-			line-height: 1.55;
-		}
-		.bx-reviews-section .author {
-			font-weight: 700;
-			color: var(--accent);
-			font-size: 0.95rem;
-		}
-		.bx-reviews-section .note {
-			text-align: center;
-			color: var(--muted);
-			font-size: 0.9rem;
-			margin-top: 0.75rem;
-		}
-	</style>
-
-	<div class="wrap">
-		<h2 id="reviews-title">What Customers Are Saying</h2>
-		<ul class="list">
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“These filters are amazing! After priming a bit longer, the earthy
-					taste went away completely. The water is fresh, pure, and crisp — I
-					can’t believe the difference. Totally worth it for fluoride-free
-					water.”
-				</p>
-				<p class="author">— Kiani K., Parker CO • 09/28/2025</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“I installed the BOROUX Proactive Fluoride Filters to improve my
-					drinking water, and it’s a clear upgrade. Knowing fluoride is gone
-					gives me confidence in every glass. The water is bright and clean,
-					better than store-bought.”
-				</p>
-				<p class="author">— Lainie O., Pueblo CO • 09/25/2025</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“Protecting my family is a top priority, and the BOROUX Proactive
-					Filters make me confident our water is safe. After priming a little
-					longer, the taste became perfectly clean.”
-				</p>
-				<p class="author">— Trisha J., Denver CO • 09/24/2025</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“I love that the fluoride filters are enclosed in stainless steel
-					sheaths — no plastic! They work great and feel so much sturdier than
-					other brands I’ve tried.”
-				</p>
-				<p class="author">— Immashe, Bradenton FL • 10/17/2025</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“Excellent product! The included primer kit made setup super easy.
-					Highly recommend the Proactive Fluoride Filters — they’re clearly
-					built with quality in mind.”
-				</p>
-				<p class="author">— Jennifer S., Springfield MO • 09/26/2025</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“After moving to city water, the taste was awful. Once we added the
-					flouride filters, we could immediately taste the difference — fresh,
-					pure, and chemical-free.”
-				</p>
-				<p class="author">— Renee S., Carrollton TX • 06/17/2025</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“The stainless steel covers are brilliant — no more plastics! Super
-					excited to finally have fluoride-free water.”
-				</p>
-				<p class="author">— Ninette C., Omaha NE • 08/05/2025</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“Our family loves the metal filters. They’re easy to install, look
-					great, and we feel healthier knowing our water is fluoride-free and
-					not sitting in plastic.”
-				</p>
-				<p class="author">— Mark R., St Louis MO • 06/19/2025</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“It’s so nice not to taste the chemicals in our water anymore! Exactly
-					what we were hoping for.”
-				</p>
-				<p class="author">— Colleen, Charlotte NC • 08/06/2025</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“Goodbye fluoride! So happy these finally launched — the stainless
-					design looks great and filters fast. Five stars.”
-				</p>
-				<p class="author">— Doc B., Stafford VA • 07/13/2025</p>
-			</li>
-		</ul>
-
-		<p class="note">
-			* Verified customer feedback for the
-			<strong>Boroux Proactive™ Fluoride Filter</strong>
-			(BX-FLU-2). Sourced from Judge.me reviews on boroux.com, June–October
-			2025.
-		</p>
-	</div>
-</section>
-
-<!-- BOROUX FAQ (scoped, no JS) -->
-<section class="bx-faq-section" aria-labelledby="faq-title">
-	<style>
-		.bx-faq-section {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #555;
-			--bg: #f5f9fc;
-			--radius: 12px;
-			font-family: 'Josefin Sans', sans-serif;
-			color: var(--text);
-			max-width: 900px;
-			margin: 2rem auto;
-			padding: 0 1rem;
-		}
-		.bx-faq-section h2 {
-			text-align: center;
-			margin-bottom: 1rem;
-			color: var(--accent);
-			font-size: 1.45rem;
-		}
-		.bx-faq-section details {
-			background: #fff;
-			border-radius: var(--radius);
-			padding: 1rem 1.25rem;
-			margin-bottom: 1rem;
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 6px 18px rgba(0, 0, 0, 0.04);
-		}
-		.bx-faq-section summary {
-			font-weight: 600;
-			cursor: pointer;
-			color: var(--accent);
-			font-size: 1.05rem;
-			margin: 0;
-		}
-		.bx-faq-section summary::-webkit-details-marker {
-			display: none;
-		}
-		.bx-faq-section summary::after {
-			content: ' +';
-			float: right;
-			font-size: 1.05rem;
-		}
-		.bx-faq-section details[open] summary::after {
-			content: ' -';
-		}
-		.bx-faq-section p {
-			margin: 0.5rem 0 0;
-			color: var(--text);
-			line-height: 1.55;
-		}
-	</style>
-
-	<div class="wrap">
-		<h2 id="faq-title">Questions & Answers — Proactive™ Fluoride Filter</h2>
-
-		<details>
-			<summary>How long does the Proactive™ Fluoride Filter last?</summary>
-			<p>
-				The lifespan depends on your water usage and source-water quality. The
-				manufacturer recommends replacing the set at around
-				<strong>1,000 gallons</strong>, which for many households corresponds
-				roughly to about 6-12 months of use.
-			</p>
-		</details>
-
-		<details>
-			<summary>Does the filter reduce arsenic as well as fluoride?</summary>
-			<p>
-				At this time, the Proactive™ filter has
-				<strong>not been independently tested for arsenic reduction</strong>.
-				The published data is focused on fluoride removal.
-			</p>
-		</details>
-
-		<details>
-			<summary>
-				Is the stainless steel shell necessary for the filter to work?
-			</summary>
-			<p>
-				Yes. The stainless steel shell supports the patented up-flow design,
-				which slows flow rate, increases contact time with the nano-carbon
-				media, and helps maintain high fluoride removal efficiency.
-			</p>
-		</details>
-
-		<details>
-			<summary>Do I need one Proactive™ filter per Foundation™ filter?</summary>
-			<p>
-				Yes. Each Proactive™ Fluoride Filter is designed to attach to one
-				Foundation™ Filter (1-to-1 configuration). This ensures balanced flow
-				and optimal fluoride reduction.
-			</p>
-		</details>
-
-		<details>
-			<summary>
-				Why is the filter described as “alumina-free”? What does that mean?
-			</summary>
-			<p>
-				Traditional fluoride filters often use activated alumina (aluminum
-				oxide) media. The Proactive™ filter uses a hybrid nano-carbon media
-				instead—avoiding alumina-based media entirely. This is a key design
-				decision by the manufacturer to eliminate potential aluminum exposure
-				from the media while achieving high fluoride reduction.
-			</p>
-		</details>
-
-		<details>
-			<summary>
-				Why does new water from the filter sometimes taste slightly mineral or
-				earthy at first?
-			</summary>
-			<p>
-				You may notice a subtle taste when first using the Proactive™ filter.
-				This is normal and temporary. It is caused by the dense media being
-				flushed for the first time and any residual manufacturing traces. The
-				manufacturer recommends priming each filter for at least 10 minutes
-				before first use to eliminate this initial taste.
-			</p>
-		</details>
-
-		<p class="note">
-			*These FAQs are based on available manufacturer information at the time of
-			writing. Actual usage, lifespan, and performance can vary based on your
-			specific water chemistry and flow conditions.
-		</p>
-	</div>
-</section>
-
-<!-- 7) RECOMMENDED PRODUCTS -->
-<section class="bx-products-section" aria-labelledby="products-title">
-	<style>
-		.bx-products-section {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #555;
-			--card: #fff;
-			--radius: 12px;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-products-section .wrap {
-			width: min(1100px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-products-section h2 {
-			text-align: center;
-			color: var(--accent);
-			margin: 2rem 0 1.25rem;
-		}
-		.bx-products-section .grid {
-			display: grid;
-			gap: 1.25rem;
-			grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-		}
-		.bx-products-section .product {
-			background: var(--card);
-			border-radius: var(--radius);
-			padding: 1.1rem;
-			padding-bottom: 40px;
-			text-align: center;
-			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 0.5rem;
-			transition: transform 0.2s ease;
-			position: relative;
-		}
-		.bx-products-section .product:hover {
-			transform: translateY(-4px);
-		}
-		.bx-products-section .img {
-			width: 100%;
-			max-width: 280px;
-			aspect-ratio: 4/3;
-			object-fit: cover;
-			object-position: center;
-			border-radius: 10px;
-			display: block;
-		}
-		.bx-products-section h3 {
-			margin: 0.25rem 0;
-			font-size: 1.05rem;
-			color: #0e3555;
-		}
-		.bx-products-section p {
-			margin: 0 0.25rem 0.5rem;
-			color: var(--muted);
-		}
-		.bx-products-section .btn {
-			display: inline-block;
-			background: var(--accent);
-			color: #fff;
-			text-decoration: none;
-			font-weight: 700;
-			font-size: 0.92rem;
-			padding: 0.55rem 1rem;
-			border-radius: 8px;
-			position: absolute;
-			bottom: 0;
-			margin-bottom: 5px;
-		}
-	</style>
-
-	<div class="wrap">
-		<h2 id="products-title">Recommended Products</h2>
-		<div class="grid">
-			<article class="product">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
-					alt="Boroux Foundation Filter Replacement Set placeholder"
-				/>
-				<h3>Boroux Water Filter Systems (from $349)</h3>
-				<p>
-					Every BOROUX system begins with 304 stainless steel—the same material
-					trusted in professional kitchens for its strength, purity, and
-					timeless finish. The Legacy System stands as a countertop centerpiece,
-					combining performance and elegance; the Compact System mirrors that
-					craftsmanship in a travel-friendly form. Both feature Foundation™
-					filtration, independently tested to remove more contaminants and
-					preserve taste and confidence for an entire year.
-				</p>
-				<a class="btn" href="#">Shop Now</a>
-			</article>
-
-			<article class="product">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/513542808_756084973441965_208157682521460141_n.webp"
-					alt="Boroux Stainless Gravity System placeholder"
-				/>
-				<h3>Boroux Foundation Filters ($160)</h3>
-				<p>
-					The BOROUX Foundation™ Filters are the core of clean water—engineered
-					to remove hundreds of real-world contaminants including PFAS, heavy
-					metals, pesticides, pharmaceuticals, and microplastics. Built from
-					sustainable stainless-steel and high-performance carbon media, they
-					deliver lab-tested purity, exceptional taste, and a year of dependable
-					protection per set.
-				</p>
-				<a class="btn" href="#">Shop Now</a>
-			</article>
-
-			<article class="product">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Shower_head_17.webp"
-					alt="Boroux Glass Spigot accessory placeholder"
-				/>
-				<h3>Boroux Shower Filter ($60)</h3>
-				<p>
-					Step into spa-quality water. The BOROUX Shower Filter System removes
-					up to 98% of chlorine using high-grade copper-zinc and calcium sulfite
-					media — balancing water chemistry to leave your skin smoother and your
-					hair noticeably softer. With a sleek chrome finish and quick,
-					tool-free installation, it brings a touch of luxury to every shower.
-				</p>
-				<a class="btn" href="#">Shop Now</a>
-			</article>
-		</div>
-	</div>
-</section>
+</body>

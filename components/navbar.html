@@ -6,100 +6,139 @@
 			--accent2: #4bb7ff;
 			--text: #fff;
 			--hover: #eaf6ff;
+			--pill-bg: rgba(255, 255, 255, 0.12);
+			--pill-bg-hover: rgba(255, 255, 255, 0.2);
+			--pill-active: #ffffff;
+			--pill-active-text: #0f2b45;
 			--shadow: rgba(0, 0, 0, 0.15);
+			--maxw: 1100px;
 		}
 
 		.bx-nav-section .bx-navwrap {
-			width: 100%;
-			margin: 0 auto;
-			padding: 0.75rem 0rem;
-			display: flex;
-			justify-content: center;
 			background: linear-gradient(
 				90deg,
 				var(--accent1) 0%,
 				var(--accent2) 100%
 			);
-			box-shadow: 0 4px 18px var(--shadow);
+			box-shadow: 0 3px 12px var(--shadow);
+			width: 100%;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		.bx-nav-section .bx-navmax {
+			width: min(var(--maxw), 100%);
+			margin: 0 auto;
 		}
 
 		.bx-nav-section .bx-nav {
 			display: flex;
-			flex-wrap: wrap;
-			gap: 0.75rem 1.25rem;
+			gap: 0.5rem;
 			list-style: none;
 			margin: 0;
-			padding: 0;
+			padding: 0.5rem 1rem;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: none;
+			justify-content: center;
 			align-items: center;
+		}
+		.bx-nav-section .bx-nav::-webkit-scrollbar {
+			display: none;
+		}
+
+		.bx-nav-section .bx-nav li {
+			flex: 0 0 auto;
 		}
 
 		.bx-nav-section .bx-nav a {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
 			color: var(--text);
 			text-decoration: none;
-			font-weight: 600;
-			font-size: 1.05rem;
+			font-weight: 700;
+			font-size: 1rem;
 			padding: 0.45rem 0.9rem;
-			border-radius: 6px;
-			letter-spacing: 0.2px;
-			transition: all 0.25s ease;
-			position: relative;
-		}
-
-		.bx-nav-section .bx-nav a::after {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			transform: translateX(-50%) scaleX(0);
-			transform-origin: center;
-			width: 60%;
-			height: 2px;
-			background: var(--text);
-			transition: transform 0.25s ease;
-			border-radius: 2px;
-		}
-
-		.bx-nav-section .bx-nav a:hover::after {
-			transform: translateX(-50%) scaleX(1);
+			border-radius: 999px;
+			background: var(--pill-bg);
+			transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+			white-space: nowrap;
 		}
 
 		.bx-nav-section .bx-nav a:hover {
+			background: var(--pill-bg-hover);
 			color: var(--hover);
-			text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 		}
 
 		.bx-nav-section .bx-nav a:focus-visible {
 			outline: 2px solid var(--hover);
 			outline-offset: 3px;
 		}
+
+		.bx-nav-section .bx-nav a.is-active {
+			background: var(--pill-active);
+			color: var(--pill-active-text);
+			box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15),
+				0 1px 8px rgba(0, 0, 0, 0.1) inset;
+		}
+
+		.bx-nav-section .bx-nav a:active {
+			transform: translateY(1px);
+		}
+
+		@media (max-width: 859px) {
+			.bx-nav-section .bx-nav {
+				justify-content: flex-start;
+				padding: 0.6rem 1rem;
+			}
+			.bx-nav-section .bx-nav li:first-child {
+				margin-left: 0.25rem;
+			}
+			.bx-nav-section .bx-nav li:last-child {
+				margin-right: 0.25rem;
+			}
+		}
+
+		@media (min-width: 860px) {
+			.bx-nav-section .bx-nav {
+				overflow: visible;
+				justify-content: center;
+				padding: 0.6rem 1rem;
+				gap: 0.75rem 1rem;
+			}
+		}
 	</style>
 
 	<div class="bx-navwrap">
-		<ul class="bx-nav" role="list">
-			<li>
-				<a
-					href="https://www.ebay.com/str/aquatreasuresemporium/Water-Filter-Systems/_i.html?store_cat=52745885012"
-					>Systems</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://www.ebay.com/str/aquatreasuresemporium/Replacement-Filters/_i.html?store_cat=52745886012"
-					>Replacement Filters</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://www.ebay.com/str/aquatreasuresemporium/Accessories/_i.html?store_cat=52745887012"
-					>Accessories</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://www.ebay.com/itm/266906991579?itmmeta=01K9FP2572D2W454R80S1SPXF9&hash=item3e24e57bdb:g:74cAAOSw9BZmlaLA"
-					>Replacement Parts</a
-				>
-			</li>
-		</ul>
+		<div class="bx-navmax">
+			<ul class="bx-nav" role="list">
+				<li>
+					<a
+						href="https://www.ebay.com/str/aquatreasuresemporium/Water-Filter-Systems/_i.html?store_cat=52745885012"
+						>Systems</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://www.ebay.com/str/aquatreasuresemporium/Replacement-Filters/_i.html?store_cat=52745886012"
+						class="is-active"
+						>Replacement Filters</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://www.ebay.com/str/aquatreasuresemporium/Accessories/_i.html?store_cat=52745887012"
+						>Accessories</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://www.ebay.com/itm/266906991579?itmmeta=01K9FP2572D2W454R80S1SPXF9&hash=item3e24e57bdb:g:74cAAOSw9BZmlaLA"
+						>Replacement Parts</a
+					>
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>

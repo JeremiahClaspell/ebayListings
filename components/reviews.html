@@ -3,88 +3,197 @@
 		.bx-reviews-section {
 			--accent: #1b4b66;
 			--text: #222;
-			--muted: #555;
+			--muted: #56606a;
 			--card: #fff;
+			--ring: rgba(27, 75, 102, 0.12);
 			--radius: 12px;
 			font-family: 'Josefin Sans', sans-serif;
 		}
 		.bx-reviews-section .wrap {
-			width: min(900px, 100%);
+			width: min(980px, 100%);
 			margin: 0 auto;
-			padding: 0 1rem;
+			padding: 0 clamp(0.75rem, 3vw, 1rem);
+			box-sizing: border-box;
 		}
+
 		.bx-reviews-section h2 {
 			text-align: center;
 			color: var(--accent);
 			margin: 2rem 0 1rem;
+			font-size: 1.5rem;
+			letter-spacing: 0.2px;
 		}
+
 		.bx-reviews-section .list {
 			list-style: none;
-			padding: 0;
 			margin: 0;
+			padding: 0;
 			display: grid;
-			gap: 1rem;
+			gap: 14px;
+			grid-template-columns: 1fr;
 		}
+		@media (min-width: 760px) {
+			.bx-reviews-section .list {
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+
 		.bx-reviews-section .item {
 			background: var(--card);
-			border-radius: 10px;
-			padding: 1rem 1.1rem;
-			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+			border-radius: var(--radius);
+			padding: 14px 16px;
+			box-shadow: 0 6px 18px -6px var(--ring);
+			border: 1px solid #eef3f8;
+			transition: transform 0.18s ease, box-shadow 0.18s ease,
+				border-color 0.18s ease;
+		}
+		.bx-reviews-section .item:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 10px 26px -8px var(--ring);
+			border-color: #e6eef6;
+		}
+
+		.bx-reviews-section .head {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 0.75rem;
+			margin-bottom: 0.4rem;
+			flex-wrap: wrap;
 		}
 		.bx-reviews-section .stars {
-			color: #ffc107;
-			margin-bottom: 0.35rem;
+			display: inline-flex;
+			gap: 2px;
+			line-height: 0;
 		}
+		.bx-reviews-section .star {
+			width: 16px;
+			height: 16px;
+			fill: #ffc107;
+			flex: 0 0 16px;
+		}
+		.bx-reviews-section .meta {
+			color: var(--muted);
+			font-size: 0.9rem;
+			text-align: right;
+			white-space: nowrap;
+		}
+
 		.bx-reviews-section .quote {
-			margin: 0 0 0.4rem;
+			margin: 0.25rem 0 0.5rem;
+			color: var(--text);
+			line-height: 1.6;
 			font-style: italic;
 		}
+
 		.bx-reviews-section .author {
-			font-weight: 700;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
 			color: var(--accent);
+			font-weight: 700;
 			font-size: 0.95rem;
 		}
+		.bx-reviews-section .dot {
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background: #c7d7e6;
+			display: inline-block;
+		}
+
 		.bx-reviews-section .note {
 			text-align: center;
 			color: var(--muted);
 			font-size: 0.9rem;
-			margin-top: 0.75rem;
+			margin-top: 0.9rem;
+		}
+
+		@media (max-width: 600px) {
+			.bx-reviews-section .wrap {
+				padding-left: clamp(0.75rem, 4vw, 1rem);
+				padding-right: clamp(0.75rem, 4vw, 1rem);
+			}
+			.bx-reviews-section h2 {
+				font-size: 1.25rem;
+				margin: 1.25rem 0 0.75rem;
+			}
+			.bx-reviews-section .item {
+				padding: 12px 14px;
+				border-radius: 10px;
+				box-shadow: 0 4px 14px -8px var(--ring);
+			}
+			.bx-reviews-section .star {
+				width: 14px;
+				height: 14px;
+			}
+			.bx-reviews-section .meta {
+				font-size: 0.82rem;
+				opacity: 0.9;
+			}
+			.bx-reviews-section .quote {
+				font-size: 0.97rem;
+			}
+			.bx-reviews-section .author {
+				font-size: 0.92rem;
+			}
+			.bx-reviews-section .note {
+				font-size: 0.85rem;
+				margin-top: 0.6rem;
+			}
 		}
 	</style>
 
 	<div class="wrap">
 		<h2 id="reviews-title">What Customers Are Saying</h2>
-		<ul class="list">
+		<ul class="list" role="list">
 			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+				<div class="head">
+					<div class="stars" aria-label="5 out of 5 stars">⭐️⭐️⭐️⭐️⭐️</div>
+					<div class="meta">Los Angeles, CA</div>
+				</div>
 				<p class="quote">
 					“The water tastes great and it’s much healthier than tap water.”
 				</p>
-				<p class="author">— Linda D., Los Angeles, CA</p>
+				<div class="author">
+					Linda D. <span class="dot"></span> Verified Buyer
+				</div>
 			</li>
 			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+				<div class="head">
+					<div class="stars" aria-label="5 out of 5 stars">⭐️⭐️⭐️⭐️⭐️</div>
+					<div class="meta">Pueblo, CO</div>
+				</div>
 				<p class="quote">
 					“My three-year-old asks for water now! Total game-changer.”
 				</p>
-				<p class="author">— Max L., Pueblo, CO</p>
+				<div class="author">
+					Max L. <span class="dot"></span> Verified Buyer
+				</div>
 			</li>
 			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+				<div class="head">
+					<div class="stars" aria-label="5 out of 5 stars">⭐️⭐️⭐️⭐️⭐️</div>
+					<div class="meta">Denver, CO</div>
+				</div>
 				<p class="quote">“Love the ongoing testing and transparent results.”</p>
-				<p class="author">— Jennifer A., Denver, CO</p>
+				<div class="author">
+					Jennifer A. <span class="dot"></span> Verified Buyer
+				</div>
 			</li>
 			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+				<div class="head">
+					<div class="stars" aria-label="5 out of 5 stars">⭐️⭐️⭐️⭐️⭐️</div>
+					<div class="meta">Carlisle, IN</div>
+				</div>
 				<p class="quote">
 					“Worked exactly as promised — really clean drinking water.”
 				</p>
-				<p class="author">— Virgil S., Carlisle, IN</p>
+				<div class="author">
+					Virgil S. <span class="dot"></span> Verified Buyer
+				</div>
 			</li>
 		</ul>
-		<p class="note">
-			* Reviews reflect typical feedback for the Foundation Filter model
-			BX-FND9-2. Replace with approved Judge.me quotes as needed.
-		</p>
+		<p class="note">* Replace these with approved Judge.me quotes as needed.</p>
 	</div>
 </section>

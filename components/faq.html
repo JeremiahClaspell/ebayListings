@@ -9,12 +9,19 @@
 				sans-serif;
 			color: var(--bx-text);
 			line-height: 1.6;
-			padding: 1.75rem 1rem;
+			width: 100%;
+			margin: 2rem 0;
 			background: var(--bx-soft);
-			border-radius: 12px;
-			width: min(1000px, 100%);
-			margin: 2rem auto;
+			overflow-x: hidden;
 		}
+		.bx-scope-faq .inner {
+			width: min(1000px, 100%);
+			margin: 0 auto;
+			padding: 1.75rem clamp(0.75rem, 4vw, 1rem);
+			box-sizing: border-box;
+			border-radius: 12px;
+		}
+
 		.bx-scope-faq h2 {
 			margin: 0 0 1rem;
 			font-size: 1.6rem;
@@ -27,6 +34,7 @@
 			color: var(--bx-muted);
 			max-width: 720px;
 		}
+
 		.bx-scope-faq .faq-list {
 			display: grid;
 			gap: 0.75rem;
@@ -64,115 +72,115 @@
 			color: var(--bx-muted);
 			font-size: 0.95rem;
 		}
+
 		@media (max-width: 640px) {
-			.bx-scope-faq {
-				padding: 1.25rem 0.75rem;
+			.bx-scope-faq .inner {
+				padding: 1.25rem clamp(0.75rem, 4vw, 1rem);
+				border-radius: 0;
+			}
+			.bx-scope-faq h2 {
+				font-size: 1.35rem;
 			}
 		}
 	</style>
 
-	<h2 id="bx-faq-title">Frequently Asked Questions</h2>
-	<p class="lead">
-		Quick answers about how the Foundation™ filters work, what they’re made to
-		remove, and how long they last.
-	</p>
+	<div class="inner">
+		<h2 id="bx-faq-title">Frequently Asked Questions</h2>
+		<p class="lead">
+			Quick answers about how the Foundation™ filters work, what they’re made to
+			remove, and how long they last.
+		</p>
 
-	<div class="faq-list">
-		<details>
-			<summary>How do the BOROUX Foundation™ Filters work?</summary>
-			<div class="answer">
-				They use a specialized activated-carbon block to both
-				<em>adsorb</em> contaminants (they stick to the carbon’s surface) and
-				physically trap tiny particles in microscopic pores—like a super-fine
-				sieve. This combination targets taste/odor compounds and a wide range of
-				chemical contaminants.
-				<div class="muted">Source: BOROUX FAQ & product details.</div>
-			</div>
-		</details>
-
-		<details>
-			<summary>What certifications do the Foundation™ Filters have?</summary>
-			<div class="answer">
-				They are certified by the Water Quality Association (WQA) to
-				<strong>NSF/ANSI 42</strong>, <strong>NSF/ANSI/CAN 401</strong>, and
-				<strong>NSF/ANSI/CAN 372</strong>.
-				<div class="muted">Source: BOROUX product FAQ.</div>
-			</div>
-		</details>
-
-		<details>
-			<summary>How long do the filters last?</summary>
-			<div class="answer">
-				The recommended replacement interval is
-				<strong>every 12 months</strong> under typical household use. Actual
-				life varies with water quality and daily volume; replacing annually
-				keeps performance within verified reduction levels.
-				<div class="muted">Source: BOROUX blog guidance on lifespan.</div>
-			</div>
-		</details>
-
-		<details>
-			<summary>What contaminants are they designed to reduce?</summary>
-			<div class="answer">
-				Independent testing shows broad reduction across categories such as
-				disinfectants/byproducts, heavy metals, PFAS, pharmaceuticals,
-				VOCs/industrial chemicals, pesticides, and micro-particles. See the full
-				test panel and results for specific compounds and reduction percentages.
-				<div class="muted">
-					Source: “What Does BOROUX Filter?” page with verified third-party
-					results.
+		<div class="faq-list">
+			<details>
+				<summary>How do the BOROUX Foundation™ Filters work?</summary>
+				<div class="answer">
+					They use a specialized activated-carbon block to both
+					<em>adsorb</em> contaminants and physically trap tiny particles in
+					microscopic pores—like a super-fine sieve. This combination targets
+					taste/odor compounds and a wide range of chemical contaminants.
+					<div class="muted">Source: BOROUX FAQ & product details.</div>
 				</div>
-			</div>
-		</details>
+			</details>
 
-		<details>
-			<summary>Do the Foundation™ Filters reduce fluoride?</summary>
-			<div class="answer">
-				<strong>No</strong>—fluoride reduction is provided by the BOROUX
-				<em>Proactive™ Fluoride Filters</em>, which install as a second stage.
-				<div class="muted">Source: BOROUX FAQ.</div>
-			</div>
-		</details>
+			<details>
+				<summary>What certifications do the Foundation™ Filters have?</summary>
+				<div class="answer">
+					Certified by the Water Quality Association (WQA) to
+					<strong>NSF/ANSI 42</strong>, <strong>NSF/ANSI/CAN 401</strong>, and
+					<strong>NSF/ANSI/CAN 372</strong>.
+					<div class="muted">Source: BOROUX product FAQ.</div>
+				</div>
+			</details>
 
-		<details>
-			<summary>
-				Are Foundation™ Filters compatible with other gravity systems?
-			</summary>
-			<div class="answer">
-				Yes—Foundation™ Filters are designed to fit most common gravity-fed
-				systems. Check the compatibility list if you’re adapting an existing
-				unit.
-				<div class="muted">Source: BOROUX FAQ.</div>
-			</div>
-		</details>
+			<details>
+				<summary>How long do the filters last?</summary>
+				<div class="answer">
+					Recommended replacement is <strong>every 12 months</strong> under
+					typical household use. Actual life varies with water quality and daily
+					volume.
+					<div class="muted">Source: BOROUX blog guidance on lifespan.</div>
+				</div>
+			</details>
 
-		<details>
-			<summary>Where are the filters made?</summary>
-			<div class="answer">
-				The filters are proudly crafted in the USA. (Accessory components such
-				as the plastic Stem Saver™ may be sourced internationally.)
-				<div class="muted">Source: BOROUX FAQ.</div>
-			</div>
-		</details>
+			<details>
+				<summary>What contaminants are they designed to reduce?</summary>
+				<div class="answer">
+					Broad reduction across disinfectants/byproducts, heavy metals, PFAS,
+					pharmaceuticals, VOCs/industrial chemicals, pesticides, and
+					micro-particles. See full test results for specific compounds and
+					reduction percentages.
+					<div class="muted">Source: “What Does BOROUX Filter?” page.</div>
+				</div>
+			</details>
 
-		<details>
-			<summary>What’s the micron performance?</summary>
-			<div class="answer">
-				Guidance from BOROUX notes effective capture in the ~<strong
-					>0.5–1.0 μm</strong
-				>
-				range for many waterborne particles—small enough to reduce
-				micro-particulates while maintaining flow.
-				<div class="muted">Source: BOROUX micron-rating article.</div>
-			</div>
-		</details>
-		<details>
-			<summary>How do I prime or set up the filters?</summary>
-			<div class="answer">
-				Follow the step-by-step priming and setup instructions provided in
-				BOROUX’s How-To guides for best flow and performance.
-				<div class="muted">Source: BOROUX How-To pages (priming & setup).</div>
-			</div>
-		</details>
+			<details>
+				<summary>Do the Foundation™ Filters reduce fluoride?</summary>
+				<div class="answer">
+					<strong>No</strong>—fluoride reduction is provided by the BOROUX
+					<em>Proactive™ Fluoride Filters</em> as a second stage.
+					<div class="muted">Source: BOROUX FAQ.</div>
+				</div>
+			</details>
+
+			<details>
+				<summary>
+					Are Foundation™ Filters compatible with other gravity systems?
+				</summary>
+				<div class="answer">
+					Yes—designed to fit most common gravity-fed systems. Check the
+					compatibility list if adapting an existing unit.
+					<div class="muted">Source: BOROUX FAQ.</div>
+				</div>
+			</details>
+
+			<details>
+				<summary>Where are the filters made?</summary>
+				<div class="answer">
+					Filters are crafted in the USA. (Some accessory components may be
+					sourced internationally.)
+					<div class="muted">Source: BOROUX FAQ.</div>
+				</div>
+			</details>
+
+			<details>
+				<summary>What’s the micron performance?</summary>
+				<div class="answer">
+					Effective capture in the ~<strong>0.5–1.0 μm</strong> range for many
+					waterborne particles—small enough to reduce micro-particulates while
+					maintaining flow.
+					<div class="muted">Source: BOROUX micron-rating guidance.</div>
+				</div>
+			</details>
+
+			<details>
+				<summary>How do I prime or set up the filters?</summary>
+				<div class="answer">
+					Follow BOROUX’s step-by-step How-To guides for priming and setup to
+					ensure best flow and performance.
+					<div class="muted">Source: BOROUX How-To pages.</div>
+				</div>
+			</details>
+		</div>
 	</div>
 </section>

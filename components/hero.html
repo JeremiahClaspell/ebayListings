@@ -9,101 +9,158 @@
 			--radius: 12px;
 			--gap: 1.5rem;
 			font-family: 'Josefin Sans', sans-serif;
+			margin-top: 20px;
 		}
+
 		.bx-hero-section .wrap {
 			width: min(1100px, 100%);
 			margin: 0 auto;
 			padding: 0 1rem;
+			box-sizing: border-box;
 		}
+
 		.bx-hero-section .grid {
-			display: grid;
-			gap: var(--gap);
-			grid-template-columns: 1fr;
-			margin: 1.25rem 0 var(--gap);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: stretch;
+			gap: 1.25rem;
+			width: 100%;
 		}
-		@media (min-width: 860px) {
-			.bx-hero-section .grid {
-				grid-template-columns: 0.95fr 1.05fr;
-				align-items: start;
-			}
-		}
+
 		.bx-hero-section .card {
 			background: var(--card);
 			border-radius: var(--radius);
 			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 10px 30px rgba(0, 0, 0, 0.06);
+			flex: 1 1 500px;
+			max-width: 48%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			overflow: hidden;
 		}
+
 		.bx-hero-section .pad {
-			padding: 1rem;
+			padding: 1.25rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			height: 100%;
 		}
-		@media (min-width: 860px) {
-			.bx-hero-section .pad {
-				padding: 1.25rem;
-			}
-		}
+
 		.bx-hero-section .img {
 			border-radius: var(--radius);
-			object-fit: cover;
-			object-position: center;
+			object-fit: scale-down;
+			object-position: center left;
 			display: block;
-			height: 375px;
-			margin: auto;
+			width: 100%;
+			height: 100%;
+			max-height: 600px;
+			background: #fff;
 		}
+
 		.bx-hero-section .points {
 			display: grid;
 			gap: 1rem;
 		}
+
 		.bx-hero-section h3 {
 			margin: 0 0 0.25rem;
 			font-size: 1.08rem;
 			color: var(--ink);
 		}
+
 		.bx-hero-section p {
 			margin: 0;
 			color: var(--muted);
 			line-height: 1.55;
+			border-bottom: 2px solid #4bb7ff;
+			padding-bottom: 0.6rem;
 		}
-		.bx-hero-section .badge {
-			white-space: nowrap;
+
+		@media (max-width: 859px) {
+			.bx-hero-section .wrap {
+				padding: 0 0.1rem;
+			}
+
+			.bx-hero-section .grid {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.bx-hero-section .card {
+				max-width: 95vw;
+				width: 100%;
+				overflow: unset;
+			}
+
+			.bx-hero-section .img {
+				max-height: 480px;
+			}
+
+			.bx-hero-section .pad {
+				box-sizing: border-box;
+			}
 		}
 	</style>
 
 	<div class="wrap">
 		<div class="grid">
-			<div class="card pad">
+			<div class="card">
 				<img
 					class="img"
 					loading="lazy"
-					src="https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/481909053_671520315231765_7645254753795905352_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7dPvJusuCn4Q7kNvwHWQErT&_nc_oc=AdkPf7KyvlxE0iDu9szUqG4J6QHIpTUbK1iD7JqCBcgRDU7dk-u57o9jVvJhsZl8Ez9sduNrIzkgbMDY2UGeJ43-&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=-j0ft4vq9v4KXA7lauJNvQ&oh=00_AfilBvESqbGnosYnZgdr6_G9zSxu8GMRw0VmVQ1qy9XiKQ&oe=6913388A"
-					alt="BOROUX lifestyle / product placeholder"
+					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481909053_671520315231765_7645254753795905352_n.webp"
+					alt="BOROUX Foundation Filter lifestyle image"
 				/>
 			</div>
+
 			<div class="card pad">
 				<div class="points">
 					<div>
-						<h3>BEST IN CLASS PERFORMANCE ⭐️⭐️⭐️⭐️⭐️</h3>
+						<h3>UNMATCHED FILTRATION PERFORMANCE ⭐️⭐️⭐️⭐️⭐️</h3>
 						<p>
-							Independently tested to reduce a wider range of contaminants —
-							including disinfectants, heavy metals, pharmaceuticals, PFAS, and
-							more — while maintaining performance over thousands of gallons.
+							Independently verified to reduce a wide range of modern
+							contaminants — including PFAS, heavy metals, pharmaceuticals, and
+							disinfectant byproducts — all while maintaining strong flow and
+							crisp, balanced taste.
 						</p>
 					</div>
+
 					<div>
 						<h3>UP TO 12 MONTHS OF PROTECTION ✅</h3>
 						<p>
-							A full year of dependable filtration — the new standard in lasting
-							water quality.
+							Each set delivers long-lasting, consistent filtration performance
+							— offering months of clarity, safety, and confidence before
+							replacement is needed.
 						</p>
 					</div>
+
 					<div>
-						<h3>COMPATIBLE WITH MOST GRAVITY WATER FILTERS 🧩</h3>
+						<h3>COMPATIBLE WITH MOST GRAVITY SYSTEMS 🧩</h3>
 						<p>
-							Fits Boroux, Berkey, ProPur, Alexapure Pro, Doulton, and many more
-							— simple, universal, and effortless.
+							Fits Boroux, Berkey, ProPur, Alexapure Pro, Doulton, and most
+							gravity-fed systems using standard-style black filter elements.
+							Installs easily — no tools, adapters, or guesswork required.
 						</p>
 					</div>
+
+					<div>
+						<h3>PRECISION-CRAFTED IN 304 STAINLESS STEEL 🛠️</h3>
+						<p>
+							Housed in professional-grade stainless steel for purity and
+							strength, each Foundation™ Filter is engineered for durability,
+							corrosion resistance, and long-term reliability.
+						</p>
+					</div>
+
 					<div>
 						<h3>60-DAY RISK-FREE TRIAL ✅</h3>
-						<p>Try it for 60 days risk-free — love it or your money back.</p>
+						<p>
+							Try them at home — love the performance or return within 60 days
+							for a full refund. No gimmicks, just cleaner, safer water you can
+							trust.
+						</p>
 					</div>
 				</div>
 			</div>
