@@ -1,1625 +1,2063 @@
 <!-- ===================================== -->
 <!-- BOROUX: Compartmentalized Sections    -->
 <!-- ===================================== -->
-
-<link
-	href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
-	rel="stylesheet"
-/>
-
-<!-- 1) NAV -->
-<section class="bx-nav-section" aria-label="Primary Navigation">
-	<style>
-		.bx-nav-section {
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-nav-section .bx-navwrap {
-			width: 100%;
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-nav-section .bx-nav {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.75rem 1rem;
-			justify-content: center;
-			align-items: center;
-			list-style: none;
-			margin: 0;
-			padding: 0.75rem 1rem;
-			border-radius: 8px;
-			background: linear-gradient(
-					180deg,
-					rgba(0, 0, 0, 0.15) 0%,
-					rgba(255, 255, 255, 0.08) 40%,
-					rgba(0, 0, 0, 0.12) 100%
-				),
-				linear-gradient(
-					90deg,
-					#4bb7ff 0%,
-					#336dff 20%,
-					#336dff 80%,
-					#4bb7ff 100%
-				);
-			color: #fff;
-			font-weight: 600;
-			font-size: 1rem;
-			letter-spacing: 0.2px;
-		}
-		.bx-nav-section .bx-nav a {
-			color: #fff;
-			text-decoration: none;
-			padding: 0.35rem 0.6rem;
-			border-radius: 6px;
-		}
-		.bx-nav-section .bx-nav a:focus-visible {
-			outline: 2px solid #fff;
-			outline-offset: 2px;
-		}
-	</style>
-
-	<div class="bx-navwrap">
-		<ul class="bx-nav" role="list">
-			<li>
-				<a
-					href="https://www.ebay.com/str/aquatreasuresemporium/Water-Filter-Systems/_i.html?store_cat=52745885012"
-					>Systems</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://www.ebay.com/str/aquatreasuresemporium/Replacement-Filters/_i.html?store_cat=52745886012"
-					>Replacement Filters</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://www.ebay.com/str/aquatreasuresemporium/Accessories/_i.html?store_cat=52745887012"
-					>Accessories</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://www.ebay.com/itm/266906991579?itmmeta=01K9FP2572D2W454R80S1SPXF9&hash=item3e24e57bdb:g:74cAAOSw9BZmlaLA"
-					>Replacement Parts</a
-				>
-			</li>
-		</ul>
-	</div>
-</section>
-
-<!-- 2) HERO / FEATURES -->
-<section class="bx-hero-section" aria-label="Key Features">
-	<style>
-		.bx-hero-section {
-			--accent: #1b4b66;
-			--ink: #0e3555;
-			--text: #222;
-			--muted: #56606a;
-			--card: #fff;
-			--radius: 12px;
-			--gap: 1.5rem;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-hero-section .wrap {
-			width: min(1100px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-hero-section .grid {
-			display: grid;
-			gap: var(--gap);
-			grid-template-columns: 1fr;
-			margin: 1.25rem 0 var(--gap);
-		}
-		@media (min-width: 860px) {
-			.bx-hero-section .grid {
-				grid-template-columns: 0.95fr 1.05fr;
-				align-items: start;
+<body style="margin: 0">
+	<!-- ===================================== -->
+	<!-- BOROUX: Compartmentalized Sections    -->
+	<!-- ===================================== -->
+	<div id="bx-div">
+		<style>
+			@media (max-width: 860px) {
+				#bx-div {
+					width: 100vw;
+					margin: 0;
+					box-sizing: border-box;
+					overflow: hidden;
+				}
 			}
-		}
-		.bx-hero-section .card {
-			background: var(--card);
-			border-radius: var(--radius);
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 10px 30px rgba(0, 0, 0, 0.06);
-		}
-		.bx-hero-section .pad {
-			padding: 1rem;
-		}
-		@media (min-width: 860px) {
-			.bx-hero-section .pad {
-				padding: 1.25rem;
+			#bx-div section {
+				margin-bottom: 30px;
 			}
-		}
-		.bx-hero-section .img {
-			border-radius: var(--radius);
-			object-fit: cover;
-			object-position: center;
-			display: block;
-			height: 375px;
-			margin: auto;
-		}
-		.bx-hero-section .points {
-			display: grid;
-			gap: 1rem;
-		}
-		.bx-hero-section h3 {
-			margin: 0 0 0.25rem;
-			font-size: 1.08rem;
-			color: var(--ink);
-		}
-		.bx-hero-section p {
-			margin: 0;
-			color: var(--muted);
-			line-height: 1.55;
-		}
-		.bx-hero-section .badge {
-			white-space: nowrap;
-		}
-	</style>
+		</style>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<div class="wrap">
-		<div class="grid">
-			<div class="card pad">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Bottle_1L-6.webp"
-					alt="BOROUX lifestyle / product placeholder"
-				/>
-			</div>
-			<div class="card pad">
-				<div class="points">
-					<div>
-						<h3>UNMATCHED QUALITY AND PRECISION ⭐️⭐️⭐️⭐️⭐️</h3>
-						<p>
-							Elegant, durable, and made to last — each Boroux Glass Bottle is
-							crafted from premium borosilicate glass for exceptional clarity
-							and strength. Designed for those who value purity, taste, and
-							sustainability in every sip.
-						</p>
-					</div>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
 
-					<div>
-						<h3>BPA/BPS-FREE ✅</h3>
-						<p>
-							Completely free from harmful plastics and resins — preserving your
-							water’s natural taste and protecting your health. Every material
-							used is chosen for safety and longevity, with zero chemical
-							leaching even after years of use.
-						</p>
-					</div>
+		<!-- 1) NAV -->
+		<section class="bx-nav-section" aria-label="Primary Navigation">
+			<style>
+				.bx-nav-section {
+					font-family: 'Josefin Sans', sans-serif;
+					--accent1: #1b4b66;
+					--accent2: #4bb7ff;
+					--text: #fff;
+					--hover: #eaf6ff;
+					--pill-bg: rgba(255, 255, 255, 0.12);
+					--pill-bg-hover: rgba(255, 255, 255, 0.2);
+					--pill-active: #ffffff;
+					--pill-active-text: #0f2b45;
+					--shadow: rgba(0, 0, 0, 0.15);
+					--maxw: 1100px;
+				}
 
-					<div>
-						<h3>MADE FROM BOROSILICATE GLASS 🛠️</h3>
-						<p>
-							The same laboratory-grade glass trusted in science and fine
-							dining. It resists thermal shock, odors, and staining — ensuring
-							crystal-clear water and effortless cleaning. Capped with
-							precision-machined <strong>304 food-grade stainless steel</strong>
-							and a leakproof silicone seal for lasting performance and timeless
-							quality.
-						</p>
-					</div>
+				.bx-nav-section .bx-navwrap {
+					background: linear-gradient(
+						90deg,
+						var(--accent1) 0%,
+						var(--accent2) 100%
+					);
+					box-shadow: 0 3px 12px var(--shadow);
+					width: 100%;
+					margin: 0 auto;
+					overflow: hidden;
+				}
 
-					<div>
-						<h3>DESIGNED FOR DAILY USE 🌎</h3>
-						<p>
-							Lightweight yet strong, with a wide mouth for ice, fruit, and easy
-							cleaning. Reusable and endlessly recyclable, it’s a sustainable
-							upgrade from plastic or disposable bottles — helping reduce waste
-							without sacrificing style.
-						</p>
-					</div>
+				.bx-nav-section .bx-navmax {
+					width: min(var(--maxw), 100%);
+					margin: 0 auto;
+				}
 
-					<div>
-						<h3>60-DAY RISK-FREE TRIAL ✅</h3>
-						<p>
-							Try it for 60 days risk-free — love it or your money back. Built
-							to outlast trends and deliver pure hydration for years to come.
-						</p>
-					</div>
+				.bx-nav-section .bx-nav {
+					display: flex;
+					gap: 0.5rem;
+					list-style: none;
+					margin: 0;
+					padding: 0.5rem 1rem;
+					overflow-x: auto;
+					-webkit-overflow-scrolling: touch;
+					scrollbar-width: none;
+					justify-content: center;
+					align-items: center;
+				}
+				.bx-nav-section .bx-nav::-webkit-scrollbar {
+					display: none;
+				}
+
+				.bx-nav-section .bx-nav li {
+					flex: 0 0 auto;
+				}
+
+				.bx-nav-section .bx-nav a {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					color: var(--text);
+					text-decoration: none;
+					font-weight: 700;
+					font-size: 1rem;
+					padding: 0.45rem 0.9rem;
+					border-radius: 999px;
+					background: var(--pill-bg);
+					transition: background 0.25s ease, color 0.25s ease,
+						transform 0.2s ease;
+					white-space: nowrap;
+				}
+
+				.bx-nav-section .bx-nav a:hover {
+					background: var(--pill-bg-hover);
+					color: var(--hover);
+				}
+
+				.bx-nav-section .bx-nav a:focus-visible {
+					outline: 2px solid var(--hover);
+					outline-offset: 3px;
+				}
+
+				.bx-nav-section .bx-nav a.is-active {
+					background: var(--pill-active);
+					color: var(--pill-active-text);
+					box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15),
+						0 1px 8px rgba(0, 0, 0, 0.1) inset;
+				}
+
+				.bx-nav-section .bx-nav a:active {
+					transform: translateY(1px);
+				}
+
+				@media (max-width: 859px) {
+					.bx-nav-section .bx-nav {
+						justify-content: flex-start;
+						padding: 0.6rem 1rem;
+					}
+					.bx-nav-section .bx-nav li:first-child {
+						margin-left: 0.25rem;
+					}
+					.bx-nav-section .bx-nav li:last-child {
+						margin-right: 0.25rem;
+					}
+				}
+
+				@media (min-width: 860px) {
+					.bx-nav-section .bx-nav {
+						overflow: visible;
+						justify-content: center;
+						padding: 0.6rem 1rem;
+						gap: 0.75rem 1rem;
+					}
+				}
+			</style>
+
+			<div class="bx-navwrap">
+				<div class="bx-navmax">
+					<ul class="bx-nav" role="list">
+						<li>
+							<a
+								href="https://www.ebay.com/str/aquatreasuresemporium/Water-Filter-Systems/_i.html?store_cat=52745885012"
+								>Systems</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.ebay.com/str/aquatreasuresemporium/Replacement-Filters/_i.html?store_cat=52745886012"
+								class="is-active"
+								>Replacement Filters</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.ebay.com/str/aquatreasuresemporium/Accessories/_i.html?store_cat=52745887012"
+								>Accessories</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.ebay.com/itm/266906991579?itmmeta=01K9FP2572D2W454R80S1SPXF9&hash=item3e24e57bdb:g:74cAAOSw9BZmlaLA"
+								>Replacement Parts</a
+							>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
-<section class="bx-lifestyle-mosaic">
-	<style>
-		.bx-lifestyle-mosaic {
-			--gap: 16px;
-			--r: 10px;
-			font-family: 'Josefin Sans', sans-serif;
-			background: #f8fbfd;
-			padding: 1.5rem 0 2rem;
-		}
+		</section>
 
-		.bx-lifestyle-mosaic .wrap {
-			width: min(950px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-			text-align: center;
-		}
+		<!-- 2) HERO / FEATURES -->
+		<section class="bx-hero-section" aria-label="Key Features">
+			<style>
+				.bx-hero-section {
+					--accent: #1b4b66;
+					--ink: #0e3555;
+					--text: #222;
+					--muted: #56606a;
+					--card: #fff;
+					--radius: 12px;
+					--gap: 1.5rem;
+					font-family: 'Josefin Sans', sans-serif;
+					margin-top: 20px;
+				}
+				.bx-hero-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					box-sizing: border-box;
+				}
+				.bx-hero-section .grid {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: stretch;
+					gap: 1.25rem;
+					width: 100%;
+				}
+				.bx-hero-section .card {
+					background: var(--card);
+					border-radius: var(--radius);
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 10px 30px rgba(0, 0, 0, 0.06);
+					flex: 1 1 500px;
+					max-width: 48%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					overflow: hidden;
+				}
+				.bx-hero-section .pad {
+					padding: 1.25rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 100%;
+				}
+				.bx-hero-section .img {
+					border-radius: var(--radius);
+					object-fit: scale-down;
+					object-position: center left;
+					display: block;
+					width: 100%;
+					height: 100%;
+					max-height: 600px;
+					background: #fff;
+				}
+				.bx-hero-section .points {
+					display: grid;
+					gap: 1rem;
+				}
+				.bx-hero-section h3 {
+					margin: 0 0 0.25rem;
+					font-size: 1.08rem;
+					color: var(--ink);
+				}
+				.bx-hero-section p {
+					margin: 0;
+					color: var(--muted);
+					line-height: 1.55;
+					border-bottom: 2px solid #4bb7ff;
+					padding-bottom: 0.6rem;
+				}
 
-		.bx-lifestyle-mosaic h2 {
-			margin: 0 0 1.25rem;
-			color: #1b4b66;
-			font-size: 1.5rem;
-			font-weight: 600;
-		}
+				@media (max-width: 859px) {
+					.bx-hero-section .wrap {
+						padding: 0 0.1rem;
+					}
+					.bx-hero-section .grid {
+						flex-direction: column;
+						align-items: center;
+					}
+					.bx-hero-section .card {
+						max-width: 95vw;
+						width: 100%;
+						overflow: unset;
+					}
+					.bx-hero-section .img {
+						max-height: 480px;
+					}
+					.bx-hero-section .pad {
+						box-sizing: border-box;
+					}
+				}
+			</style>
 
-		.bx-lifestyle-mosaic .grid {
-			display: flex;
-			justify-content: center;
-			gap: var(--gap);
-			flex-wrap: wrap;
-		}
+			<div class="wrap">
+				<div class="grid">
+					<!-- Image Card -->
+					<div class="card">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Bottle_1L-6.webp"
+							alt="BOROUX Glass Bottle lifestyle image"
+						/>
+					</div>
 
-		.bx-lifestyle-mosaic figure {
-			margin: 0;
-			position: relative;
-			overflow: hidden;
-			border-radius: var(--r);
-			background: #fff;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-			width: 280px;
-			height: 280px;
-			flex: 1 1 280px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			transition: transform 0.25s ease, box-shadow 0.25s ease;
-		}
+					<!-- Text Card -->
+					<div class="card pad">
+						<div class="points">
+							<div>
+								<h3>PURE TASTE, BEAUTIFULLY MADE ⭐️⭐️⭐️⭐️⭐️</h3>
+								<p>
+									Premium borosilicate glass keeps water tasting clean and
+									crisp—because hydration should feel as good as it looks.
+								</p>
+							</div>
 
-		.bx-lifestyle-mosaic figure:hover {
-			transform: translateY(-4px);
-			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-		}
+							<div>
+								<h3>BPA/BPS-FREE & FAMILY-SAFE ✅</h3>
+								<p>
+									No plastics, no resins, no aftertaste. Safer materials chosen
+									for everyday use (and little sippers with big opinions).
+								</p>
+							</div>
 
-		.bx-lifestyle-mosaic img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-			display: block;
-			border-radius: var(--r);
-		}
+							<div>
+								<h3>BOROSILICATE DURABILITY 🛠️</h3>
+								<p>
+									Lab-grade glass resists thermal shock, odors, and stains for
+									always-fresh sipping. Precision cap with silicone seal helps
+									prevent leaks in your tote or gym bag.
+								</p>
+							</div>
 
-		.bx-lifestyle-mosaic figcaption {
-			position: absolute;
-			bottom: 8px;
-			left: 8px;
-			right: 8px;
-			background: rgba(0, 0, 0, 0.45);
-			color: #fff;
-			font-weight: 600;
-			padding: 0.35rem 0.6rem;
-			border-radius: 6px;
-			font-size: 0.9rem;
-		}
+							<div>
+								<h3>DESIGNED FOR REAL LIFE 🌎</h3>
+								<p>
+									Wide mouth for ice, fruit, and easy cleaning. Reusable and
+									endlessly recyclable—a graceful step up from plastic and
+									single-use.
+								</p>
+							</div>
 
-		@media (max-width: 800px) {
-			.bx-lifestyle-mosaic figure {
-				width: 220px;
-				height: 220px;
-			}
-		}
-
-		@media (max-width: 640px) {
-			.bx-lifestyle-mosaic figure {
-				width: 100%;
-				height: 180px;
-				max-width: 320px;
-			}
-			.bx-lifestyle-mosaic figcaption {
-				font-size: 0.8rem;
-			}
-		}
-	</style>
-
-	<div class="wrap">
-		<div class="grid">
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481906871_669985882051875_7834526164071720644_n.webp"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/501356936_18496733731028668_38647491052598674_n.webp"
-					height="300"
-					width="300"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/492529203_706331931750603_92061978923944795_n.webp"
-				/>
-			</figure>
-		</div>
-	</div>
-</section>
-
-<!-- 3) BOTTLES HIGHLIGHTS (with panel background) -->
-<section class="bx-contaminants-section" aria-labelledby="bottles-title">
-	<style>
-		.bx-contaminants-section {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #555;
-			--bg: #f5f9fc;
-			--card: #fff;
-			--radius: 12px;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-contaminants-section .wrap {
-			width: min(1100px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-contaminants-section h2 {
-			text-align: center;
-			margin: 2rem 0 1rem;
-			color: var(--accent);
-			font-size: 1.45rem;
-		}
-		.bx-contaminants-section .panel {
-			background: var(--bg);
-			border-radius: var(--radius);
-			padding: 1rem;
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.04);
-		}
-		.bx-contaminants-section .image-card {
-			background: var(--card);
-			border-radius: var(--radius);
-			padding: 0.75rem;
-			margin-bottom: 1rem;
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 10px 30px rgba(0, 0, 0, 0.06);
-		}
-		.bx-contaminants-section .img {
-			width: 100%;
-			border-radius: 10px;
-			aspect-ratio: 16/10;
-			object-fit: cover;
-			object-position: center;
-			display: block;
-		}
-		.bx-contaminants-section .list {
-			display: grid;
-			gap: 1rem;
-		}
-		.bx-contaminants-section .item {
-			border-left: 4px solid var(--accent);
-			padding-left: 1rem;
-			background: var(--card);
-			border-radius: 8px;
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
-		}
-		.bx-contaminants-section .item h3 {
-			margin: 0.65rem 0 0.35rem;
-			color: var(--accent);
-			font-size: 1.06rem;
-		}
-		.bx-contaminants-section .item p {
-			margin: 0.25rem 0 0.8rem;
-			color: var(--text);
-			line-height: 1.55;
-		}
-		.bx-contaminants-section .summary {
-			background: var(--bg);
-			border-radius: 10px;
-			padding: 1rem;
-			margin-top: 0.75rem;
-			font-weight: 600;
-			color: var(--text);
-		}
-	</style>
-
-	<div class="wrap">
-		<h2 id="bottles-title">Why BOROUX Bottles Stand Out</h2>
-
-		<div class="panel">
-			<div class="image-card">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/11417439_1460999260870644_408412285_n.webp"
-					alt="BOROUX borosilicate glass bottles with stainless caps on a kitchen counter"
-				/>
-			</div>
-
-			<div class="list">
-				<div class="item">
-					<h3>Ultra-Clean Taste</h3>
-					<p>
-						Borosilicate glass keeps water crisp and neutral — no plastic odors,
-						no lingering flavors. Perfect for everyday hydration and
-						taste-sensitive drinks like tea or citrus infusions.
-					</p>
-				</div>
-
-				<div class="item">
-					<h3>BPA/BPS-Free, Food-Safe Build</h3>
-					<p>
-						Only glass, 304 stainless steel, and a silicone seal touch your
-						water. Simple materials, easy trust.
-					</p>
-				</div>
-
-				<div class="item">
-					<h3>304 Stainless Steel Cap</h3>
-					<p>
-						Corrosion-resistant and precision-machined for durability. The same
-						grade used in professional kitchens for lasting performance.
-					</p>
-				</div>
-
-				<div class="item">
-					<h3>Wide-Mouth Convenience</h3>
-					<p>
-						Ice-friendly opening fits standard bottle brushes for quick
-						cleaning. Add fruit, herbs, or electrolytes without a mess.
-					</p>
-				</div>
-
-				<div class="item">
-					<h3>Dishwasher-Safe Bottle</h3>
-					<p>
-						Hassle-free care: bottle is dishwasher-safe; we recommend
-						hand-washing the cap to preserve the seal and finish.
-					</p>
-				</div>
-
-				<div class="item">
-					<h3>Travel & Everyday Ready</h3>
-					<p>
-						Slim silhouette fits most car cup holders and backpack side pockets;
-						tough borosilicate glass resists thermal shock and daily use.
-					</p>
-				</div>
-
-				<div class="item">
-					<h3>Sustainable by Design</h3>
-					<p>
-						Built to replace hundreds of single-use bottles each year — lowering
-						waste and saving money with every refill.
-					</p>
-				</div>
-
-				<div class="summary">
-					Crisp taste, premium materials, and effortless care — BOROUX bottles
-					make clean, great-tasting water part of every day.
+							<div>
+								<h3>60-DAY RISK-FREE TRIAL ✅</h3>
+								<p>
+									Try it at home. If the feel, look, and taste don’t win you
+									over, return it within 60 days for a full refund.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /Text Card -->
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
+		</section>
 
-<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
+		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
+		<section class="bx-lifestyle-mosaic">
+			<style>
+				.bx-lifestyle-mosaic {
+					--gap: 16px;
+					--r: 10px;
+					font-family: 'Josefin Sans', sans-serif;
+					background: #f8fbfd;
+					padding: 1.5rem 0 2rem;
+				}
 
-<section class="bx-lifestyle-mosaic">
-	<style>
-		.bx-lifestyle-mosaic {
-			--gap: 16px;
-			--r: 10px;
-			font-family: 'Josefin Sans', sans-serif;
-			background: #f8fbfd;
-			padding: 1.5rem 0 2rem;
-		}
+				.bx-lifestyle-mosaic .wrap {
+					width: min(950px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					text-align: center;
+				}
 
-		.bx-lifestyle-mosaic .wrap {
-			width: min(950px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-			text-align: center;
-		}
+				.bx-lifestyle-mosaic h2 {
+					margin: 0 0 1.25rem;
+					color: #1b4b66;
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
 
-		.bx-lifestyle-mosaic h2 {
-			margin: 0 0 1.25rem;
-			color: #1b4b66;
-			font-size: 1.5rem;
-			font-weight: 600;
-		}
+				.bx-lifestyle-mosaic .grid {
+					display: flex;
+					justify-content: center;
+					gap: var(--gap);
+					flex-wrap: wrap;
+				}
 
-		.bx-lifestyle-mosaic .grid {
-			display: flex;
-			justify-content: center;
-			gap: var(--gap);
-			flex-wrap: wrap;
-		}
+				.bx-lifestyle-mosaic figure {
+					margin: 0;
+					position: relative;
+					overflow: hidden;
+					border-radius: var(--r);
+					background: #fff;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+					width: 280px;
+					height: 280px;
+					flex: 1 1 280px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: transform 0.25s ease, box-shadow 0.25s ease;
+				}
 
-		.bx-lifestyle-mosaic figure {
-			margin: 0;
-			position: relative;
-			overflow: hidden;
-			border-radius: var(--r);
-			background: #fff;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-			width: 280px;
-			height: 280px;
-			flex: 1 1 280px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			transition: transform 0.25s ease, box-shadow 0.25s ease;
-		}
+				.bx-lifestyle-mosaic figure:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+				}
 
-		.bx-lifestyle-mosaic figure:hover {
-			transform: translateY(-4px);
-			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-		}
+				.bx-lifestyle-mosaic img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+					border-radius: var(--r);
+				}
 
-		.bx-lifestyle-mosaic img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-			display: block;
-			border-radius: var(--r);
-		}
+				.bx-lifestyle-mosaic figcaption {
+					position: absolute;
+					bottom: 8px;
+					left: 8px;
+					right: 8px;
+					background: rgba(0, 0, 0, 0.45);
+					color: #fff;
+					font-weight: 600;
+					padding: 0.35rem 0.6rem;
+					border-radius: 6px;
+					font-size: 0.9rem;
+				}
 
-		.bx-lifestyle-mosaic figcaption {
-			position: absolute;
-			bottom: 8px;
-			left: 8px;
-			right: 8px;
-			background: rgba(0, 0, 0, 0.45);
-			color: #fff;
-			font-weight: 600;
-			padding: 0.35rem 0.6rem;
-			border-radius: 6px;
-			font-size: 0.9rem;
-		}
+				@media (max-width: 800px) {
+					.bx-lifestyle-mosaic figure {
+						width: 220px;
+						height: 220px;
+					}
+				}
 
-		@media (max-width: 800px) {
-			.bx-lifestyle-mosaic figure {
-				width: 220px;
-				height: 220px;
-			}
-		}
+				@media (max-width: 640px) {
+					.bx-lifestyle-mosaic .wrap {
+						padding: 0;
+					}
+					.bx-lifestyle-mosaic figure {
+						width: 100%;
+						height: 180px;
+						max-width: 320px;
+					}
+					.bx-lifestyle-mosaic figcaption {
+						font-size: 0.8rem;
+					}
+				}
+			</style>
 
-		@media (max-width: 640px) {
-			.bx-lifestyle-mosaic figure {
-				width: 100%;
-				height: 180px;
-				max-width: 320px;
-			}
-			.bx-lifestyle-mosaic figcaption {
-				font-size: 0.8rem;
-			}
-		}
-	</style>
+			<div class="wrap">
+				<div class="grid">
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481906871_669985882051875_7834526164071720644_n.webp"
+						/>
+					</figure>
 
-	<div class="wrap">
-		<div class="grid">
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Bottle_1L-4.webp"
-				/>
-			</figure>
-			<figure>
-				<img
-					style="object-position: top"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/456135962_1830299670826576_2990825406429605489_n.webp"
-				/>
-			</figure>
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482247285_671020285281768_4395068893802631677_n.webp"
-				/>
-			</figure>
-		</div>
-	</div>
-</section>
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/501356936_18496733731028668_38647491052598674_n.webp"
+							height="300"
+							width="300"
+						/>
+					</figure>
 
-<!-- 4) COMPARISON (table desktop, cards mobile) — REWORKED FOR BOROUX BOTTLES -->
-<section class="bx-compare-section" aria-labelledby="compare-title">
-	<style>
-		.bx-compare-section {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #56606a;
-			--bg: #f5f9fc;
-			--card: #fff;
-			--ok: #0f8a5f;
-			--warn: #b96b00;
-			--bad: #b71c1c;
-			--radius: 12px;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-compare-section .wrap {
-			width: min(1100px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-compare-section h2 {
-			text-align: center;
-			color: var(--accent);
-			margin: 2rem 0 0.5rem;
-		}
-		.bx-compare-section .lead {
-			text-align: center;
-			color: var(--muted);
-			margin: 0 0 1rem;
-		}
-		.bx-compare-section .legend {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.5rem 0.75rem;
-			justify-content: center;
-			color: var(--muted);
-			font-size: 0.92rem;
-			margin-bottom: 0.75rem;
-		}
-		.bx-compare-section .dot {
-			display: inline-block;
-			width: 0.65rem;
-			height: 0.65rem;
-			border-radius: 50%;
-			margin-right: 0.4rem;
-			transform: translateY(1px);
-		}
-		.bx-compare-section .ok {
-			background: var(--ok);
-		}
-		.bx-compare-section .warn {
-			background: var(--warn);
-		}
-		.bx-compare-section .bad {
-			background: var(--bad);
-		}
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/492529203_706331931750603_92061978923944795_n.webp"
+						/>
+					</figure>
+				</div>
+			</div>
+		</section>
 
-		/* table */
-		.bx-compare-section .table-wrap {
-			background: transparent;
-			border-radius: 10px;
-			overflow-x: auto;
-			-webkit-overflow-scrolling: touch;
-		}
-		.bx-compare-section .table {
-			min-width: 960px;
-			width: 100%;
-			border-collapse: separate;
-			border-spacing: 0;
-			overflow: hidden;
-			border-radius: 10px;
-			background: var(--card);
-			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06), 0 8px 24px rgba(0, 0, 0, 0.04);
-		}
-		.bx-compare-section thead th {
-			background: var(--bg);
-			color: var(--text);
-			font-weight: 700;
-			font-size: 0.92rem;
-			text-align: left;
-			padding: 12px 14px;
-			border-bottom: 1px solid #e7eef6;
-		}
-		.bx-compare-section td {
-			padding: 14px;
-			border-bottom: 1px solid #eef3f8;
-			vertical-align: top;
-			font-size: 0.95rem;
-		}
-		.bx-compare-section tr:last-child td {
-			border-bottom: none;
-		}
+		<!-- 3) BOTTLES HIGHLIGHTS (with panel background) -->
+		<section class="bx-contaminants-section" aria-labelledby="bottles-title">
+			<style>
+				.bx-contaminants-section {
+					--accent: #1b4b66;
+					--text: #222;
+					--muted: #555;
+					--bg: #f5f9fc;
+					--card: #fff;
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+				}
+				.bx-contaminants-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+				}
+				.bx-contaminants-section h2 {
+					text-align: center;
+					margin: 2rem 0 1rem;
+					color: var(--accent);
+					font-size: 1.45rem;
+				}
+				.bx-contaminants-section .panel {
+					background: var(--bg);
+					border-radius: var(--radius);
+					padding: 1rem;
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04),
+						0 8px 24px rgba(0, 0, 0, 0.04);
+				}
+				.bx-contaminants-section .image-card {
+					background: var(--card);
+					border-radius: var(--radius);
+					padding: 0.75rem;
+					margin-bottom: 1rem;
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 10px 30px rgba(0, 0, 0, 0.06);
+				}
+				.bx-contaminants-section .img {
+					width: 100%;
+					border-radius: 10px;
+					aspect-ratio: 16/10;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+				}
+				.bx-contaminants-section .list {
+					display: grid;
+					gap: 1rem;
+				}
+				.bx-contaminants-section .item {
+					border-left: 4px solid var(--accent);
+					padding-left: 1rem;
+				}
+				.bx-contaminants-section .item h3 {
+					margin: 0 0 0.35rem;
+					color: var(--accent);
+					font-size: 1.06rem;
+				}
+				.bx-contaminants-section .item p {
+					margin: 0.25rem 0;
+					color: var(--text);
+				}
+				.bx-contaminants-section .summary {
+					background: var(--bg);
+					border-radius: 10px;
+					padding: 1rem;
+					margin-top: 0.75rem;
+					font-weight: 600;
+				}
 
-		.bx-compare-section .pill {
-			display: inline-block;
-			padding: 0.15rem 0.5rem;
-			border-radius: 999px;
-			font-size: 0.78rem;
-			font-weight: 700;
-			background: var(--bg);
-			color: var(--accent);
-		}
-		.bx-compare-section .meter {
-			display: inline-flex;
-			gap: 4px;
-			margin-top: 0.25rem;
-		}
-		.bx-compare-section .meter span {
-			width: 9px;
-			height: 9px;
-			border-radius: 2px;
-			background: #e7eef6;
-		}
-		.bx-compare-section .meter .on {
-			background: var(--accent);
-		}
+				@media (max-width: 640px) {
+					.bx-contaminants-section .wrap {
+						padding: 0;
+					}
+					.bx-contaminants-section .panel {
+						border-radius: 0;
+					}
+					.bx-contaminants-section h2 {
+						margin: 1.5rem 1rem 1rem;
+					}
+					.bx-contaminants-section .list {
+						padding: 0 1rem;
+					}
+				}
+			</style>
+			<div class="wrap">
+				<h2 id="bottles-title">Why BOROUX Bottles Stand Out</h2>
 
-		.bx-compare-section .foot {
-			background: var(--bg);
-			border-left: 4px solid var(--accent);
-			padding: 12px 14px;
-			border-radius: 8px;
-			margin-top: 1rem;
-			font-size: 0.92rem;
-			color: var(--muted);
-		}
+				<div class="panel">
+					<div class="image-card">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/11417439_1460999260870644_408412285_n.webp"
+							alt="BOROUX borosilicate glass bottles with stainless caps on a kitchen counter"
+						/>
+					</div>
 
-		/* Mobile cards (match look & feel across listings) */
-		.bx-compare-section .cards {
-			display: none;
-			margin-top: 1rem;
-		}
-		.bx-compare-section .card {
-			background: var(--card);
-			border-radius: 10px;
-			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-			padding: 1rem;
-			margin-bottom: 0.9rem;
-		}
-		.bx-compare-section .card h3 {
-			margin: 0 0 0.4rem;
-			color: var(--accent);
-			font-size: 1.02rem;
-		}
-		.bx-compare-section .row {
-			display: grid;
-			grid-template-columns: 140px 1fr;
-			gap: 0.5rem 0.75rem;
-			padding: 0.25rem 0;
-			border-top: 1px solid #eef3f8;
-		}
-		.bx-compare-section .row:first-of-type {
-			border-top: 0;
-		}
-		.bx-compare-section .lbl {
-			font-weight: 700;
-			color: #333;
-			font-size: 0.88rem;
-		}
-		.bx-compare-section .val {
-			font-size: 0.95rem;
-		}
-		@media (max-width: 900px) {
-			.bx-compare-section thead {
-				display: none;
-			}
-			.bx-compare-section .table-wrap {
-				display: none;
-			}
-			.bx-compare-section .cards {
-				display: block;
-			}
-		}
-	</style>
+					<div class="list">
+						<div class="item">
+							<h3>Ultra-Clean Taste</h3>
+							<p>
+								Borosilicate glass keeps water crisp and neutral — no plastic
+								odors, no lingering flavors. Perfect for everyday hydration and
+								taste-sensitive drinks like tea or citrus infusions.
+							</p>
+						</div>
 
-	<div class="wrap">
-		<h2 id="compare-title">
-			Real-World Comparison: Taste, Materials & Sustainability
-		</h2>
-		<p class="lead">
-			Keep the familiar layout. New focus for bottles: taste neutrality,
-			material safety, ease of care, durability/weight, and waste per year.
-		</p>
+						<div class="item">
+							<h3>BPA/BPS-Free, Food-Safe Build</h3>
+							<p>
+								Only glass, 304 stainless steel, and a silicone seal touch your
+								water. Simple materials, easy trust.
+							</p>
+						</div>
 
-		<div class="legend">
-			<span><i class="dot ok"></i>strong</span>
-			<span><i class="dot warn"></i>mixed/limited</span>
-			<span><i class="dot bad"></i>weak/untested</span>
-		</div>
+						<div class="item">
+							<h3>304 Stainless Steel Cap</h3>
+							<p>
+								Corrosion-resistant and precision-machined for durability. The
+								same grade used in professional kitchens for lasting
+								performance.
+							</p>
+						</div>
 
-		<!-- DESKTOP TABLE -->
-		<div class="table-wrap">
-			<table class="table" role="table" aria-describedby="compare-title">
-				<thead>
-					<tr>
-						<th>System</th>
-						<th>Taste Neutrality & Heat Tolerance*</th>
-						<th>Materials & Safety**</th>
-						<th>Care & Daily Use</th>
-						<th>Waste / Year</th>
-						<th>What This Means</th>
-					</tr>
-				</thead>
-				<tbody>
-					<!-- BOROUX BOTTLES -->
-					<tr>
-						<td>
-							<strong>BOROUX Glass Bottle</strong><br />
-							<span class="pill">borosilicate + 304 steel cap</span>
-						</td>
-						<td>
-							Flavor-neutral glass; resists odor/ghosting; handles hot/cold
-							swings.<br />
-							<div class="meter" aria-label="taste & heat">
-								<span class="on"></span><span class="on"></span
-								><span class="on"></span><span class="on"></span
-								><span class="on"></span>
-							</div>
-						</td>
-						<td>
-							BPA/BPS-free; borosilicate glass + food-grade silicone seal; 304
-							stainless cap.
-							<span class="dot ok" title="strong"></span>
-						</td>
-						<td>
-							Wide-mouth for ice & cleaning; bottle is dishwasher-safe (cap
-							hand-wash recommended).
-						</td>
-						<td>
-							Near-zero (reuse for years); replaces hundreds of single-use
-							bottles.
-							<span class="dot ok"></span>
-						</td>
-						<td>
-							Best balance of pure taste, safety, and longevity; ideal everyday
-							companion.
-						</td>
-					</tr>
+						<div class="item">
+							<h3>Wide-Mouth Convenience</h3>
+							<p>
+								Ice-friendly opening fits standard bottle brushes for quick
+								cleaning. Add fruit, herbs, or electrolytes without a mess.
+							</p>
+						</div>
 
-					<!-- INSULATED STAINLESS -->
-					<tr>
-						<td><strong>Insulated Stainless (18/8)</strong></td>
-						<td>
-							Generally neutral; can retain flavors with strongly flavored
-							drinks; excellent temp hold.<br />
-							<div class="meter">
-								<span class="on"></span><span class="on"></span
-								><span class="on"></span><span class="on"></span><span></span>
-							</div>
-						</td>
-						<td>
-							Food-grade steel; often plastic lids/seals (BPA-free typical).
-							<span class="dot ok"></span>
-						</td>
-						<td>
-							Hand-wash lids; heavier; not see-through; good for long outdoor
-							days.
-						</td>
-						<td>
-							Very low (long service life).
-							<span class="dot ok"></span>
-						</td>
-						<td>
-							Great temperature performance; slightly heavier and can hold onto
-							odors over time.
-						</td>
-					</tr>
+						<div class="item">
+							<h3>Dishwasher-Safe Bottle</h3>
+							<p>
+								Hassle-free care: bottle is dishwasher-safe; we recommend
+								hand-washing the cap to preserve the seal and finish.
+							</p>
+						</div>
 
-					<!-- PLASTIC REUSABLE (TRITAN/PP) -->
-					<tr>
-						<td><strong>Plastic Reusable</strong> (Tritan/PP)</td>
-						<td>
-							Light, durable; may retain odors/flavors; heat sensitivity
-							varies.<br />
-							<div class="meter">
-								<span class="on"></span><span class="on"></span
-								><span class="on"></span><span></span><span></span>
-							</div>
-						</td>
-						<td>
-							BPA/BPS-free common; micro-scratch over time; not as inert as
-							glass.
-							<span class="dot warn"></span>
-						</td>
-						<td>
-							Easy to carry; wide range of caps; more frequent replacement if
-							hazed/scratched.
-						</td>
-						<td>
-							Low–moderate (replacements more frequent).
-							<span class="dot warn"></span>
-						</td>
-						<td>
-							Budget-friendly and tough, but taste neutrality and longevity
-							trail glass/steel.
-						</td>
-					</tr>
+						<div class="item">
+							<h3>Travel & Everyday Ready</h3>
+							<p>
+								Slim silhouette fits most car cup holders and backpack side
+								pockets; tough borosilicate glass resists thermal shock and
+								daily use.
+							</p>
+						</div>
 
-					<!-- GENERIC GLASS -->
-					<tr>
-						<td><strong>Generic Glass Bottle</strong></td>
-						<td>
-							Neutral taste; may be soda-lime glass (less thermal shock
-							resistance).<br />
-							<div class="meter">
-								<span class="on"></span><span class="on"></span
-								><span class="on"></span><span></span><span></span>
-							</div>
-						</td>
-						<td>
-							Varies by brand; lid materials differ; check seal quality.
-							<span class="dot warn"></span>
-						</td>
-						<td>Can be dishwasher-safe; fit/finish & lid reliability vary.</td>
-						<td>
-							Low (if durable); break risk increases replacements.
-							<span class="dot warn"></span>
-						</td>
-						<td>
-							Solid taste; verify glass type and cap quality to avoid
-							leaks/breakage.
-						</td>
-					</tr>
+						<div class="item">
+							<h3>Sustainable by Design</h3>
+							<p>
+								Built to replace hundreds of single-use bottles each year —
+								lowering waste and saving money with every refill.
+							</p>
+						</div>
 
-					<!-- DISPOSABLE BOTTLED WATER -->
-					<tr>
-						<td><strong>Disposable Bottled Water</strong></td>
-						<td>
-							Consistent taste per brand; warms quickly; not reusable by
-							design.<br />
-							<div class="meter">
-								<span class="on"></span><span></span><span></span><span></span
-								><span></span>
-							</div>
-						</td>
-						<td>
-							Regulated as a food product; single-use PET plastic.
-							<span class="dot bad"></span>
-						</td>
-						<td>No care (use & toss); highest ongoing cost.</td>
-						<td>
-							Very high (single-use plastic stream).
-							<span class="dot bad"></span>
-						</td>
-						<td>Convenient in a pinch; expensive and waste-heavy long-term.</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-		<!-- MOBILE CARDS (AUTO-SHOW UNDER 900PX) -->
-		<div class="cards" aria-hidden="true">
-			<article class="card">
-				<h3>
-					BOROUX Glass Bottle <span class="pill">borosilicate + 304 cap</span>
-				</h3>
-				<div class="row">
-					<span class="lbl">Taste & Heat*</span>
-					<div class="val">
-						Flavor-neutral, odor-resistant; handles hot/cold swings.
-						<div class="meter">
-							<span class="on"></span><span class="on"></span
-							><span class="on"></span><span class="on"></span
-							><span class="on"></span>
+						<div class="summary">
+							Crisp taste, premium materials, and effortless care — BOROUX
+							bottles make clean, great-tasting water part of every day.
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<span class="lbl">Materials**</span>
-					<div class="val">
-						Borosilicate glass, 304 stainless cap, silicone seal; BPA/BPS-free.
-						<span class="dot ok"></span>
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Care</span>
-					<div class="val">
-						Wide-mouth; bottle dishwasher-safe; hand-wash cap.
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Waste/Year</span>
-					<div class="val">
-						Near-zero; replaces hundreds of disposables.
-						<span class="dot ok"></span>
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Meaning</span>
-					<div class="val">Pure taste + premium materials for daily use.</div>
-				</div>
-			</article>
+			</div>
+		</section>
 
-			<article class="card">
-				<h3>Insulated Stainless (18/8)</h3>
-				<div class="row">
-					<span class="lbl">Taste & Heat*</span>
-					<div class="val">
-						Neutral with some flavor carryover; excellent temp hold.
-						<div class="meter">
-							<span class="on"></span><span class="on"></span
-							><span class="on"></span><span class="on"></span><span></span>
+		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
+
+		<section class="bx-lifestyle-mosaic">
+			<style>
+				.bx-lifestyle-mosaic {
+					--gap: 16px;
+					--r: 10px;
+					font-family: 'Josefin Sans', sans-serif;
+					background: #f8fbfd;
+					padding: 1.5rem 0 2rem;
+				}
+
+				.bx-lifestyle-mosaic .wrap {
+					width: min(950px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					text-align: center;
+				}
+
+				.bx-lifestyle-mosaic h2 {
+					margin: 0 0 1.25rem;
+					color: #1b4b66;
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
+
+				.bx-lifestyle-mosaic .grid {
+					display: flex;
+					justify-content: center;
+					gap: var(--gap);
+					flex-wrap: wrap;
+				}
+
+				.bx-lifestyle-mosaic figure {
+					margin: 0;
+					position: relative;
+					overflow: hidden;
+					border-radius: var(--r);
+					background: #fff;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+					width: 280px;
+					height: 280px;
+					flex: 1 1 280px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: transform 0.25s ease, box-shadow 0.25s ease;
+				}
+
+				.bx-lifestyle-mosaic figure:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+				}
+
+				.bx-lifestyle-mosaic img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+					border-radius: var(--r);
+				}
+
+				.bx-lifestyle-mosaic figcaption {
+					position: absolute;
+					bottom: 8px;
+					left: 8px;
+					right: 8px;
+					background: rgba(0, 0, 0, 0.45);
+					color: #fff;
+					font-weight: 600;
+					padding: 0.35rem 0.6rem;
+					border-radius: 6px;
+					font-size: 0.9rem;
+				}
+
+				@media (max-width: 800px) {
+					.bx-lifestyle-mosaic figure {
+						width: 220px;
+						height: 220px;
+					}
+				}
+
+				@media (max-width: 640px) {
+					.bx-lifestyle-mosaic .wrap {
+						padding: 0;
+					}
+					.bx-lifestyle-mosaic figure {
+						width: 100%;
+						height: 180px;
+						max-width: 320px;
+					}
+					.bx-lifestyle-mosaic figcaption {
+						font-size: 0.8rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<div class="grid">
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Bottle_1L-4.webp"
+						/>
+					</figure>
+					<figure>
+						<img
+							style="object-position: top"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/456135962_1830299670826576_2990825406429605489_n.webp"
+						/>
+					</figure>
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482247285_671020285281768_4395068893802631677_n.webp"
+						/>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+		<!-- 4) COMPARISON (table desktop, cards mobile) — REWORKED FOR BOROUX BOTTLES -->
+		<section class="bx-compare-section" aria-labelledby="compare-title">
+			<style>
+				.bx-compare-section {
+					--accent: #1b4b66;
+					--text: #222;
+					--muted: #56606a;
+					--bg: #f5f9fc;
+					--card: #fff;
+					--ok: #0f8a5f;
+					--warn: #b96b00;
+					--bad: #b71c1c;
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+				}
+
+				.bx-compare-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+				}
+
+				.bx-compare-section h2 {
+					text-align: center;
+					color: var(--accent);
+					margin: 2rem 0 0.5rem;
+				}
+
+				.bx-compare-section .lead {
+					text-align: center;
+					color: var(--muted);
+					margin: 0 0 1rem;
+				}
+
+				.bx-compare-section .legend {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.5rem 0.75rem;
+					justify-content: center;
+					color: var(--muted);
+					font-size: 0.92rem;
+					margin-bottom: 0.75rem;
+				}
+
+				.bx-compare-section .dot {
+					display: inline-block;
+					width: 0.65rem;
+					height: 0.65rem;
+					border-radius: 50%;
+					margin-right: 0.4rem;
+					transform: translateY(1px);
+				}
+				.bx-compare-section .ok {
+					background: var(--ok);
+				}
+				.bx-compare-section .warn {
+					background: var(--warn);
+				}
+				.bx-compare-section .bad {
+					background: var(--bad);
+				}
+
+				/* Desktop table */
+				.bx-compare-section .table-wrap {
+					background: transparent;
+					border-radius: 10px;
+					overflow-x: auto;
+					-webkit-overflow-scrolling: touch;
+				}
+				.bx-compare-section .table {
+					min-width: 960px;
+					width: 100%;
+					border-collapse: separate;
+					border-spacing: 0;
+					overflow: hidden;
+					border-radius: 10px;
+					background: var(--card);
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 8px 24px rgba(0, 0, 0, 0.04);
+				}
+				.bx-compare-section thead th {
+					background: var(--bg);
+					color: var(--text);
+					font-weight: 700;
+					font-size: 0.92rem;
+					text-align: left;
+					padding: 12px 14px;
+					border-bottom: 1px solid #e7eef6;
+				}
+				.bx-compare-section td {
+					padding: 14px;
+					border-bottom: 1px solid #eef3f8;
+					vertical-align: top;
+					font-size: 0.95rem;
+				}
+				.bx-compare-section tr:last-child td {
+					border-bottom: none;
+				}
+
+				.bx-compare-section .pill {
+					display: inline-block;
+					padding: 0.15rem 0.5rem;
+					border-radius: 999px;
+					font-size: 0.78rem;
+					font-weight: 700;
+					background: var(--bg);
+					color: var(--accent);
+				}
+				.bx-compare-section .meter {
+					display: inline-flex;
+					gap: 4px;
+					margin-top: 0.25rem;
+				}
+				.bx-compare-section .meter span {
+					width: 9px;
+					height: 9px;
+					border-radius: 2px;
+					background: #e7eef6;
+				}
+				.bx-compare-section .meter .on {
+					background: var(--accent);
+				}
+
+				.bx-compare-section .foot {
+					background: var(--bg);
+					border-left: 4px solid var(--accent);
+					padding: 12px 14px;
+					border-radius: 8px;
+					margin-top: 1rem;
+					font-size: 0.92rem;
+					color: var(--muted);
+				}
+
+				/* Mobile cards */
+				.bx-compare-section .cards {
+					display: none;
+					margin-top: 1rem;
+				}
+				.bx-compare-section .card {
+					background: var(--card);
+					border-radius: 10px;
+					box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+					padding: 1rem;
+					margin-bottom: 0.9rem;
+				}
+				.bx-compare-section .card h3 {
+					margin: 0 0 0.4rem;
+					color: var(--accent);
+					font-size: 1.02rem;
+				}
+				.bx-compare-section .row {
+					display: grid;
+					grid-template-columns: 140px 1fr;
+					gap: 0.5rem 0.75rem;
+					padding: 0.25rem 0;
+					border-top: 1px solid #eef3f8;
+				}
+				.bx-compare-section .row:first-of-type {
+					border-top: 0;
+				}
+				.bx-compare-section .lbl {
+					font-weight: 700;
+					color: #333;
+					font-size: 0.88rem;
+				}
+				.bx-compare-section .val {
+					font-size: 0.95rem;
+				}
+
+				/* Switch to cards under 900px */
+				@media (max-width: 900px) {
+					.bx-compare-section thead {
+						display: none;
+					}
+					.bx-compare-section .table-wrap {
+						display: none;
+					}
+					.bx-compare-section .cards {
+						display: block;
+					}
+				}
+
+				/* Mobile paddings to avoid left-only inset */
+				@media (max-width: 640px) {
+					.bx-compare-section .wrap {
+						padding: 0;
+					}
+					.bx-compare-section h2 {
+						margin: 1.5rem 1rem 0.5rem;
+					}
+					.bx-compare-section .lead,
+					.bx-compare-section .legend,
+					.bx-compare-section .foot {
+						margin-left: 1rem;
+						margin-right: 1rem;
+					}
+					.bx-compare-section .table-wrap {
+						padding: 0 1rem;
+					}
+					.bx-compare-section .cards {
+						padding: 0 1rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="compare-title">
+					Real-World Comparison: Taste, Materials & Sustainability
+				</h2>
+				<p class="lead">
+					Focused on hydration bottles—taste neutrality, material safety, ease
+					of care, durability/weight, and annual waste.
+				</p>
+
+				<div class="legend">
+					<span><i class="dot ok"></i>strong</span>
+					<span><i class="dot warn"></i>mixed/limited</span>
+					<span><i class="dot bad"></i>weak/untested</span>
+				</div>
+
+				<!-- DESKTOP TABLE -->
+				<div class="table-wrap">
+					<table class="table" role="table" aria-describedby="compare-title">
+						<thead>
+							<tr>
+								<th>System</th>
+								<th>Taste Neutrality & Heat Tolerance*</th>
+								<th>Materials & Safety**</th>
+								<th>Care & Daily Use</th>
+								<th>Waste / Year</th>
+								<th>What This Means</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- BOROUX GLASS -->
+							<tr>
+								<td>
+									<strong>BOROUX Glass Bottle</strong><br />
+									<span class="pill">borosilicate + 304 cap</span>
+								</td>
+								<td>
+									Flavor-neutral glass; resists odor/ghosting; handles hot/cold
+									swings.<br />
+									<div class="meter" aria-label="taste & heat">
+										<span class="on"></span><span class="on"></span
+										><span class="on"></span><span class="on"></span
+										><span class="on"></span>
+									</div>
+								</td>
+								<td>
+									BPA/BPS-free; borosilicate + silicone seal; stainless cap.
+									<span class="dot ok" title="strong"></span>
+								</td>
+								<td>
+									Wide-mouth for ice & cleaning; bottle dishwasher-safe (cap
+									hand-wash recommended).
+								</td>
+								<td>
+									Near-zero (reuse for years); replaces hundreds of single-use
+									bottles.
+									<span class="dot ok"></span>
+								</td>
+								<td>
+									Best balance of pure taste, safety, and longevity; ideal daily
+									companion.
+								</td>
+							</tr>
+
+							<!-- INSULATED STAINLESS -->
+							<tr>
+								<td><strong>Insulated Stainless (18/8)</strong></td>
+								<td>
+									Generally neutral; can retain strong flavors; excellent temp
+									hold.<br />
+									<div class="meter">
+										<span class="on"></span><span class="on"></span
+										><span class="on"></span><span class="on"></span
+										><span></span>
+									</div>
+								</td>
+								<td>
+									Food-grade steel; plastic lids/seals common (BPA-free
+									typical).
+									<span class="dot ok"></span>
+								</td>
+								<td>
+									Hand-wash lids; heavier; not see-through; great for long
+									outdoor days.
+								</td>
+								<td>
+									Very low (long service life).
+									<span class="dot ok"></span>
+								</td>
+								<td>
+									Superb temperature control; slightly heavier and may hold
+									odors over time.
+								</td>
+							</tr>
+
+							<!-- PLASTIC REUSABLE -->
+							<tr>
+								<td><strong>Plastic Reusable</strong> (Tritan/PP)</td>
+								<td>
+									Light, durable; may retain odors/flavors; heat sensitivity
+									varies.<br />
+									<div class="meter">
+										<span class="on"></span><span class="on"></span
+										><span class="on"></span><span></span><span></span>
+									</div>
+								</td>
+								<td>
+									BPA/BPS-free common; micro-scratches over time; less inert
+									than glass.
+									<span class="dot warn"></span>
+								</td>
+								<td>
+									Easy to carry; wide cap options; more frequent replacement if
+									hazed.
+								</td>
+								<td>
+									Low–moderate (replacements more frequent).
+									<span class="dot warn"></span>
+								</td>
+								<td>
+									Budget-friendly and tough, but taste neutrality and longevity
+									trail glass/steel.
+								</td>
+							</tr>
+
+							<!-- GENERIC GLASS -->
+							<tr>
+								<td><strong>Generic Glass Bottle</strong></td>
+								<td>
+									Neutral taste; often soda-lime glass (less thermal-shock
+									resistance).<br />
+									<div class="meter">
+										<span class="on"></span><span class="on"></span
+										><span class="on"></span><span></span><span></span>
+									</div>
+								</td>
+								<td>
+									Quality varies; lid/seal differ; check fit and leak
+									resistance.
+									<span class="dot warn"></span>
+								</td>
+								<td>
+									Can be dishwasher-safe; reliability and finish vary widely.
+								</td>
+								<td>
+									Low if durable; break risk increases replacements.
+									<span class="dot warn"></span>
+								</td>
+								<td>
+									Solid taste, but verify glass type and cap quality to avoid
+									leaks/breakage.
+								</td>
+							</tr>
+
+							<!-- DISPOSABLE -->
+							<tr>
+								<td><strong>Disposable Bottled Water</strong></td>
+								<td>
+									Consistent brand taste; warms quickly; not reusable.<br />
+									<div class="meter">
+										<span class="on"></span><span></span><span></span
+										><span></span><span></span>
+									</div>
+								</td>
+								<td>
+									Single-use PET plastic.
+									<span class="dot bad"></span>
+								</td>
+								<td>Use & toss; highest ongoing cost.</td>
+								<td>
+									Very high plastic waste.
+									<span class="dot bad"></span>
+								</td>
+								<td>
+									Convenient but costly and waste-heavy; doesn’t improve home
+									water.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<!-- MOBILE CARDS -->
+				<div class="cards" aria-hidden="true">
+					<article class="card">
+						<h3>
+							BOROUX Glass Bottle
+							<span class="pill">borosilicate + 304 cap</span>
+						</h3>
+						<div class="row">
+							<span class="lbl">Taste & Heat*</span>
+							<div class="val">
+								Flavor-neutral; odor-resistant; handles hot/cold swings.
+								<div class="meter">
+									<span class="on"></span><span class="on"></span
+									><span class="on"></span><span class="on"></span
+									><span class="on"></span>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Materials**</span>
-					<div class="val">
-						Food-grade steel; plastic lids common. <span class="dot ok"></span>
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Care</span>
-					<div class="val">Hand-wash lids; heavier to carry.</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Waste/Year</span>
-					<div class="val">Very low. <span class="dot ok"></span></div>
-				</div>
-				<div class="row">
-					<span class="lbl">Meaning</span>
-					<div class="val">Great for temp control; heavier than glass.</div>
-				</div>
-			</article>
-
-			<article class="card">
-				<h3>Plastic Reusable (Tritan/PP)</h3>
-				<div class="row">
-					<span class="lbl">Taste & Heat*</span>
-					<div class="val">
-						May retain odors; limited heat tolerance.
-						<div class="meter">
-							<span class="on"></span><span class="on"></span
-							><span class="on"></span><span></span><span></span>
+						<div class="row">
+							<span class="lbl">Materials**</span>
+							<div class="val">
+								Borosilicate, stainless cap, silicone seal; BPA/BPS-free.
+								<span class="dot ok"></span>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Materials**</span>
-					<div class="val">
-						BPA/BPS-free typical; micro-scratches over time.
-						<span class="dot warn"></span>
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Care</span>
-					<div class="val">Easy, but more frequent replacement if hazed.</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Waste/Year</span>
-					<div class="val">Low–moderate. <span class="dot warn"></span></div>
-				</div>
-				<div class="row">
-					<span class="lbl">Meaning</span>
-					<div class="val">
-						Budget-friendly; trails glass in taste & longevity.
-					</div>
-				</div>
-			</article>
-
-			<article class="card">
-				<h3>Generic Glass Bottle</h3>
-				<div class="row">
-					<span class="lbl">Taste & Heat*</span>
-					<div class="val">
-						Neutral; soda-lime glass may dislike thermal shock.
-						<div class="meter">
-							<span class="on"></span><span class="on"></span
-							><span class="on"></span><span></span><span></span>
+						<div class="row">
+							<span class="lbl">Care</span>
+							<div class="val">
+								Wide-mouth; bottle dishwasher-safe; hand-wash cap.
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Materials**</span>
-					<div class="val">
-						Quality varies; lid & seal vary. <span class="dot warn"></span>
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Care</span>
-					<div class="val">
-						Often dishwasher-safe; check cap/leak reliability.
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Waste/Year</span>
-					<div class="val">
-						Low if durable; break risk. <span class="dot warn"></span>
-					</div>
-				</div>
-				<div class="row">
-					<span class="lbl">Meaning</span>
-					<div class="val">Good taste; verify materials/cap quality.</div>
-				</div>
-			</article>
-
-			<article class="card">
-				<h3>Disposable Bottled Water</h3>
-				<div class="row">
-					<span class="lbl">Taste & Heat*</span>
-					<div class="val">
-						Consistent brand taste; warms quickly.
-						<div class="meter">
-							<span class="on"></span><span></span><span></span><span></span
-							><span></span>
+						<div class="row">
+							<span class="lbl">Waste/Year</span>
+							<div class="val">
+								Near-zero (reuse for years). <span class="dot ok"></span>
+							</div>
 						</div>
-					</div>
+						<div class="row">
+							<span class="lbl">Meaning</span>
+							<div class="val">
+								Pure taste + premium materials for daily use.
+							</div>
+						</div>
+					</article>
+
+					<article class="card">
+						<h3>Insulated Stainless (18/8)</h3>
+						<div class="row">
+							<span class="lbl">Taste & Heat*</span>
+							<div class="val">
+								Neutral with some flavor carryover; excellent temp hold.
+								<div class="meter">
+									<span class="on"></span><span class="on"></span
+									><span class="on"></span><span class="on"></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Materials**</span>
+							<div class="val">
+								Food-grade steel; plastic lids common.
+								<span class="dot ok"></span>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Care</span>
+							<div class="val">Hand-wash lids; heavier to carry.</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Waste/Year</span>
+							<div class="val">Very low. <span class="dot ok"></span></div>
+						</div>
+						<div class="row">
+							<span class="lbl">Meaning</span>
+							<div class="val">
+								Great temperature control; heavier than glass.
+							</div>
+						</div>
+					</article>
+
+					<article class="card">
+						<h3>Plastic Reusable (Tritan/PP)</h3>
+						<div class="row">
+							<span class="lbl">Taste & Heat*</span>
+							<div class="val">
+								May retain odors; limited heat tolerance.
+								<div class="meter">
+									<span class="on"></span><span class="on"></span
+									><span class="on"></span><span></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Materials**</span>
+							<div class="val">
+								BPA/BPS-free typical; micro-scratches over time.
+								<span class="dot warn"></span>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Care</span>
+							<div class="val">
+								Easy, but more frequent replacement if hazed.
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Waste/Year</span>
+							<div class="val">
+								Low–moderate. <span class="dot warn"></span>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Meaning</span>
+							<div class="val">
+								Budget-friendly; trails glass in taste & longevity.
+							</div>
+						</div>
+					</article>
+
+					<article class="card">
+						<h3>Generic Glass Bottle</h3>
+						<div class="row">
+							<span class="lbl">Taste & Heat*</span>
+							<div class="val">
+								Neutral; soda-lime glass may dislike thermal shock.
+								<div class="meter">
+									<span class="on"></span><span class="on"></span
+									><span class="on"></span><span></span><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Materials**</span>
+							<div class="val">
+								Quality varies; lid & seal vary. <span class="dot warn"></span>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Care</span>
+							<div class="val">
+								Often dishwasher-safe; check cap/leak reliability.
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Waste/Year</span>
+							<div class="val">
+								Low if durable; break risk. <span class="dot warn"></span>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Meaning</span>
+							<div class="val">Good taste; verify materials/cap quality.</div>
+						</div>
+					</article>
+
+					<article class="card">
+						<h3>Disposable Bottled Water</h3>
+						<div class="row">
+							<span class="lbl">Taste & Heat*</span>
+							<div class="val">
+								Consistent brand taste; warms quickly.
+								<div class="meter">
+									<span class="on"></span><span></span><span></span><span></span
+									><span></span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Materials**</span>
+							<div class="val">
+								Single-use PET plastic. <span class="dot bad"></span>
+							</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Care</span>
+							<div class="val">None; highest ongoing cost.</div>
+						</div>
+						<div class="row">
+							<span class="lbl">Waste/Year</span>
+							<div class="val">Very high. <span class="dot bad"></span></div>
+						</div>
+						<div class="row">
+							<span class="lbl">Meaning</span>
+							<div class="val">Convenient, but costly & waste-heavy.</div>
+						</div>
+					</article>
 				</div>
-				<div class="row">
-					<span class="lbl">Materials**</span>
-					<div class="val">
-						Single-use PET plastic. <span class="dot bad"></span>
-					</div>
+
+				<div class="foot">
+					<strong>How to read this:</strong>
+					* <em>Taste Neutrality & Heat Tolerance</em> reflects flavor
+					carryover, odor resistance, and resilience to hot/cold swings. **
+					<em>Materials & Safety</em> considers contact materials (glass,
+					stainless, silicone) and common safety expectations (e.g.,
+					BPA/BPS-free).
 				</div>
-				<div class="row">
-					<span class="lbl">Care</span>
-					<div class="val">None; highest ongoing cost.</div>
+			</div>
+		</section>
+
+		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
+		<section class="bx-lifestyle-mosaic">
+			<style>
+				.bx-lifestyle-mosaic {
+					--gap: 16px;
+					--r: 10px;
+					font-family: 'Josefin Sans', sans-serif;
+					background: #f8fbfd;
+					padding: 1.5rem 0 2rem;
+				}
+
+				.bx-lifestyle-mosaic .wrap {
+					width: min(950px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					text-align: center;
+				}
+
+				.bx-lifestyle-mosaic h2 {
+					margin: 0 0 1.25rem;
+					color: #1b4b66;
+					font-size: 1.5rem;
+					font-weight: 600;
+				}
+
+				.bx-lifestyle-mosaic .grid {
+					display: flex;
+					justify-content: center;
+					gap: var(--gap);
+					flex-wrap: wrap;
+				}
+
+				.bx-lifestyle-mosaic figure {
+					margin: 0;
+					position: relative;
+					overflow: hidden;
+					border-radius: var(--r);
+					background: #fff;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+					width: 280px;
+					height: 280px;
+					flex: 1 1 280px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: transform 0.25s ease, box-shadow 0.25s ease;
+				}
+
+				.bx-lifestyle-mosaic figure:hover {
+					transform: translateY(-4px);
+					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+				}
+
+				.bx-lifestyle-mosaic img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					display: block;
+					border-radius: var(--r);
+				}
+
+				.bx-lifestyle-mosaic figcaption {
+					position: absolute;
+					bottom: 8px;
+					left: 8px;
+					right: 8px;
+					background: rgba(0, 0, 0, 0.45);
+					color: #fff;
+					font-weight: 600;
+					padding: 0.35rem 0.6rem;
+					border-radius: 6px;
+					font-size: 0.9rem;
+				}
+
+				@media (max-width: 800px) {
+					.bx-lifestyle-mosaic figure {
+						width: 220px;
+						height: 220px;
+					}
+				}
+
+				@media (max-width: 640px) {
+					.bx-lifestyle-mosaic .wrap {
+						padding: 0;
+					}
+					.bx-lifestyle-mosaic figure {
+						width: 100%;
+						height: 180px;
+						max-width: 320px;
+					}
+					.bx-lifestyle-mosaic figcaption {
+						font-size: 0.8rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<div class="grid">
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Bottle_1L-4.webp"
+						/>
+					</figure>
+
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/519958646_768320685551727_186831482326535167_n.webp"
+						/>
+					</figure>
+
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482219349_671875495196247_4734281636374861379_n.webp"
+						/>
+					</figure>
 				</div>
-				<div class="row">
-					<span class="lbl">Waste/Year</span>
-					<div class="val">Very high. <span class="dot bad"></span></div>
+			</div>
+		</section>
+
+		<!-- 6) REVIEWS -->
+		<section class="bx-reviews-section" aria-labelledby="reviews-title">
+			<style>
+				.bx-reviews-section {
+					--accent: #1b4b66;
+					--text: #222;
+					--muted: #56606a;
+					--card: #fff;
+					--ring: rgba(27, 75, 102, 0.12);
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+				}
+				.bx-reviews-section .wrap {
+					width: min(980px, 100%);
+					margin: 0 auto;
+					padding: 0 clamp(0.75rem, 3vw, 1rem);
+					box-sizing: border-box;
+				}
+				.bx-reviews-section h2 {
+					text-align: center;
+					color: var(--accent);
+					margin: 2rem 0 1rem;
+					font-size: 1.5rem;
+					letter-spacing: 0.2px;
+				}
+				.bx-reviews-section .list {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					display: grid;
+					gap: 14px;
+					grid-template-columns: 1fr;
+				}
+				@media (min-width: 760px) {
+					.bx-reviews-section .list {
+						grid-template-columns: 1fr 1fr;
+					}
+				}
+				.bx-reviews-section .item {
+					background: var(--card);
+					border-radius: var(--radius);
+					padding: 14px 16px;
+					box-shadow: 0 6px 18px -6px var(--ring);
+					border: 1px solid #eef3f8;
+					transition: transform 0.18s ease, box-shadow 0.18s ease,
+						border-color 0.18s ease;
+				}
+				.bx-reviews-section .item:hover {
+					transform: translateY(-2px);
+					box-shadow: 0 10px 26px -8px var(--ring);
+					border-color: #e6eef6;
+				}
+				.bx-reviews-section .head {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					gap: 0.75rem;
+					margin-bottom: 0.4rem;
+					flex-wrap: wrap;
+				}
+				.bx-reviews-section .stars {
+					display: inline-flex;
+					gap: 2px;
+					line-height: 0;
+				}
+				.bx-reviews-section .star {
+					width: 16px;
+					height: 16px;
+					fill: #ffc107;
+					flex: 0 0 16px;
+				}
+				.bx-reviews-section .meta {
+					color: var(--muted);
+					font-size: 0.9rem;
+					text-align: right;
+					white-space: nowrap;
+				}
+				.bx-reviews-section .quote {
+					margin: 0.25rem 0 0.5rem;
+					color: var(--text);
+					line-height: 1.6;
+					font-style: italic;
+				}
+				.bx-reviews-section .author {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+					color: var(--accent);
+					font-weight: 700;
+					font-size: 0.95rem;
+				}
+				.bx-reviews-section .dot {
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					background: #c7d7e6;
+					display: inline-block;
+				}
+				.bx-reviews-section .note {
+					text-align: center;
+					color: var(--muted);
+					font-size: 0.9rem;
+					margin-top: 0.9rem;
+				}
+				@media (max-width: 600px) {
+					.bx-reviews-section .wrap {
+						padding-left: clamp(0.75rem, 4vw, 1rem);
+						padding-right: clamp(0.75rem, 4vw, 1rem);
+					}
+					.bx-reviews-section h2 {
+						font-size: 1.25rem;
+						margin: 1.25rem 0 0.75rem;
+					}
+					.bx-reviews-section .item {
+						padding: 12px 14px;
+						border-radius: 10px;
+						box-shadow: 0 4px 14px -8px var(--ring);
+					}
+					.bx-reviews-section .star {
+						width: 14px;
+						height: 14px;
+					}
+					.bx-reviews-section .meta {
+						font-size: 0.82rem;
+						opacity: 0.9;
+					}
+					.bx-reviews-section .quote {
+						font-size: 0.97rem;
+					}
+					.bx-reviews-section .author {
+						font-size: 0.92rem;
+					}
+					.bx-reviews-section .note {
+						font-size: 0.85rem;
+						margin-top: 0.6rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="reviews-title">What Glass Bottle Customers Are Saying</h2>
+
+				<ul class="list">
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Seattle, WA</div>
+						</div>
+						<p class="quote">
+							“These bottles are sturdy and crystal clear. I’ve dropped mine
+							more than once and it hasn’t even chipped — absolutely love the
+							quality.”
+						</p>
+						<div class="author">Denise R.</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Austin, TX</div>
+						</div>
+						<p class="quote">
+							“The borosilicate glass feels premium and the stainless cap seals
+							perfectly — no leaks, no odors, just clean water all day.”
+						</p>
+						<div class="author">Jason L.</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Boulder, CO</div>
+						</div>
+						<p class="quote">
+							“Love that it’s completely plastic-free. It’s my go-to at home and
+							at work — feels good knowing I’m not using disposable bottles.”
+						</p>
+						<div class="author">Michelle P.</div>
+					</li>
+
+					<li class="item">
+						<div class="head">
+							<div class="stars" aria-label="5 out of 5 stars">
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+								<svg class="star" viewBox="0 0 24 24">
+									<path
+										d="M12 17.27l-5.18 3.05 1.41-5.94L3 9.74l6.09-.52L12 3.5l2.91 5.72 6.09.52-5.23 4.64 1.41 5.94z"
+									/>
+								</svg>
+							</div>
+							<div class="meta">Portland, OR</div>
+						</div>
+						<p class="quote">
+							“The wide mouth makes cleaning and adding ice so easy. Looks sleek
+							and minimalist — everyone asks where I got it.”
+						</p>
+						<div class="author">Alex G.</div>
+					</li>
+				</ul>
+				<p class="note">
+					* Verified reviews compiled from Boroux.com and Amazon listings for
+					the Glass Water Bottle Collection.
+				</p>
+			</div>
+		</section>
+
+		<!-- BOROUX FAQ (scoped, no JS) -->
+		<section class="bx-scope-faq" aria-labelledby="faq-title">
+			<style>
+				.bx-scope-faq {
+					--bx-accent: #1b4b66;
+					--bx-text: #222;
+					--bx-muted: #555;
+					--bx-soft: #f5f9fc;
+					font-family: 'Josefin Sans', system-ui, Segoe UI, Roboto, Arial,
+						sans-serif;
+					color: var(--bx-text);
+					line-height: 1.6;
+					width: 100%;
+					margin: 2rem 0;
+					background: var(--bx-soft);
+					overflow-x: hidden;
+				}
+				.bx-scope-faq .inner {
+					width: min(1000px, 100%);
+					margin: 0 auto;
+					padding: 1.75rem clamp(0.75rem, 4vw, 1rem);
+					box-sizing: border-box;
+					border-radius: 12px;
+				}
+				.bx-scope-faq h2 {
+					margin: 0 0 1rem;
+					font-size: 1.6rem;
+					color: var(--bx-accent);
+					text-align: center;
+				}
+				.bx-scope-faq p.lead {
+					margin: 0.25rem auto 1.25rem;
+					text-align: center;
+					color: var(--bx-muted);
+					max-width: 720px;
+				}
+				.bx-scope-faq .faq-list {
+					display: grid;
+					gap: 0.75rem;
+				}
+				.bx-scope-faq details {
+					background: #fff;
+					border-radius: 10px;
+					padding: 0.75rem 1rem;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+				}
+				.bx-scope-faq summary {
+					cursor: pointer;
+					font-weight: 700;
+					color: #0f2748;
+					outline: none;
+					list-style: none;
+				}
+				.bx-scope-faq summary::-webkit-details-marker {
+					display: none;
+				}
+				.bx-scope-faq summary:after {
+					content: '+';
+					float: right;
+					color: var(--bx-accent);
+					font-weight: 700;
+				}
+				.bx-scope-faq details[open] summary:after {
+					content: '–';
+				}
+				.bx-scope-faq .answer {
+					margin: 0.6rem 0 0;
+					color: var(--bx-text);
+				}
+				.bx-scope-faq .muted {
+					color: var(--bx-muted);
+					font-size: 0.95rem;
+				}
+				@media (max-width: 640px) {
+					.bx-scope-faq .inner {
+						padding: 1.25rem clamp(0.75rem, 4vw, 1rem);
+						border-radius: 0;
+					}
+					.bx-scope-faq h2 {
+						font-size: 1.35rem;
+					}
+				}
+			</style>
+
+			<div class="inner">
+				<h2 id="faq-title">Questions &amp; Answers — Boroux Glass Bottles</h2>
+				<p class="lead">
+					Care, materials, and daily-use tips for the Glass Bottle collection.
+				</p>
+
+				<div class="faq-list">
+					<details>
+						<summary>
+							What makes this bottle different from regular glass bottles?
+						</summary>
+						<div class="answer">
+							It’s crafted from <strong>borosilicate glass</strong>, which is
+							more resistant to thermal shock than standard soda-lime glass. Our
+							design also uses a thicker base for added durability.
+						</div>
+					</details>
+
+					<details>
+						<summary>Is the lid safe and leak-proof?</summary>
+						<div class="answer">
+							Yes. The cap is
+							<strong>304 food-grade stainless steel</strong> with a precision
+							silicone O-ring for a secure, leak-resistant seal.
+						</div>
+					</details>
+
+					<details>
+						<summary>Can I use it for both hot and cold beverages?</summary>
+						<div class="answer">
+							Borosilicate tolerates heat better than regular glass, but for
+							longevity we recommend
+							<strong>cold beverages</strong>. Avoid sudden temperature shocks
+							(e.g., boiling water into a chilled bottle).
+						</div>
+					</details>
+
+					<details>
+						<summary>Is it dishwasher safe?</summary>
+						<div class="answer">
+							The <strong>glass body is dishwasher-safe</strong>. Hand-wash the
+							stainless cap to preserve the silicone seal and finish.
+						</div>
+					</details>
+
+					<details>
+						<summary>Does this bottle leach chemicals into my water?</summary>
+						<div class="answer">
+							No. Contact materials are <strong>borosilicate glass</strong>,
+							<strong>304 stainless steel</strong>, and
+							<strong>silicone</strong>—chosen for inertness and long-term
+							safety.
+						</div>
+					</details>
+
+					<details>
+						<summary>What is the capacity and size?</summary>
+						<div class="answer">
+							The standard bottle holds
+							<strong>500&nbsp;mL (16.9&nbsp;fl&nbsp;oz)</strong> and measures
+							approximately <strong>2.5″ wide × 8.75″ tall</strong>.
+						</div>
+					</details>
+
+					<details>
+						<summary>Does this help reduce disposable plastic waste?</summary>
+						<div class="answer">
+							Yes. A durable, reusable glass bottle replaces hundreds of
+							single-use plastic bottles each year—lowering waste while
+							improving taste and material safety.
+						</div>
+					</details>
 				</div>
-				<div class="row">
-					<span class="lbl">Meaning</span>
-					<div class="val">Convenient, but costly & waste-heavy.</div>
+
+				<p class="muted" style="margin-top: 1rem">
+					*Always avoid sudden temperature changes and inspect the seal
+					periodically for best performance.
+				</p>
+			</div>
+		</section>
+
+		<!-- 7) RECOMMENDED PRODUCTS -->
+		<section class="bx-products-section" aria-labelledby="products-title">
+			<style>
+				.bx-products-section {
+					--accent: #1b4b66;
+					--text: #222;
+					--muted: #555;
+					--card: #fff;
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+					width: 100%;
+					overflow-x: hidden;
+				}
+				.bx-products-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 clamp(12px, 4vw, 16px);
+					box-sizing: border-box;
+				}
+				.bx-products-section h2 {
+					text-align: center;
+					color: var(--accent);
+					margin: 2rem 0 1.25rem;
+				}
+
+				.bx-products-section .grid {
+					display: grid;
+					gap: 1.25rem;
+					grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+				}
+
+				@media (max-width: 420px) {
+					.bx-products-section .grid {
+						grid-template-columns: 1fr;
+					}
+				}
+
+				.bx-products-section .product {
+					background: var(--card);
+					border-radius: var(--radius);
+					padding: 1.1rem;
+					text-align: center;
+					box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 0.6rem;
+					transition: transform 0.2s ease;
+					box-sizing: border-box;
+				}
+				.bx-products-section .product:hover {
+					transform: translateY(-4px);
+				}
+
+				.bx-products-section .img {
+					width: 100%;
+					max-width: 320px;
+					aspect-ratio: 4/3;
+					object-fit: cover;
+					object-position: center;
+					border-radius: 10px;
+					display: block;
+				}
+				.bx-products-section h3 {
+					margin: 0.25rem 0;
+					font-size: 1.05rem;
+					color: #0e3555;
+				}
+				.bx-products-section p {
+					margin: 0 0.25rem 0.5rem;
+					color: var(--muted);
+				}
+
+				.bx-products-section .btn {
+					display: inline-block;
+					background: var(--accent);
+					color: #fff;
+					text-decoration: none;
+					font-weight: 700;
+					font-size: 0.92rem;
+					padding: 0.55rem 1rem;
+					border-radius: 8px;
+					margin-top: auto;
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="products-title">Recommended Products</h2>
+				<div class="grid">
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
+							alt="Boroux Foundation Filter Replacement Set placeholder"
+						/>
+						<h3>Boroux Water Filter Systems (from $349)</h3>
+						<p>
+							Every BOROUX system begins with 304 stainless steel—the same
+							material trusted in professional kitchens for its strength,
+							purity, and timeless finish. The Legacy is a countertop
+							centerpiece; Compact mirrors that craftsmanship in a
+							travel-friendly form. Both feature Foundation™ filtration for a
+							full year of taste and confidence.
+						</p>
+						<a class="btn" href="#">Shop Now</a>
+					</article>
+
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
+							alt="Boroux Stainless Gravity System placeholder"
+						/>
+						<h3>Boroux Proactive Fluoride Filter ($139)</h3>
+						<p>
+							The first alumina-free fluoride filters—a complete re-think of
+							safe, long-lasting fluoride reduction.
+						</p>
+						<a class="btn" href="#">Shop Now</a>
+					</article>
+
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Shower_head_17.webp"
+							alt="Boroux Shower Filter placeholder"
+						/>
+						<h3>Boroux Shower Filter ($60)</h3>
+						<p>
+							Remove up to 98% of chlorine with high-grade media—smoother skin,
+							softer hair, and quick tool-free install.
+						</p>
+						<a class="btn" href="#">Shop Now</a>
+					</article>
 				</div>
-			</article>
-		</div>
-
-		<div class="foot">
-			<strong>How to read this:</strong>
-			* <em>Taste Neutrality & Heat Tolerance</em> reflects flavor carryover,
-			odor resistance, and resilience to hot/cold swings. **
-			<em>Materials & Safety</em> considers contact materials (glass, stainless,
-			silicone), and common consumer safety expectations (e.g., BPA/BPS-free).
-			For ongoing cost, assume reusable bottles spread cost over years of
-			refills; disposable bottles generate the highest recurring spend and
-			waste.
-		</div>
+			</div>
+		</section>
 	</div>
-</section>
-
-<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
-<section class="bx-lifestyle-mosaic">
-	<style>
-		.bx-lifestyle-mosaic {
-			--gap: 16px;
-			--r: 10px;
-			font-family: 'Josefin Sans', sans-serif;
-			background: #f8fbfd;
-			padding: 1.5rem 0 2rem;
-		}
-
-		.bx-lifestyle-mosaic .wrap {
-			width: min(950px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-			text-align: center;
-		}
-
-		.bx-lifestyle-mosaic h2 {
-			margin: 0 0 1.25rem;
-			color: #1b4b66;
-			font-size: 1.5rem;
-			font-weight: 600;
-		}
-
-		.bx-lifestyle-mosaic .grid {
-			display: flex;
-			justify-content: center;
-			gap: var(--gap);
-			flex-wrap: wrap;
-		}
-
-		.bx-lifestyle-mosaic figure {
-			margin: 0;
-			position: relative;
-			overflow: hidden;
-			border-radius: var(--r);
-			background: #fff;
-			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-			width: 280px;
-			height: 280px;
-			flex: 1 1 280px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			transition: transform 0.25s ease, box-shadow 0.25s ease;
-		}
-
-		.bx-lifestyle-mosaic figure:hover {
-			transform: translateY(-4px);
-			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-		}
-
-		.bx-lifestyle-mosaic img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-			display: block;
-			border-radius: var(--r);
-		}
-
-		.bx-lifestyle-mosaic figcaption {
-			position: absolute;
-			bottom: 8px;
-			left: 8px;
-			right: 8px;
-			background: rgba(0, 0, 0, 0.45);
-			color: #fff;
-			font-weight: 600;
-			padding: 0.35rem 0.6rem;
-			border-radius: 6px;
-			font-size: 0.9rem;
-		}
-
-		@media (max-width: 800px) {
-			.bx-lifestyle-mosaic figure {
-				width: 220px;
-				height: 220px;
-			}
-		}
-
-		@media (max-width: 640px) {
-			.bx-lifestyle-mosaic figure {
-				width: 100%;
-				height: 180px;
-				max-width: 320px;
-			}
-			.bx-lifestyle-mosaic figcaption {
-				font-size: 0.8rem;
-			}
-		}
-	</style>
-
-	<div class="wrap">
-		<div class="grid">
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Bottle_1L-4.webp"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/519958646_768320685551727_186831482326535167_n.webp"
-				/>
-			</figure>
-
-			<figure>
-				<img
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482219349_671875495196247_4734281636374861379_n.webp"
-				/>
-			</figure>
-		</div>
-	</div>
-</section>
-
-<!-- 6) REVIEWS -->
-<section class="bx-reviews-section" aria-labelledby="reviews-title">
-	<style>
-		.bx-reviews-section {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #555;
-			--card: #fff;
-			--radius: 12px;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-reviews-section .wrap {
-			width: min(900px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-reviews-section h2 {
-			text-align: center;
-			color: var(--accent);
-			margin: 2rem 0 1rem;
-		}
-		.bx-reviews-section .list {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			display: grid;
-			gap: 1rem;
-		}
-		.bx-reviews-section .item {
-			background: var(--card);
-			border-radius: 10px;
-			padding: 1rem 1.1rem;
-			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-		}
-		.bx-reviews-section .stars {
-			color: #ffc107;
-			margin-bottom: 0.35rem;
-		}
-		.bx-reviews-section .quote {
-			margin: 0 0 0.4rem;
-			font-style: italic;
-		}
-		.bx-reviews-section .author {
-			font-weight: 700;
-			color: var(--accent);
-			font-size: 0.95rem;
-		}
-		.bx-reviews-section .note {
-			text-align: center;
-			color: var(--muted);
-			font-size: 0.9rem;
-			margin-top: 0.75rem;
-		}
-	</style>
-
-	<div class="wrap">
-		<h2 id="reviews-title">What Customers Are Saying</h2>
-		<ul class="list">
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“These bottles are sturdy and crystal clear. I’ve dropped mine more
-					than once and it hasn’t even chipped — absolutely love the quality.”
-				</p>
-				<p class="author">— Denise R., Seattle, WA</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“The borosilicate glass feels premium and the stainless cap seals
-					perfectly — no leaks, no odors, just clean water all day.”
-				</p>
-				<p class="author">— Jason L., Austin, TX</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“Love that it’s completely plastic-free. It’s my go-to at home and at
-					work — feels good knowing I’m not using disposable bottles.”
-				</p>
-				<p class="author">— Michelle P., Boulder, CO</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“The wide mouth makes cleaning and adding ice so easy. Looks sleek and
-					minimalist — everyone asks where I got it.”
-				</p>
-				<p class="author">— Alex G., Portland, OR</p>
-			</li>
-
-			<li class="item">
-				<div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
-				<p class="quote">
-					“After switching from stainless bottles, this one feels so much better
-					— pure taste, perfect size, and no metallic flavor.”
-				</p>
-				<p class="author">— Lauren M., Denver, CO</p>
-			</li>
-		</ul>
-
-		<p class="note">
-			* Verified reviews compiled from Boroux.com and Amazon listings for the
-			Glass Water Bottle Collection.
-		</p>
-	</div>
-</section>
-
-<!-- BOROUX FAQ (scoped, no JS) -->
-<section class="bx-faq-section" aria-labelledby="faq-title">
-	<style>
-		.bx-faq-section {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #555;
-			font-family: 'Josefin Sans', sans-serif;
-			max-width: 900px;
-			margin: 3rem auto;
-			padding: 0 1rem;
-			color: var(--text);
-		}
-		.bx-faq-section h2 {
-			text-align: center;
-			color: var(--accent);
-			margin-bottom: 1.5rem;
-			font-size: 1.45rem;
-		}
-		.bx-faq-section .faq-item {
-			margin-bottom: 1.4rem;
-		}
-		.bx-faq-section .faq-item h3 {
-			margin: 0 0 0.4rem;
-			font-size: 1.1rem;
-			color: var(--accent);
-		}
-		.bx-faq-section .faq-item p {
-			margin: 0;
-			color: var(--muted);
-			font-size: 0.95rem;
-			line-height: 1.5;
-		}
-	</style>
-
-	<h2 id="faq-title">Frequently Asked Questions</h2>
-
-	<div class="faq-item">
-		<h3>What makes this bottle different from regular glass bottles?</h3>
-		<p>
-			It’s made from **borosilicate glass**, which is far more durable and
-			capable of withstanding thermal changes than standard soda-lime glass. The
-			base is also thicker than typical bottles for added strength.
-			:contentReference[oaicite:0]{index=0}
-		</p>
-	</div>
-
-	<div class="faq-item">
-		<h3>Is the lid safe and leak-proof?</h3>
-		<p>
-			Yes. The lid is crafted from **304 food-grade stainless steel** and sealed
-			with a silicone O-ring to ensure a durable, leak-resistant closure.
-			:contentReference[oaicite:1]{index=1}
-		</p>
-	</div>
-
-	<div class="faq-item">
-		<h3>Can I use it for both hot and cold beverages?</h3>
-		<p>
-			While the borosilicate glass is more heat tolerant than regular glass, the
-			manufacturer recommends using the bottle for **cold beverages only** to
-			maintain optimal performance and longevity.
-			:contentReference[oaicite:2]{index=2}
-		</p>
-	</div>
-
-	<div class="faq-item">
-		<h3>Is it dishwasher safe?</h3>
-		<p>
-			The glass body is dishwasher safe. However, it’s recommended to
-			**hand-wash the stainless steel lid** to best preserve the seal and
-			finish. :contentReference[oaicite:3]{index=3}
-		</p>
-	</div>
-
-	<div class="faq-item">
-		<h3>Does this bottle leach chemicals into my water?</h3>
-		<p>
-			No. The materials used (borosilicate glass, 304 stainless steel, silicone
-			seal) are selected to ensure that no harmful substances will leach into
-			the water, even with repeated use. :contentReference[oaicite:4]{index=4}
-		</p>
-	</div>
-
-	<div class="faq-item">
-		<h3>What is the capacity and size?</h3>
-		<p>
-			The standard model holds 500 mL (16.9 fl oz) and measures approximately
-			2.5″ wide by 8.75″ tall. :contentReference[oaicite:5]{index=5}
-		</p>
-	</div>
-
-	<div class="faq-item">
-		<h3>Does this help reduce disposable plastic waste?</h3>
-		<p>
-			Yes. Choosing a reusable, high-quality glass bottle is a sustainable
-			option that replaces countless single-use plastic bottles — helping reduce
-			environmental impact while securing better taste and safety.
-			:contentReference[oaicite:6]{index=6}
-		</p>
-	</div>
-</section>
-
-<!-- 7) RECOMMENDED PRODUCTS -->
-<section class="bx-products-section" aria-labelledby="products-title">
-	<style>
-		.bx-products-section {
-			--accent: #1b4b66;
-			--text: #222;
-			--muted: #555;
-			--card: #fff;
-			--radius: 12px;
-			font-family: 'Josefin Sans', sans-serif;
-		}
-		.bx-products-section .wrap {
-			width: min(1100px, 100%);
-			margin: 0 auto;
-			padding: 0 1rem;
-		}
-		.bx-products-section h2 {
-			text-align: center;
-			color: var(--accent);
-			margin: 2rem 0 1.25rem;
-		}
-		.bx-products-section .grid {
-			display: grid;
-			gap: 1.25rem;
-			grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-		}
-		.bx-products-section .product {
-			background: var(--card);
-			border-radius: var(--radius);
-			padding: 1.1rem;
-			padding-bottom: 40px;
-			text-align: center;
-			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 0.5rem;
-			transition: transform 0.2s ease;
-			position: relative;
-		}
-		.bx-products-section .product:hover {
-			transform: translateY(-4px);
-		}
-		.bx-products-section .img {
-			width: 100%;
-			max-width: 280px;
-			aspect-ratio: 4/3;
-			object-fit: cover;
-			object-position: center;
-			border-radius: 10px;
-			display: block;
-		}
-		.bx-products-section h3 {
-			margin: 0.25rem 0;
-			font-size: 1.05rem;
-			color: #0e3555;
-		}
-		.bx-products-section p {
-			margin: 0 0.25rem 0.5rem;
-			color: var(--muted);
-		}
-		.bx-products-section .btn {
-			display: inline-block;
-			background: var(--accent);
-			color: #fff;
-			text-decoration: none;
-			font-weight: 700;
-			font-size: 0.92rem;
-			padding: 0.55rem 1rem;
-			border-radius: 8px;
-			position: absolute;
-			bottom: 0;
-			margin-bottom: 5px;
-		}
-	</style>
-
-	<div class="wrap">
-		<h2 id="products-title">Recommended Products</h2>
-		<div class="grid">
-			<article class="product">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
-					alt="Boroux Foundation Filter Replacement Set placeholder"
-				/>
-				<h3>Boroux Water Filter Systems (from $349)</h3>
-				<p>
-					Every BOROUX system begins with 304 stainless steel—the same material
-					trusted in professional kitchens for its strength, purity, and
-					timeless finish. The Legacy System stands as a countertop centerpiece,
-					combining performance and elegance; the Compact System mirrors that
-					craftsmanship in a travel-friendly form. Both feature Foundation™
-					filtration, independently tested to remove more contaminants and
-					preserve taste and confidence for an entire year.
-				</p>
-				<a class="btn" href="#">Shop Now</a>
-			</article>
-
-			<article class="product">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
-					alt="Boroux Stainless Gravity System placeholder"
-				/>
-				<h3>Boroux Proactive Fluoride Filter ($139)</h3>
-				<p>
-					The BOROUX Proactive™ Filters are the first alumina-free fluoride
-					filters—a complete redesign of what safe, long-lasting fluoride
-					reduction should be.
-				</p>
-				<a class="btn" href="#">Shop Now</a>
-			</article>
-
-			<article class="product">
-				<img
-					class="img"
-					loading="lazy"
-					src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Shower_head_17.webp"
-					alt="Boroux Glass Spigot accessory placeholder"
-				/>
-				<h3>Boroux Shower Filter ($60)</h3>
-				<p>
-					Step into spa-quality water. The BOROUX Shower Filter System removes
-					up to 98% of chlorine using high-grade copper-zinc and calcium sulfite
-					media — balancing water chemistry to leave your skin smoother and your
-					hair noticeably softer. With a sleek chrome finish and quick,
-					tool-free installation, it brings a touch of luxury to every shower.
-				</p>
-				<a class="btn" href="#">Shop Now</a>
-			</article>
-		</div>
-	</div>
-</section>
+</body>
