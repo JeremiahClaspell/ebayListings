@@ -1,0 +1,1026 @@
+<body style="margin: 0">
+	<div id="bx-div">
+		<style>
+			@media (max-width: 860px) {
+				#bx-div {
+					width: 100vw;
+					margin: 0;
+					box-sizing: border-box;
+					overflow: hidden;
+				}
+			}
+			#bx-div section {
+				margin-bottom: 30px;
+			}
+		</style>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- 1) NAV -->
+		<section class="bx-nav-section" aria-label="Primary Navigation">
+			<style>
+				.bx-nav-section {
+					font-family: 'Josefin Sans', sans-serif;
+					--accent1: #1b4b66;
+					--accent2: #4bb7ff;
+					--text: #fff;
+					--hover: #eaf6ff;
+					--pill-bg: rgba(255, 255, 255, 0.12);
+					--pill-bg-hover: rgba(255, 255, 255, 0.2);
+					--pill-active: #ffffff;
+					--pill-active-text: #0f2b45;
+					--shadow: rgba(0, 0, 0, 0.15);
+					--maxw: 1100px;
+				}
+
+				.bx-nav-section .bx-navwrap {
+					background: linear-gradient(
+						90deg,
+						#545141 0%,
+						#229ee9 20%,
+						#a9f7ff 85%,
+						rgba(255, 255, 255, 0) 100%
+					);
+
+					background-size: 200% 100%;
+
+					box-shadow: 0 3px 12px var(--shadow);
+					width: 100%;
+					margin: 0 auto;
+					overflow: hidden;
+				}
+
+				.bx-nav-section .bx-navmax {
+					width: min(var(--maxw), 100%);
+					margin: 0 auto;
+				}
+
+				.bx-nav-section .bx-nav {
+					display: flex;
+					gap: 0.5rem;
+					list-style: none;
+					margin: 0;
+					padding: 0.5rem 1rem;
+					overflow-x: auto;
+					-webkit-overflow-scrolling: touch;
+					scrollbar-width: none;
+					justify-content: center;
+					align-items: center;
+				}
+				.bx-nav-section .bx-nav::-webkit-scrollbar {
+					display: none;
+				}
+
+				.bx-nav-section .bx-nav li {
+					flex: 0 0 auto;
+				}
+
+				.bx-nav-section .bx-nav a {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					color: var(--text);
+					text-decoration: none;
+					font-weight: 700;
+					font-size: 1rem;
+					padding: 0.45rem 0.9rem;
+					border-radius: 999px;
+					background: var(--pill-bg);
+					transition: background 0.25s ease, color 0.25s ease,
+						transform 0.2s ease;
+					white-space: nowrap;
+				}
+
+				.bx-nav-section .bx-nav a:hover {
+					background: var(--pill-bg-hover);
+					color: var(--hover);
+				}
+
+				.bx-nav-section .bx-nav a:focus-visible {
+					outline: 2px solid var(--hover);
+					outline-offset: 3px;
+				}
+
+				.bx-nav-section .bx-nav a.is-active {
+					background: var(--pill-active);
+					color: var(--pill-active-text);
+					box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15),
+						0 1px 8px rgba(0, 0, 0, 0.1) inset;
+				}
+
+				.bx-nav-section .bx-nav a:active {
+					transform: translateY(1px);
+				}
+
+				@media (max-width: 859px) {
+					.bx-nav-section .bx-nav {
+						justify-content: flex-start;
+						padding: 0.6rem 1rem;
+					}
+					.bx-nav-section .bx-nav li:first-child {
+						margin-left: 0.25rem;
+					}
+					.bx-nav-section .bx-nav li:last-child {
+						margin-right: 0.25rem;
+					}
+				}
+
+				@media (min-width: 860px) {
+					.bx-nav-section .bx-nav {
+						overflow: visible;
+						justify-content: center;
+						padding: 0.6rem 1rem;
+						gap: 0.75rem 1rem;
+					}
+				}
+			</style>
+
+			<div class="bx-navwrap">
+				<div class="bx-navmax">
+					<ul class="bx-nav" role="list">
+						<li>
+							<a
+								href="https://www.ebay.com/str/aquatreasuresemporium/Water-Filter-Systems/_i.html?store_cat=52745885012"
+								>Systems</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.ebay.com/str/aquatreasuresemporium/Replacement-Filters/_i.html?store_cat=52745886012"
+								class="is-active"
+								>Replacement Filters</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.ebay.com/str/aquatreasuresemporium/Accessories/_i.html?store_cat=52745887012"
+								>Accessories</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.ebay.com/itm/266906991579?itmmeta=01K9FP2572D2W454R80S1SPXF9&hash=item3e24e57bdb:g:74cAAOSw9BZmlaLA"
+								>Replacement Parts</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- TRAVEL HERO -->
+		<section class="bx-hero-section" aria-label="Key Features (Travel)">
+			<style>
+				.bx-hero-section {
+					--accent: #1b4b66;
+					--ink: #0e3555;
+					--text: #222;
+					--muted: #56606a;
+					--card: #fff;
+					--radius: 12px;
+					--gap: 1.5rem;
+					font-family: 'Josefin Sans', sans-serif;
+					margin-top: 20px;
+				}
+				.bx-hero-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					box-sizing: border-box;
+				}
+				.bx-hero-section .grid {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: stretch;
+					gap: 1.25rem;
+					width: 100%;
+				}
+				.bx-hero-section .card {
+					background: var(--card);
+					border-radius: var(--radius);
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 10px 30px rgba(0, 0, 0, 0.06);
+					flex: 1 1 500px;
+					max-width: 48%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					overflow: hidden;
+				}
+				.bx-hero-section .pad {
+					padding: 1.25rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 100%;
+				}
+				.bx-hero-section .img {
+					border-radius: var(--radius);
+					object-fit: scale-down;
+					object-position: center left;
+					display: block;
+					width: 100%;
+					height: 100%;
+					max-height: 600px;
+					background: #fff;
+				}
+				.bx-hero-section .points {
+					display: grid;
+					gap: 1rem;
+				}
+				.bx-hero-section h3 {
+					margin: 0 0 0.25rem;
+					font-size: 1.08rem;
+					color: var(--ink);
+				}
+				.bx-hero-section p {
+					margin: 0;
+					color: var(--muted);
+					line-height: 1.55;
+					border-bottom: 2px solid #4bb7ff;
+					padding-bottom: 0.6rem;
+				}
+				@media (max-width: 859px) {
+					.bx-hero-section .wrap {
+						padding: 0 0.1rem;
+					}
+					.bx-hero-section .grid {
+						flex-direction: column;
+						align-items: center;
+					}
+					.bx-hero-section .card {
+						max-width: 95vw;
+						width: 100%;
+						overflow: unset;
+					}
+					.bx-hero-section .img {
+						max-height: 480px;
+					}
+					.bx-hero-section .pad {
+						box-sizing: border-box;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<div class="grid">
+					<!-- Image Card -->
+					<div class="card">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/s-l1600%20(3).webp"
+							alt="Travel stainless housing – open box (no filters)"
+						/>
+					</div>
+
+					<!-- Text Card -->
+					<div class="card pad">
+						<div class="points">
+							<div>
+								<h3>TRAVEL HOUSING ONLY 🧰</h3>
+								<p>
+									Compact stainless unit (≈1.5&nbsp;gal).
+									<strong>No filters included</strong> — add your preferred
+									threaded black elements to complete.
+								</p>
+							</div>
+
+							<div>
+								<h3>COMPACT • PACKS DOWN SMALL 🧳</h3>
+								<p>
+									Upper chamber nests into the lower for transport. Ideal for
+									RVs, vans, dorms, cabins, and minimalist kitchens.
+								</p>
+							</div>
+
+							<div>
+								<h3>SIZED FOR 1–2 PEOPLE 📏</h3>
+								<p>
+									In-use dims approx. 18&quot; H × 7.5&quot; Dia
+									(≈1.5&nbsp;gal). Light, counter-friendly footprint with
+									everyday convenience.
+								</p>
+							</div>
+
+							<div>
+								<h3>ACCEPTS TOP FILTERS 🧩</h3>
+								<p>
+									Fits standard threaded gravity elements (e.g., BOROUX
+									Foundation™, Black Berkey®, etc.). Holds up to
+									<strong>2 filters</strong>.
+								</p>
+							</div>
+
+							<div>
+								<h3>OPEN BOX • READY TO INSTALL 📦</h3>
+								<p>
+									May show light cosmetic blemishes. Includes spigot &amp;
+									hardware — assemble in minutes and you’re set.
+								</p>
+							</div>
+
+							<div>
+								<h3>STAINLESS CONFIDENCE 🍶</h3>
+								<p>
+									Durable AISI 304 stainless construction with a timeless look
+									that’s easy to keep clean on the road or at home.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- /Text Card -->
+				</div>
+			</div>
+		</section>
+
+		<!-- TRAVEL DISCLOSURES -->
+		<section
+			class="bx-disclosure-section"
+			aria-labelledby="travel-disclosure-title"
+		>
+			<style>
+				.bx-disclosure-section {
+					--accent: #1b4b66;
+					--ink: #0e3555;
+					--text: #222;
+					--muted: #56606a;
+					--bg: #f5f9fc;
+					--card: #fff;
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+					margin-top: 20px;
+				}
+				.bx-disclosure-section .wrap {
+					width: min(1100px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					box-sizing: border-box;
+				}
+				.bx-disclosure-section h2 {
+					text-align: center;
+					color: var(--accent);
+					font-size: 1.45rem;
+					margin: 2rem 0 1rem;
+				}
+				.bx-disclosure-section .card {
+					background: var(--card);
+					border-radius: var(--radius);
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 8px 24px rgba(0, 0, 0, 0.06);
+					padding: 1.25rem;
+				}
+				.bx-disclosure-section h3 {
+					color: var(--ink);
+					font-size: 1.08rem;
+					margin: 0.75rem 0 0.25rem;
+				}
+				.bx-disclosure-section ul {
+					list-style: none;
+					padding: 0;
+					margin: 0.5rem 0 1rem;
+				}
+				.bx-disclosure-section li {
+					position: relative;
+					padding-left: 1.25rem;
+					margin-bottom: 0.35rem;
+					color: var(--text);
+				}
+				.bx-disclosure-section li::before {
+					content: '•';
+					color: var(--accent);
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+				.bx-disclosure-section .notice {
+					background: var(--bg);
+					border-left: 4px solid var(--accent);
+					border-radius: 8px;
+					padding: 1rem;
+					margin-top: 1.25rem;
+					color: var(--muted);
+					font-size: 0.95rem;
+					line-height: 1.5;
+				}
+				.bx-disclosure-section .final {
+					color: #b71c1c;
+					font-weight: 700;
+					margin-top: 0.75rem;
+				}
+				@media (max-width: 640px) {
+					.bx-disclosure-section .wrap {
+						padding: 0 0.75rem;
+					}
+					.bx-disclosure-section h2 {
+						font-size: 1.25rem;
+						margin: 1.5rem 0 0.75rem;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="travel-disclosure-title">
+					Travel Model • Product Details & Disclosures
+				</h2>
+
+				<div class="card">
+					<h3>What’s Included</h3>
+					<ul>
+						<li>
+							Upper and lower stainless steel chambers (nesting travel size)
+						</li>
+						<li>1 stainless steel lid with knob and screw</li>
+						<li>
+							1 standard black spigot +
+							<strong>1 complimentary stainless spigot</strong>
+						</li>
+						<li>1 black rubber base gasket</li>
+						<li>2 hole plugs (for unused filter ports)</li>
+						<li>1 Anti-Airlock Clip</li>
+						<li>2 vials of Red Dye</li>
+						<li>1 priming tool</li>
+					</ul>
+
+					<h3>Key Specifications</h3>
+					<ul>
+						<li>
+							Capacity: approx. <strong>1.5 gallons</strong> (ideal for 1–2
+							users)
+						</li>
+						<li>
+							Holds up to <strong>2 filter elements</strong> (standard
+							black-element threads)
+						</li>
+						<li>
+							Approx. dimensions in use:
+							<strong>18&quot; H × 7.5&quot; Dia</strong>
+						</li>
+						<li>Material: <strong>AISI 304 stainless steel</strong></li>
+					</ul>
+
+					<div class="notice">
+						<strong>Important Disclosures:</strong>
+						<ul>
+							<li>
+								This listing is for the
+								<strong>housing/canisters/unit only</strong> — no filters
+								included.
+							</li>
+							<li>
+								You must purchase compatible filters separately to make a
+								working system.
+							</li>
+							<li>
+								Not intended for use with filters that are
+								<strong>out of compliance with FIFRA</strong>.
+							</li>
+							<li>
+								This product <strong>does not filter microorganisms</strong> by
+								itself.
+							</li>
+							<li>
+								Units are <strong>repackaged</strong> (not original brand
+								boxes).
+							</li>
+							<li>
+								May show <strong>minor cosmetic imperfections</strong> such as
+								small scratches or dents.
+							</li>
+							<li>
+								Logos may vary by production year; multiple authentic versions
+								exist.
+							</li>
+						</ul>
+					</div>
+
+					<p class="final">
+						⚠️ Filters not included. All sales are final due to inventory
+						liquidation.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- 7) RECOMMENDED PRODUCTS -->
+		<section
+			class="bx-upsell-spotlight"
+			aria-labelledby="upsell-spotlight-title"
+		>
+			<style>
+				.bx-upsell-spotlight {
+					--accent: #1b4b66;
+					--accent-2: #0e3555;
+					--glow: #cfe9ff;
+					--ink: #142536;
+					--ok: #0f8a5f;
+					--muted: #586471;
+					--bg: #f5f9fc;
+					--card: #fff;
+					--ring: rgba(27, 75, 102, 0.16);
+					--radius: 16px;
+					--gap: 1.1rem;
+					font-family: 'Josefin Sans', system-ui, Segoe UI, Roboto, Arial,
+						sans-serif;
+					position: relative;
+					padding: 32px 0;
+					overflow: hidden;
+					background: radial-gradient(
+							1200px 600px at 10% -20%,
+							rgba(75, 183, 255, 0.15),
+							transparent 60%
+						),
+						radial-gradient(
+							900px 500px at 110% 0%,
+							rgba(27, 75, 102, 0.15),
+							transparent 60%
+						),
+						linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+					border-top: 1px solid #e8f1f8;
+					border-bottom: 1px solid #e8f1f8;
+				}
+				.bx-upsell-spotlight .wrap {
+					width: min(1120px, 100%);
+					margin: 0 auto;
+					padding: 0 clamp(14px, 4vw, 18px);
+					box-sizing: border-box;
+				}
+				.bx-upsell-spotlight .header {
+					text-align: center;
+					margin-bottom: 1.4rem;
+				}
+				.bx-upsell-spotlight .eyebrow {
+					display: inline-block;
+					font-weight: 800;
+					letter-spacing: 0.6px;
+					text-transform: uppercase;
+					font-size: 0.78rem;
+					color: #fff;
+					background: linear-gradient(135deg, #1b4b66, #0e3555);
+					padding: 6px 10px;
+					border-radius: 999px;
+					box-shadow: 0 6px 20px -10px var(--ring);
+				}
+				.bx-upsell-spotlight h2 {
+					margin: 0.6rem 0 0.3rem;
+					font-size: 1.75rem;
+					color: var(--accent-2);
+					letter-spacing: 0.2px;
+				}
+				.bx-upsell-spotlight .lede {
+					color: var(--muted);
+					max-width: 780px;
+					margin: 0.25rem auto 1.25rem;
+					line-height: 1.6;
+				}
+
+				/* grid */
+				.bx-upsell-spotlight .grid {
+					display: grid;
+					gap: 1.1rem;
+					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				}
+
+				/* card */
+				.bx-upsell-spotlight .product {
+					background: var(--card);
+					border: 1px solid #e6eef6;
+					border-radius: var(--radius);
+					box-shadow: 0 18px 48px -22px var(--ring), 0 1px 0 rgba(0, 0, 0, 0.04);
+					padding: 1.1rem;
+					display: flex;
+					flex-direction: column;
+					position: relative;
+					overflow: hidden;
+					transition: transform 0.18s ease, box-shadow 0.18s ease,
+						border-color 0.18s ease;
+					isolation: isolate;
+				}
+				.bx-upsell-spotlight .product:hover {
+					transform: translateY(-3px);
+					border-color: #dbe8f3;
+					box-shadow: 0 24px 66px -32px var(--ring);
+				}
+				.bx-upsell-spotlight .ribbon {
+					position: absolute;
+					top: 12px;
+					left: -8px;
+					z-index: 1;
+					background: linear-gradient(135deg, #1b4b66, #0e3555);
+					color: #fff;
+					font-weight: 800;
+					font-size: 0.74rem;
+					padding: 6px 14px;
+					border-top-right-radius: 8px;
+					border-bottom-right-radius: 8px;
+					box-shadow: 0 8px 24px -14px var(--ring);
+				}
+				.bx-upsell-spotlight .img {
+					width: 100%;
+					max-width: 360px;
+					aspect-ratio: 4/3;
+					object-fit: cover;
+					border-radius: 12px;
+					margin: 0 auto 0.8rem;
+					background: #fff;
+				}
+				.bx-upsell-spotlight .title {
+					margin: 0;
+					color: var(--ink);
+					font-size: 1.12rem;
+					line-height: 1.25;
+					font-weight: 800;
+				}
+				.bx-upsell-spotlight .subtitle {
+					margin: 0.25rem 0 0.55rem;
+					color: var(--accent-2);
+					font-weight: 700;
+					font-size: 0.98rem;
+				}
+				.bx-upsell-spotlight .bullets {
+					margin: 0 0 0.7rem;
+					padding: 0;
+					list-style: none;
+					color: var(--ink);
+					font-size: 0.96rem;
+					display: grid;
+					gap: 0.35rem;
+				}
+				.bx-upsell-spotlight .bullets li {
+					display: grid;
+					grid-template-columns: 18px 1fr;
+					gap: 0.5rem;
+					align-items: flex-start;
+				}
+				.bx-upsell-spotlight .tick {
+					width: 18px;
+					height: 18px;
+					border-radius: 4px;
+					background: #e9f6ef;
+					display: inline-grid;
+					place-content: center;
+					color: var(--ok);
+					font-weight: 900;
+					line-height: 1;
+					font-size: 0.8rem;
+					border: 1px solid #d5f0e4;
+				}
+				.bx-upsell-spotlight .copy {
+					color: var(--muted);
+					line-height: 1.65;
+					margin: 0.1rem 0 0.9rem;
+				}
+				.bx-upsell-spotlight .price {
+					color: var(--accent-2);
+					font-weight: 800;
+					margin: 0.1rem 0 0.8rem;
+				}
+				.bx-upsell-spotlight .badges {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.35rem 0.5rem;
+					margin-bottom: 0.8rem;
+				}
+				.bx-upsell-spotlight .badge {
+					background: #f0f6fb;
+					color: #275074;
+					border: 1px solid #e0edf7;
+					border-radius: 999px;
+					padding: 4px 8px;
+					font-size: 0.78rem;
+					font-weight: 700;
+				}
+				.bx-upsell-spotlight .cta {
+					display: inline-block;
+					margin-top: auto;
+					align-self: center;
+					background: linear-gradient(135deg, #1b4b66, #0e3555);
+					color: #fff;
+					text-decoration: none;
+					font-weight: 900;
+					letter-spacing: 0.2px;
+					font-size: 0.92rem;
+					padding: 0.62rem 1.05rem;
+					border-radius: 10px;
+					box-shadow: 0 12px 34px -18px var(--ring);
+					transition: filter 0.15s ease, transform 0.15s ease;
+				}
+				.bx-upsell-spotlight .cta:hover {
+					filter: brightness(1.05);
+					transform: translateY(-1px);
+				}
+
+				.bx-upsell-spotlight .trust {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 0.5rem 0.75rem;
+					background: #f7fbff;
+					border: 1px dashed #d8e8f5;
+					border-radius: 12px;
+					padding: 0.65rem 0.8rem;
+					margin: 1.25rem auto 0;
+					color: #2b4a65;
+					font-weight: 700;
+				}
+				.bx-upsell-spotlight .trust span {
+					display: inline-flex;
+					gap: 0.4rem;
+					align-items: center;
+				}
+				.bx-upsell-spotlight .dot {
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					background: var(--accent);
+					box-shadow: 0 0 0 3px var(--glow);
+				}
+
+				@media (max-width: 640px) {
+					.bx-upsell-spotlight h2 {
+						font-size: 1.45rem;
+					}
+					.bx-upsell-spotlight .grid {
+						grid-template-columns: 1fr;
+					}
+					.bx-upsell-spotlight .product {
+						border-radius: 14px;
+					}
+				}
+			</style>
+
+			<div class="wrap">
+				<div class="header">
+					<span class="eyebrow">Level Up Your Water</span>
+					<h2 id="upsell-spotlight-title">
+						Premium BOROUX Upgrades for Your Gravity System
+					</h2>
+					<p class="lede">
+						Make your Berkey® housing shine with certified filters, fluoride
+						protection, and stainless accessories built for taste, trust, and
+						longevity.
+					</p>
+				</div>
+
+				<div class="grid">
+					<!-- 1 -->
+					<article class="product">
+						<span class="ribbon">Best Value</span>
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
+							alt="BOROUX Foundation + Proactive Fluoride Filters bundle"
+						/>
+						<h3 class="title">Foundation™ + Proactive™ Fluoride Bundle</h3>
+						<div class="subtitle">
+							Dual-stage protection for PFAS, fluoride, heavy metals & more
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Independent testing for PFAS, VOCs, metals, and
+									pharmaceuticals</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Alumina-free fluoride reduction (ceramic & carbon
+									design)</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Steady flow + 12-month replacement rhythm for worry-free
+									use</span
+								>
+							</li>
+						</ul>
+						<p class="copy">
+							Your turnkey upgrade: broad contaminant coverage without
+							guesswork. Keeps water crisp and clean all year.
+						</p>
+						<div class="badges">
+							<span class="badge">WQA Standards</span
+							><span class="badge">1-Year Plan</span
+							><span class="badge">Easy Install</span>
+						</div>
+						<div class="price">$279–$299</div>
+						<a class="cta" href="#">Shop the Bundle</a>
+					</article>
+
+					<!-- 2 -->
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
+							alt="BOROUX Foundation Filters set of two"
+						/>
+						<h3 class="title">Foundation™ Filters — Set of 2</h3>
+						<div class="subtitle">
+							Certified carbon block for everyday confidence
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span
+									>NSF/ANSI 42, 401 & 372 (WQA) — taste, emerging contaminants,
+									lead-free</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Targets PFAS, chlorine byproducts, VOCs, and more</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Designed for 12 months of consistent performance</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Start with strong, broad reduction and clean taste that lasts.
+							Compatible with most gravity systems.
+						</p>
+						<div class="badges">
+							<span class="badge">PFAS Focus</span
+							><span class="badge">Great Taste</span
+							><span class="badge">Low Waste</span>
+						</div>
+						<div class="price">$160</div>
+						<a class="cta" href="#">Add Foundation™</a>
+					</article>
+
+					<!-- 3 -->
+					<article class="product">
+						<span class="ribbon">Fluoride Safe</span>
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
+							alt="BOROUX Proactive Fluoride Filters"
+						/>
+						<h3 class="title">Proactive™ Fluoride Filters</h3>
+						<div class="subtitle">Alumina-free, ceramic-carbon design</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Purpose-built for fluoride reduction without aluminum
+									media</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Pairs under Foundation™ for a clean, balanced finish</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Simple add-on install; replace annually</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Protect what matters most with a safer approach to fluoride
+							reduction — engineered for modern water.
+						</p>
+						<div class="badges">
+							<span class="badge">Alumina-Free</span
+							><span class="badge">Balanced Taste</span>
+						</div>
+						<div class="price">$139</div>
+						<a class="cta" href="#">Add Fluoride Filters</a>
+					</article>
+
+					<!-- 4 -->
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/legacy_system.webp"
+							alt="BOROUX Legacy Stainless System"
+						/>
+						<h3 class="title">Legacy™ Stainless System</h3>
+						<div class="subtitle">
+							304 stainless housing + Foundation™ filtration
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>Durable, kitchen-grade steel with timeless look</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Large capacity + effortless daily operation</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Built for years of reliable service</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Make it the centerpiece of clean living — performance,
+							craftsmanship, and easy maintenance in one.
+						</p>
+						<div class="badges">
+							<span class="badge">304 Steel</span
+							><span class="badge">Family-Ready</span>
+						</div>
+						<div class="price">from $349</div>
+						<a class="cta" href="#">Shop Legacy</a>
+					</article>
+
+					<!-- 5 -->
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Shower_head_17.webp"
+							alt="BOROUX Shower Filter"
+						/>
+						<h3 class="title">Shower Filter System</h3>
+						<div class="subtitle">
+							Up to 98% chlorine reduction — softer skin & hair
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>High-grade copper-zinc + calcium sulfite media</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Quick, tool-free install; chrome finish</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Feel the difference from the first rinse</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Turn everyday showers into a clean, gentle reset. Great for
+							sensitive skin and treated city water.
+						</p>
+						<div class="badges">
+							<span class="badge">Chlorine ↓</span
+							><span class="badge">Fast Install</span>
+						</div>
+						<div class="price">$60</div>
+						<a class="cta" href="#">Shop Shower Filter</a>
+					</article>
+
+					<!-- 6 -->
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/spigot.webp"
+							alt="BOROUX Stainless Spigot"
+						/>
+						<h3 class="title">Original Stainless Spigot</h3>
+						<div class="subtitle">No-drip, all-metal, food-grade build</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Solid stainless + ceramic seal — zero plastic contact</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Smooth lever action; installs in minutes</span>
+							</li>
+							<li>
+								<span class="tick">✓</span><span>Perfect pour, every time</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Finish your setup with the spigot that matches your standards —
+							durable, precise, and beautiful.
+						</p>
+						<div class="badges">
+							<span class="badge">Food-Grade</span
+							><span class="badge">Drip-Free</span>
+						</div>
+						<div class="price">$39</div>
+						<a class="cta" href="#">Add Spigot</a>
+					</article>
+				</div>
+
+				<div class="trust" role="note" aria-label="Assurance badges">
+					<span><i class="dot"></i> Made in USA (filters)</span>
+					<span><i class="dot"></i> WQA-Referenced Standards</span>
+					<span><i class="dot"></i> Fits Most Gravity Housings</span>
+					<span><i class="dot"></i> 12-Month Replacement Rhythm</span>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
