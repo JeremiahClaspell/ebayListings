@@ -229,14 +229,15 @@
 					background: #fff;
 				}
 				.hero-split {
-					display: flex;
-					flex-wrap: wrap;
-					gap: 0.5rem;
-					margin-top: 0.5rem;
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 0.75rem;
+					margin-top: 0.75rem;
 				}
 				.hero-split .img {
-					flex: 1 1 49%;
-					max-height: 320px;
+					height: auto;
+					max-height: 300px;
+					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 				}
 				.bx-hero-section .points {
 					display: grid;
@@ -254,27 +255,6 @@
 					border-bottom: 2px solid #4bb7ff;
 					padding-bottom: 0.6rem;
 				}
-				.hero-split {
-					display: flex;
-					flex-wrap: wrap;
-					gap: 0.75rem;
-					justify-content: center;
-					align-items: center;
-					margin-top: 0.75rem;
-				}
-
-				.hero-split .img {
-					flex: 1 1 calc(50% - 0.75rem);
-					max-width: calc(50% - 0.75rem);
-					height: auto;
-					object-fit: contain;
-					border-radius: var(--radius);
-					background: #fff;
-					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-				}
-
-				/* Stack on mobile */
-
 				@media (max-width: 859px) {
 					.bx-hero-section .wrap {
 						padding: 0 0.1rem;
@@ -291,11 +271,9 @@
 					.bx-hero-section .img {
 						max-height: 480px;
 					}
-					.hero-split .img {
-						max-width: 100%;
-						flex: 1 1 100%;
+					.hero-split {
+						grid-template-columns: 1fr;
 					}
-
 					.hero-split .img {
 						max-height: 240px;
 					}
@@ -309,127 +287,129 @@
 				<div class="grid">
 					<!-- Image Card -->
 					<div class="card">
-						<!-- LCP image -->
+						<!-- Hero / system image -->
 						<img
 							class="img"
 							loading="eager"
 							fetchpriority="high"
 							decoding="async"
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
-							alt="BOROUX Legacy or Compact stainless system with dual-stage Foundation and Proactive filters"
+							alt="BOROUX stainless gravity system bundled with Foundation, Proactive, and Water View Spigot"
 						/>
-						<img
-							class="img"
-							loading="lazy"
-							decoding="async"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481909053_671520315231765_7645254753795905352_n.webp"
-							alt="Foundation™ Filter pair for broad contaminant reduction"
-						/>
-						<img
-							class="img"
-							loading="lazy"
-							decoding="async"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
-							alt="Proactive™ Fluoride Filters — alumina-free second stage"
-						/>
+						<div class="hero-split">
+							<!-- Foundation filters -->
+							<img
+								class="img"
+								loading="lazy"
+								decoding="async"
+								src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481909053_671520315231765_7645254753795905352_n.webp"
+								alt="Foundation™ Filter pair for broad contaminant reduction"
+							/>
+							<!-- Proactive fluoride filters -->
+							<img
+								class="img"
+								loading="lazy"
+								decoding="async"
+								src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
+								alt="Proactive™ Fluoride Filters — alumina-free second stage"
+							/>
+							<!-- Water View Spigot (replace URL if you have a dedicated image) -->
+							<img
+								class="img"
+								loading="lazy"
+								decoding="async"
+								src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/sight-glass-water-view-spigot.webp"
+								alt="BOROUX Water View Spigot with built-in level indicator"
+								onerror="this.style.display='none'"
+							/>
+							<!-- Housing detail or lifestyle (fallback) -->
+							<img
+								class="img"
+								loading="lazy"
+								decoding="async"
+								src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/s-l1600%20(3).webp"
+								alt="Stainless housing detail and finish"
+							/>
+						</div>
 					</div>
 
 					<!-- Text Card -->
 					<div class="card pad">
 						<div class="points">
 							<div>
-								<h3>THE COMPLETE BOROUX SYSTEM 💧🛡️</h3>
+								<h3>
+									TRIPLE BUNDLE: FOUNDATION™ + PROACTIVE™ + WATER VIEW 💧🛡️
+								</h3>
 								<p>
-									Choose <strong>Legacy</strong> or
-									<strong>Compact</strong> stainless housing, then pair
-									<strong>Foundation™</strong> (PFAS, heavy metals,
-									pharmaceuticals, VOCs, pesticides) with
-									<strong>Proactive™</strong> for dedicated
-									<strong>fluoride reduction</strong>. A unified, at-home answer
-									for modern tap water.
+									Broad-spectrum reduction from
+									<strong>Foundation™</strong> (PFAS, heavy metals, VOCs,
+									pesticides, pharmaceuticals) plus dedicated
+									<strong>fluoride reduction</strong> from
+									<strong>Proactive™</strong> — finished with the
+									<strong>Water View Spigot</strong>
+									so you always know when to refill.
 								</p>
 							</div>
 
 							<div>
-								<h3>DUAL-STAGE: PFAS + FLUORIDE, COVERED ✅</h3>
+								<h3>SEE YOUR WATER LEVEL AT A GLANCE 👀</h3>
 								<p>
-									Foundation™ targets broad real-world contaminants; Proactive™
-									focuses on fluoride. Together they deliver clean, balanced
-									water without the chemical aftertaste.
+									The Water View Spigot’s integrated sight-glass prevents dry
+									starts, keeps flow steady, and helps you plan top-offs before
+									guests, meals, or workouts.
 								</p>
 							</div>
 
 							<div>
-								<h3>ENGINEERED HOUSING, LIFETIME CONFIDENCE 🥇</h3>
+								<h3>ALUMINA-FREE FLUORIDE FILTRATION 🌿</h3>
 								<p>
-									Food-grade <strong>304 stainless</strong> chambers, lid, and
-									hardware, plus a
-									<strong>ceramic-core, metal-only spigot</strong> for a smooth,
-									drip-free pour. Built to
-									<strong>endure a lifetime</strong> and backed by a
-									<strong>Lifetime Warranty</strong> on the housing.
+									<strong>Proactive™</strong> avoids aluminum-based media and
+									bone char. Its proprietary non-toxic composite binds fluoride
+									effectively — no metallic aftertaste.
 								</p>
 							</div>
 
 							<div>
-								<h3>FITS YOUR LIFE, NOT JUST YOUR COUNTER 🧩</h3>
+								<h3>YEAR-ROUND PERFORMANCE, SIMPLE UPKEEP 📆</h3>
 								<p>
-									Legacy for maximum capacity; Compact for smaller spaces and
-									travel. Both accept standard black-element threads and install
-									in minutes—no tools required.
+									Replace on an <strong>annual rhythm</strong> for verified
+									reduction levels and consistent flow. Clear level monitoring
+									makes maintenance effortless.
 								</p>
 							</div>
 
 							<div>
-								<h3>CONSISTENT, YEAR-ROUND PERFORMANCE 📆</h3>
+								<h3>BUILT FOR THE LONG HAUL 🥇</h3>
 								<p>
-									Replace filters on a simple annual rhythm to stay within
-									verified reduction levels. Steady flow, steady protection, no
-									guesswork.
+									Food-grade <strong>304 stainless</strong> housing and a
+									metal-only, ceramic-core valve deliver a clean taste and a
+									drip-free pour — engineered for everyday use.
 								</p>
 							</div>
+
 							<div>
 								<h3>INDEPENDENTLY VERIFIED QUALITY 🧪</h3>
 								<p>
-									Certified to <strong>NSF/ANSI 42</strong>,
-									<strong>401</strong>, and <strong>372</strong> standards for
-									chlorine, emerging contaminants, and lead-free safety —
-									standards many look up to, but few actually meet.
+									Foundation™ is certified to <strong>NSF/ANSI 42</strong>,
+									<strong>401</strong>, and <strong>372</strong> standards.
+									Real-world results across the contaminants you actually care
+									about.
 								</p>
 							</div>
+
 							<div>
-								<h3>DESIGNED TO LOOK AS GOOD AS IT WORKS ✨</h3>
+								<h3>FITS YOUR SETUP 🧩</h3>
 								<p>
-									Brushed stainless finish, clean lines, tight tolerances, and
-									cohesive accessories (stand, Water View Spigot) make it a
-									permanent part of your kitchen—not a gadget.
-								</p>
-							</div>
-							<div>
-								<h3>THE NEXT GENERATION OF FLUORIDE FILTRATION 💧</h3>
-								<p>
-									The BOROUX Proactive™ Filters were created to solve what
-									others couldn’t — removing fluoride without using
-									aluminum-based media. Clean water, reimagined for modern
-									families who expect better.
-								</p>
-							</div>
-							<div>
-								<h3>ALUMINA-FREE BY DESIGN 🌿</h3>
-								<p>
-									Unlike traditional fluoride filters that rely on activated
-									alumina or bone char, Proactive™ uses a proprietary non-toxic
-									composite that binds fluoride safely and effectively — no
-									metal residues, no aftertaste, no compromise.
+									Standard black-element threads for fast installation. Works
+									seamlessly with BOROUX housings and accessories.
 								</p>
 							</div>
 
 							<div>
 								<h3>BACKED BY THE BOROUX PROMISE 💬</h3>
 								<p>
-									Try it for 60 days, risk-free. If it doesn’t transform the way
-									your water feels, tastes, and supports your home — send it
-									back for a full refund. No questions, just confidence.
+									Try it for 60 days. If it doesn’t elevate your water and your
+									routine, send it back for a full refund.
 								</p>
 							</div>
 						</div>
@@ -991,8 +971,25 @@
 					margin-top: 0.75rem;
 					font-weight: 600;
 				}
+				.bx-design-section .inthebox {
+					margin-top: 1rem;
+					background: #fff;
+					border-radius: 10px;
+					padding: 1rem;
+					border: 1px solid #e7eef6;
+				}
+				.bx-design-section .inthebox h3 {
+					margin: 0 0 0.4rem;
+					color: #0e3555;
+					font-size: 1.02rem;
+				}
+				.bx-design-section .inthebox ul {
+					margin: 0;
+					padding-left: 1.05rem;
+					line-height: 1.55;
+				}
 
-				/* Mobile tweaks to match your reference */
+				/* Mobile */
 				@media (max-width: 760px) {
 					.bx-design-section .wrap {
 						padding: 0;
@@ -1016,7 +1013,8 @@
 
 			<div class="wrap">
 				<h2 id="design-title">
-					Legacy & Compact: Design, Craftsmanship & Materials
+					BOROUX Stainless System + Water View Spigot: Design, Materials &
+					In-Box
 				</h2>
 
 				<div class="panel">
@@ -1025,7 +1023,7 @@
 							class="img"
 							loading="lazy"
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481941305_671527778564352_4932945213936566000_n.webp"
-							alt="BOROUX Legacy & Compact stainless gravity systems—detail of lid, handles, and spigot"
+							alt="BOROUX stainless gravity system with Water View Spigot—detail of lid, handles, and spigot"
 							style="object-fit: scale-down"
 						/>
 					</div>
@@ -1038,44 +1036,47 @@
 									<h3>Food-Grade 304 Stainless, Inside & Out</h3>
 									<p>
 										Chambers, lid, and hardware use corrosion-resistant
-										<strong>304 stainless steel</strong> for a clean, neutral
-										taste and exceptional durability. Engineered to
-										<strong>endure a lifetime</strong>, every housing is backed
-										by a <strong>Lifetime Warranty</strong> against leaks, rust,
-										or corrosion — a testament to its uncompromising build
-										quality.
+										<strong>304 stainless steel</strong> for neutral taste and
+										daily-use durability. Built to
+										<strong>last a lifetime</strong>, with a brushed finish that
+										looks great on any counter.
+									</p>
+								</div>
+
+								<div class="item">
+									<h3>Water View Spigot (Sight-Glass)</h3>
+									<p>
+										Integrated level window means no guessing. Prevents dry
+										starts, helps plan top-offs, and reduces sediment
+										disturbance. Tight, drip-free shutoff with ceramic valve
+										control.
+									</p>
+								</div>
+
+								<div class="item">
+									<h3>Metal-Only, Ceramic-Core Valve</h3>
+									<p>
+										Stainless body, nut, and washers pair with a
+										precision-lapped ceramic disc for a smooth, consistent
+										pour—<em>no plastic in the water path</em>.
 									</p>
 								</div>
 
 								<div class="item">
 									<h3>Clean Lines, Tight Tolerances</h3>
 									<p>
-										Crisp cylindrical form, smooth rolled edges, and consistent
-										seams give a quietly premium silhouette built for daily use.
-									</p>
-								</div>
-
-								<div class="item">
-									<h3>Ceramic-Core, Metal-Only Spigot</h3>
-									<p>
-										The no-plastic water path pairs a stainless body with a
-										precision-lapped ceramic valve for a smooth, drip-free pour.
-									</p>
-								</div>
-
-								<div class="item">
-									<h3>Balanced Handling</h3>
-									<p>
-										Low center of gravity with stable base geometry; optional
-										stand and Water View Spigot integrate cleanly without fuss.
+										Rolled edges and consistent seams create a quietly premium
+										silhouette. Optional stand and accessories align neatly for
+										a cohesive look.
 									</p>
 								</div>
 
 								<div class="item">
 									<h3>Serviceable by Design</h3>
 									<p>
-										Fast disassembly for rinsing; durable surfaces wipe clean
-										without special polishes or coatings.
+										Quick disassembly for rinsing; durable surfaces wipe clean
+										without special polishes. Sight-glass tube removes easily
+										for periodic cleaning.
 									</p>
 								</div>
 							</div>
@@ -1094,23 +1095,40 @@
 								<li>
 									<strong>Valve Core:</strong> Ceramic disc (precision on/off)
 								</li>
+								<li><strong>Sight-Glass Tube:</strong> Borosilicate glass</li>
+								<li><strong>End Caps/Collars:</strong> 304 stainless steel</li>
 								<li><strong>Seals/Gaskets:</strong> Food-contact elastomers</li>
-								<li>
-									<strong>Finish:</strong> Brushed stainless for a cohesive look
-								</li>
+								<li><strong>Finish:</strong> Brushed stainless</li>
 							</ul>
 
 							<h3 style="margin-top: 0.9rem">Thoughtful Details</h3>
 							<ul>
-								<li>Smooth pour with excellent shutoff control</li>
-								<li>Comfortable lid pull and easy lift points</li>
-								<li>Tidy alignment of accessories (stand, sight-glass)</li>
+								<li>Level indicator readable at a glance</li>
+								<li>Smooth, controlled flow with positive shutoff</li>
+								<li>Easy access for cleaning and periodic maintenance</li>
 							</ul>
 
 							<div class="summary">
-								From lid to spigot, Legacy & Compact emphasize precision,
-								durability, and taste neutrality—purpose-built stainless where
-								it matters, ceramic where it counts.
+								Stainless where it matters, ceramic where it counts, and a clear
+								view of your water level—engineered for everyday confidence.
+							</div>
+
+							<!-- In the Box -->
+							<div class="inthebox">
+								<h3>In the Box (Typical Bundle)</h3>
+								<ul>
+									<li>Upper & lower 304 stainless chambers + stainless lid</li>
+									<li>
+										BOROUX <strong>Water View Spigot</strong> (spigot,
+										sight-glass tube, end caps, seals)
+									</li>
+									<li>Base gasket & mounting hardware</li>
+									<li>Setup/cleaning guide</li>
+								</ul>
+								<p class="muted">
+									Contents may vary by configuration (e.g., with/without filters
+									or stand). See listing options for exact inclusions.
+								</p>
 							</div>
 						</aside>
 					</div>

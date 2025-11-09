@@ -220,8 +220,8 @@
 				}
 				.bx-hero-section .img {
 					border-radius: var(--radius);
-					object-fit: scale-down;
-					object-position: center left;
+					object-fit: contain;
+					object-position: center;
 					display: block;
 					width: 100%;
 					height: 100%;
@@ -244,7 +244,6 @@
 					border-bottom: 2px solid #4bb7ff;
 					padding-bottom: 0.6rem;
 				}
-
 				@media (max-width: 859px) {
 					.bx-hero-section .wrap {
 						padding: 0 0.1rem;
@@ -274,8 +273,14 @@
 						<img
 							class="img"
 							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481909053_671520315231765_7645254753795905352_n.webp"
-							alt="BOROUX Foundation Filter lifestyle image"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/boroux-dual-set.webp"
+							alt="BOROUX Foundation and Proactive dual-stage filter set"
+						/>
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
+							alt="BOROUX Proactive fluoride filters"
 						/>
 					</div>
 
@@ -283,57 +288,70 @@
 					<div class="card pad">
 						<div class="points">
 							<div>
-								<h3>BETTER WATER STARTS HERE 💧</h3>
+								<h3>DUAL-STAGE PURITY — FOUNDATION™ + PROACTIVE™ 💧</h3>
 								<p>
-									The BOROUX Foundation™ Filter was created for families who
-									want more than “good enough.” Every drop is fresh, clean, and
-									free from the chemical aftertaste so common in tap and
-									competitor systems.
+									Together, they deliver the most complete gravity filtration
+									system in the BOROUX lineup —
+									<strong>Foundation™</strong> removes the toughest real-world
+									contaminants, and <strong>Proactive™</strong> targets fluoride
+									with a modern, alumina-free design.
 								</p>
 							</div>
 
 							<div>
-								<h3>REMOVES WHAT OTHERS MISS 🛡️</h3>
+								<h3>FOUNDATION™ — THE BROAD DEFENSE 🛡️</h3>
 								<p>
 									Independently tested to reduce PFAS (“forever chemicals”),
-									heavy metals, pharmaceuticals, and disinfectant byproducts —
-									the real-world pollutants most filters leave behind.
+									heavy metals, VOCs, pesticides, pharmaceuticals, and
+									chlorine/chloramine taste. Certified to
+									<strong>NSF/ANSI 42</strong>, <strong>401</strong>, and
+									<strong>372</strong> standards.
 								</p>
 							</div>
 
 							<div>
-								<h3>LONG-LASTING, CONSISTENT PROTECTION ✅</h3>
+								<h3>PROACTIVE™ — THE FLUORIDE SPECIALIST 🌿</h3>
 								<p>
-									Up to 12 months of proven performance per set — steady flow,
-									trusted results, and no guessing when it’s time to change.
+									Removes fluoride without aluminum-based media. Uses a
+									proprietary composite that safely binds fluoride while keeping
+									water clean, neutral, and refreshing — no metallic aftertaste,
+									no bone char.
 								</p>
 							</div>
 
 							<div>
-								<h3>EFFORTLESS COMPATIBILITY 🧩</h3>
+								<h3>ONE SYSTEM, COMPLETE COVERAGE 🧩</h3>
 								<p>
-									Fits BOROUX, Berkey, Alexapure, ProOne, Doulton, and other
-									leading gravity systems using standard black-element threads.
-									Installs in minutes — no tools, no adapters, no frustration.
+									Combine both for dual-stage performance: Foundation™ handles
+									the broad spectrum, Proactive™ finishes the job. Works with
+									all BOROUX gravity housings and most Berkey-style systems.
 								</p>
 							</div>
 
 							<div>
-								<h3>INDEPENDENTLY VERIFIED QUALITY 🧪</h3>
+								<h3>12 MONTHS OF PEAK PERFORMANCE 📆</h3>
 								<p>
-									Certified to <strong>NSF/ANSI 42</strong>,
-									<strong>401</strong>, and <strong>372</strong> standards for
-									chlorine, emerging contaminants, and lead-free safety —
-									standards many look up to, but few actually meet.
+									Replace annually for consistent results and verified reduction
+									levels. Together, they maintain flow, flavor, and peace of
+									mind — all year long.
+								</p>
+							</div>
+
+							<div>
+								<h3>EFFORTLESS INSTALLATION 🔧</h3>
+								<p>
+									Fits BOROUX, Berkey, Alexapure, ProOne, and similar gravity
+									systems using standard threaded mounts. Installs in minutes —
+									no tools or adapters required.
 								</p>
 							</div>
 
 							<div>
 								<h3>BACKED BY THE BOROUX PROMISE 💬</h3>
 								<p>
-									Try it for 60 days, risk-free. If it doesn’t transform the way
-									your water feels, tastes, and supports your home — send it
-									back for a full refund. No questions, just confidence.
+									Try the dual-stage set for 60 days. If it doesn’t transform
+									your water and confidence, return it for a full refund. No
+									hassle, no fine print — just better water.
 								</p>
 							</div>
 						</div>
@@ -791,25 +809,21 @@
 					--radius: 12px;
 					font-family: 'Josefin Sans', sans-serif;
 				}
-
 				.bx-compare-section .wrap {
 					width: min(1100px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 				}
-
 				.bx-compare-section h2 {
 					text-align: center;
 					color: var(--accent);
 					margin: 2rem 0 0.5rem;
 				}
-
 				.bx-compare-section .lead {
 					text-align: center;
 					color: var(--muted);
 					margin: 0 0 1rem;
 				}
-
 				.bx-compare-section .legend {
 					display: flex;
 					flex-wrap: wrap;
@@ -819,7 +833,6 @@
 					font-size: 0.92rem;
 					margin-bottom: 0.75rem;
 				}
-
 				.bx-compare-section .dot {
 					display: inline-block;
 					width: 0.65rem;
@@ -928,160 +941,190 @@
 			</style>
 
 			<div class="wrap">
-				<h2 id="compare-title">
-					Real-World Comparison: Cost, Waste & Proven Effectiveness
-				</h2>
+				<h2 id="compare-title">Dual-Stage Combos: How BOROUX Stacks Up</h2>
 				<p class="lead">
-					Big “gallon” claims are usually for chlorine. This focuses on PFAS,
-					heavy metals, pesticides, VOCs, and more.
+					Comparing real-world coverage, cost over time, and yearly waste across
+					popular gravity + fluoride setups and common alternatives.
 				</p>
+
 				<div class="legend">
 					<span><i class="dot ok"></i>strong</span>
 					<span><i class="dot warn"></i>mixed/limited</span>
 					<span><i class="dot bad"></i>weak/untested</span>
 				</div>
 
-				<!-- TABLE ONLY (scrolls horizontally on small screens) -->
 				<div class="table-wrap">
 					<table class="table" role="table" aria-describedby="compare-title">
 						<thead>
 							<tr>
 								<th>System</th>
+								<th>Coverage Focus</th>
 								<th>Effective Protection Window*</th>
-								<th>Test Depth & Volume**</th>
-								<th>Approx. Cost / Gallon</th>
+								<th>Approx. Cost / Year</th>
 								<th>Plastic Waste / Year</th>
 								<th>What This Means</th>
 							</tr>
 						</thead>
 						<tbody>
+							<!-- BOROUX -->
 							<tr>
 								<td>
-									<strong>BOROUX Foundation (Gravity)</strong><br />
-									<span class="pill">independently tested</span>
-								</td>
-								<td>
-									PFAS & complex contaminants: <strong>~400–800 gal</strong> per
-									set (2 filters).<br />
-									Chlorine/chloramine: <strong>~4,000–12,000 gal</strong> class
-									performance.
-									<div class="meter">
+									<strong>BOROUX Foundation™ + Proactive™</strong><br />
+									<span class="pill">dual-stage (broad + fluoride)</span>
+									<div class="meter" aria-label="coverage">
 										<span class="on"></span><span class="on"></span
 										><span class="on"></span><span class="on"></span
 										><span class="on"></span>
 									</div>
 								</td>
 								<td>
-									Broad panel (PFAS, heavy metals, pesticides, VOCs, pharma)
-									with volume endurance.
+									PFAS, heavy metals, VOCs/pesticides, pharma,
+									chlorine/chloramine
+									<em>plus</em> targeted fluoride (alumina-free).
+									<div><i class="dot ok"></i> broad + targeted</div>
+								</td>
+								<td>
+									Plan on an <strong>annual</strong> cadence for both stages
+									under typical municipal water and household use.
+								</td>
+								<td>
+									Use your listed price for the set; many homes see competitive
+									total cost vs. pitchers/bottled over 12 months.
+								</td>
+								<td>
+									Low (long-life elements; no disposable bottles).
 									<span class="dot ok"></span>
 								</td>
 								<td>
-									<em>Example:</em> $160 ÷ ~800 gal → <strong>$0.20/gal</strong>
-								</td>
-								<td>
-									Low: two long-life elements/yr (or less), no bottles.
-									<span class="dot ok"></span>
-								</td>
-								<td>
-									Wide coverage + transparent volumes per contaminant; plan
-									replacements honestly.
+									One setup covers everyday contaminants and fluoride together;
+									simple schedule, consistent taste and flow.
 								</td>
 							</tr>
 
+							<!-- Berkey BF2 + PF2 (generic description, non-comparative) -->
 							<tr>
-								<td><strong>Berkey-style Gravity</strong></td>
 								<td>
-									Good on chlorine/particulates; mixed transparency on
-									PFAS/complex organics.
+									<strong>Berkey® Black Elements (BF) + PF-2®</strong><br />
+									<span class="pill">dual-stage (brand combo)</span>
 									<div class="meter">
 										<span class="on"></span><span class="on"></span
-										><span class="on"></span><span></span><span></span>
+										><span class="on"></span><span class="on"></span
+										><span></span>
 									</div>
 								</td>
 								<td>
-									Large totals often for taste/odor; complex contaminants
-									sometimes small-volume tests.
-									<span class="dot warn"></span>
+									Taste/odor, particulates, selected metals/organics; fluoride
+									via add-on stage (media varies by revision).
+									<div>
+										<i class="dot warn"></i> details vary by documentation
+									</div>
 								</td>
-								<td>Use lowest verified PFAS/metal figure, not chlorine.</td>
-								<td>Low. <span class="dot ok"></span></td>
 								<td>
-									Solid taste/odor control; verify lab volumes by contaminant.
+									Replace stages per brand guidance; fluoride stage life can
+									differ from the primary elements.
+								</td>
+								<td>
+									Yearly total depends on separate replacement cycles for BF and
+									PF-2.
+								</td>
+								<td>
+									Low–moderate (few long-life elements).
+									<span class="dot ok"></span>
+								</td>
+								<td>
+									Widely used combo; verify current specs and schedules for your
+									household volume and water chemistry.
 								</td>
 							</tr>
 
+							<!-- Generic Amazon gravity + fluoride add-on -->
 							<tr>
 								<td>
-									<strong>Generic Online Gravity Filters</strong>
-								</td>
-								<td>
-									Claims vary; PFAS/industrial performance depends on model;
-									endurance often only for chlorine.
+									<strong>Generic Gravity + Fluoride Add-On</strong><br />
+									<span class="pill">varies by brand</span>
 									<div class="meter">
 										<span class="on"></span><span class="on"></span><span></span
 										><span></span><span></span>
 									</div>
 								</td>
 								<td>
-									Some third-party tests; many rely on small challenges for
-									complex contaminants.
+									Often chlorine/odor + some metals; fluoride handled by
+									activated alumina or bone-char cartridges.
+									<div><i class="dot warn"></i> mixed breadth</div>
+								</td>
+								<td>
+									Shorter practical windows for complex contaminants are common;
+									fluoride add-on may need more frequent changes.
+								</td>
+								<td>
+									Appealing upfront price; can trend higher over a year with
+									multiple cartridge swaps.
+								</td>
+								<td>
+									Low–moderate (more frequent cartridges).
 									<span class="dot warn"></span>
 								</td>
 								<td>
-									Use verified PFAS/metal gallons; assume shorter than chlorine
-									if none provided.
-								</td>
-								<td>
-									Low–moderate (depends on frequency).
-									<span class="dot warn"></span>
-								</td>
-								<td>
-									Budget option; confirm breadth + endurance before relying on
-									big gallon claims.
+									Budget route; check third-party test depth and gallon volumes
+									by contaminant before relying on claims.
 								</td>
 							</tr>
 
+							<!-- Premium pitcher with fluoride cartridge -->
 							<tr>
-								<td><strong>Leading Water Pitcher</strong></td>
 								<td>
-									Primarily taste/odor + some metals; limited PFAS/complex
-									organics; short life (weeks).
+									<strong>Premium Pitcher + Fluoride Cartridge</strong><br />
+									<span class="pill">convenience</span>
 									<div class="meter">
 										<span class="on"></span><span></span><span></span
 										><span></span><span></span>
 									</div>
 								</td>
 								<td>
-									Narrow panels; small cartridges → shorter verified life.
+									Primarily taste/odor; selective metals and limited organics;
+									fluoride available on some models.
+									<div><i class="dot warn"></i> narrow panel</div>
+								</td>
+								<td>
+									Weeks to a few months per cartridge; frequent swaps to
+									maintain taste/flow.
+								</td>
+								<td>
+									Often higher over 12 months due to recurring cartridges.
+								</td>
+								<td>
+									Moderate–high (many small cartridges).
 									<span class="dot warn"></span>
 								</td>
-								<td>Frequent swaps → higher $/gal over a year.</td>
-								<td>Moderate–high. <span class="dot warn"></span></td>
 								<td>
-									Convenient & cheap up front; expect frequent changes +
-									narrower protection.
+									Easy and compact; best for light use and taste, not broad
+									contaminant coverage.
 								</td>
 							</tr>
 
+							<!-- Bottled water -->
 							<tr>
-								<td><strong>Bottled Water</strong></td>
 								<td>
-									Not a filter; no at-home removal.
+									<strong>Bottled Water</strong><br />
+									<span class="pill">not a filter</span>
 									<div class="meter">
 										<span></span><span></span><span></span><span></span
 										><span></span>
 									</div>
 								</td>
 								<td>
-									Regulated as a food product, not a home filtration system.
+									No at-home removal; composition varies by source and brand.
+									<div><i class="dot bad"></i> no filtration</div>
+								</td>
+								<td>N/A (no protection window).</td>
+								<td>Typically highest for daily household needs.</td>
+								<td>
+									Very high (single-use plastic).
 									<span class="dot bad"></span>
 								</td>
-								<td>Typically highest.</td>
-								<td>Very high (single-use). <span class="dot bad"></span></td>
 								<td>
-									Convenient, but costly & waste-heavy; doesn’t address tap
-									contaminants.
+									Convenient in a pinch, but costly and waste-heavy for ongoing
+									drinking and cooking.
 								</td>
 							</tr>
 						</tbody>
@@ -1090,11 +1133,12 @@
 
 				<div class="foot">
 					<strong>How to read this:</strong>
-					* Effective Protection Window = practical gallons for demanding
-					contaminants (PFAS, heavy metals, pesticides, VOCs) — not just
-					chlorine. ** Test Depth & Volume matters: many big “gallon” claims
-					only cover chlorine; plan using the lowest verified figure among the
-					hardest categories.
+					* “Effective Protection Window” summarizes practical replacement
+					timing for demanding categories (PFAS, metals, VOCs, pesticides)
+					rather than large totals often quoted for chlorine alone. Always
+					follow the most conservative verified guidance for your water and
+					usage. Specs and media choices can change by brand or model—confirm
+					current documentation before purchase.
 				</div>
 			</div>
 		</section>
@@ -1277,10 +1321,37 @@
 					text-align: left;
 					vertical-align: top;
 				}
-				.bx-life-section th {
+				.bx-life-section thead th {
 					color: var(--accent);
-					width: 35%;
 					font-weight: 700;
+					background: var(--bg);
+				}
+				.bx-life-section th:first-child {
+					width: 30%;
+				}
+				.bx-life-section .sys {
+					white-space: nowrap;
+					font-weight: 700;
+					color: #0e3555;
+				}
+				.bx-life-section .num {
+					white-space: nowrap;
+					font-variant-numeric: tabular-nums;
+				}
+				.bx-life-section .badge {
+					display: inline-block;
+					padding: 0.15rem 0.45rem;
+					border-radius: 999px;
+					background: var(--bg);
+					color: #0e3555;
+					font-size: 0.78rem;
+					font-weight: 700;
+					white-space: nowrap;
+				}
+				.bx-life-section .meta {
+					color: var(--muted);
+					font-size: 0.92rem;
+					margin-top: 0.35rem;
 				}
 				.bx-life-section tr:last-child td {
 					border-bottom: 0;
@@ -1291,7 +1362,6 @@
 						background: #fcfdff;
 					}
 				}
-
 				.bx-life-section .note {
 					background: var(--bg);
 					border-left: 4px solid var(--accent);
@@ -1302,19 +1372,18 @@
 					font-size: 0.92rem;
 				}
 
-				@media (max-width: 700px) {
+				@media (max-width: 760px) {
 					.bx-life-section .wrap {
 						padding: 0;
 					}
 					.bx-life-section .table-scroll {
-						margin: 0 0;
 						border-radius: 0;
 					}
 					.bx-life-section .table-scroll-inner {
 						padding: 0 16px;
 					}
 					.bx-life-section table {
-						min-width: 680px;
+						min-width: 760px;
 					}
 					.bx-life-section h2,
 					.bx-life-section .intro,
@@ -1325,130 +1394,166 @@
 			</style>
 
 			<div class="wrap">
-				<h2 id="life-title">Expected Filter Lifetime by Contaminant</h2>
+				<h2 id="life-title">
+					Expected Filter Lifetime by Contaminant (Foundation™ + Proactive™)
+				</h2>
 				<p class="intro">
-					<strong>Filter lifespan</strong> marks where reduction efficiency
-					begins to taper — not when filtration stops. Figures reflect the
-					verified volume where the Boroux Foundation™ filter still meets
-					certified reduction levels (≈ 90–95%). Replacing on schedule maintains
-					full protection.
+					Lifespan marks where reduction efficiency begins to taper — not when
+					filtration stops. Values below reflect practical, verified windows
+					under typical municipal water and daily use (≈1.5–2 gal/day). Replace
+					on schedule to keep performance in the certified range.
 				</p>
 
 				<div class="table-scroll">
 					<div class="table-scroll-inner">
-						<table>
-							<tr>
-								<th>
-									Disinfectants & Byproducts<br /><span style="font-weight: 400"
-										>Chlorine, chloramine, THMs</span
-									>
-								</th>
-								<td>
-									<strong>Verified window:</strong> 4,000–12,000 gal per
-									system<br /><strong>Typical use:</strong> ~2 gal/day
-									(≈730/yr)<br /><strong>Est. lifespan:</strong> 5–10 years
-									before chlorine breakthrough.<br /><em
-										>Efficiency begins to taper after the window; taste/odor
-										reduction usually continues well beyond.</em
-									>
-								</td>
-							</tr>
-							<tr>
-								<th>PFAS (“Forever Chemicals”)</th>
-								<td>
-									<strong>Verified window:</strong> ≈800 gal per system<br /><strong
-										>Typical use:</strong
-									>
-									1.5–2 gal/day<br /><strong>Est. lifespan:</strong> 12–15
-									months under normal municipal loads.<br /><em
-										>Window indicates where removal begins to fall from ≥95%;
-										replace at ~12 months to stay ahead of breakthrough.</em
-									>
-								</td>
-							</tr>
-							<tr>
-								<th>
-									Heavy Metals<br /><span style="font-weight: 400"
-										>Lead, mercury, chromium, uranium</span
-									>
-								</th>
-								<td>
-									<strong>Verified window:</strong> 500–1,600 gal (metal & pH
-									dependent)<br /><strong>Typical use:</strong> 1.5–2 gal/day<br /><strong
-										>Est. lifespan:</strong
-									>
-									10–14 months.<br /><em
-										>Onset of tapering, not exhaustion; reduction continues at
-										lower levels beyond the certified window.</em
-									>
-								</td>
-							</tr>
-							<tr>
-								<th>Pharmaceuticals</th>
-								<td>
-									<strong>Verified window:</strong> 400–500 gal per system<br /><strong
-										>Typical use:</strong
-									>
-									1.5–2 gal/day<br /><strong>Est. lifespan:</strong> 7–11
-									months.<br /><em
-										>Reduction softens after this period; a portion is still
-										captured.</em
-									>
-								</td>
-							</tr>
-							<tr>
-								<th>Pesticides & Herbicides</th>
-								<td>
-									<strong>Verified window:</strong> 400–700 gal<br /><strong
-										>Typical use:</strong
-									>
-									1.5–2 gal/day<br /><strong>Est. lifespan:</strong> 8–12
-									months.<br /><em
-										>Point where efficiency starts to decline from peak;
-										agricultural/organic load may shorten this.</em
-									>
-								</td>
-							</tr>
-							<tr>
-								<th>Industrial Chemicals & VOCs</th>
-								<td>
-									<strong>Verified window:</strong> 300–400 gal<br /><strong
-										>Typical use:</strong
-									>
-									1.5–2 gal/day<br /><strong>Est. lifespan:</strong> 6–9
-									months.<br /><em
-										>Adsorption sites saturate faster for VOCs; this marks
-										measurable breakthrough, not total loss.</em
-									>
-								</td>
-							</tr>
-							<tr>
-								<th>Microplastics & Sediment</th>
-								<td>
-									<strong>Verified window:</strong> Continuous for system
-									lifetime<br /><strong>Est. lifespan:</strong> Follows the
-									shortest critical contaminant (generally 12 months).<br /><em
-										>Capture (≥98.9% for 0.5–1.0 µm) remains steady; flow
-										restriction is your cue to replace.</em
-									>
-								</td>
-							</tr>
-							<tr>
-								<th>Recommended Replacement</th>
-								<td>
-									Most homes using 1.5–2 gal/day:
-									<strong>Replace every 12 months</strong> to maintain verified
-									protection. Lower-use households may extend to ~15 months.
-								</td>
-							</tr>
+						<table role="table" aria-describedby="life-title">
+							<thead>
+								<tr>
+									<th>Contaminant Category</th>
+									<th>Foundation™ (Primary Stage)</th>
+									<th>Proactive™ (Fluoride Stage)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">
+										Disinfectants &amp; Byproducts<br />
+										<span class="meta">Chlorine, chloramine, THMs</span>
+									</th>
+									<td>
+										<span class="num"
+											><strong>~4,000–12,000&nbsp;gal</strong> per system</span
+										><br />
+										<span class="meta"
+											>Est. lifespan: 5–10 years before chlorine breakthrough
+											(taste/odor often persists beyond window)</span
+										>
+									</td>
+									<td class="meta">
+										Handled by Foundation stage; Proactive not required for this
+										category.
+									</td>
+								</tr>
+
+								<tr>
+									<th scope="row">PFAS (“Forever Chemicals”)</th>
+									<td>
+										<span class="num"
+											><strong>~800&nbsp;gal</strong> per system</span
+										><br />
+										<span class="meta"
+											>Est. lifespan: ~12–15 months under normal loads</span
+										>
+									</td>
+									<td class="meta">
+										Not targeted by Proactive (fluoride-specific media).
+									</td>
+								</tr>
+
+								<tr>
+									<th scope="row">
+										Heavy Metals<br /><span class="meta"
+											>Lead, mercury, chromium, uranium</span
+										>
+									</th>
+									<td>
+										<span class="num"
+											><strong>~500–1,600&nbsp;gal</strong></span
+										>
+										(metal &amp; pH dependent)<br />
+										<span class="meta">Est. lifespan: ~10–14 months</span>
+									</td>
+									<td class="meta">
+										Not targeted by Proactive (fluoride-specific media).
+									</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Pharmaceuticals</th>
+									<td>
+										<span class="num"><strong>~400–500&nbsp;gal</strong></span
+										><br />
+										<span class="meta">Est. lifespan: ~7–11 months</span>
+									</td>
+									<td class="meta">Not targeted by Proactive.</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Pesticides &amp; Herbicides</th>
+									<td>
+										<span class="num"><strong>~400–700&nbsp;gal</strong></span
+										><br />
+										<span class="meta">Est. lifespan: ~8–12 months</span>
+									</td>
+									<td class="meta">Not targeted by Proactive.</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Industrial Chemicals &amp; VOCs</th>
+									<td>
+										<span class="num"><strong>~300–400&nbsp;gal</strong></span
+										><br />
+										<span class="meta">Est. lifespan: ~6–9 months</span>
+									</td>
+									<td class="meta">Not targeted by Proactive.</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Microplastics &amp; Sediment</th>
+									<td>
+										<span class="num"
+											><strong>Continuous</strong> (mechanical capture)</span
+										><br />
+										<span class="meta"
+											>Replace on flow cue or when the shortest critical
+											category is reached (generally ~12 months).</span
+										>
+									</td>
+									<td class="meta">Not targeted by Proactive.</td>
+								</tr>
+
+								<tr>
+									<th scope="row">
+										Fluoride (Municipal)
+										<span class="badge" title="Second stage">Proactive™</span>
+									</th>
+									<td class="meta">
+										Foundation does not reduce fluoride; add Proactive stage.
+									</td>
+									<td>
+										<span class="num"><strong>~400–600&nbsp;gal</strong></span>
+										typical municipal levels<br />
+										<span class="meta"
+											>Est. lifespan: ~9–12 months (earlier in high-fluoride
+											regions)</span
+										>
+									</td>
+								</tr>
+
+								<tr>
+									<th scope="row">Recommended Replacement</th>
+									<td>
+										<span class="sys">Foundation™</span>:
+										<strong>Every ~12 months</strong> for households using
+										~1.5–2 gal/day.
+									</td>
+									<td>
+										<span class="sys">Proactive™</span>:
+										<strong>Every ~9–12 months</strong>; align with annual
+										change or sooner if fluoride load is high.
+									</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>
 
 				<div class="note">
-					<strong>Note:</strong> Lifespan is the safety margin where performance
-					begins to taper, not a hard stop. Actual duration varies with water
-					chemistry, contaminant load, and daily use.
+					<strong>Notes:</strong> These are practical windows where verified
+					reduction begins to taper, not a hard stop. Actual life varies with
+					water chemistry, contaminant load, and daily volume. For simplicity,
+					many homes change both stages annually; in high-fluoride areas,
+					replace Proactive™ on the earlier side.
 				</div>
 			</div>
 		</section>

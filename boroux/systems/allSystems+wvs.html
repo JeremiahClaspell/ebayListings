@@ -181,7 +181,6 @@
 					--muted: #56606a;
 					--card: #fff;
 					--radius: 12px;
-					--gap: 1.5rem;
 					font-family: 'Josefin Sans', sans-serif;
 					margin-top: 20px;
 				}
@@ -220,8 +219,8 @@
 				}
 				.bx-hero-section .img {
 					border-radius: var(--radius);
-					object-fit: scale-down;
-					object-position: center left;
+					object-fit: contain;
+					object-position: center;
 					display: block;
 					width: 100%;
 					height: 100%;
@@ -244,7 +243,6 @@
 					border-bottom: 2px solid #4bb7ff;
 					padding-bottom: 0.6rem;
 				}
-
 				@media (max-width: 859px) {
 					.bx-hero-section .wrap {
 						padding: 0 0.1rem;
@@ -273,15 +271,18 @@
 					<div class="card">
 						<img
 							class="img"
-							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
-							alt="BOROUX Foundation Filter lifestyle image"
+							loading="eager"
+							fetchpriority="high"
+							decoding="async"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/stand_comparison_polish_9c979cf0-fc6a-4275-803f-0ab7552c8eb8.webp"
+							alt="BOROUX Legacy stainless unit with Water View Spigot installed"
 						/>
 						<img
 							class="img"
 							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481909053_671520315231765_7645254753795905352_n.webp"
-							alt="BOROUX Foundation Filter lifestyle image"
+							decoding="async"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/stand_comparison_polish_9c979cf0-fc6a-4275-803f-0ab7552c8eb8.webp"
+							alt="BOROUX Water View Spigot close-up showing stainless design and level indicator"
 						/>
 					</div>
 
@@ -289,57 +290,65 @@
 					<div class="card pad">
 						<div class="points">
 							<div>
-								<h3>BETTER WATER STARTS HERE 💧</h3>
+								<h3>THE COMPLETE BOROUX EXPERIENCE 💧</h3>
 								<p>
-									The BOROUX Foundation™ Filter was created for families who
-									want more than “good enough.” Every drop is fresh, clean, and
-									free from the chemical aftertaste so common in tap and
-									competitor systems.
+									Elevate your stainless BOROUX system with the
+									<strong>Water View Spigot</strong> — combining clarity, style,
+									and precision engineering for effortless use and timeless
+									design.
 								</p>
 							</div>
 
 							<div>
-								<h3>REMOVES WHAT OTHERS MISS 🛡️</h3>
+								<h3>SEE YOUR WATER LEVEL AT A GLANCE 👁️</h3>
 								<p>
-									Independently tested to reduce PFAS (“forever chemicals”),
-									heavy metals, pharmaceuticals, and disinfectant byproducts —
-									the real-world pollutants most filters leave behind.
+									The integrated glass sight-tube reveals your remaining water
+									instantly — no need to lift the upper chamber or guess when
+									it’s time to refill.
 								</p>
 							</div>
 
 							<div>
-								<h3>LONG-LASTING, CONSISTENT PROTECTION ✅</h3>
+								<h3>ALL-METAL, CERAMIC-SEALED CONSTRUCTION 🥇</h3>
 								<p>
-									Up to 12 months of proven performance per set — steady flow,
-									trusted results, and no guessing when it’s time to change.
+									Machined from solid stainless steel with a polished finish,
+									non-plastic valve internals, and a
+									<strong>ceramic disc seal</strong>
+									for smooth, drip-free operation and unmatched durability.
 								</p>
 							</div>
 
 							<div>
-								<h3>EFFORTLESS COMPATIBILITY 🧩</h3>
+								<h3>PRECISION FLOW CONTROL 🚿</h3>
 								<p>
-									Fits BOROUX, Berkey, Alexapure, ProOne, Doulton, and other
-									leading gravity systems using standard black-element threads.
-									Installs in minutes — no tools, no adapters, no frustration.
+									Designed for steady, consistent pouring — ideal for filling
+									cups, bottles, or cookware without splashing or sudden surges.
 								</p>
 							</div>
 
 							<div>
-								<h3>INDEPENDENTLY VERIFIED QUALITY 🧪</h3>
+								<h3>EFFORTLESS INSTALLATION 🔧</h3>
 								<p>
-									Certified to <strong>NSF/ANSI 42</strong>,
-									<strong>401</strong>, and <strong>372</strong>
-									standards for chlorine, emerging contaminants, and lead-free
-									safety — standards many look up to, but few actually meet.
+									Replaces your existing spigot in minutes using the included
+									washers and fittings. No special tools or permanent
+									modification required.
 								</p>
 							</div>
 
 							<div>
-								<h3>BACKED BY THE BOROUX PROMISE 💬</h3>
+								<h3>BUILT FOR BOROUX SYSTEMS 🧩</h3>
 								<p>
-									Try it for 60 days, risk-free. If it doesn’t transform the way
-									your water feels, tastes, and supports your home — send it
-									back for a full refund. No questions, just confidence.
+									Perfect match for BOROUX Legacy™ and Compact™ stainless units.
+									Compatible with most gravity-fed systems using standard spigot
+									ports.
+								</p>
+							</div>
+
+							<div>
+								<h3>CRAFTED TO LAST A LIFETIME 💬</h3>
+								<p>
+									Designed, engineered, and tested in the USA. Backed by the
+									BOROUX Lifetime Warranty and 60-day satisfaction guarantee.
 								</p>
 							</div>
 						</div>
@@ -785,6 +794,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- 3) DESIGN & CRAFTSMANSHIP (with panel background) -->
 		<section class="bx-design-section" aria-labelledby="design-title">
 			<style>
@@ -827,7 +837,7 @@
 					width: 100%;
 					border-radius: 10px;
 					aspect-ratio: 16/10;
-					object-fit: cover;
+					object-fit: contain;
 					object-position: center;
 					display: block;
 				}
@@ -888,8 +898,26 @@
 					margin-top: 0.75rem;
 					font-weight: 600;
 				}
+				.bx-design-section .inthebox {
+					margin-top: 1rem;
+					border: 1px solid #e8eff6;
+					border-radius: 10px;
+					padding: 0.9rem;
+					background: #fff;
+				}
+				.bx-design-section .inthebox h3 {
+					margin: 0 0 0.5rem;
+					color: #0e3555;
+					font-size: 1.03rem;
+				}
+				.bx-design-section .inthebox ul {
+					margin: 0;
+					padding-left: 1.05rem;
+					color: #333;
+					line-height: 1.55;
+				}
 
-				/* Mobile tweaks to match your reference */
+				/* Mobile tweaks */
 				@media (max-width: 760px) {
 					.bx-design-section .wrap {
 						padding: 0;
@@ -912,18 +940,15 @@
 			</style>
 
 			<div class="wrap">
-				<h2 id="design-title">
-					Legacy & Compact: Design, Craftsmanship & Materials
-				</h2>
+				<h2 id="design-title">BOROUX Stainless System + Water View Spigot</h2>
 
 				<div class="panel">
 					<div class="image-card">
 						<img
 							class="img"
 							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481941305_671527778564352_4932945213936566000_n.webp"
-							alt="BOROUX Legacy & Compact stainless gravity systems—detail of lid, handles, and spigot"
-							style="object-fit: scale-down"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/stand_comparison_polish_9c979cf0-fc6a-4275-803f-0ab7552c8eb8.webp"
+							alt="BOROUX stainless system with Water View Spigot installed"
 						/>
 					</div>
 
@@ -932,88 +957,110 @@
 						<div class="card">
 							<div class="list">
 								<div class="item">
-									<h3>Food-Grade 304 Stainless, Inside & Out</h3>
+									<h3>304 Stainless, Inside & Out</h3>
 									<p>
-										Chambers, lid, and hardware use corrosion-resistant
-										<strong>304 stainless steel</strong> for a clean, neutral
-										taste and exceptional durability. Engineered to
-										<strong>endure a lifetime</strong>, every housing is backed
-										by a <strong>Lifetime Warranty</strong> against leaks, rust,
-										or corrosion — a testament to its uncompromising build
-										quality.
+										Chambers, lid, and hardware are crafted from food-grade
+										<strong>304 stainless steel</strong> for neutral taste, easy
+										cleaning, and long-term durability.
 									</p>
 								</div>
 
 								<div class="item">
-									<h3>Clean Lines, Tight Tolerances</h3>
+									<h3>Water Level at a Glance</h3>
 									<p>
-										Crisp cylindrical form, smooth rolled edges, and consistent
-										seams give a quietly premium silhouette built for daily use.
+										The <strong>Water View Spigot</strong> integrates a glass
+										sight-tube so you can see remaining water instantly — no
+										lifting or guessing.
 									</p>
 								</div>
 
 								<div class="item">
-									<h3>Ceramic-Core, Metal-Only Spigot</h3>
+									<h3>All-Metal Path, Ceramic Control</h3>
 									<p>
-										The no-plastic water path pairs a stainless body with a
-										precision-lapped ceramic valve for a smooth, drip-free pour.
+										Stainless body, nut, and washers paired with a
+										<strong>ceramic disc valve</strong> deliver a smooth,
+										drip-free pour without plastic internals.
 									</p>
 								</div>
 
 								<div class="item">
-									<h3>Balanced Handling</h3>
+									<h3>Precision Fit & Clean Lines</h3>
 									<p>
-										Low center of gravity with stable base geometry; optional
-										stand and Water View Spigot integrate cleanly without fuss.
+										Rolled edges, tight seams, and a brushed finish give the
+										system a premium, low-profile silhouette that belongs on
+										your counter.
 									</p>
 								</div>
 
 								<div class="item">
 									<h3>Serviceable by Design</h3>
 									<p>
-										Fast disassembly for rinsing; durable surfaces wipe clean
-										without special polishes or coatings.
+										Quick disassembly for routine rinsing. Sight-tube removes
+										easily for cleaning or replacement.
 									</p>
 								</div>
 							</div>
+							<p class="muted">
+								Compatible with BOROUX Legacy™ and Compact™ systems, and most
+								gravity units using a standard spigot port.
+							</p>
 						</div>
 
-						<!-- Right: Materials callouts & In the Box -->
+						<!-- Right: Materials + In the Box -->
 						<aside class="card specs">
 							<h3>Material Callouts</h3>
 							<ul>
 								<li>
-									<strong>Chambers, Lid, Hardware:</strong> 304 stainless steel
+									<strong>Chambers / Lid / Hardware:</strong> 304 stainless
+									steel
 								</li>
 								<li>
-									<strong>Spigot Body/Nut/Washers:</strong> 304 stainless steel
+									<strong>Spigot Body / Nut / Washers:</strong> 304 stainless
+									steel
 								</li>
 								<li>
 									<strong>Valve Core:</strong> Ceramic disc (precision on/off)
 								</li>
-								<li><strong>Seals/Gaskets:</strong> Food-contact elastomers</li>
 								<li>
-									<strong>Finish:</strong> Brushed stainless for a cohesive look
+									<strong>Sight-Tube:</strong> Tempered glass with level
+									markings
 								</li>
+								<li>
+									<strong>Seals / Gaskets:</strong> Food-contact elastomers
+								</li>
+								<li><strong>Finish:</strong> Brushed stainless</li>
 							</ul>
 
-							<h3 style="margin-top: 0.9rem">Thoughtful Details</h3>
-							<ul>
-								<li>Smooth pour with excellent shutoff control</li>
-								<li>Comfortable lid pull and easy lift points</li>
-								<li>Tidy alignment of accessories (stand, sight-glass)</li>
-							</ul>
+							<div class="inthebox" aria-labelledby="bx-inbox-title">
+								<h3 id="bx-inbox-title">In the Box</h3>
+								<ul>
+									<li>
+										<strong>BOROUX Stainless System:</strong> Legacy™ or
+										Compact™ housing (upper & lower chambers)
+									</li>
+									<li>Stainless steel lid with knob & screw</li>
+									<li>Base gasket & chamber plugs</li>
+									<li>
+										<strong>Water View Spigot Kit:</strong> stainless spigot
+										body, ceramic valve core, glass sight-tube, locknut,
+										washers, and clear level indicator
+									</li>
+									<li>Quick install guide (tool-free)</li>
+								</ul>
+							</div>
 
 							<div class="summary">
-								From lid to spigot, Legacy & Compact emphasize precision,
-								durability, and taste neutrality—purpose-built stainless where
-								it matters, ceramic where it counts.
+								Built from stainless where it matters and ceramic where it
+								counts — the BOROUX Water View Spigot adds daily convenience
+								without compromising purity.
 							</div>
 						</aside>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
 		<section class="bx-lifestyle-mosaic">
 			<style>
 				.bx-lifestyle-mosaic {
@@ -1132,6 +1179,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- 4) COMPARISON (table desktop, cards mobile) -->
 		<section class="bx-compare-section" aria-labelledby="compare-title">
 			<style>
@@ -1189,7 +1237,6 @@
 					background: var(--bad);
 				}
 
-				/* table */
 				.bx-compare-section .table-wrap {
 					background: transparent;
 					border-radius: 10px;
@@ -1258,7 +1305,11 @@
 					color: var(--muted);
 				}
 
-				/* Responsive tweaks to match reference */
+				@media (max-width: 520px) {
+					.bx-compare-section .table {
+						min-width: 760px;
+					}
+				}
 				@media (max-width: 640px) {
 					.bx-compare-section .wrap {
 						padding: 0;
@@ -1279,12 +1330,10 @@
 			</style>
 
 			<div class="wrap">
-				<h2 id="compare-title">
-					Real-World Comparison: Cost, Waste &amp; Proven Effectiveness
-				</h2>
+				<h2 id="compare-title">How BOROUX Systems Compare</h2>
 				<p class="lead">
-					Big “gallon” claims are usually for chlorine. This focuses on PFAS,
-					heavy metals, pesticides, VOCs, and more.
+					Focused on real-world contaminants (PFAS, heavy metals, pesticides,
+					VOCs, pharma) — not just chlorine taste/odor.
 				</p>
 
 				<div class="legend">
@@ -1293,7 +1342,6 @@
 					<span><i class="dot bad"></i>weak/untested</span>
 				</div>
 
-				<!-- TABLE ONLY (scrolls horizontally on small screens) -->
 				<div class="table-wrap">
 					<table class="table" role="table" aria-describedby="compare-title">
 						<thead>
@@ -1309,14 +1357,14 @@
 						<tbody>
 							<tr>
 								<td>
-									<strong>BOROUX Foundation (Gravity)</strong><br />
+									<strong>BOROUX Legacy / Compact + Foundation™</strong><br />
 									<span class="pill">independently tested</span>
 								</td>
 								<td>
 									PFAS &amp; complex contaminants:
-									<strong>~400–800 gal</strong> per set (2 filters).<br />
-									Chlorine/chloramine: <strong>~4,000–12,000 gal</strong> class
-									performance.
+									<strong>~400–800&nbsp;gal</strong> per set (2 filters).<br />
+									Chlorine/chloramine:
+									<strong>~4,000–12,000&nbsp;gal</strong> class performance.
 									<div class="meter" aria-label="coverage">
 										<span class="on"></span><span class="on"></span
 										><span class="on"></span><span class="on"></span
@@ -1325,75 +1373,83 @@
 								</td>
 								<td>
 									Broad panel (PFAS, heavy metals, pesticides, VOCs, pharma)
-									with volume endurance.
+									with endurance reporting by contaminant.
 									<span class="dot ok" title="strong"></span>
 								</td>
 								<td>
-									<em>Example:</em> $160 ÷ ~800 gal → <strong>$0.20/gal</strong>
+									<em>Example:</em> $160 ÷ ~800&nbsp;gal →
+									<strong>$0.20/gal</strong>
 								</td>
 								<td>
-									Low: two long-life elements/yr (or less), no bottles.
+									Low: long-life elements; no single-use bottles.
 									<span class="dot ok"></span>
 								</td>
 								<td>
-									Wide coverage + transparent volumes per contaminant; plan
-									replacements honestly.
+									Wide coverage + transparent volumes; replace annually to stay
+									within verified windows.
 								</td>
 							</tr>
 
 							<tr>
-								<td><strong>Berkey-style Gravity</strong></td>
 								<td>
-									Good on chlorine/particulates; mixed transparency on
-									PFAS/complex organics.
+									<strong
+										>BOROUX Legacy / Compact + Foundation™ + Water View
+										Spigot</strong
+									><br />
+									<span class="pill">convenience add-on</span>
+								</td>
+								<td>
+									Same protection; sight-glass helps maintain timely refills for
+									consistent performance.
 									<div class="meter">
 										<span class="on"></span><span class="on"></span
-										><span class="on"></span><span></span><span></span>
+										><span class="on"></span><span class="on"></span
+										><span class="on"></span>
 									</div>
 								</td>
 								<td>
-									Large totals often for taste/odor; complex contaminants
-									sometimes small-volume tests.
-									<span class="dot warn"></span>
+									Does not change filtration panel; improves daily use &
+									top-offs. <span class="dot ok"></span>
 								</td>
-								<td>Use lowest verified PFAS/metal figure, not chlorine.</td>
+								<td>+$ per kit (filters’ $/gal unchanged)</td>
 								<td>Low. <span class="dot ok"></span></td>
 								<td>
-									Solid taste/odor control; verify lab volumes by contaminant.
+									Convenience = fewer dry starts, better UX, same verified
+									reduction.
 								</td>
 							</tr>
 
 							<tr>
-								<td><strong>Generic Online Gravity Filters</strong></td>
+								<td><strong>Generic Gravity Filters (online)</strong></td>
 								<td>
-									Claims vary; PFAS/industrial performance depends on model;
-									endurance often only for chlorine.
+									Claims vary; PFAS/industrial results often limited; endurance
+									figures usually for chlorine only.
 									<div class="meter">
 										<span class="on"></span><span class="on"></span><span></span
 										><span></span><span></span>
 									</div>
 								</td>
 								<td>
-									Some third-party tests; many rely on small challenges for
+									Some third-party tests; many small-volume challenges for
 									complex contaminants.
 									<span class="dot warn"></span>
 								</td>
 								<td>
 									Use verified PFAS/metal gallons; assume shorter than chlorine
-									if none provided.
+									totals.
 								</td>
 								<td>
-									Low–moderate (depends on frequency).
+									Low–moderate (depends on swap frequency).
 									<span class="dot warn"></span>
 								</td>
 								<td>
-									Budget option; confirm breadth + endurance before relying on
+									Budget option—confirm breadth and endurance before relying on
 									big gallon claims.
 								</td>
 							</tr>
 
 							<tr>
-								<td><strong>Leading Water Pitcher</strong></td>
+								<td><strong>Water Pitcher (leading brands)</strong></td>
 								<td>
 									Primarily taste/odor + some metals; limited PFAS/complex
 									organics; short life (weeks).
@@ -1409,7 +1465,7 @@
 								<td>Frequent swaps → higher $/gal over a year.</td>
 								<td>Moderate–high. <span class="dot warn"></span></td>
 								<td>
-									Convenient &amp; cheap up front; expect frequent changes +
+									Convenient & cheap up front; expect frequent changes +
 									narrower protection.
 								</td>
 							</tr>
@@ -1430,7 +1486,7 @@
 								<td>Typically highest.</td>
 								<td>Very high (single-use). <span class="dot bad"></span></td>
 								<td>
-									Convenient, but costly &amp; waste-heavy; doesn’t address tap
+									Convenient, but costly & waste-heavy; doesn’t address tap
 									contaminants.
 								</td>
 							</tr>
@@ -1442,7 +1498,7 @@
 					<strong>How to read this:</strong>
 					* Effective Protection Window = practical gallons for demanding
 					contaminants (PFAS, heavy metals, pesticides, VOCs) — not just
-					chlorine. ** Test Depth &amp; Volume matters: many big “gallon” claims
+					chlorine. ** Test depth &amp; volume matter: many big “gallon” claims
 					only cover chlorine; plan using the lowest verified figure among the
 					hardest categories.
 				</div>
