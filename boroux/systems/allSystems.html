@@ -35,7 +35,6 @@
 					--shadow: rgba(0, 0, 0, 0.15);
 					--maxw: 1100px;
 				}
-
 				.bx-nav-section .bx-navwrap {
 					background: linear-gradient(
 						90deg,
@@ -44,20 +43,16 @@
 						#a9f7ff 85%,
 						rgba(255, 255, 255, 0) 100%
 					);
-
 					background-size: 200% 100%;
-
 					box-shadow: 0 3px 12px var(--shadow);
 					width: 100%;
 					margin: 0 auto;
 					overflow: hidden;
 				}
-
 				.bx-nav-section .bx-navmax {
 					width: min(var(--maxw), 100%);
 					margin: 0 auto;
 				}
-
 				.bx-nav-section .bx-nav {
 					display: flex;
 					gap: 0.5rem;
@@ -73,11 +68,9 @@
 				.bx-nav-section .bx-nav::-webkit-scrollbar {
 					display: none;
 				}
-
 				.bx-nav-section .bx-nav li {
 					flex: 0 0 auto;
 				}
-
 				.bx-nav-section .bx-nav a {
 					display: inline-flex;
 					align-items: center;
@@ -93,28 +86,23 @@
 						transform 0.2s ease;
 					white-space: nowrap;
 				}
-
 				.bx-nav-section .bx-nav a:hover {
 					background: var(--pill-bg-hover);
 					color: var(--hover);
 				}
-
 				.bx-nav-section .bx-nav a:focus-visible {
 					outline: 2px solid var(--hover);
 					outline-offset: 3px;
 				}
-
 				.bx-nav-section .bx-nav a.is-active {
 					background: var(--pill-active);
 					color: var(--pill-active-text);
 					box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15),
 						0 1px 8px rgba(0, 0, 0, 0.1) inset;
 				}
-
 				.bx-nav-section .bx-nav a:active {
 					transform: translateY(1px);
 				}
-
 				@media (max-width: 859px) {
 					.bx-nav-section .bx-nav {
 						justify-content: flex-start;
@@ -127,7 +115,6 @@
 						margin-right: 0.25rem;
 					}
 				}
-
 				@media (min-width: 860px) {
 					.bx-nav-section .bx-nav {
 						overflow: visible;
@@ -137,7 +124,6 @@
 					}
 				}
 			</style>
-
 			<div class="bx-navwrap">
 				<div class="bx-navmax">
 					<ul class="bx-nav" role="list">
@@ -241,7 +227,7 @@
 					margin: 0;
 					color: var(--muted);
 					line-height: 1.55;
-					border-bottom: 2px solid #4bb7ff;
+					border-bottom: 2px solid #1b4b66;
 					padding-bottom: 0.6rem;
 				}
 
@@ -266,10 +252,8 @@
 					}
 				}
 			</style>
-
 			<div class="wrap">
 				<div class="grid">
-					<!-- Image Card -->
 					<div class="card">
 						<img
 							class="img"
@@ -284,8 +268,6 @@
 							alt="BOROUX Foundation Filter lifestyle image"
 						/>
 					</div>
-
-					<!-- Text Card -->
 					<div class="card pad">
 						<div class="points">
 							<div>
@@ -297,7 +279,6 @@
 									competitor systems.
 								</p>
 							</div>
-
 							<div>
 								<h3>REMOVES WHAT OTHERS MISS 🛡️</h3>
 								<p>
@@ -306,7 +287,6 @@
 									the real-world pollutants most filters leave behind.
 								</p>
 							</div>
-
 							<div>
 								<h3>LONG-LASTING, CONSISTENT PROTECTION ✅</h3>
 								<p>
@@ -314,7 +294,6 @@
 									trusted results, and no guessing when it’s time to change.
 								</p>
 							</div>
-
 							<div>
 								<h3>EFFORTLESS COMPATIBILITY 🧩</h3>
 								<p>
@@ -323,7 +302,6 @@
 									Installs in minutes — no tools, no adapters, no frustration.
 								</p>
 							</div>
-
 							<div>
 								<h3>INDEPENDENTLY VERIFIED QUALITY 🧪</h3>
 								<p>
@@ -333,7 +311,6 @@
 									safety — standards many look up to, but few actually meet.
 								</p>
 							</div>
-
 							<div>
 								<h3>BACKED BY THE BOROUX PROMISE 💬</h3>
 								<p>
@@ -344,7 +321,171 @@
 							</div>
 						</div>
 					</div>
-					<!-- /Text Card -->
+				</div>
+			</div>
+		</section>
+
+		<!-- 5) UNIT SIZE ESTIMATOR -->
+		<section class="bx-sizing-section" aria-labelledby="bx-sizing-title">
+			<style>
+				.bx-sizing-section {
+					--accent: #1b4b66;
+					--ink: #0e3555;
+					--text: #222;
+					--muted: #56606a;
+					--bg: #f5f9fc;
+					--card: #fff;
+					--radius: 12px;
+					font-family: 'Josefin Sans', sans-serif;
+					margin-top: 20px;
+				}
+				.bx-sizing-section .wrap {
+					width: min(900px, 100%);
+					margin: 0 auto;
+					padding: 0 1rem;
+					box-sizing: border-box;
+				}
+				.bx-sizing-section h2 {
+					text-align: center;
+					color: var(--accent);
+					margin: 2rem 0 0.75rem;
+					font-size: 1.45rem;
+				}
+				.bx-sizing-section p.lead {
+					text-align: center;
+					color: var(--muted);
+					margin: 0 0 1rem;
+				}
+				.bx-sizing-section .table-wrap {
+					overflow-x: auto;
+					border-radius: 10px;
+				}
+				.bx-sizing-section table {
+					width: 100%;
+					border-collapse: separate;
+					border-spacing: 0;
+					background: var(--card);
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
+						0 8px 24px rgba(0, 0, 0, 0.06);
+					border-radius: 10px;
+				}
+				.bx-sizing-section thead th {
+					background: var(--bg);
+					color: var(--text);
+					font-weight: 700;
+					font-size: 0.95rem;
+					text-align: left;
+					padding: 12px 14px;
+					border-bottom: 1px solid #e7eef6;
+				}
+				.bx-sizing-section td {
+					padding: 14px;
+					border-bottom: 1px solid #eef3f8;
+					vertical-align: top;
+					font-size: 0.95rem;
+				}
+				.bx-sizing-section tr:last-child td {
+					border-bottom: 0;
+				}
+				.bx-sizing-section .unit {
+					font-weight: 700;
+					color: var(--ink);
+				}
+				.bx-sizing-section .pill {
+					display: inline-block;
+					padding: 0.15rem 0.5rem;
+					border-radius: 999px;
+					font-size: 0.78rem;
+					font-weight: 700;
+					background: var(--bg);
+					color: var(--accent);
+					margin-left: 6px;
+				}
+				.bx-sizing-section .note {
+					background: var(--bg);
+					border-left: 4px solid var(--accent);
+					border-radius: 8px;
+					padding: 1rem;
+					margin-top: 1rem;
+					color: var(--muted);
+					font-size: 0.92rem;
+					line-height: 1.55;
+				}
+			</style>
+
+			<div class="wrap">
+				<h2 id="bx-sizing-title">Find Your Perfect BOROUX System</h2>
+				<p class="lead">
+					Choose the BOROUX gravity system that fits your lifestyle. All use the
+					same Foundation™ filters — more filters increase flow speed and
+					household capacity.
+				</p>
+
+				<div class="table-wrap">
+					<table role="table">
+						<thead>
+							<tr>
+								<th>System</th>
+								<th>Capacity</th>
+								<th>Filter Setup</th>
+								<th>Ideal For</th>
+								<th>Typical Refill Frequency*</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<span class="unit">BOROUX Compact</span>
+									<span class="pill">travel / small-space</span>
+								</td>
+								<td>≈ 1.8 gal (6.8 L)</td>
+								<td>Up to 2 Foundation™ filters</td>
+								<td>1–2 people • apartments • RVs • off-grid living</td>
+								<td>Refill about once per day under normal use</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span class="unit">BOROUX Legacy</span>
+									<span class="pill">standard set</span>
+								</td>
+								<td>≈ 3.0 gal (11.4 L)</td>
+								<td>Includes 2 Foundation™ filters</td>
+								<td>2–4 people • daily kitchen use • small families</td>
+								<td>Typically refilled once per day</td>
+							</tr>
+
+							<tr>
+								<td>
+									<span class="unit">BOROUX Legacy High-Flow</span>
+									<span class="pill">4 filters installed</span>
+								</td>
+								<td>≈ 3.0 gal (11.4 L)</td>
+								<td>Includes 4 Foundation™ filters</td>
+								<td>4–6 people • high-demand households • faster flow</td>
+								<td>Typically refilled once per day</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="note">
+					<strong>Filter Capacity &amp; Performance:</strong>
+					<ul>
+						<li>
+							Each pair of Foundation™ filters lasts up to ≈12 months gallons.
+						</li>
+						<li>
+							Installing four filters doubles the flow rate and keeps up easily
+							with larger families.
+						</li>
+						<li>
+							All BOROUX systems use the same threaded filter mount — simple to
+							replace or upgrade anytime.
+						</li>
+					</ul>
+					*Refill rhythm estimates are based on average household drinking and
+					cooking water needs.
 				</div>
 			</div>
 		</section>
@@ -359,28 +500,24 @@
 					background: #f8fbfd;
 					padding: 1.5rem 0 2rem;
 				}
-
 				.bx-lifestyle-mosaic .wrap {
 					width: min(950px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 					text-align: center;
 				}
-
 				.bx-lifestyle-mosaic h2 {
 					margin: 0 0 1.25rem;
 					color: #1b4b66;
 					font-size: 1.5rem;
 					font-weight: 600;
 				}
-
 				.bx-lifestyle-mosaic .grid {
 					display: flex;
 					justify-content: center;
 					gap: var(--gap);
 					flex-wrap: wrap;
 				}
-
 				.bx-lifestyle-mosaic figure {
 					margin: 0;
 					position: relative;
@@ -396,12 +533,10 @@
 					justify-content: center;
 					transition: transform 0.25s ease, box-shadow 0.25s ease;
 				}
-
 				.bx-lifestyle-mosaic figure:hover {
 					transform: translateY(-4px);
 					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 				}
-
 				.bx-lifestyle-mosaic img {
 					width: 100%;
 					height: 100%;
@@ -410,7 +545,6 @@
 					display: block;
 					border-radius: var(--r);
 				}
-
 				.bx-lifestyle-mosaic figcaption {
 					position: absolute;
 					bottom: 8px;
@@ -423,21 +557,22 @@
 					border-radius: 6px;
 					font-size: 0.9rem;
 				}
-
 				@media (max-width: 800px) {
 					.bx-lifestyle-mosaic figure {
 						width: 220px;
-						height: 220px;
+						height: auto;
+					}
+					.bx-lifestyle-mosaic img {
+						height: unset;
 					}
 				}
-
 				@media (max-width: 640px) {
 					.bx-lifestyle-mosaic .wrap {
 						padding: 0;
 					}
 					.bx-lifestyle-mosaic figure {
 						width: 100%;
-						height: 180px;
+						height: auto;
 						max-width: 320px;
 					}
 					.bx-lifestyle-mosaic figcaption {
@@ -445,7 +580,6 @@
 					}
 				}
 			</style>
-
 			<div class="wrap">
 				<div class="grid">
 					<figure>
@@ -453,7 +587,6 @@
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481906871_669985882051875_7834526164071720644_n.webp"
 						/>
 					</figure>
-
 					<figure>
 						<img
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/559003281_841992691517859_7056607156578405457_n.webp?height=300"
@@ -461,7 +594,6 @@
 							width="300"
 						/>
 					</figure>
-
 					<figure>
 						<img
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/494807247_713705557679907_264792049872702420_n.webp"
@@ -542,7 +674,6 @@
 					font-weight: 600;
 				}
 
-				/* New mobile adjustments to match reference */
 				@media (max-width: 640px) {
 					.bx-contaminants-section .wrap {
 						padding: 0;
@@ -667,7 +798,6 @@
 		</section>
 
 		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
-
 		<section class="bx-lifestyle-mosaic">
 			<style>
 				.bx-lifestyle-mosaic {
@@ -677,28 +807,24 @@
 					background: #f8fbfd;
 					padding: 1.5rem 0 2rem;
 				}
-
 				.bx-lifestyle-mosaic .wrap {
 					width: min(950px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 					text-align: center;
 				}
-
 				.bx-lifestyle-mosaic h2 {
 					margin: 0 0 1.25rem;
 					color: #1b4b66;
 					font-size: 1.5rem;
 					font-weight: 600;
 				}
-
 				.bx-lifestyle-mosaic .grid {
 					display: flex;
 					justify-content: center;
 					gap: var(--gap);
 					flex-wrap: wrap;
 				}
-
 				.bx-lifestyle-mosaic figure {
 					margin: 0;
 					position: relative;
@@ -714,12 +840,10 @@
 					justify-content: center;
 					transition: transform 0.25s ease, box-shadow 0.25s ease;
 				}
-
 				.bx-lifestyle-mosaic figure:hover {
 					transform: translateY(-4px);
 					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 				}
-
 				.bx-lifestyle-mosaic img {
 					width: 100%;
 					height: 100%;
@@ -728,7 +852,6 @@
 					display: block;
 					border-radius: var(--r);
 				}
-
 				.bx-lifestyle-mosaic figcaption {
 					position: absolute;
 					bottom: 8px;
@@ -741,21 +864,22 @@
 					border-radius: 6px;
 					font-size: 0.9rem;
 				}
-
 				@media (max-width: 800px) {
 					.bx-lifestyle-mosaic figure {
 						width: 220px;
-						height: 220px;
+						height: auto;
+					}
+					.bx-lifestyle-mosaic img {
+						height: unset;
 					}
 				}
-
 				@media (max-width: 640px) {
 					.bx-lifestyle-mosaic .wrap {
 						padding: 0;
 					}
 					.bx-lifestyle-mosaic figure {
 						width: 100%;
-						height: 180px;
+						height: auto;
 						max-width: 320px;
 					}
 					.bx-lifestyle-mosaic figcaption {
@@ -785,6 +909,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- 3) DESIGN & CRAFTSMANSHIP (with panel background) -->
 		<section class="bx-design-section" aria-labelledby="design-title">
 			<style>
@@ -928,7 +1053,6 @@
 					</div>
 
 					<div class="cols">
-						<!-- Left: Craft, Fit, Precision -->
 						<div class="card">
 							<div class="list">
 								<div class="item">
@@ -978,7 +1102,6 @@
 							</div>
 						</div>
 
-						<!-- Right: Materials callouts & In the Box -->
 						<aside class="card specs">
 							<h3>Material Callouts</h3>
 							<ul>
@@ -996,24 +1119,45 @@
 									<strong>Finish:</strong> Brushed stainless for a cohesive look
 								</li>
 							</ul>
-
-							<h3 style="margin-top: 0.9rem">Thoughtful Details</h3>
-							<ul>
-								<li>Smooth pour with excellent shutoff control</li>
-								<li>Comfortable lid pull and easy lift points</li>
-								<li>Tidy alignment of accessories (stand, sight-glass)</li>
-							</ul>
-
 							<div class="summary">
-								From lid to spigot, Legacy & Compact emphasize precision,
-								durability, and taste neutrality—purpose-built stainless where
-								it matters, ceramic where it counts.
+								Built from stainless where it matters and ceramic where it
+								counts — the BOROUX System with Foundation™ and Proactive™
+								filtration delivers visible clarity, balanced taste, and lasting
+								confidence without compromise.
+							</div>
+							<div class="inthebox" aria-labelledby="bx-inbox-title">
+								<h3 id="bx-inbox-title">In the Box</h3>
+								<ul>
+									<li>
+										<strong>BOROUX Stainless System:</strong> Legacy™ or
+										Compact™ housing — upper & lower chambers with matching
+										stainless lid
+									</li>
+									<li>
+										<strong>BOROUX Foundation™ Filters:</strong> dual
+										carbon-block core for broad reduction of PFAS, heavy metals,
+										VOCs, pharmaceuticals, and more
+									</li>
+									<li>
+										<strong>Base gasket & chamber plugs</strong> — included with
+										Legacy™; Compact™ design does not require them
+									</li>
+									<li>
+										<strong>Stainless Steel Spigot Kit:</strong> stainless
+										spigot body, ceramic valve core, locknut, and washers
+									</li>
+									<li>
+										Quick-start install guide & priming tool for easy first-time
+										setup
+									</li>
+								</ul>
 							</div>
 						</aside>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section class="bx-lifestyle-mosaic">
 			<style>
 				.bx-lifestyle-mosaic {
@@ -1023,28 +1167,24 @@
 					background: #f8fbfd;
 					padding: 1.5rem 0 2rem;
 				}
-
 				.bx-lifestyle-mosaic .wrap {
 					width: min(950px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 					text-align: center;
 				}
-
 				.bx-lifestyle-mosaic h2 {
 					margin: 0 0 1.25rem;
 					color: #1b4b66;
 					font-size: 1.5rem;
 					font-weight: 600;
 				}
-
 				.bx-lifestyle-mosaic .grid {
 					display: flex;
 					justify-content: center;
 					gap: var(--gap);
 					flex-wrap: wrap;
 				}
-
 				.bx-lifestyle-mosaic figure {
 					margin: 0;
 					position: relative;
@@ -1060,12 +1200,10 @@
 					justify-content: center;
 					transition: transform 0.25s ease, box-shadow 0.25s ease;
 				}
-
 				.bx-lifestyle-mosaic figure:hover {
 					transform: translateY(-4px);
 					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 				}
-
 				.bx-lifestyle-mosaic img {
 					width: 100%;
 					height: 100%;
@@ -1074,7 +1212,6 @@
 					display: block;
 					border-radius: var(--r);
 				}
-
 				.bx-lifestyle-mosaic figcaption {
 					position: absolute;
 					bottom: 8px;
@@ -1087,21 +1224,22 @@
 					border-radius: 6px;
 					font-size: 0.9rem;
 				}
-
 				@media (max-width: 800px) {
 					.bx-lifestyle-mosaic figure {
 						width: 220px;
-						height: 220px;
+						height: auto;
+					}
+					.bx-lifestyle-mosaic img {
+						height: unset;
 					}
 				}
-
 				@media (max-width: 640px) {
 					.bx-lifestyle-mosaic .wrap {
 						padding: 0;
 					}
 					.bx-lifestyle-mosaic figure {
 						width: 100%;
-						height: 180px;
+						height: auto;
 						max-width: 320px;
 					}
 					.bx-lifestyle-mosaic figcaption {
@@ -1132,6 +1270,7 @@
 				</div>
 			</div>
 		</section>
+
 		<!-- 4) COMPARISON (table desktop, cards mobile) -->
 		<section class="bx-compare-section" aria-labelledby="compare-title">
 			<style>
@@ -1188,8 +1327,6 @@
 				.bx-compare-section .bad {
 					background: var(--bad);
 				}
-
-				/* table */
 				.bx-compare-section .table-wrap {
 					background: transparent;
 					border-radius: 10px;
@@ -1257,8 +1394,6 @@
 					font-size: 0.92rem;
 					color: var(--muted);
 				}
-
-				/* Responsive tweaks to match reference */
 				@media (max-width: 640px) {
 					.bx-compare-section .wrap {
 						padding: 0;
@@ -1277,7 +1412,6 @@
 					}
 				}
 			</style>
-
 			<div class="wrap">
 				<h2 id="compare-title">
 					Real-World Comparison: Cost, Waste &amp; Proven Effectiveness
@@ -1286,14 +1420,11 @@
 					Big “gallon” claims are usually for chlorine. This focuses on PFAS,
 					heavy metals, pesticides, VOCs, and more.
 				</p>
-
 				<div class="legend">
 					<span><i class="dot ok"></i>strong</span>
 					<span><i class="dot warn"></i>mixed/limited</span>
 					<span><i class="dot bad"></i>weak/untested</span>
 				</div>
-
-				<!-- TABLE ONLY (scrolls horizontally on small screens) -->
 				<div class="table-wrap">
 					<table class="table" role="table" aria-describedby="compare-title">
 						<thead>
@@ -1329,7 +1460,9 @@
 									<span class="dot ok" title="strong"></span>
 								</td>
 								<td>
-									<em>Example:</em> $160 ÷ ~800 gal → <strong>$0.20/gal</strong>
+									<em>Example:</em> $160 ÷ ~800 gal → <strong>$0.20/gal</strong
+									><br />
+									💲
 								</td>
 								<td>
 									Low: two long-life elements/yr (or less), no bottles.
@@ -1340,7 +1473,6 @@
 									replacements honestly.
 								</td>
 							</tr>
-
 							<tr>
 								<td><strong>Berkey-style Gravity</strong></td>
 								<td>
@@ -1356,13 +1488,15 @@
 									sometimes small-volume tests.
 									<span class="dot warn"></span>
 								</td>
-								<td>Use lowest verified PFAS/metal figure, not chlorine.</td>
+								<td>
+									Use lowest verified PFAS/metal figure, not chlorine.<br />
+									💲💲
+								</td>
 								<td>Low. <span class="dot ok"></span></td>
 								<td>
 									Solid taste/odor control; verify lab volumes by contaminant.
 								</td>
 							</tr>
-
 							<tr>
 								<td><strong>Generic Online Gravity Filters</strong></td>
 								<td>
@@ -1380,7 +1514,8 @@
 								</td>
 								<td>
 									Use verified PFAS/metal gallons; assume shorter than chlorine
-									if none provided.
+									if none provided.<br />
+									💲💲💲
 								</td>
 								<td>
 									Low–moderate (depends on frequency).
@@ -1391,7 +1526,6 @@
 									big gallon claims.
 								</td>
 							</tr>
-
 							<tr>
 								<td><strong>Leading Water Pitcher</strong></td>
 								<td>
@@ -1406,14 +1540,16 @@
 									Narrow panels; small cartridges → shorter verified life.
 									<span class="dot warn"></span>
 								</td>
-								<td>Frequent swaps → higher $/gal over a year.</td>
+								<td>
+									Frequent swaps → higher $/gal over a year.<br />
+									💲💲💲💲
+								</td>
 								<td>Moderate–high. <span class="dot warn"></span></td>
 								<td>
 									Convenient &amp; cheap up front; expect frequent changes +
 									narrower protection.
 								</td>
 							</tr>
-
 							<tr>
 								<td><strong>Bottled Water</strong></td>
 								<td>
@@ -1427,7 +1563,10 @@
 									Regulated as a food product, not a home filtration system.
 									<span class="dot bad"></span>
 								</td>
-								<td>Typically highest.</td>
+								<td>
+									Typically highest.<br />
+									💲💲💲💲💲
+								</td>
 								<td>Very high (single-use). <span class="dot bad"></span></td>
 								<td>
 									Convenient, but costly &amp; waste-heavy; doesn’t address tap
@@ -1437,7 +1576,6 @@
 						</tbody>
 					</table>
 				</div>
-
 				<div class="foot">
 					<strong>How to read this:</strong>
 					* Effective Protection Window = practical gallons for demanding
@@ -1459,28 +1597,24 @@
 					background: #f8fbfd;
 					padding: 1.5rem 0 2rem;
 				}
-
 				.bx-lifestyle-mosaic .wrap {
 					width: min(950px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 					text-align: center;
 				}
-
 				.bx-lifestyle-mosaic h2 {
 					margin: 0 0 1.25rem;
 					color: #1b4b66;
 					font-size: 1.5rem;
 					font-weight: 600;
 				}
-
 				.bx-lifestyle-mosaic .grid {
 					display: flex;
 					justify-content: center;
 					gap: var(--gap);
 					flex-wrap: wrap;
 				}
-
 				.bx-lifestyle-mosaic figure {
 					margin: 0;
 					position: relative;
@@ -1496,12 +1630,10 @@
 					justify-content: center;
 					transition: transform 0.25s ease, box-shadow 0.25s ease;
 				}
-
 				.bx-lifestyle-mosaic figure:hover {
 					transform: translateY(-4px);
 					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 				}
-
 				.bx-lifestyle-mosaic img {
 					width: 100%;
 					height: 100%;
@@ -1510,7 +1642,6 @@
 					display: block;
 					border-radius: var(--r);
 				}
-
 				.bx-lifestyle-mosaic figcaption {
 					position: absolute;
 					bottom: 8px;
@@ -1523,21 +1654,22 @@
 					border-radius: 6px;
 					font-size: 0.9rem;
 				}
-
 				@media (max-width: 800px) {
 					.bx-lifestyle-mosaic figure {
 						width: 220px;
-						height: 220px;
+						height: auto;
+					}
+					.bx-lifestyle-mosaic img {
+						height: unset;
 					}
 				}
-
 				@media (max-width: 640px) {
 					.bx-lifestyle-mosaic .wrap {
 						padding: 0;
 					}
 					.bx-lifestyle-mosaic figure {
 						width: 100%;
-						height: 180px;
+						height: auto;
 						max-width: 320px;
 					}
 					.bx-lifestyle-mosaic figcaption {
@@ -1550,16 +1682,14 @@
 				<div class="grid">
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482203878_671536448563485_1590241430208201975_n.webp"
-						/>
-					</figure>
-
-					<figure>
-						<img
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/519958646_768320685551727_186831482326535167_n.webp"
 						/>
 					</figure>
-
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482203878_671536448563485_1590241430208201975_n.webp"
+						/>
+					</figure>
 					<figure>
 						<img
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482219349_671875495196247_4734281636374861379_n.webp"
@@ -1807,171 +1937,6 @@
 					<strong>Note:</strong> Lifespan is the safety margin where performance
 					begins to taper, not a hard stop. Actual duration varies with water
 					chemistry, contaminant load, and daily use.
-				</div>
-			</div>
-		</section>
-
-		<!-- 5) UNIT SIZE ESTIMATOR -->
-		<section class="bx-sizing-section" aria-labelledby="bx-sizing-title">
-			<style>
-				.bx-sizing-section {
-					--accent: #1b4b66;
-					--ink: #0e3555;
-					--text: #222;
-					--muted: #56606a;
-					--bg: #f5f9fc;
-					--card: #fff;
-					--radius: 12px;
-					font-family: 'Josefin Sans', sans-serif;
-					margin-top: 20px;
-				}
-				.bx-sizing-section .wrap {
-					width: min(900px, 100%);
-					margin: 0 auto;
-					padding: 0 1rem;
-					box-sizing: border-box;
-				}
-				.bx-sizing-section h2 {
-					text-align: center;
-					color: var(--accent);
-					margin: 2rem 0 0.75rem;
-					font-size: 1.45rem;
-				}
-				.bx-sizing-section p.lead {
-					text-align: center;
-					color: var(--muted);
-					margin: 0 0 1rem;
-				}
-				.bx-sizing-section .table-wrap {
-					overflow-x: auto;
-					border-radius: 10px;
-				}
-				.bx-sizing-section table {
-					width: 100%;
-					border-collapse: separate;
-					border-spacing: 0;
-					background: var(--card);
-					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
-						0 8px 24px rgba(0, 0, 0, 0.06);
-					border-radius: 10px;
-				}
-				.bx-sizing-section thead th {
-					background: var(--bg);
-					color: var(--text);
-					font-weight: 700;
-					font-size: 0.95rem;
-					text-align: left;
-					padding: 12px 14px;
-					border-bottom: 1px solid #e7eef6;
-				}
-				.bx-sizing-section td {
-					padding: 14px;
-					border-bottom: 1px solid #eef3f8;
-					vertical-align: top;
-					font-size: 0.95rem;
-				}
-				.bx-sizing-section tr:last-child td {
-					border-bottom: 0;
-				}
-				.bx-sizing-section .unit {
-					font-weight: 700;
-					color: var(--ink);
-				}
-				.bx-sizing-section .pill {
-					display: inline-block;
-					padding: 0.15rem 0.5rem;
-					border-radius: 999px;
-					font-size: 0.78rem;
-					font-weight: 700;
-					background: var(--bg);
-					color: var(--accent);
-					margin-left: 6px;
-				}
-				.bx-sizing-section .note {
-					background: var(--bg);
-					border-left: 4px solid var(--accent);
-					border-radius: 8px;
-					padding: 1rem;
-					margin-top: 1rem;
-					color: var(--muted);
-					font-size: 0.92rem;
-					line-height: 1.55;
-				}
-			</style>
-
-			<div class="wrap">
-				<h2 id="bx-sizing-title">Find Your Perfect BOROUX System</h2>
-				<p class="lead">
-					Choose the BOROUX gravity system that fits your lifestyle. All use the
-					same Foundation™ filters — more filters increase flow speed and
-					household capacity.
-				</p>
-
-				<div class="table-wrap">
-					<table role="table">
-						<thead>
-							<tr>
-								<th>System</th>
-								<th>Capacity</th>
-								<th>Filter Setup</th>
-								<th>Ideal For</th>
-								<th>Typical Refill Frequency*</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<span class="unit">BOROUX Compact</span>
-									<span class="pill">travel / small-space</span>
-								</td>
-								<td>≈ 1.8 gal (6.8 L)</td>
-								<td>Up to 2 Foundation™ filters</td>
-								<td>1–2 people • apartments • RVs • off-grid living</td>
-								<td>Refill about once per day under normal use</td>
-							</tr>
-
-							<tr>
-								<td>
-									<span class="unit">BOROUX Legacy</span>
-									<span class="pill">standard set</span>
-								</td>
-								<td>≈ 3.0 gal (11.4 L)</td>
-								<td>Includes 2 Foundation™ filters</td>
-								<td>2–4 people • daily kitchen use • small families</td>
-								<td>Typically refilled once per day</td>
-							</tr>
-
-							<tr>
-								<td>
-									<span class="unit">BOROUX Legacy High-Flow</span>
-									<span class="pill">4 filters installed</span>
-								</td>
-								<td>≈ 3.0 gal (11.4 L)</td>
-								<td>Includes 4 Foundation™ filters</td>
-								<td>4–6 people • high-demand households • faster flow</td>
-								<td>Typically refilled once per day</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-
-				<div class="note">
-					<strong>Filter Capacity &amp; Performance:</strong>
-					<ul>
-						<li>
-							Each pair of Foundation™ filters lasts up to ≈12 months gallons.
-						</li>
-						<li>
-							Installing four filters doubles the flow rate and keeps up easily
-							with larger families.
-						</li>
-						<li>
-							All BOROUX systems use the same threaded filter mount — simple to
-							replace or upgrade anytime.
-						</li>
-					</ul>
-					*Refill rhythm estimates are based on average household drinking and
-					cooking water needs.
 				</div>
 			</div>
 		</section>
