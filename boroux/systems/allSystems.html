@@ -10,7 +10,11 @@
 				}
 			}
 			#bx-div section {
-				margin-bottom: 30px;
+				margin-bottom: 20px;
+			}
+			#bx-div section:first-of-type {
+				margin-bottom: 0px;
+				padding-bottom: 0px;
 			}
 		</style>
 		<link
@@ -169,7 +173,9 @@
 					--radius: 12px;
 					--gap: 1.5rem;
 					font-family: 'Josefin Sans', sans-serif;
-					margin-top: 20px;
+					background-color: #f8fbfd;
+					padding-bottom: 15px;
+					padding-top: 40px;
 				}
 				.bx-hero-section .wrap {
 					width: min(1100px, 100%);
@@ -194,7 +200,7 @@
 					max-width: 48%;
 					display: flex;
 					flex-direction: column;
-					justify-content: center;
+					justify-content: space-between;
 					overflow: hidden;
 				}
 				.bx-hero-section .pad {
@@ -206,13 +212,23 @@
 				}
 				.bx-hero-section .img {
 					border-radius: var(--radius);
-					object-fit: scale-down;
-					object-position: center left;
+					object-fit: contain;
+					object-position: center;
 					display: block;
 					width: 100%;
 					height: 100%;
 					max-height: 600px;
 					background: #fff;
+				}
+				.hero-split {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.5rem;
+					margin-top: 0.5rem;
+				}
+				.hero-split .img {
+					flex: 1 1 49%;
+					max-height: 320px;
 				}
 				.bx-hero-section .points {
 					display: grid;
@@ -229,6 +245,35 @@
 					line-height: 1.55;
 					border-bottom: 2px solid #1b4b66;
 					padding-bottom: 0.6rem;
+				}
+				.bx-hero-section div:last-of-type > p {
+					border-bottom: none;
+				}
+				.hero-split {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.75rem;
+					justify-content: center;
+					align-items: center;
+					margin-top: 0.75rem;
+				}
+				.hero-split .img {
+					flex: 1 1 calc(50% - 0.75rem);
+					max-width: calc(50% - 0.75rem);
+					height: auto;
+					object-fit: contain;
+					border-radius: var(--radius);
+					background: #fff;
+				}
+
+				.bx-hero-section a[href^='#'] {
+					color: #1b4b66;
+					text-decoration: underline;
+					font-weight: 600;
+					transition: color 0.2s;
+				}
+				.bx-hero-section a[href^='#']:hover {
+					color: #0e3555;
 				}
 
 				@media (max-width: 859px) {
@@ -247,17 +292,109 @@
 					.bx-hero-section .img {
 						max-height: 480px;
 					}
+					.hero-split .img {
+						max-width: 100%;
+						flex: 1 1 100%;
+					}
+					.hero-split .img {
+						max-height: 240px;
+						box-shadow: none;
+						border: none;
+					}
 					.bx-hero-section .pad {
 						box-sizing: border-box;
 					}
 				}
 			</style>
+
 			<div class="wrap">
 				<div class="grid">
+					<div class="card pad">
+						<div class="points">
+							<div>
+								<h3>BETTER WATER STARTS HERE 💧</h3>
+								<p>
+									The BOROUX Foundation™ Filter was created for families who
+									want more than “good enough.” Every drop is fresh, clean, and
+									free from the chemical aftertaste so common in tap and
+									competitor systems.
+									<a href="#bx-sizing-section">help me choose my size ↓</a>
+								</p>
+							</div>
+							<div>
+								<h3>REMOVES WHAT OTHERS MISS 🛡️</h3>
+								<p>
+									Independently tested to reduce PFAS (“forever chemicals”),
+									heavy metals, pharmaceuticals, microplastics, and disinfectant
+									byproducts — the real-world pollutants most filters leave
+									behind.
+									<a href="#bx-contaminants-section"
+										>see what each stage removes ↓</a
+									>
+								</p>
+							</div>
+							<div>
+								<h3>THOUGHTFUL ENGINEERING, LIFETIME CONFIDENCE 🥇</h3>
+								<p>
+									Food-grade <strong>304 stainless</strong> chambers, lid, and
+									hardware, plus a
+									<strong>ceramic-core, metal-only spigot</strong> for a smooth,
+									drip-free pour. Built to
+									<strong>endure a lifetime</strong> and backed by a
+									<strong>Lifetime Warranty</strong> on the housing.
+									<a href="#bx-design-section">explore the craftsmanship ↓</a>
+								</p>
+							</div>
+							<div>
+								<h3>CONSISTENT, YEAR-ROUND PERFORMANCE 📆</h3>
+								<p>
+									Replace filters on a simple annual rhythm to stay within
+									verified reduction levels. Steady flow, steady protection, no
+									guesswork.
+									<a href="#bx-life-section"
+										>see lifespan & maintenance tips ↓</a
+									>
+								</p>
+							</div>
+							<div>
+								<h3>INDEPENDENTLY VERIFIED QUALITY 🧪</h3>
+								<p>
+									Certified to <strong>NSF/ANSI 42</strong>,
+									<strong>401</strong>, and <strong>372</strong> standards for
+									chlorine, emerging contaminants, and lead-free safety —
+									standards many look up to, but few actually meet.
+									<a href="#bx-compare-section">see how BOROUX stacks up ↓</a>
+
+									>
+								</p>
+							</div>
+							<div>
+								<h3>DESIGNED TO LOOK AS GOOD AS IT WORKS ✨</h3>
+								<p>
+									Brushed stainless finish, clean lines, tight tolerances, and
+									cohesive accessories (stand, Water View Spigot) make it a
+									permanent part of your kitchen—not a gadget.
+									<a href="#bx-reviews-section"
+										>see what real people are saying ↓</a
+									>
+								</p>
+							</div>
+							<div>
+								<h3>BACKED BY THE BOROUX PROMISE 💬</h3>
+								<p>
+									Try it for 60 days, risk-free. If it doesn’t transform the way
+									your water feels, tastes, and supports your home — send it
+									back for a full refund. No questions, just confidence.
+									<a href="#inthebox">see what’s included ↓</a>
+								</p>
+							</div>
+						</div>
+					</div>
 					<div class="card">
 						<img
 							class="img"
 							loading="lazy"
+							style="height: unset"
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
 							alt="BOROUX Foundation Filter lifestyle image"
 						/>
@@ -268,67 +405,14 @@
 							alt="BOROUX Foundation Filter lifestyle image"
 						/>
 					</div>
-					<div class="card pad">
-						<div class="points">
-							<div>
-								<h3>BETTER WATER STARTS HERE 💧</h3>
-								<p>
-									The BOROUX Foundation™ Filter was created for families who
-									want more than “good enough.” Every drop is fresh, clean, and
-									free from the chemical aftertaste so common in tap and
-									competitor systems.
-								</p>
-							</div>
-							<div>
-								<h3>REMOVES WHAT OTHERS MISS 🛡️</h3>
-								<p>
-									Independently tested to reduce PFAS (“forever chemicals”),
-									heavy metals, pharmaceuticals, and disinfectant byproducts —
-									the real-world pollutants most filters leave behind.
-								</p>
-							</div>
-							<div>
-								<h3>LONG-LASTING, CONSISTENT PROTECTION ✅</h3>
-								<p>
-									Up to 12 months of proven performance per set — steady flow,
-									trusted results, and no guessing when it’s time to change.
-								</p>
-							</div>
-							<div>
-								<h3>EFFORTLESS COMPATIBILITY 🧩</h3>
-								<p>
-									Fits BOROUX, Berkey, Alexapure, ProOne, Doulton, and other
-									leading gravity systems using standard black-element threads.
-									Installs in minutes — no tools, no adapters, no frustration.
-								</p>
-							</div>
-							<div>
-								<h3>INDEPENDENTLY VERIFIED QUALITY 🧪</h3>
-								<p>
-									Certified to <strong>NSF/ANSI 42</strong>,
-									<strong>401</strong>, and <strong>372</strong>
-									standards for chlorine, emerging contaminants, and lead-free
-									safety — standards many look up to, but few actually meet.
-								</p>
-							</div>
-							<div>
-								<h3>BACKED BY THE BOROUX PROMISE 💬</h3>
-								<p>
-									Try it for 60 days, risk-free. If it doesn’t transform the way
-									your water feels, tastes, and supports your home — send it
-									back for a full refund. No questions, just confidence.
-								</p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- 5) UNIT SIZE ESTIMATOR -->
-		<section class="bx-sizing-section" aria-labelledby="bx-sizing-title">
+		<section id="bx-sizing-section" aria-labelledby="bx-sizing-title">
 			<style>
-				.bx-sizing-section {
+				#bx-sizing-section {
 					--accent: #1b4b66;
 					--ink: #0e3555;
 					--text: #222;
@@ -337,30 +421,30 @@
 					--card: #fff;
 					--radius: 12px;
 					font-family: 'Josefin Sans', sans-serif;
-					margin-top: 20px;
+					padding-top: 10px;
 				}
-				.bx-sizing-section .wrap {
+				#bx-sizing-section .wrap {
 					width: min(900px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 					box-sizing: border-box;
 				}
-				.bx-sizing-section h2 {
+				#bx-sizing-section h2 {
 					text-align: center;
 					color: var(--accent);
 					margin: 2rem 0 0.75rem;
 					font-size: 1.45rem;
 				}
-				.bx-sizing-section p.lead {
+				#bx-sizing-section p.lead {
 					text-align: center;
 					color: var(--muted);
 					margin: 0 0 1rem;
 				}
-				.bx-sizing-section .table-wrap {
+				#bx-sizing-section .table-wrap {
 					overflow-x: auto;
 					border-radius: 10px;
 				}
-				.bx-sizing-section table {
+				#bx-sizing-section table {
 					width: 100%;
 					border-collapse: separate;
 					border-spacing: 0;
@@ -369,7 +453,7 @@
 						0 8px 24px rgba(0, 0, 0, 0.06);
 					border-radius: 10px;
 				}
-				.bx-sizing-section thead th {
+				#bx-sizing-section thead th {
 					background: var(--bg);
 					color: var(--text);
 					font-weight: 700;
@@ -378,20 +462,20 @@
 					padding: 12px 14px;
 					border-bottom: 1px solid #e7eef6;
 				}
-				.bx-sizing-section td {
+				#bx-sizing-section td {
 					padding: 14px;
 					border-bottom: 1px solid #eef3f8;
 					vertical-align: top;
 					font-size: 0.95rem;
 				}
-				.bx-sizing-section tr:last-child td {
+				#bx-sizing-section tr:last-child td {
 					border-bottom: 0;
 				}
-				.bx-sizing-section .unit {
+				#bx-sizing-section .unit {
 					font-weight: 700;
 					color: var(--ink);
 				}
-				.bx-sizing-section .pill {
+				#bx-sizing-section .pill {
 					display: inline-block;
 					padding: 0.15rem 0.5rem;
 					border-radius: 999px;
@@ -401,7 +485,7 @@
 					color: var(--accent);
 					margin-left: 6px;
 				}
-				.bx-sizing-section .note {
+				#bx-sizing-section .note {
 					background: var(--bg);
 					border-left: 4px solid var(--accent);
 					border-radius: 8px;
@@ -411,14 +495,31 @@
 					font-size: 0.92rem;
 					line-height: 1.55;
 				}
+				#bx-sizing-section .add-filters-link {
+					display: inline-block;
+					font-size: 0.9rem;
+					color: #1b4b66;
+					text-decoration: none;
+					background: #f5f9fc;
+					border: 1px solid #d3e4f3;
+					border-radius: 6px;
+					padding: 6px 14px;
+					transition: all 0.2s ease;
+				}
+
+				#bx-sizing-section .add-filters-link:hover {
+					background: #e7f2fa;
+					border-color: #1b4b66;
+					color: #0d2e46;
+				}
 			</style>
 
 			<div class="wrap">
 				<h2 id="bx-sizing-title">Find Your Perfect BOROUX System</h2>
 				<p class="lead">
-					Choose the BOROUX gravity system that fits your lifestyle. All use the
-					same Foundation™ filters — more filters increase flow speed and
-					household capacity.
+					All systems use Foundation™ filters. Replacement windows below are
+					calculated from lab windows for demanding contaminants (PFAS/metals)
+					using: <em>months = gallons ÷ (capacity × refills/day × 30)</em>.
 				</p>
 
 				<div class="table-wrap">
@@ -429,63 +530,127 @@
 								<th>Capacity</th>
 								<th>Filter Setup</th>
 								<th>Ideal For</th>
-								<th>Typical Refill Frequency*</th>
+								<th>Typical Refill*</th>
+								<th>Lab Window (PFAS/Metals)</th>
+								<th>Optimal Replacement Window</th>
+								<th>
+									Practical Replacement Window (Disinfectants / Byproducts)
+								</th>
 							</tr>
 						</thead>
 						<tbody>
+							<!-- COMPACT -->
 							<tr>
 								<td>
 									<span class="unit">BOROUX Compact</span>
 									<span class="pill">travel / small-space</span>
 								</td>
 								<td>≈ 1.8 gal (6.8 L)</td>
-								<td>Up to 2 Foundation™ filters</td>
-								<td>1–2 people • apartments • RVs • off-grid living</td>
-								<td>Refill about once per day under normal use</td>
+								<td>Up to 2 Foundation™ filters (1 pair)</td>
+								<td>1–2 people • apartments • RVs • off-grid</td>
+								<td>~1× / day</td>
+								<td>≈ 400–800 gal / pair</td>
+								<td>
+									≈ <strong>8–15 months</strong><br /><span class="meta"
+										>= 400–800 ÷ (1.8 × 30)</span
+									>
+								</td>
+								<td>≈ <strong>5-10 years</strong></td>
 							</tr>
 
+							<!-- LEGACY (2 FILTERS) -->
 							<tr>
 								<td>
 									<span class="unit">BOROUX Legacy</span>
 									<span class="pill">standard set</span>
 								</td>
 								<td>≈ 3.0 gal (11.4 L)</td>
-								<td>Includes 2 Foundation™ filters</td>
-								<td>2–4 people • daily kitchen use • small families</td>
-								<td>Typically refilled once per day</td>
+								<td>2 Foundation™ filters (1 pair)</td>
+								<td>2–4 people • daily kitchen use</td>
+								<td>~1× / day</td>
+								<td>≈ 400–800 gal / pair</td>
+								<td>
+									≈ <strong>4–9 months</strong><br /><span class="meta"
+										>= 400–800 ÷ (3.0 × 30)</span
+									>
+								</td>
+								<td>≈ <strong>3-8 years</strong></td>
 							</tr>
 
+							<!-- LEGACY HIGH-FLOW (4 FILTERS) -->
 							<tr>
 								<td>
 									<span class="unit">BOROUX Legacy High-Flow</span>
 									<span class="pill">4 filters installed</span>
 								</td>
 								<td>≈ 3.0 gal (11.4 L)</td>
-								<td>Includes 4 Foundation™ filters</td>
-								<td>4–6 people • high-demand households • faster flow</td>
-								<td>Typically refilled once per day</td>
+								<td>4 Foundation™ filters (2 pairs in parallel)</td>
+								<td>4–6 people • higher demand • faster flow</td>
+								<td>~1× / day</td>
+								<td>
+									≈ <strong>800–1600 gal / system</strong><br /><span
+										class="meta"
+										>two pairs share the load</span
+									>
+								</td>
+								<td>
+									≈ <strong>9–18 months</strong><br /><span class="meta"
+										>= 800–1600 ÷ (3.0 × 30)</span
+									>
+								</td>
+								<td>≈ <strong>5-10 years</strong></td>
+							</tr>
+							<tr class="add-filters-row">
+								<td colspan="10" style="text-align: center; padding: 0.75rem 0">
+									<a
+										href="https://www.ebay.com/itm/XXXXXXXXXXXX"
+										class="add-filters-link"
+									>
+										+ Add More Foundation™ Filters
+									</a>
+								</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 
 				<div class="note">
-					<strong>Filter Capacity &amp; Performance:</strong>
+					<strong>Assumptions & Tips:</strong>
 					<ul>
 						<li>
-							Each pair of Foundation™ filters lasts up to ≈12 months gallons.
+							<em>Refills/day:</em> Calculations use ~1 refill/day. If you
+							refill twice per day, <strong>halve</strong> the months.
 						</li>
 						<li>
-							Installing four filters doubles the flow rate and keeps up easily
-							with larger families.
+							<em>Limiting category:</em> We plan on the toughest categories
+							(PFAS/metals). Chlorine-only endurance can be far higher, but
+							shouldn’t set your schedule.
 						</li>
 						<li>
-							All BOROUX systems use the same threaded filter mount — simple to
-							replace or upgrade anytime.
+							<em>High-Flow math:</em> Two pairs in parallel roughly double the
+							system’s PFAS/metal gallon window (load sharing).
 						</li>
 					</ul>
-					*Refill rhythm estimates are based on average household drinking and
-					cooking water needs.
+					<strong>Using Proactive™ (Fluoride Stage)?</strong>
+					Typical fluoride lab window is ≈
+					<strong>400–600 gal per pair</strong>. At the same refill rates:
+					<ul>
+						<li>
+							<strong>Compact (1.8 gal/day):</strong> ≈
+							<strong>7–11 months</strong> (= 400–600 ÷ 54)
+						</li>
+						<li>
+							<strong>Legacy (3.0 gal/day):</strong> ≈
+							<strong>4–7 months</strong> (= 400–600 ÷ 90)
+						</li>
+						<li>
+							<strong>Legacy High-Flow (3.0 gal/day):</strong> If running 2
+							Proactive pairs in parallel (i.e., 4 fluoride elements), window ≈
+							<strong>9–13 months</strong> (doubles like Foundation).
+						</li>
+					</ul>
+					*“Typical Refill” reflects how often most households empty the lower
+					chamber. Actual consumption varies by family size and cooking habits.
 				</div>
 			</div>
 		</section>
@@ -545,6 +710,7 @@
 					display: block;
 					border-radius: var(--r);
 				}
+
 				.bx-lifestyle-mosaic figcaption {
 					position: absolute;
 					bottom: 8px;
@@ -587,11 +753,10 @@
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481906871_669985882051875_7834526164071720644_n.webp"
 						/>
 					</figure>
+
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/559003281_841992691517859_7056607156578405457_n.webp?height=300"
-							height="300"
-							width="300"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482024679_671538441896619_7228383810387488397_n.webp"
 						/>
 					</figure>
 					<figure>
@@ -604,9 +769,9 @@
 		</section>
 
 		<!-- 3) CONTAMINANTS (with panel background) -->
-		<section class="bx-contaminants-section" aria-labelledby="contam-title">
+		<section id="bx-contaminants-section" aria-labelledby="contam-title">
 			<style>
-				.bx-contaminants-section {
+				#bx-contaminants-section {
 					--accent: #1b4b66;
 					--text: #222;
 					--muted: #555;
@@ -614,26 +779,27 @@
 					--card: #fff;
 					--radius: 12px;
 					font-family: 'Josefin Sans', sans-serif;
+					padding-top: 10px;
 				}
-				.bx-contaminants-section .wrap {
+				#bx-contaminants-section .wrap {
 					width: min(1100px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 				}
-				.bx-contaminants-section h2 {
+				#bx-contaminants-section h2 {
 					text-align: center;
 					margin: 2rem 0 1rem;
 					color: var(--accent);
 					font-size: 1.45rem;
 				}
-				.bx-contaminants-section .panel {
+				#bx-contaminants-section .panel {
 					background: var(--bg);
 					border-radius: var(--radius);
 					padding: 1rem;
 					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04),
 						0 8px 24px rgba(0, 0, 0, 0.04);
 				}
-				.bx-contaminants-section .image-card {
+				#bx-contaminants-section .image-card {
 					background: var(--card);
 					border-radius: var(--radius);
 					padding: 0.75rem;
@@ -641,7 +807,7 @@
 					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
 						0 10px 30px rgba(0, 0, 0, 0.06);
 				}
-				.bx-contaminants-section .img {
+				#bx-contaminants-section .img {
 					width: 100%;
 					border-radius: 10px;
 					aspect-ratio: 16/10;
@@ -649,24 +815,24 @@
 					object-position: center;
 					display: block;
 				}
-				.bx-contaminants-section .list {
+				#bx-contaminants-section .list {
 					display: grid;
 					gap: 1rem;
 				}
-				.bx-contaminants-section .item {
+				#bx-contaminants-section .item {
 					border-left: 4px solid var(--accent);
 					padding-left: 1rem;
 				}
-				.bx-contaminants-section .item h3 {
+				#bx-contaminants-section .item h3 {
 					margin: 0 0 0.35rem;
 					color: var(--accent);
 					font-size: 1.06rem;
 				}
-				.bx-contaminants-section .item p {
+				#bx-contaminants-section .item p {
 					margin: 0.25rem 0;
 					color: var(--text);
 				}
-				.bx-contaminants-section .summary {
+				#bx-contaminants-section .summary {
 					background: var(--bg);
 					border-radius: 10px;
 					padding: 1rem;
@@ -675,16 +841,16 @@
 				}
 
 				@media (max-width: 640px) {
-					.bx-contaminants-section .wrap {
+					#bx-contaminants-section .wrap {
 						padding: 0;
 					}
-					.bx-contaminants-section .panel {
+					#bx-contaminants-section .panel {
 						border-radius: 0;
 					}
-					.bx-contaminants-section h2 {
+					#bx-contaminants-section h2 {
 						margin: 1.5rem 1rem 1rem;
 					}
-					.bx-contaminants-section .list {
+					#bx-contaminants-section .list {
 						padding: 0 1rem;
 					}
 				}
@@ -864,6 +1030,11 @@
 					border-radius: 6px;
 					font-size: 0.9rem;
 				}
+				@media (min-width: 640px) {
+					.bx-lifestyle-mosaic .special1 {
+						object-position: center -120px;
+					}
+				}
 				@media (max-width: 800px) {
 					.bx-lifestyle-mosaic figure {
 						width: 220px;
@@ -891,7 +1062,7 @@
 				<div class="grid">
 					<figure>
 						<img
-							style="object-position: 0px -10px"
+							class="special1"
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/483524274_671519475231849_1350277120335767838_n.webp"
 						/>
 					</figure>
@@ -911,9 +1082,9 @@
 		</section>
 
 		<!-- 3) DESIGN & CRAFTSMANSHIP (with panel background) -->
-		<section class="bx-design-section" aria-labelledby="design-title">
+		<section id="bx-design-section" aria-labelledby="design-title">
 			<style>
-				.bx-design-section {
+				#bx-design-section {
 					--accent: #1b4b66;
 					--text: #222;
 					--muted: #555;
@@ -921,26 +1092,27 @@
 					--card: #fff;
 					--radius: 12px;
 					font-family: 'Josefin Sans', sans-serif;
+					padding-top: 10px;
 				}
-				.bx-design-section .wrap {
+				#bx-design-section .wrap {
 					width: min(1100px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 				}
-				.bx-design-section h2 {
+				#bx-design-section h2 {
 					text-align: center;
 					margin: 2rem 0 1rem;
 					color: var(--accent);
 					font-size: 1.45rem;
 				}
-				.bx-design-section .panel {
+				#bx-design-section .panel {
 					background: var(--bg);
 					border-radius: var(--radius);
 					padding: 1rem;
 					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04),
 						0 8px 24px rgba(0, 0, 0, 0.04);
 				}
-				.bx-design-section .image-card {
+				#bx-design-section .image-card {
 					background: var(--card);
 					border-radius: var(--radius);
 					padding: 0.75rem;
@@ -948,7 +1120,7 @@
 					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
 						0 10px 30px rgba(0, 0, 0, 0.06);
 				}
-				.bx-design-section .img {
+				#bx-design-section .img {
 					width: 100%;
 					border-radius: 10px;
 					aspect-ratio: 16/10;
@@ -956,57 +1128,57 @@
 					object-position: center;
 					display: block;
 				}
-				.bx-design-section .cols {
+				#bx-design-section .cols {
 					display: grid;
 					grid-template-columns: 1.1fr 0.9fr;
 					gap: 1rem;
 				}
-				.bx-design-section .card {
+				#bx-design-section .card {
 					background: var(--card);
 					border-radius: 10px;
 					padding: 1rem;
 					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
 						0 10px 30px rgba(0, 0, 0, 0.06);
 				}
-				.bx-design-section .list {
+				#bx-design-section .list {
 					display: grid;
 					gap: 0.9rem;
 				}
-				.bx-design-section .item {
+				#bx-design-section .item {
 					border-left: 4px solid var(--accent);
 					padding-left: 0.9rem;
 				}
-				.bx-design-section .item h3 {
+				#bx-design-section .item h3 {
 					margin: 0 0 0.25rem;
 					color: var(--accent);
 					font-size: 1.06rem;
 				}
-				.bx-design-section .item p,
-				.bx-design-section .item ul {
+				#bx-design-section .item p,
+				#bx-design-section .item ul {
 					margin: 0.25rem 0 0;
 					color: var(--text);
 					line-height: 1.55;
 				}
-				.bx-design-section .item ul {
+				#bx-design-section .item ul {
 					padding-left: 1.05rem;
 				}
-				.bx-design-section .muted {
+				#bx-design-section .muted {
 					color: var(--muted);
 					font-size: 0.95rem;
 					margin-top: 0.5rem;
 				}
-				.bx-design-section .specs h3 {
+				#bx-design-section .specs h3 {
 					color: #0e3555;
 					margin: 0.1rem 0 0.5rem;
 					font-size: 1.04rem;
 				}
-				.bx-design-section .specs ul {
+				#bx-design-section .specs ul {
 					margin: 0;
 					padding-left: 1.05rem;
 					color: #333;
 					line-height: 1.55;
 				}
-				.bx-design-section .summary {
+				#bx-design-section .summary {
 					background: var(--bg);
 					border-radius: 10px;
 					padding: 1rem;
@@ -1014,23 +1186,42 @@
 					font-weight: 600;
 				}
 
+				#bx-design-section #inthebox {
+					margin-top: 1rem;
+					border: 1px solid #e8eff6;
+					border-radius: 10px;
+					padding: 0.9rem;
+					background: #fff;
+				}
+				#bx-design-section #inthebox h3 {
+					margin: 0 0 0.5rem;
+					color: #0e3555;
+					font-size: 1.03rem;
+				}
+				#bx-design-section #inthebox ul {
+					margin: 0;
+					padding-left: 1.05rem;
+					color: #333;
+					line-height: 1.55;
+				}
+
 				/* Mobile tweaks to match your reference */
 				@media (max-width: 760px) {
-					.bx-design-section .wrap {
+					#bx-design-section .wrap {
 						padding: 0;
 					}
-					.bx-design-section .panel {
+					#bx-design-section .panel {
 						border-radius: 0;
 					}
-					.bx-design-section .cols {
+					#bx-design-section .cols {
 						grid-template-columns: 1fr;
 					}
 				}
 				@media (max-width: 640px) {
-					.bx-design-section h2 {
+					#bx-design-section h2 {
 						margin: 1.5rem 1rem 1rem;
 					}
-					.bx-design-section .list {
+					#bx-design-section .list {
 						padding: 0 1rem;
 					}
 				}
@@ -1067,7 +1258,6 @@
 										quality.
 									</p>
 								</div>
-
 								<div class="item">
 									<h3>Clean Lines, Tight Tolerances</h3>
 									<p>
@@ -1075,7 +1265,6 @@
 										seams give a quietly premium silhouette built for daily use.
 									</p>
 								</div>
-
 								<div class="item">
 									<h3>Ceramic-Core, Metal-Only Spigot</h3>
 									<p>
@@ -1083,7 +1272,6 @@
 										precision-lapped ceramic valve for a smooth, drip-free pour.
 									</p>
 								</div>
-
 								<div class="item">
 									<h3>Balanced Handling</h3>
 									<p>
@@ -1091,12 +1279,19 @@
 										stand and Water View Spigot integrate cleanly without fuss.
 									</p>
 								</div>
-
 								<div class="item">
 									<h3>Serviceable by Design</h3>
 									<p>
 										Fast disassembly for rinsing; durable surfaces wipe clean
 										without special polishes or coatings.
+									</p>
+								</div>
+								<div class="item">
+									<h3>Understated Luxury, Everyday Utility</h3>
+									<p>
+										The BOROUX system is designed to look as intentional on a
+										modern kitchen counter as it performs — timeless, balanced,
+										and built for decades of use.
 									</p>
 								</div>
 							</div>
@@ -1125,7 +1320,7 @@
 								filtration delivers visible clarity, balanced taste, and lasting
 								confidence without compromise.
 							</div>
-							<div class="inthebox" aria-labelledby="bx-inbox-title">
+							<div id="inthebox" aria-labelledby="bx-inbox-title">
 								<h3 id="bx-inbox-title">In the Box</h3>
 								<ul>
 									<li>
@@ -1158,6 +1353,7 @@
 			</div>
 		</section>
 
+		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
 		<section class="bx-lifestyle-mosaic">
 			<style>
 				.bx-lifestyle-mosaic {
@@ -1245,10 +1441,24 @@
 					.bx-lifestyle-mosaic figcaption {
 						font-size: 0.8rem;
 					}
+
+					.bx-lifestyle-mosaic figure {
+						display: none;
+					}
+
+					.bx-lifestyle-mosaic .grid figure:first-of-type {
+						display: block;
+					}
 				}
 			</style>
 			<div class="wrap">
 				<div class="grid">
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482089300_671551171895346_5858157712306919252_n.webp"
+							style="object-fit: scale-down"
+						/>
+					</figure>
 					<figure>
 						<img
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481816069_671525075231289_5495785893350029269_n.webp"
@@ -1257,14 +1467,7 @@
 					</figure>
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Black_legacy_2.webp"
-							style="object-fit: scale-down"
-						/>
-					</figure>
-					<figure>
-						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482089300_671551171895346_5858157712306919252_n.webp"
-							style="object-fit: scale-down"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/559003281_841992691517859_7056607156578405457_n.webp?height=300"
 						/>
 					</figure>
 				</div>
@@ -1272,9 +1475,9 @@
 		</section>
 
 		<!-- 4) COMPARISON (table desktop, cards mobile) -->
-		<section class="bx-compare-section" aria-labelledby="compare-title">
+		<section id="bx-compare-section" aria-labelledby="compare-title">
 			<style>
-				.bx-compare-section {
+				#bx-compare-section {
 					--accent: #1b4b66;
 					--text: #222;
 					--muted: #56606a;
@@ -1285,23 +1488,24 @@
 					--bad: #b71c1c;
 					--radius: 12px;
 					font-family: 'Josefin Sans', sans-serif;
+					padding-top: 10px;
 				}
-				.bx-compare-section .wrap {
+				#bx-compare-section .wrap {
 					width: min(1100px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 				}
-				.bx-compare-section h2 {
+				#bx-compare-section h2 {
 					text-align: center;
 					color: var(--accent);
 					margin: 2rem 0 0.5rem;
 				}
-				.bx-compare-section .lead {
+				#bx-compare-section .lead {
 					text-align: center;
 					color: var(--muted);
 					margin: 0 0 1rem;
 				}
-				.bx-compare-section .legend {
+				#bx-compare-section .legend {
 					display: flex;
 					flex-wrap: wrap;
 					gap: 0.5rem 0.75rem;
@@ -1310,7 +1514,7 @@
 					font-size: 0.92rem;
 					margin-bottom: 0.75rem;
 				}
-				.bx-compare-section .dot {
+				#bx-compare-section .dot {
 					display: inline-block;
 					width: 0.65rem;
 					height: 0.65rem;
@@ -1318,22 +1522,22 @@
 					margin-right: 0.4rem;
 					transform: translateY(1px);
 				}
-				.bx-compare-section .ok {
+				#bx-compare-section .ok {
 					background: var(--ok);
 				}
-				.bx-compare-section .warn {
+				#bx-compare-section .warn {
 					background: var(--warn);
 				}
-				.bx-compare-section .bad {
+				#bx-compare-section .bad {
 					background: var(--bad);
 				}
-				.bx-compare-section .table-wrap {
+				#bx-compare-section .table-wrap {
 					background: transparent;
 					border-radius: 10px;
 					overflow-x: auto;
 					-webkit-overflow-scrolling: touch;
 				}
-				.bx-compare-section .table {
+				#bx-compare-section .table {
 					min-width: 960px;
 					width: 100%;
 					border-collapse: separate;
@@ -1344,7 +1548,7 @@
 					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06),
 						0 8px 24px rgba(0, 0, 0, 0.04);
 				}
-				.bx-compare-section thead th {
+				#bx-compare-section thead th {
 					background: var(--bg);
 					color: var(--text);
 					font-weight: 700;
@@ -1353,16 +1557,16 @@
 					padding: 12px 14px;
 					border-bottom: 1px solid #e7eef6;
 				}
-				.bx-compare-section td {
+				#bx-compare-section td {
 					padding: 14px;
 					border-bottom: 1px solid #eef3f8;
 					vertical-align: top;
 					font-size: 0.95rem;
 				}
-				.bx-compare-section tr:last-child td {
+				#bx-compare-section tr:last-child td {
 					border-bottom: none;
 				}
-				.bx-compare-section .pill {
+				#bx-compare-section .pill {
 					display: inline-block;
 					padding: 0.15rem 0.5rem;
 					border-radius: 999px;
@@ -1371,21 +1575,21 @@
 					background: var(--bg);
 					color: var(--accent);
 				}
-				.bx-compare-section .meter {
+				#bx-compare-section .meter {
 					display: inline-flex;
 					gap: 4px;
 					margin-top: 0.25rem;
 				}
-				.bx-compare-section .meter span {
+				#bx-compare-section .meter span {
 					width: 9px;
 					height: 9px;
 					border-radius: 2px;
 					background: #e7eef6;
 				}
-				.bx-compare-section .meter .on {
+				#bx-compare-section .meter .on {
 					background: var(--accent);
 				}
-				.bx-compare-section .foot {
+				#bx-compare-section .foot {
 					background: var(--bg);
 					border-left: 4px solid var(--accent);
 					padding: 12px 14px;
@@ -1395,19 +1599,19 @@
 					color: var(--muted);
 				}
 				@media (max-width: 640px) {
-					.bx-compare-section .wrap {
+					#bx-compare-section .wrap {
 						padding: 0;
 					}
-					.bx-compare-section h2 {
+					#bx-compare-section h2 {
 						margin: 1.5rem 1rem 0.5rem;
 					}
-					.bx-compare-section .lead,
-					.bx-compare-section .legend,
-					.bx-compare-section .foot {
+					#bx-compare-section .lead,
+					#bx-compare-section .legend,
+					#bx-compare-section .foot {
 						margin-left: 1rem;
 						margin-right: 1rem;
 					}
-					.bx-compare-section .table-wrap {
+					#bx-compare-section .table-wrap {
 						padding: 0 1rem;
 					}
 				}
@@ -1569,8 +1773,8 @@
 								</td>
 								<td>Very high (single-use). <span class="dot bad"></span></td>
 								<td>
-									Convenient, but costly &amp; waste-heavy; doesn’t address tap
-									contaminants.
+									Convenient, but costly &amp; waste-heavy;
+									<b>doesn’t address tap contaminants.</b>
 								</td>
 							</tr>
 						</tbody>
@@ -1675,6 +1879,14 @@
 					.bx-lifestyle-mosaic figcaption {
 						font-size: 0.8rem;
 					}
+
+					.bx-lifestyle-mosaic figure {
+						display: none;
+					}
+
+					.bx-lifestyle-mosaic .grid figure:first-of-type {
+						display: block;
+					}
 				}
 			</style>
 
@@ -1700,9 +1912,9 @@
 		</section>
 
 		<!-- 5) LIFETIME BY CONTAMINANT -->
-		<section class="bx-life-section" aria-labelledby="life-title">
+		<section id="bx-life-section" aria-labelledby="life-title">
 			<style>
-				.bx-life-section {
+				#bx-life-section {
 					--accent: #1b4b66;
 					--text: #222;
 					--muted: #555;
@@ -1710,18 +1922,19 @@
 					--card: #fff;
 					--radius: 12px;
 					font-family: 'Josefin Sans', sans-serif;
+					padding-top: 10px;
 				}
-				.bx-life-section .wrap {
+				#bx-life-section .wrap {
 					width: min(1100px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 				}
-				.bx-life-section h2 {
+				#bx-life-section h2 {
 					text-align: center;
 					color: var(--accent);
 					margin: 2rem 0 0.6rem;
 				}
-				.bx-life-section .intro {
+				#bx-life-section .intro {
 					text-align: center;
 					color: var(--muted);
 					max-width: 760px;
@@ -1729,48 +1942,72 @@
 					line-height: 1.55;
 				}
 
-				/* scrollable container for table on mobile */
-				.bx-life-section .table-scroll {
+				#bx-life-section .table-scroll {
 					border-radius: var(--radius);
 					box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 					background: var(--card);
 					overflow: hidden;
 				}
-				.bx-life-section .table-scroll-inner {
+				#bx-life-section .table-scroll-inner {
 					overflow-x: auto;
 					-webkit-overflow-scrolling: touch;
 					scrollbar-gutter: stable both-edges;
 					overscroll-behavior-x: contain;
 				}
 
-				.bx-life-section table {
+				#bx-life-section table {
 					width: 100%;
 					border-collapse: collapse;
 					background: transparent;
 				}
-				.bx-life-section th,
-				.bx-life-section td {
+				#bx-life-section th,
+				#bx-life-section td {
 					padding: 14px;
 					border-bottom: 1px solid #eaeaea;
 					text-align: left;
 					vertical-align: top;
 				}
-				.bx-life-section th {
+				#bx-life-section thead th {
 					color: var(--accent);
-					width: 35%;
 					font-weight: 700;
+					background: var(--bg);
 				}
-				.bx-life-section tr:last-child td {
+				#bx-life-section th:first-child {
+					width: 30%;
+				}
+				#bx-life-section .sys {
+					white-space: nowrap;
+					font-weight: 700;
+					color: #0e3555;
+				}
+				#bx-life-section .num {
+					white-space: nowrap;
+					font-variant-numeric: tabular-nums;
+				}
+				#bx-life-section .badge {
+					display: inline-block;
+					padding: 0.15rem 0.45rem;
+					border-radius: 999px;
+					background: var(--bg);
+					color: #0e3555;
+					font-size: 0.78rem;
+					font-weight: 700;
+					white-space: nowrap;
+				}
+				#bx-life-section .meta {
+					color: var(--muted);
+					font-size: 0.92rem;
+					margin-top: 0.35rem;
+				}
+				#bx-life-section tr:last-child td {
 					border-bottom: 0;
 				}
-
 				@media (min-width: 701px) {
-					.bx-life-section tbody tr:nth-child(odd) {
+					#bx-life-section tbody tr:nth-child(odd) {
 						background: #fcfdff;
 					}
 				}
-
-				.bx-life-section .note {
+				#bx-life-section .note {
 					background: var(--bg);
 					border-left: 4px solid var(--accent);
 					padding: 1rem;
@@ -1779,172 +2016,260 @@
 					color: var(--muted);
 					font-size: 0.92rem;
 				}
-
-				@media (max-width: 700px) {
-					.bx-life-section .wrap {
+				@media (max-width: 760px) {
+					#bx-life-section .wrap {
 						padding: 0;
 					}
-					.bx-life-section .table-scroll {
-						margin: 0 0;
+					#bx-life-section .table-scroll {
 						border-radius: 0;
 					}
-					.bx-life-section .table-scroll-inner {
+					#bx-life-section .table-scroll-inner {
 						padding: 0 16px;
 					}
-					.bx-life-section table {
-						min-width: 680px;
+					#bx-life-section table {
+						min-width: 760px;
 					}
-					.bx-life-section h2,
-					.bx-life-section .intro,
-					.bx-life-section .note {
+					#bx-life-section h2,
+					#bx-life-section .intro,
+					#bx-life-section .note {
 						padding: 0 1rem;
 					}
 				}
+
+				#bx-life-section .add-filters-link {
+					display: inline-block;
+					font-size: 0.9rem;
+					color: #1b4b66;
+					text-decoration: none;
+					background: #f5f9fc;
+					border: 1px solid #d3e4f3;
+					border-radius: 6px;
+					padding: 6px 14px;
+					transition: all 0.2s ease;
+				}
+
+				#bx-life-section .add-filters-link:hover {
+					background: #e7f2fa;
+					border-color: #1b4b66;
+					color: #0d2e46;
+				}
+				.pill.addon {
+					background: #e9f3ff;
+					color: #1b4b66;
+					border: 1px solid #b3d6f9;
+					font-size: 0.75rem;
+					padding: 0.1rem 0.5rem;
+					border-radius: 999px;
+					margin-left: 6px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
 			</style>
-
 			<div class="wrap">
-				<h2 id="life-title">Expected Filter Lifetime by Contaminant</h2>
+				<h2 id="life-title">
+					Expected Filter Lifetime by Contaminant (Foundation™ + Proactive™)
+				</h2>
 				<p class="intro">
-					<strong>Filter lifespan</strong> marks where reduction efficiency
-					begins to taper — not when filtration stops. Figures reflect the
-					verified volume where the Boroux Foundation™ filter still meets
-					certified reduction levels (≈ 90–95%). Replacing on schedule maintains
-					full protection.
+					Lifespan marks where reduction efficiency begins to taper — not when
+					filtration stops. Values below reflect practical, verified windows
+					under typical municipal water and daily use (≈1.5–2 gal/day). Replace
+					on schedule to keep performance in the certified range.
 				</p>
-
 				<div class="table-scroll">
 					<div class="table-scroll-inner">
-						<table>
-							<tr>
-								<th>
-									Disinfectants &amp; Byproducts<br />
-									<span style="font-weight: 400"
-										>Chlorine, chloramine, THMs</span
-									>
-								</th>
-								<td>
-									<strong>Verified window:</strong> 4,000–12,000 gal per
-									system<br />
-									<strong>Typical use:</strong> ~2 gal/day (≈730/yr)<br />
-									<strong>Est. lifespan:</strong> 5–10 years before chlorine
-									breakthrough.<br />
-									<em
-										>Efficiency begins to taper after the window; taste/odor
-										reduction usually continues well beyond.</em
-									>
-								</td>
-							</tr>
-
-							<tr>
-								<th>PFAS (“Forever Chemicals”)</th>
-								<td>
-									<strong>Verified window:</strong> ≈800 gal per system<br />
-									<strong>Typical use:</strong> 1.5–2 gal/day<br />
-									<strong>Est. lifespan:</strong> 12–15 months under normal
-									municipal loads.<br />
-									<em
-										>Window indicates where removal begins to fall from ≥95%;
-										replace at ~12 months to stay ahead of breakthrough.</em
-									>
-								</td>
-							</tr>
-
-							<tr>
-								<th>
-									Heavy Metals<br />
-									<span style="font-weight: 400"
-										>Lead, mercury, chromium, uranium</span
-									>
-								</th>
-								<td>
-									<strong>Verified window:</strong> 500–1,600 gal (metal &amp;
-									pH dependent)<br />
-									<strong>Typical use:</strong> 1.5–2 gal/day<br />
-									<strong>Est. lifespan:</strong> 10–14 months.<br />
-									<em
-										>Onset of tapering, not exhaustion; reduction continues at
-										lower levels beyond the certified window.</em
-									>
-								</td>
-							</tr>
-
-							<tr>
-								<th>Pharmaceuticals</th>
-								<td>
-									<strong>Verified window:</strong> 400–500 gal per system<br />
-									<strong>Typical use:</strong> 1.5–2 gal/day<br />
-									<strong>Est. lifespan:</strong> 7–11 months.<br />
-									<em
-										>Reduction softens after this period; a portion is still
-										captured.</em
-									>
-								</td>
-							</tr>
-
-							<tr>
-								<th>Pesticides &amp; Herbicides</th>
-								<td>
-									<strong>Verified window:</strong> 400–700 gal<br />
-									<strong>Typical use:</strong> 1.5–2 gal/day<br />
-									<strong>Est. lifespan:</strong> 8–12 months.<br />
-									<em
-										>Point where efficiency starts to decline from peak;
-										agricultural/organic load may shorten this.</em
-									>
-								</td>
-							</tr>
-
-							<tr>
-								<th>Industrial Chemicals &amp; VOCs</th>
-								<td>
-									<strong>Verified window:</strong> 300–400 gal<br />
-									<strong>Typical use:</strong> 1.5–2 gal/day<br />
-									<strong>Est. lifespan:</strong> 6–9 months.<br />
-									<em
-										>Adsorption sites saturate faster for VOCs; this marks
-										measurable breakthrough, not total loss.</em
-									>
-								</td>
-							</tr>
-
-							<tr>
-								<th>Microplastics &amp; Sediment</th>
-								<td>
-									<strong>Verified window:</strong> Continuous for system
-									lifetime<br />
-									<strong>Est. lifespan:</strong> Follows the shortest critical
-									contaminant (generally 12 months).<br />
-									<em
-										>Capture (≥98.9% for 0.5–1.0 µm) remains steady; flow
-										restriction is your cue to replace.</em
-									>
-								</td>
-							</tr>
-
-							<tr>
-								<th>Recommended Replacement</th>
-								<td>
-									Most homes using 1.5–2 gal/day:
-									<strong>Replace every 12 months</strong> to maintain verified
-									protection. Lower-use households may extend to ~15 months.
-								</td>
-							</tr>
+						<table role="table" aria-describedby="life-title">
+							<thead>
+								<tr>
+									<th>Contaminant Category</th>
+									<th>Foundation™ (Primary Stage)</th>
+									<th>
+										Proactive™ (Secondary Stage)
+										<span class="pill addon">Add-On</span>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">
+										Disinfectants &amp; Byproducts<br />
+										<span class="meta">Chlorine, chloramine, THMs</span>
+									</th>
+									<td>
+										<strong>Verified window:</strong> 4,000–12,000 gal per
+										system<br />
+										<strong>Typical use:</strong> ~2 gal/day (≈730/yr)<br />
+										<strong>Est. lifespan:</strong> 5–10 years before chlorine
+										breakthrough.<br />
+										<em
+											>Efficiency begins to taper after the window; taste/odor
+											reduction usually continues well beyond.</em
+										>
+									</td>
+									<td class="meta">
+										Handled by Foundation stage; Proactive not required for this
+										category.
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">PFAS (“Forever Chemicals”)</th>
+									<td>
+										<strong>Verified window:</strong> ≈800 gal per system<br />
+										<strong>Typical use:</strong> 1.5–2 gal/day<br />
+										<strong>Est. lifespan:</strong> 12–15 months under normal
+										municipal loads.<br />
+										<em
+											>Window indicates where removal begins to fall from ≥95%;
+											replace at ~12 months to stay ahead of breakthrough.</em
+										>
+									</td>
+									<td class="meta">
+										Not targeted by Proactive (fluoride-specific media).
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										Heavy Metals<br /><span class="meta"
+											>Lead, mercury, chromium, uranium</span
+										>
+									</th>
+									<td>
+										<strong>Verified window:</strong> 500–1,600 gal (metal &amp;
+										pH dependent)<br />
+										<strong>Typical use:</strong> 1.5–2 gal/day<br />
+										<strong>Est. lifespan:</strong> 10–14 months.<br />
+										<em
+											>Onset of tapering, not exhaustion; reduction continues at
+											lower levels beyond the certified window.</em
+										>
+									</td>
+									<td class="meta">
+										Not targeted by Proactive (fluoride-specific media).
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Pharmaceuticals</th>
+									<td>
+										<strong>Verified window:</strong> 400–500 gal per system<br />
+										<strong>Typical use:</strong> 1.5–2 gal/day<br />
+										<strong>Est. lifespan:</strong> 7–11 months.<br />
+										<em
+											>Reduction softens after this period; a portion is still
+											captured.</em
+										>
+									</td>
+									<td class="meta">Not targeted by Proactive.</td>
+								</tr>
+								<tr>
+									<th scope="row">Pesticides &amp; Herbicides</th>
+									<td>
+										<strong>Verified window:</strong> 400–700 gal<br />
+										<strong>Typical use:</strong> 1.5–2 gal/day<br />
+										<strong>Est. lifespan:</strong> 8–12 months.<br />
+										<em
+											>Point where efficiency starts to decline from peak;
+											agricultural/organic load may shorten this.</em
+										>
+									</td>
+									<td class="meta">Not targeted by Proactive.</td>
+								</tr>
+								<tr>
+									<th scope="row">Industrial Chemicals &amp; VOCs</th>
+									<td>
+										<strong>Verified window:</strong> 300–400 gal<br />
+										<strong>Typical use:</strong> 1.5–2 gal/day<br />
+										<strong>Est. lifespan:</strong> 6–9 months.<br />
+										<em
+											>Adsorption sites saturate faster for VOCs; this marks
+											measurable breakthrough, not total loss.</em
+										>
+									</td>
+									<td class="meta">Not targeted by Proactive.</td>
+								</tr>
+								<tr>
+									<th scope="row">Microplastics &amp; Sediment</th>
+									<td>
+										<strong>Verified window:</strong> Continuous for system
+										lifetime<br />
+										<strong>Est. lifespan:</strong> Follows the shortest
+										critical contaminant (generally 12 months).<br />
+										<em
+											>Capture (≥98.9% for 0.5–1.0 µm) remains steady; flow
+											restriction is your cue to replace.</em
+										>
+									</td>
+									<td class="meta">Not targeted by Proactive.</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										Fluoride (Municipal)
+										<span class="badge" title="Second stage">Proactive™</span>
+									</th>
+									<td class="meta">
+										Foundation does not reduce fluoride; add Proactive stage.
+									</td>
+									<td>
+										<strong>Verified window:</strong> up to 1,000 gal per
+										pair<br />
+										<strong>Est. lifespan:</strong> Typically 9–12 months under
+										normal municipal fluoride levels (0.7–1.2 mg/L).<br />
+										<em>
+											Effectiveness gradually tapers after the certified volume
+											— replace annually for consistent fluoride reduction and
+											balanced taste.
+										</em>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Recommended Replacement</th>
+									<td>
+										Most homes using 1.5–2 gal/day:
+										<strong>Replace every 12 months</strong> to maintain
+										verified protection. Lower-use households may extend to ~15
+										months.
+									</td>
+									<td>
+										<span class="sys">Proactive™</span>:
+										<strong>Every ~9–12 months</strong>; align with annual
+										change or sooner if fluoride load is high.
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"></th>
+									<td>
+										<a
+											href="https://www.ebay.com/itm/XXXXXXXXXXXX"
+											class="add-filters-link"
+										>
+											+ Add More Foundation™ Filters
+										</a>
+									</td>
+									<td>
+										<a
+											href="https://www.ebay.com/itm/XXXXXXXXXXXX"
+											class="add-filters-link"
+										>
+											+ Add Proactive Filters
+										</a>
+									</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>
-
 				<div class="note">
-					<strong>Note:</strong> Lifespan is the safety margin where performance
-					begins to taper, not a hard stop. Actual duration varies with water
-					chemistry, contaminant load, and daily use.
+					<strong>Notes:</strong> These are practical windows where verified
+					reduction begins to taper, not a hard stop. Actual life varies with
+					water chemistry, contaminant load, and daily volume. For simplicity,
+					many homes change both stages annually; in high-fluoride areas,
+					replace Proactive™ on the earlier side.
 				</div>
 			</div>
 		</section>
 
 		<!-- 6) REVIEWS — Legacy Compact + Foundation Filters -->
-		<section class="bx-reviews-section" aria-labelledby="reviews-title">
+		<section id="bx-reviews-section" aria-labelledby="reviews-title">
 			<style>
-				.bx-reviews-section {
+				#bx-reviews-section {
 					--accent: #1b4b66;
 					--text: #222;
 					--muted: #56606a;
@@ -1952,21 +2277,22 @@
 					--ring: rgba(27, 75, 102, 0.12);
 					--radius: 12px;
 					font-family: 'Josefin Sans', sans-serif;
+					padding-top: 10px;
 				}
-				.bx-reviews-section .wrap {
+				#bx-reviews-section .wrap {
 					width: min(980px, 100%);
 					margin: 0 auto;
 					padding: 0 clamp(0.75rem, 3vw, 1rem);
 					box-sizing: border-box;
 				}
-				.bx-reviews-section h2 {
+				#bx-reviews-section h2 {
 					text-align: center;
 					color: var(--accent);
 					margin: 2rem 0 1rem;
 					font-size: 1.5rem;
 					letter-spacing: 0.2px;
 				}
-				.bx-reviews-section .list {
+				#bx-reviews-section .list {
 					list-style: none;
 					margin: 0;
 					padding: 0;
@@ -1975,11 +2301,11 @@
 					grid-template-columns: 1fr;
 				}
 				@media (min-width: 760px) {
-					.bx-reviews-section .list {
+					#bx-reviews-section .list {
 						grid-template-columns: 1fr 1fr;
 					}
 				}
-				.bx-reviews-section .item {
+				#bx-reviews-section .item {
 					background: var(--card);
 					border-radius: var(--radius);
 					padding: 14px 16px;
@@ -1988,12 +2314,12 @@
 					transition: transform 0.18s ease, box-shadow 0.18s ease,
 						border-color 0.18s ease;
 				}
-				.bx-reviews-section .item:hover {
+				#bx-reviews-section .item:hover {
 					transform: translateY(-2px);
 					box-shadow: 0 10px 26px -8px var(--ring);
 					border-color: #e6eef6;
 				}
-				.bx-reviews-section .head {
+				#bx-reviews-section .head {
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
@@ -2001,30 +2327,30 @@
 					margin-bottom: 0.4rem;
 					flex-wrap: wrap;
 				}
-				.bx-reviews-section .stars {
+				#bx-reviews-section .stars {
 					display: inline-flex;
 					gap: 2px;
 					line-height: 0;
 				}
-				.bx-reviews-section .star {
+				#bx-reviews-section .star {
 					width: 16px;
 					height: 16px;
 					fill: #ffc107;
 					flex: 0 0 16px;
 				}
-				.bx-reviews-section .meta {
+				#bx-reviews-section .meta {
 					color: var(--muted);
 					font-size: 0.9rem;
 					text-align: right;
 					white-space: nowrap;
 				}
-				.bx-reviews-section .quote {
+				#bx-reviews-section .quote {
 					margin: 0.25rem 0 0.5rem;
 					color: var(--text);
 					line-height: 1.6;
 					font-style: italic;
 				}
-				.bx-reviews-section .author {
+				#bx-reviews-section .author {
 					display: flex;
 					align-items: center;
 					gap: 0.5rem;
@@ -2032,48 +2358,48 @@
 					font-weight: 700;
 					font-size: 0.95rem;
 				}
-				.bx-reviews-section .dot {
+				#bx-reviews-section .dot {
 					width: 4px;
 					height: 4px;
 					border-radius: 50%;
 					background: #c7d7e6;
 					display: inline-block;
 				}
-				.bx-reviews-section .note {
+				#bx-reviews-section .note {
 					text-align: center;
 					color: var(--muted);
 					font-size: 0.9rem;
 					margin-top: 0.9rem;
 				}
 				@media (max-width: 600px) {
-					.bx-reviews-section .wrap {
+					#bx-reviews-section .wrap {
 						padding-left: clamp(0.75rem, 4vw, 1rem);
 						padding-right: clamp(0.75rem, 4vw, 1rem);
 					}
-					.bx-reviews-section h2 {
+					#bx-reviews-section h2 {
 						font-size: 1.25rem;
 						margin: 1.25rem 0 0.75rem;
 					}
-					.bx-reviews-section .item {
+					#bx-reviews-section .item {
 						padding: 12px 14px;
 						border-radius: 10px;
 						box-shadow: 0 4px 14px -8px var(--ring);
 					}
-					.bx-reviews-section .star {
+					#bx-reviews-section .star {
 						width: 14px;
 						height: 14px;
 					}
-					.bx-reviews-section .meta {
+					#bx-reviews-section .meta {
 						font-size: 0.82rem;
 						opacity: 0.9;
 					}
-					.bx-reviews-section .quote {
+					#bx-reviews-section .quote {
 						font-size: 0.97rem;
 					}
-					.bx-reviews-section .author {
+					#bx-reviews-section .author {
 						font-size: 0.92rem;
 					}
-					.bx-reviews-section .note {
+					#bx-reviews-section .note {
 						font-size: 0.85rem;
 						margin-top: 0.6rem;
 					}
@@ -2157,6 +2483,7 @@
 					margin: 2rem 0;
 					background: var(--bx-soft);
 					overflow-x: hidden;
+					padding-top: 10px;
 				}
 				.bx-scope-faq .inner {
 					width: min(1000px, 100%);
@@ -2344,12 +2671,9 @@
 		</section>
 
 		<!-- 7) RECOMMENDED PRODUCTS -->
-		<section
-			class="bx-upsell-spotlight"
-			aria-labelledby="upsell-spotlight-title"
-		>
+		<section id="bx-upsell-spotlight" aria-labelledby="upsell-spotlight-title">
 			<style>
-				.bx-upsell-spotlight {
+				#bx-upsell-spotlight {
 					--accent: #1b4b66;
 					--accent-2: #0e3555;
 					--glow: #cfe9ff;
@@ -2380,17 +2704,17 @@
 					border-top: 1px solid #e8f1f8;
 					border-bottom: 1px solid #e8f1f8;
 				}
-				.bx-upsell-spotlight .wrap {
+				#bx-upsell-spotlight .wrap {
 					width: min(1120px, 100%);
 					margin: 0 auto;
 					padding: 0 clamp(14px, 4vw, 18px);
 					box-sizing: border-box;
 				}
-				.bx-upsell-spotlight .header {
+				#bx-upsell-spotlight .header {
 					text-align: center;
 					margin-bottom: 1.4rem;
 				}
-				.bx-upsell-spotlight .eyebrow {
+				#bx-upsell-spotlight .eyebrow {
 					display: inline-block;
 					font-weight: 800;
 					letter-spacing: 0.6px;
@@ -2402,28 +2726,24 @@
 					border-radius: 999px;
 					box-shadow: 0 6px 20px -10px var(--ring);
 				}
-				.bx-upsell-spotlight h2 {
+				#bx-upsell-spotlight h2 {
 					margin: 0.6rem 0 0.3rem;
 					font-size: 1.75rem;
 					color: var(--accent-2);
 					letter-spacing: 0.2px;
 				}
-				.bx-upsell-spotlight .lede {
+				#bx-upsell-spotlight .lede {
 					color: var(--muted);
 					max-width: 780px;
 					margin: 0.25rem auto 1.25rem;
 					line-height: 1.6;
 				}
-
-				/* grid */
-				.bx-upsell-spotlight .grid {
+				#bx-upsell-spotlight .grid {
 					display: grid;
 					gap: 1.1rem;
 					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 				}
-
-				/* card */
-				.bx-upsell-spotlight .product {
+				#bx-upsell-spotlight .product {
 					background: var(--card);
 					border: 1px solid #e6eef6;
 					border-radius: var(--radius);
@@ -2437,12 +2757,12 @@
 						border-color 0.18s ease;
 					isolation: isolate;
 				}
-				.bx-upsell-spotlight .product:hover {
+				#bx-upsell-spotlight .product:hover {
 					transform: translateY(-3px);
 					border-color: #dbe8f3;
 					box-shadow: 0 24px 66px -32px var(--ring);
 				}
-				.bx-upsell-spotlight .ribbon {
+				#bx-upsell-spotlight .ribbon {
 					position: absolute;
 					top: 12px;
 					left: -8px;
@@ -2456,7 +2776,7 @@
 					border-bottom-right-radius: 8px;
 					box-shadow: 0 8px 24px -14px var(--ring);
 				}
-				.bx-upsell-spotlight .img {
+				#bx-upsell-spotlight .img {
 					width: 100%;
 					max-width: 360px;
 					aspect-ratio: 4/3;
@@ -2464,21 +2784,22 @@
 					border-radius: 12px;
 					margin: 0 auto 0.8rem;
 					background: #fff;
+					object-fit: scale-down;
 				}
-				.bx-upsell-spotlight .title {
+				#bx-upsell-spotlight .title {
 					margin: 0;
 					color: var(--ink);
 					font-size: 1.12rem;
 					line-height: 1.25;
 					font-weight: 800;
 				}
-				.bx-upsell-spotlight .subtitle {
+				#bx-upsell-spotlight .subtitle {
 					margin: 0.25rem 0 0.55rem;
 					color: var(--accent-2);
 					font-weight: 700;
 					font-size: 0.98rem;
 				}
-				.bx-upsell-spotlight .bullets {
+				#bx-upsell-spotlight .bullets {
 					margin: 0 0 0.7rem;
 					padding: 0;
 					list-style: none;
@@ -2487,13 +2808,13 @@
 					display: grid;
 					gap: 0.35rem;
 				}
-				.bx-upsell-spotlight .bullets li {
+				#bx-upsell-spotlight .bullets li {
 					display: grid;
 					grid-template-columns: 18px 1fr;
 					gap: 0.5rem;
 					align-items: flex-start;
 				}
-				.bx-upsell-spotlight .tick {
+				#bx-upsell-spotlight .tick {
 					width: 18px;
 					height: 18px;
 					border-radius: 4px;
@@ -2506,23 +2827,23 @@
 					font-size: 0.8rem;
 					border: 1px solid #d5f0e4;
 				}
-				.bx-upsell-spotlight .copy {
+				#bx-upsell-spotlight .copy {
 					color: var(--muted);
 					line-height: 1.65;
 					margin: 0.1rem 0 0.9rem;
 				}
-				.bx-upsell-spotlight .price {
+				#bx-upsell-spotlight .price {
 					color: var(--accent-2);
 					font-weight: 800;
 					margin: 0.1rem 0 0.8rem;
 				}
-				.bx-upsell-spotlight .badges {
+				#bx-upsell-spotlight .badges {
 					display: flex;
 					flex-wrap: wrap;
 					gap: 0.35rem 0.5rem;
 					margin-bottom: 0.8rem;
 				}
-				.bx-upsell-spotlight .badge {
+				#bx-upsell-spotlight .badge {
 					background: #f0f6fb;
 					color: #275074;
 					border: 1px solid #e0edf7;
@@ -2531,7 +2852,7 @@
 					font-size: 0.78rem;
 					font-weight: 700;
 				}
-				.bx-upsell-spotlight .cta {
+				#bx-upsell-spotlight .cta {
 					display: inline-block;
 					margin-top: auto;
 					align-self: center;
@@ -2546,12 +2867,11 @@
 					box-shadow: 0 12px 34px -18px var(--ring);
 					transition: filter 0.15s ease, transform 0.15s ease;
 				}
-				.bx-upsell-spotlight .cta:hover {
+				#bx-upsell-spotlight .cta:hover {
 					filter: brightness(1.05);
 					transform: translateY(-1px);
 				}
-
-				.bx-upsell-spotlight .trust {
+				#bx-upsell-spotlight .trust {
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: center;
@@ -2564,12 +2884,12 @@
 					color: #2b4a65;
 					font-weight: 700;
 				}
-				.bx-upsell-spotlight .trust span {
+				#bx-upsell-spotlight .trust span {
 					display: inline-flex;
 					gap: 0.4rem;
 					align-items: center;
 				}
-				.bx-upsell-spotlight .dot {
+				#bx-upsell-spotlight .dot {
 					width: 8px;
 					height: 8px;
 					border-radius: 50%;
@@ -2578,18 +2898,17 @@
 				}
 
 				@media (max-width: 640px) {
-					.bx-upsell-spotlight h2 {
+					#bx-upsell-spotlight h2 {
 						font-size: 1.45rem;
 					}
-					.bx-upsell-spotlight .grid {
+					#bx-upsell-spotlight .grid {
 						grid-template-columns: 1fr;
 					}
-					.bx-upsell-spotlight .product {
+					#bx-upsell-spotlight .product {
 						border-radius: 14px;
 					}
 				}
 			</style>
-
 			<div class="wrap">
 				<div class="header">
 					<span class="eyebrow">Level Up Your Water</span>
@@ -2602,255 +2921,258 @@
 						longevity.
 					</p>
 				</div>
-
 				<div class="grid">
-					<!-- 1 -->
 					<article class="product">
-						<span class="ribbon">Best Value</span>
+						<span class="ribbon">Customer Favorite</span>
 						<img
 							class="img"
 							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
-							alt="BOROUX Foundation + Proactive Fluoride Filters bundle"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/large_front_1.webp"
+							alt="BOROUX Water View Spigot with glass level indicator"
 						/>
-						<h3 class="title">Foundation™ + Proactive™ Fluoride Bundle</h3>
+						<h3 class="title">BOROUX Water View Spigot</h3>
 						<div class="subtitle">
-							Dual-stage protection for PFAS, fluoride, heavy metals & more
+							See water level at a glance — no lid lifting
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>Glass sight-tube + clear level marker</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Stainless spigot hardware with ceramic valve</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Fast install, includes gaskets & locknut</span>
+							</li>
+							<li>
+								<span class="tick">✓</span><span>Compatible with Berkey</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Daily convenience without compromising purity — know exactly when
+							to refill.
+						</p>
+						<div class="badges">
+							<span class="badge">Level Indicator</span
+							><span class="badge">304 Stainless</span>
+						</div>
+						<div class="price">$39–$49</div>
+						<a class="cta" href="#">Shop Water View</a>
+					</article>
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/bx-stand-l.webp"
+							alt="BOROUX Small & Medium Stainless Stands"
+						/>
+						<h3 class="title">BOROUX Stainless Stands</h3>
+						<div class="subtitle">Raise & display your system beautifully</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>Small fits Travel & Compact (≈8.5″ diameter)</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Medium fits Big Berkey & Legacy (≈10″ diameter)</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Rust-resistant stainless, rubber feet for stability</span
+								>
+							</li>
+						</ul>
+						<p class="copy">
+							Lift your system for easy glass filling and a clean, organized
+							look on any counter or table.
+						</p>
+						<div class="badges">
+							<span class="badge">304 Stainless</span
+							><span class="badge">Slip-Resistant</span>
+						</div>
+						<div class="price">$29–$39</div>
+						<a class="cta" href="#">Shop Stands</a>
+					</article>
+
+					<article class="product">
+						<span class="ribbon">New Arrival</span>
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Primer.webp"
+							alt="BOROUX Automated Primer – automatic filter priming and drying system"
+						/>
+						<h3 class="title">BOROUX Automated Primer</h3>
+						<div class="subtitle">
+							Hands-free priming for Foundation™ & Proactive™ filters
 						</div>
 						<ul class="bullets">
 							<li>
 								<span class="tick">✓</span
 								><span
-									>Independent testing for PFAS, VOCs, metals, and
-									pharmaceuticals</span
+									>Automatically primes filters to full saturation in
+									minutes</span
 								>
 							</li>
 							<li>
 								<span class="tick">✓</span
 								><span
-									>Alumina-free fluoride reduction (ceramic & carbon
-									design)</span
+									>Prepares Foundation™ or Proactive™ elements with consistent
+									pressure and flow</span
 								>
 							</li>
 							<li>
 								<span class="tick">✓</span
 								><span
-									>Steady flow + 12-month replacement rhythm for worry-free
-									use</span
+									>Switchable flow for priming, rinsing, and quick drying</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Compact countertop design — no faucet or tools required</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Ideal for off-grid, low-pressure, or bulk filter
+									preparation</span
 								>
 							</li>
 						</ul>
 						<p class="copy">
-							Your turnkey upgrade: broad contaminant coverage without
-							guesswork. Keeps water crisp and clean all year.
+							The easiest, most consistent way to prime your BOROUX filters.
+							Delivers full performance from day one — without the mess,
+							guesswork, or faucet hookups.
+						</p>
+						<div class="badges">
+							<span class="badge">Automatic</span>
+							<span class="badge">Hands-Free</span>
+							<span class="badge">Travel-Ready</span>
+						</div>
+						<div class="price">$39–$49</div>
+						<a class="cta" href="#">Shop Automated Primer</a>
+					</article>
+
+					<article class="product">
+						<span class="ribbon">Best in Class</span>
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481909053_671520315231765_7645254753795905352_n.webp"
+							alt="BOROUX Foundation Filters"
+						/>
+						<h3 class="title">Foundation™ Filters (Set of 2)</h3>
+						<div class="subtitle">
+							Comprehensive contaminant reduction for daily use
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Reduces PFAS, heavy metals, VOCs, and pharmaceuticals</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Standard black-element thread compatibility</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>12-month lifespan per set</span>
+							</li>
+							<li>
+								<span class="tick">✓</span><span>Compatible with Berkey</span>
+							</li>
+						</ul>
+						<p class="copy">
+							A complete foundation for cleaner, better-tasting water —
+							independently verified, long-lasting, and easy to replace.
 						</p>
 						<div class="badges">
 							<span class="badge">WQA Standards</span
-							><span class="badge">1-Year Plan</span
-							><span class="badge">Easy Install</span>
+							><span class="badge">Broad Coverage</span>
 						</div>
-						<div class="price">$279–$299</div>
-						<a class="cta" href="#">Shop the Bundle</a>
+						<div class="price">$159–$169</div>
+						<a class="cta" href="#">Shop Foundation</a>
 					</article>
-
-					<!-- 2 -->
 					<article class="product">
 						<img
 							class="img"
 							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
-							alt="BOROUX Foundation Filters set of two"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Boroux_ORiginal_Glass_Water_Bottle_5226cdbe-151a-45df-8468-731d495dabdb.webp"
+							alt="BOROUX Stainless Steel Bottle"
 						/>
-						<h3 class="title">Foundation™ Filters — Set of 2</h3>
-						<div class="subtitle">
-							Certified carbon block for everyday confidence
-						</div>
+						<h3 class="title">BOROUX Stainless Bottle (22–32oz)</h3>
+						<div class="subtitle">Keep that fresh, clean taste on the go</div>
 						<ul class="bullets">
 							<li>
 								<span class="tick">✓</span
-								><span
-									>NSF/ANSI 42, 401 & 372 (WQA) — taste, emerging contaminants,
-									lead-free</span
-								>
+								><span>Food-grade stainless — no plastic aftertaste</span>
 							</li>
 							<li>
 								<span class="tick">✓</span
-								><span>Targets PFAS, chlorine byproducts, VOCs, and more</span>
+								><span>Leak-resistant cap; wide mouth for easy cleaning</span>
 							</li>
 							<li>
 								<span class="tick">✓</span
-								><span>Designed for 12 months of consistent performance</span>
+								><span>Sized for cup holders & packs</span>
 							</li>
 						</ul>
 						<p class="copy">
-							Start with strong, broad reduction and clean taste that lasts.
-							Compatible with most gravity systems.
+							Pair your filtered water with a durable, taste-neutral bottle
+							built for everyday carry.
 						</p>
 						<div class="badges">
-							<span class="badge">PFAS Focus</span
-							><span class="badge">Great Taste</span
-							><span class="badge">Low Waste</span>
+							<span class="badge">304 Stainless</span
+							><span class="badge">BPA-Free</span>
 						</div>
-						<div class="price">$160</div>
-						<a class="cta" href="#">Add Foundation™</a>
+						<div class="price">$19–$29</div>
+						<a class="cta" href="#">Choose Bottle</a>
 					</article>
-
-					<!-- 3 -->
 					<article class="product">
-						<span class="ribbon">Fluoride Safe</span>
 						<img
 							class="img"
 							loading="lazy"
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
 							alt="BOROUX Proactive Fluoride Filters"
 						/>
-						<h3 class="title">Proactive™ Fluoride Filters</h3>
-						<div class="subtitle">Alumina-free, ceramic-carbon design</div>
+						<h3 class="title">Proactive™ Fluoride Filters (Set of 2)</h3>
+						<div class="subtitle">
+							Alumina-free, dedicated fluoride reduction
+						</div>
 						<ul class="bullets">
 							<li>
 								<span class="tick">✓</span
-								><span
-									>Purpose-built for fluoride reduction without aluminum
-									media</span
-								>
+								><span>Removes fluoride safely — no aluminum or bone char</span>
 							</li>
 							<li>
 								<span class="tick">✓</span
-								><span
-									>Pairs under Foundation™ for a clean, balanced finish</span
-								>
+								><span>Pairs with Foundation™ for full protection</span>
 							</li>
 							<li>
 								<span class="tick">✓</span
-								><span>Simple add-on install; replace annually</span>
+								><span>Simple annual replacement cycle</span>
 							</li>
 						</ul>
 						<p class="copy">
-							Protect what matters most with a safer approach to fluoride
-							reduction — engineered for modern water.
+							Next-generation fluoride filtration using clean, non-toxic media —
+							a perfect complement to the Foundation™ stage.
 						</p>
 						<div class="badges">
 							<span class="badge">Alumina-Free</span
-							><span class="badge">Balanced Taste</span>
+							><span class="badge">1-Year Plan</span>
 						</div>
-						<div class="price">$139</div>
-						<a class="cta" href="#">Add Fluoride Filters</a>
-					</article>
-
-					<!-- 4 -->
-					<article class="product">
-						<img
-							class="img"
-							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/legacy_system.webp"
-							alt="BOROUX Legacy Stainless System"
-						/>
-						<h3 class="title">Legacy™ Stainless System</h3>
-						<div class="subtitle">
-							304 stainless housing + Foundation™ filtration
-						</div>
-						<ul class="bullets">
-							<li>
-								<span class="tick">✓</span
-								><span>Durable, kitchen-grade steel with timeless look</span>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Large capacity + effortless daily operation</span>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Built for years of reliable service</span>
-							</li>
-						</ul>
-						<p class="copy">
-							Make it the centerpiece of clean living — performance,
-							craftsmanship, and easy maintenance in one.
-						</p>
-						<div class="badges">
-							<span class="badge">304 Steel</span
-							><span class="badge">Family-Ready</span>
-						</div>
-						<div class="price">from $349</div>
-						<a class="cta" href="#">Shop Legacy</a>
-					</article>
-
-					<!-- 5 -->
-					<article class="product">
-						<img
-							class="img"
-							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Shower_head_17.webp"
-							alt="BOROUX Shower Filter"
-						/>
-						<h3 class="title">Shower Filter System</h3>
-						<div class="subtitle">
-							Up to 98% chlorine reduction — softer skin & hair
-						</div>
-						<ul class="bullets">
-							<li>
-								<span class="tick">✓</span
-								><span>High-grade copper-zinc + calcium sulfite media</span>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Quick, tool-free install; chrome finish</span>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Feel the difference from the first rinse</span>
-							</li>
-						</ul>
-						<p class="copy">
-							Turn everyday showers into a clean, gentle reset. Great for
-							sensitive skin and treated city water.
-						</p>
-						<div class="badges">
-							<span class="badge">Chlorine ↓</span
-							><span class="badge">Fast Install</span>
-						</div>
-						<div class="price">$60</div>
-						<a class="cta" href="#">Shop Shower Filter</a>
-					</article>
-
-					<!-- 6 -->
-					<article class="product">
-						<img
-							class="img"
-							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/spigot.webp"
-							alt="BOROUX Stainless Spigot"
-						/>
-						<h3 class="title">Original Stainless Spigot</h3>
-						<div class="subtitle">No-drip, all-metal, food-grade build</div>
-						<ul class="bullets">
-							<li>
-								<span class="tick">✓</span
-								><span
-									>Solid stainless + ceramic seal — zero plastic contact</span
-								>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Smooth lever action; installs in minutes</span>
-							</li>
-							<li>
-								<span class="tick">✓</span><span>Perfect pour, every time</span>
-							</li>
-						</ul>
-						<p class="copy">
-							Finish your setup with the spigot that matches your standards —
-							durable, precise, and beautiful.
-						</p>
-						<div class="badges">
-							<span class="badge">Food-Grade</span
-							><span class="badge">Drip-Free</span>
-						</div>
-						<div class="price">$39</div>
-						<a class="cta" href="#">Add Spigot</a>
+						<div class="price">$129–$139</div>
+						<a class="cta" href="#">Shop Proactive</a>
 					</article>
 				</div>
-
 				<div class="trust" role="note" aria-label="Assurance badges">
 					<span><i class="dot"></i> Made in USA (filters)</span>
 					<span><i class="dot"></i> WQA-Referenced Standards</span>
