@@ -212,6 +212,9 @@
 					flex-direction: column;
 					justify-content: space-between;
 					overflow: hidden;
+					padding: 5px;
+					box-sizing: border-box;
+					height: fit-content;
 				}
 				.bx-hero-section .pad {
 					padding: 1.25rem;
@@ -291,16 +294,17 @@
 						padding: 0 0.1rem;
 					}
 					.bx-hero-section .grid {
-						flex-direction: column;
+						flex-direction: column-reverse;
 						align-items: center;
 					}
 					.bx-hero-section .card {
 						max-width: 95vw;
 						width: 100%;
 						overflow: unset;
+						flex: 1;
 					}
 					.bx-hero-section .img {
-						max-height: 480px;
+						max-height: unset;
 					}
 					.hero-split .img {
 						max-width: 100%;
@@ -376,7 +380,7 @@
 						<img
 							class="img"
 							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481914365_671536291896834_6052819229683723521_n.webp"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/wvsInfo.webp"
 							alt="BOROUX Water View Spigot with stainless body and sight-glass level tube"
 						/>
 					</div>
@@ -394,28 +398,24 @@
 					background: #f8fbfd;
 					padding: 1.5rem 0 2rem;
 				}
-
 				.bx-lifestyle-mosaic .wrap {
 					width: min(950px, 100%);
 					margin: 0 auto;
 					padding: 0 1rem;
 					text-align: center;
 				}
-
 				.bx-lifestyle-mosaic h2 {
 					margin: 0 0 1.25rem;
 					color: #1b4b66;
 					font-size: 1.5rem;
 					font-weight: 600;
 				}
-
 				.bx-lifestyle-mosaic .grid {
 					display: flex;
 					justify-content: center;
 					gap: var(--gap);
 					flex-wrap: wrap;
 				}
-
 				.bx-lifestyle-mosaic figure {
 					margin: 0;
 					position: relative;
@@ -431,12 +431,10 @@
 					justify-content: center;
 					transition: transform 0.25s ease, box-shadow 0.25s ease;
 				}
-
 				.bx-lifestyle-mosaic figure:hover {
 					transform: translateY(-4px);
 					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 				}
-
 				.bx-lifestyle-mosaic img {
 					width: 100%;
 					height: 100%;
@@ -445,7 +443,6 @@
 					display: block;
 					border-radius: var(--r);
 				}
-
 				.bx-lifestyle-mosaic figcaption {
 					position: absolute;
 					bottom: 8px;
@@ -458,21 +455,29 @@
 					border-radius: 6px;
 					font-size: 0.9rem;
 				}
-
-				@media (max-width: 800px) {
+				@media (max-width: 900px) {
 					.bx-lifestyle-mosaic figure {
 						width: 220px;
-						height: 220px;
+						height: auto;
+					}
+					.bx-lifestyle-mosaic img {
+						height: unset;
+					}
+					.bx-lifestyle-mosaic figure {
+						display: none;
+					}
+
+					.bx-lifestyle-mosaic .grid figure:first-of-type {
+						display: block;
 					}
 				}
-
 				@media (max-width: 640px) {
 					.bx-lifestyle-mosaic .wrap {
 						padding: 0;
 					}
 					.bx-lifestyle-mosaic figure {
 						width: 100%;
-						height: 180px;
+						height: auto;
 						max-width: 320px;
 					}
 					.bx-lifestyle-mosaic figcaption {
@@ -485,24 +490,22 @@
 				<div class="grid">
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482252433_671532751897188_3342742394577562053_n.webp"
-							alt="Morning coffee with clean water"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/White_level_spigot_6.webp"
+							alt="Kitchen counter setup"
 						/>
 					</figure>
 
+					<figure>
+						<img
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/549470889_18517385914028668_5513517575340119794_n.webp"
+							alt="Pouring water at the dinner table"
+						/>
+					</figure>
 					<figure>
 						<img
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/492548189_706331901750606_818933008586821056_n.webp?height=300"
 							alt="Kitchen counter setup"
 							style="object-position: center -150px"
-						/>
-					</figure>
-
-					<figure>
-						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482246648_671870281863435_7974639120966492467_n.webp"
-							alt="Pouring water at the dinner table"
-							style="object-position: -43px center; scale: 160%"
 						/>
 					</figure>
 				</div>
@@ -673,101 +676,6 @@
 
 		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
 		<section class="bx-lifestyle-mosaic">
-			<style>
-				.bx-lifestyle-mosaic {
-					--gap: 16px;
-					--r: 10px;
-					font-family: 'Josefin Sans', sans-serif;
-					background: #f8fbfd;
-					padding: 1.5rem 0 2rem;
-				}
-
-				.bx-lifestyle-mosaic .wrap {
-					width: min(950px, 100%);
-					margin: 0 auto;
-					padding: 0 1rem;
-					text-align: center;
-				}
-
-				.bx-lifestyle-mosaic h2 {
-					margin: 0 0 1.25rem;
-					color: #1b4b66;
-					font-size: 1.5rem;
-					font-weight: 600;
-				}
-
-				.bx-lifestyle-mosaic .grid {
-					display: flex;
-					justify-content: center;
-					gap: var(--gap);
-					flex-wrap: wrap;
-				}
-
-				.bx-lifestyle-mosaic figure {
-					margin: 0;
-					position: relative;
-					overflow: hidden;
-					border-radius: var(--r);
-					background: #fff;
-					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-					width: 280px;
-					height: 280px;
-					flex: 1 1 280px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					transition: transform 0.25s ease, box-shadow 0.25s ease;
-				}
-
-				.bx-lifestyle-mosaic figure:hover {
-					transform: translateY(-4px);
-					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-				}
-
-				.bx-lifestyle-mosaic img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-					object-position: center;
-					display: block;
-					border-radius: var(--r);
-				}
-
-				.bx-lifestyle-mosaic figcaption {
-					position: absolute;
-					bottom: 8px;
-					left: 8px;
-					right: 8px;
-					background: rgba(0, 0, 0, 0.45);
-					color: #fff;
-					font-weight: 600;
-					padding: 0.35rem 0.6rem;
-					border-radius: 6px;
-					font-size: 0.9rem;
-				}
-
-				@media (max-width: 800px) {
-					.bx-lifestyle-mosaic figure {
-						width: 220px;
-						height: 220px;
-					}
-				}
-
-				@media (max-width: 640px) {
-					.bx-lifestyle-mosaic .wrap {
-						padding: 0;
-					}
-					.bx-lifestyle-mosaic figure {
-						width: 100%;
-						height: 180px;
-						max-width: 320px;
-					}
-					.bx-lifestyle-mosaic figcaption {
-						font-size: 0.8rem;
-					}
-				}
-			</style>
-
 			<div class="wrap">
 				<div class="grid">
 					<figure>
@@ -778,8 +686,9 @@
 					</figure>
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/549470889_18517385914028668_5513517575340119794_n.webp"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482246648_671870281863435_7974639120966492467_n.webp"
 							alt="Pouring water at the dinner table"
+							style="object-position: -43px center; scale: 160%"
 						/>
 					</figure>
 					<figure>
@@ -1134,101 +1043,6 @@
 
 		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
 		<section class="bx-lifestyle-mosaic">
-			<style>
-				.bx-lifestyle-mosaic {
-					--gap: 16px;
-					--r: 10px;
-					font-family: 'Josefin Sans', sans-serif;
-					background: #f8fbfd;
-					padding: 1.5rem 0 2rem;
-				}
-
-				.bx-lifestyle-mosaic .wrap {
-					width: min(950px, 100%);
-					margin: 0 auto;
-					padding: 0 1rem;
-					text-align: center;
-				}
-
-				.bx-lifestyle-mosaic h2 {
-					margin: 0 0 1.25rem;
-					color: #1b4b66;
-					font-size: 1.5rem;
-					font-weight: 600;
-				}
-
-				.bx-lifestyle-mosaic .grid {
-					display: flex;
-					justify-content: center;
-					gap: var(--gap);
-					flex-wrap: wrap;
-				}
-
-				.bx-lifestyle-mosaic figure {
-					margin: 0;
-					position: relative;
-					overflow: hidden;
-					border-radius: var(--r);
-					background: #fff;
-					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-					width: 280px;
-					height: 280px;
-					flex: 1 1 280px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					transition: transform 0.25s ease, box-shadow 0.25s ease;
-				}
-
-				.bx-lifestyle-mosaic figure:hover {
-					transform: translateY(-4px);
-					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-				}
-
-				.bx-lifestyle-mosaic img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-					object-position: center;
-					display: block;
-					border-radius: var(--r);
-				}
-
-				.bx-lifestyle-mosaic figcaption {
-					position: absolute;
-					bottom: 8px;
-					left: 8px;
-					right: 8px;
-					background: rgba(0, 0, 0, 0.45);
-					color: #fff;
-					font-weight: 600;
-					padding: 0.35rem 0.6rem;
-					border-radius: 6px;
-					font-size: 0.9rem;
-				}
-
-				@media (max-width: 800px) {
-					.bx-lifestyle-mosaic figure {
-						width: 220px;
-						height: 220px;
-					}
-				}
-
-				@media (max-width: 640px) {
-					.bx-lifestyle-mosaic .wrap {
-						padding: 0;
-					}
-					.bx-lifestyle-mosaic figure {
-						width: 100%;
-						height: 180px;
-						max-width: 320px;
-					}
-					.bx-lifestyle-mosaic figcaption {
-						font-size: 0.8rem;
-					}
-				}
-			</style>
-
 			<div class="wrap">
 				<div class="grid">
 					<figure>
@@ -1247,8 +1061,8 @@
 
 					<figure>
 						<img
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/White_level_spigot_6.webp"
-							alt="Kitchen counter setup"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/482252433_671532751897188_3342742394577562053_n.webp"
+							alt="Morning coffee with clean water"
 						/>
 					</figure>
 				</div>

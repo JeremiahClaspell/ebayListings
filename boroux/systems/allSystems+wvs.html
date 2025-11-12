@@ -216,6 +216,9 @@
 					flex-direction: column;
 					justify-content: space-between;
 					overflow: hidden;
+					padding: 5px;
+					box-sizing: border-box;
+					height: fit-content;
 				}
 				.bx-hero-section .pad {
 					padding: 1.25rem;
@@ -295,16 +298,17 @@
 						padding: 0 0.1rem;
 					}
 					.bx-hero-section .grid {
-						flex-direction: column;
+						flex-direction: column-reverse;
 						align-items: center;
 					}
 					.bx-hero-section .card {
 						max-width: 95vw;
 						width: 100%;
 						overflow: unset;
+						flex: 1;
 					}
 					.bx-hero-section .img {
-						max-height: 480px;
+						max-height: unset;
 					}
 					.hero-split .img {
 						max-width: 100%;
@@ -322,34 +326,6 @@
 			</style>
 			<div class="wrap">
 				<div class="grid">
-					<!-- Image Card -->
-					<div class="card">
-						<img
-							class="img"
-							loading="eager"
-							fetchpriority="high"
-							decoding="async"
-							style="height: unset"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
-							alt="BOROUX Legacy stainless unit with Water View Spigot installed"
-						/>
-						<img
-							class="img"
-							loading="lazy"
-							decoding="async"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/foundation_certified_04ae2307-967a-4774-839f-c433a6f6d30b.webp"
-							alt="Foundation™ Filter pair for broad contaminant reduction"
-						/>
-
-						<img
-							class="img"
-							loading="lazy"
-							decoding="async"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Stainless_level_spigot_04 copy(1).webp"
-							alt="BOROUX Water View Spigot close-up showing stainless design and level indicator"
-						/>
-					</div>
-
 					<!-- Text Card -->
 					<div class="card pad">
 						<div class="points">
@@ -439,6 +415,33 @@
 								</p>
 							</div>
 						</div>
+					</div>
+					<!-- Image Card -->
+					<div class="card">
+						<img
+							class="img"
+							loading="eager"
+							fetchpriority="high"
+							decoding="async"
+							style="height: unset"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/legacyInfo.webp"
+							alt="BOROUX Legacy stainless unit with Water View Spigot installed"
+						/>
+						<img
+							class="img"
+							loading="lazy"
+							decoding="async"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/foundationInfo.webp"
+							alt="Foundation™ Filter pair for broad contaminant reduction"
+						/>
+
+						<img
+							class="img"
+							loading="lazy"
+							decoding="async"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/wvsInfo.webp"
+							alt="BOROUX Water View Spigot close-up showing stainless design and level indicator"
+						/>
 					</div>
 				</div>
 			</div>
@@ -745,7 +748,6 @@
 					display: block;
 					border-radius: var(--r);
 				}
-
 				.bx-lifestyle-mosaic figcaption {
 					position: absolute;
 					bottom: 8px;
@@ -758,13 +760,20 @@
 					border-radius: 6px;
 					font-size: 0.9rem;
 				}
-				@media (max-width: 800px) {
+				@media (max-width: 900px) {
 					.bx-lifestyle-mosaic figure {
 						width: 220px;
 						height: auto;
 					}
 					.bx-lifestyle-mosaic img {
 						height: unset;
+					}
+					.bx-lifestyle-mosaic figure {
+						display: none;
+					}
+
+					.bx-lifestyle-mosaic .grid figure:first-of-type {
+						display: block;
 					}
 				}
 				@media (max-width: 640px) {
@@ -900,7 +909,7 @@
 						<img
 							class="img"
 							loading="lazy"
-							src="https://scontent-den2-1.xx.fbcdn.net/v/t39.30808-6/481207216_668102555573541_6148621531478901719_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BTwi6gj5DiMQ7kNvwFR-yfY&_nc_oc=AdmjroxfUg5GYrLjKapOmprqWy5tKXPMvLq05oLpu6wgCr5LKFj0P6otoBT6AyinSsIvX3CbB9o1VmRNY7A2Vbq1&_nc_zt=23&_nc_ht=scontent-den2-1.xx&_nc_gid=Mv2XqZxjcuvM-nfUpOlkvA&oh=00_AfgKoAhxlNqF-RtGdsqC99JvLIlrp8rD1U4R46P7AVj6ug&oe=69134730"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/489433063_695745302809266_4342725959352552238_n copy.webp"
 							alt="Family drinking water placeholder"
 						/>
 					</div>
@@ -1000,99 +1009,6 @@
 
 		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
 		<section class="bx-lifestyle-mosaic">
-			<style>
-				.bx-lifestyle-mosaic {
-					--gap: 16px;
-					--r: 10px;
-					font-family: 'Josefin Sans', sans-serif;
-					background: #f8fbfd;
-					padding: 1.5rem 0 2rem;
-				}
-				.bx-lifestyle-mosaic .wrap {
-					width: min(950px, 100%);
-					margin: 0 auto;
-					padding: 0 1rem;
-					text-align: center;
-				}
-				.bx-lifestyle-mosaic h2 {
-					margin: 0 0 1.25rem;
-					color: #1b4b66;
-					font-size: 1.5rem;
-					font-weight: 600;
-				}
-				.bx-lifestyle-mosaic .grid {
-					display: flex;
-					justify-content: center;
-					gap: var(--gap);
-					flex-wrap: wrap;
-				}
-				.bx-lifestyle-mosaic figure {
-					margin: 0;
-					position: relative;
-					overflow: hidden;
-					border-radius: var(--r);
-					background: #fff;
-					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-					width: 280px;
-					height: 280px;
-					flex: 1 1 280px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					transition: transform 0.25s ease, box-shadow 0.25s ease;
-				}
-				.bx-lifestyle-mosaic figure:hover {
-					transform: translateY(-4px);
-					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-				}
-				.bx-lifestyle-mosaic img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-					object-position: center;
-					display: block;
-					border-radius: var(--r);
-				}
-				.bx-lifestyle-mosaic figcaption {
-					position: absolute;
-					bottom: 8px;
-					left: 8px;
-					right: 8px;
-					background: rgba(0, 0, 0, 0.45);
-					color: #fff;
-					font-weight: 600;
-					padding: 0.35rem 0.6rem;
-					border-radius: 6px;
-					font-size: 0.9rem;
-				}
-				@media (min-width: 640px) {
-					.bx-lifestyle-mosaic .special1 {
-						object-position: center -120px;
-					}
-				}
-				@media (max-width: 800px) {
-					.bx-lifestyle-mosaic figure {
-						width: 220px;
-						height: auto;
-					}
-					.bx-lifestyle-mosaic img {
-						height: unset;
-					}
-				}
-				@media (max-width: 640px) {
-					.bx-lifestyle-mosaic .wrap {
-						padding: 0;
-					}
-					.bx-lifestyle-mosaic figure {
-						width: 100%;
-						height: auto;
-						max-width: 320px;
-					}
-					.bx-lifestyle-mosaic figcaption {
-						font-size: 0.8rem;
-					}
-				}
-			</style>
 			<div class="wrap">
 				<div class="grid">
 					<figure>
@@ -1268,7 +1184,7 @@
 						<img
 							class="img"
 							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/White_level_spigot_6.webp"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
 							alt="BOROUX stainless system with Water View Spigot installed"
 						/>
 					</div>
@@ -1407,102 +1323,6 @@
 
 		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
 		<section class="bx-lifestyle-mosaic">
-			<style>
-				.bx-lifestyle-mosaic {
-					--gap: 16px;
-					--r: 10px;
-					font-family: 'Josefin Sans', sans-serif;
-					background: #f8fbfd;
-					padding: 1.5rem 0 2rem;
-				}
-				.bx-lifestyle-mosaic .wrap {
-					width: min(950px, 100%);
-					margin: 0 auto;
-					padding: 0 1rem;
-					text-align: center;
-				}
-				.bx-lifestyle-mosaic h2 {
-					margin: 0 0 1.25rem;
-					color: #1b4b66;
-					font-size: 1.5rem;
-					font-weight: 600;
-				}
-				.bx-lifestyle-mosaic .grid {
-					display: flex;
-					justify-content: center;
-					gap: var(--gap);
-					flex-wrap: wrap;
-				}
-				.bx-lifestyle-mosaic figure {
-					margin: 0;
-					position: relative;
-					overflow: hidden;
-					border-radius: var(--r);
-					background: #fff;
-					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-					width: 280px;
-					height: 280px;
-					flex: 1 1 280px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					transition: transform 0.25s ease, box-shadow 0.25s ease;
-				}
-				.bx-lifestyle-mosaic figure:hover {
-					transform: translateY(-4px);
-					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-				}
-				.bx-lifestyle-mosaic img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-					object-position: center;
-					display: block;
-					border-radius: var(--r);
-				}
-				.bx-lifestyle-mosaic figcaption {
-					position: absolute;
-					bottom: 8px;
-					left: 8px;
-					right: 8px;
-					background: rgba(0, 0, 0, 0.45);
-					color: #fff;
-					font-weight: 600;
-					padding: 0.35rem 0.6rem;
-					border-radius: 6px;
-					font-size: 0.9rem;
-				}
-				@media (max-width: 800px) {
-					.bx-lifestyle-mosaic figure {
-						width: 220px;
-						height: auto;
-					}
-					.bx-lifestyle-mosaic img {
-						height: unset;
-					}
-				}
-				@media (max-width: 640px) {
-					.bx-lifestyle-mosaic .wrap {
-						padding: 0;
-					}
-					.bx-lifestyle-mosaic figure {
-						width: 100%;
-						height: auto;
-						max-width: 320px;
-					}
-					.bx-lifestyle-mosaic figcaption {
-						font-size: 0.8rem;
-					}
-
-					.bx-lifestyle-mosaic figure {
-						display: none;
-					}
-
-					.bx-lifestyle-mosaic .grid figure:first-of-type {
-						display: block;
-					}
-				}
-			</style>
 			<div class="wrap">
 				<div class="grid">
 					<figure>
@@ -1915,103 +1735,6 @@
 
 		<!-- LIFESTYLE MOSAIC (3 centered tiles) -->
 		<section class="bx-lifestyle-mosaic">
-			<style>
-				.bx-lifestyle-mosaic {
-					--gap: 16px;
-					--r: 10px;
-					font-family: 'Josefin Sans', sans-serif;
-					background: #f8fbfd;
-					padding: 1.5rem 0 2rem;
-				}
-				.bx-lifestyle-mosaic .wrap {
-					width: min(950px, 100%);
-					margin: 0 auto;
-					padding: 0 1rem;
-					text-align: center;
-				}
-				.bx-lifestyle-mosaic h2 {
-					margin: 0 0 1.25rem;
-					color: #1b4b66;
-					font-size: 1.5rem;
-					font-weight: 600;
-				}
-				.bx-lifestyle-mosaic .grid {
-					display: flex;
-					justify-content: center;
-					gap: var(--gap);
-					flex-wrap: wrap;
-				}
-				.bx-lifestyle-mosaic figure {
-					margin: 0;
-					position: relative;
-					overflow: hidden;
-					border-radius: var(--r);
-					background: #fff;
-					box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-					width: 280px;
-					height: 280px;
-					flex: 1 1 280px;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					transition: transform 0.25s ease, box-shadow 0.25s ease;
-				}
-				.bx-lifestyle-mosaic figure:hover {
-					transform: translateY(-4px);
-					box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-				}
-				.bx-lifestyle-mosaic img {
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-					object-position: center;
-					display: block;
-					border-radius: var(--r);
-				}
-				.bx-lifestyle-mosaic figcaption {
-					position: absolute;
-					bottom: 8px;
-					left: 8px;
-					right: 8px;
-					background: rgba(0, 0, 0, 0.45);
-					color: #fff;
-					font-weight: 600;
-					padding: 0.35rem 0.6rem;
-					border-radius: 6px;
-					font-size: 0.9rem;
-				}
-				@media (max-width: 800px) {
-					.bx-lifestyle-mosaic figure {
-						width: 220px;
-						height: auto;
-					}
-					.bx-lifestyle-mosaic img {
-						height: unset;
-					}
-				}
-				@media (max-width: 640px) {
-					.bx-lifestyle-mosaic .wrap {
-						padding: 0;
-					}
-					.bx-lifestyle-mosaic figure {
-						width: 100%;
-						height: auto;
-						max-width: 320px;
-					}
-					.bx-lifestyle-mosaic figcaption {
-						font-size: 0.8rem;
-					}
-
-					.bx-lifestyle-mosaic figure {
-						display: none;
-					}
-
-					.bx-lifestyle-mosaic .grid figure:first-of-type {
-						display: block;
-					}
-				}
-			</style>
-
 			<div class="wrap">
 				<div class="grid">
 					<figure>
