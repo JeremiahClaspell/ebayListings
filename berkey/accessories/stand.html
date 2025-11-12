@@ -268,18 +268,6 @@
 
 			<div class="wrap">
 				<div class="grid">
-					<!-- Image Card -->
-					<div class="card">
-						<img
-							class="img"
-							loading="eager"
-							fetchpriority="high"
-							decoding="async"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Berkey_Stand.webp"
-							alt="Small Berkey® Stand — elevates Travel or Big systems for easy glass fill"
-						/>
-					</div>
-
 					<!-- Text Card -->
 					<div class="card pad">
 						<div class="points">
@@ -337,7 +325,17 @@
 							</div>
 						</div>
 					</div>
-					<!-- /Text Card -->
+					<!-- Image Card -->
+					<div class="card">
+						<img
+							class="img"
+							loading="eager"
+							fetchpriority="high"
+							decoding="async"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Berkey_Stand.webp"
+							alt="Small Berkey® Stand — elevates Travel or Big systems for easy glass fill"
+						/>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -468,12 +466,9 @@
 		</section>
 
 		<!-- 7) RECOMMENDED PRODUCTS -->
-		<section
-			class="bx-upsell-spotlight"
-			aria-labelledby="upsell-spotlight-title"
-		>
+		<section id="bx-upsell-spotlight" aria-labelledby="upsell-spotlight-title">
 			<style>
-				.bx-upsell-spotlight {
+				#bx-upsell-spotlight {
 					--accent: #1b4b66;
 					--accent-2: #0e3555;
 					--glow: #cfe9ff;
@@ -504,17 +499,17 @@
 					border-top: 1px solid #e8f1f8;
 					border-bottom: 1px solid #e8f1f8;
 				}
-				.bx-upsell-spotlight .wrap {
+				#bx-upsell-spotlight .wrap {
 					width: min(1120px, 100%);
 					margin: 0 auto;
 					padding: 0 clamp(14px, 4vw, 18px);
 					box-sizing: border-box;
 				}
-				.bx-upsell-spotlight .header {
+				#bx-upsell-spotlight .header {
 					text-align: center;
 					margin-bottom: 1.4rem;
 				}
-				.bx-upsell-spotlight .eyebrow {
+				#bx-upsell-spotlight .eyebrow {
 					display: inline-block;
 					font-weight: 800;
 					letter-spacing: 0.6px;
@@ -526,28 +521,24 @@
 					border-radius: 999px;
 					box-shadow: 0 6px 20px -10px var(--ring);
 				}
-				.bx-upsell-spotlight h2 {
+				#bx-upsell-spotlight h2 {
 					margin: 0.6rem 0 0.3rem;
 					font-size: 1.75rem;
 					color: var(--accent-2);
 					letter-spacing: 0.2px;
 				}
-				.bx-upsell-spotlight .lede {
+				#bx-upsell-spotlight .lede {
 					color: var(--muted);
 					max-width: 780px;
 					margin: 0.25rem auto 1.25rem;
 					line-height: 1.6;
 				}
-
-				/* grid */
-				.bx-upsell-spotlight .grid {
+				#bx-upsell-spotlight .grid {
 					display: grid;
 					gap: 1.1rem;
 					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 				}
-
-				/* card */
-				.bx-upsell-spotlight .product {
+				#bx-upsell-spotlight .product {
 					background: var(--card);
 					border: 1px solid #e6eef6;
 					border-radius: var(--radius);
@@ -561,12 +552,12 @@
 						border-color 0.18s ease;
 					isolation: isolate;
 				}
-				.bx-upsell-spotlight .product:hover {
+				#bx-upsell-spotlight .product:hover {
 					transform: translateY(-3px);
 					border-color: #dbe8f3;
 					box-shadow: 0 24px 66px -32px var(--ring);
 				}
-				.bx-upsell-spotlight .ribbon {
+				#bx-upsell-spotlight .ribbon {
 					position: absolute;
 					top: 12px;
 					left: -8px;
@@ -580,7 +571,7 @@
 					border-bottom-right-radius: 8px;
 					box-shadow: 0 8px 24px -14px var(--ring);
 				}
-				.bx-upsell-spotlight .img {
+				#bx-upsell-spotlight .img {
 					width: 100%;
 					max-width: 360px;
 					aspect-ratio: 4/3;
@@ -588,21 +579,22 @@
 					border-radius: 12px;
 					margin: 0 auto 0.8rem;
 					background: #fff;
+					object-fit: scale-down;
 				}
-				.bx-upsell-spotlight .title {
+				#bx-upsell-spotlight .title {
 					margin: 0;
 					color: var(--ink);
 					font-size: 1.12rem;
 					line-height: 1.25;
 					font-weight: 800;
 				}
-				.bx-upsell-spotlight .subtitle {
+				#bx-upsell-spotlight .subtitle {
 					margin: 0.25rem 0 0.55rem;
 					color: var(--accent-2);
 					font-weight: 700;
 					font-size: 0.98rem;
 				}
-				.bx-upsell-spotlight .bullets {
+				#bx-upsell-spotlight .bullets {
 					margin: 0 0 0.7rem;
 					padding: 0;
 					list-style: none;
@@ -611,13 +603,13 @@
 					display: grid;
 					gap: 0.35rem;
 				}
-				.bx-upsell-spotlight .bullets li {
+				#bx-upsell-spotlight .bullets li {
 					display: grid;
 					grid-template-columns: 18px 1fr;
 					gap: 0.5rem;
 					align-items: flex-start;
 				}
-				.bx-upsell-spotlight .tick {
+				#bx-upsell-spotlight .tick {
 					width: 18px;
 					height: 18px;
 					border-radius: 4px;
@@ -630,23 +622,23 @@
 					font-size: 0.8rem;
 					border: 1px solid #d5f0e4;
 				}
-				.bx-upsell-spotlight .copy {
+				#bx-upsell-spotlight .copy {
 					color: var(--muted);
 					line-height: 1.65;
 					margin: 0.1rem 0 0.9rem;
 				}
-				.bx-upsell-spotlight .price {
+				#bx-upsell-spotlight .price {
 					color: var(--accent-2);
 					font-weight: 800;
 					margin: 0.1rem 0 0.8rem;
 				}
-				.bx-upsell-spotlight .badges {
+				#bx-upsell-spotlight .badges {
 					display: flex;
 					flex-wrap: wrap;
 					gap: 0.35rem 0.5rem;
 					margin-bottom: 0.8rem;
 				}
-				.bx-upsell-spotlight .badge {
+				#bx-upsell-spotlight .badge {
 					background: #f0f6fb;
 					color: #275074;
 					border: 1px solid #e0edf7;
@@ -655,7 +647,7 @@
 					font-size: 0.78rem;
 					font-weight: 700;
 				}
-				.bx-upsell-spotlight .cta {
+				#bx-upsell-spotlight .cta {
 					display: inline-block;
 					margin-top: auto;
 					align-self: center;
@@ -670,12 +662,11 @@
 					box-shadow: 0 12px 34px -18px var(--ring);
 					transition: filter 0.15s ease, transform 0.15s ease;
 				}
-				.bx-upsell-spotlight .cta:hover {
+				#bx-upsell-spotlight .cta:hover {
 					filter: brightness(1.05);
 					transform: translateY(-1px);
 				}
-
-				.bx-upsell-spotlight .trust {
+				#bx-upsell-spotlight .trust {
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: center;
@@ -688,12 +679,12 @@
 					color: #2b4a65;
 					font-weight: 700;
 				}
-				.bx-upsell-spotlight .trust span {
+				#bx-upsell-spotlight .trust span {
 					display: inline-flex;
 					gap: 0.4rem;
 					align-items: center;
 				}
-				.bx-upsell-spotlight .dot {
+				#bx-upsell-spotlight .dot {
 					width: 8px;
 					height: 8px;
 					border-radius: 50%;
@@ -702,18 +693,17 @@
 				}
 
 				@media (max-width: 640px) {
-					.bx-upsell-spotlight h2 {
+					#bx-upsell-spotlight h2 {
 						font-size: 1.45rem;
 					}
-					.bx-upsell-spotlight .grid {
+					#bx-upsell-spotlight .grid {
 						grid-template-columns: 1fr;
 					}
-					.bx-upsell-spotlight .product {
+					#bx-upsell-spotlight .product {
 						border-radius: 14px;
 					}
 				}
 			</style>
-
 			<div class="wrap">
 				<div class="header">
 					<span class="eyebrow">Level Up Your Water</span>
@@ -726,9 +716,233 @@
 						longevity.
 					</p>
 				</div>
-
 				<div class="grid">
-					<!-- 1 -->
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481909053_671520315231765_7645254753795905352_n.webp"
+							alt="BOROUX Foundation Filters"
+						/>
+						<h3 class="title">Foundation™ Filters (Set of 2)</h3>
+						<div class="subtitle">
+							Comprehensive contaminant reduction for daily use
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Reduces PFAS, heavy metals, VOCs, and pharmaceuticals</span
+								>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Standard black-element thread compatibility</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>12-month lifespan per set</span>
+							</li>
+						</ul>
+						<p class="copy">
+							A complete foundation for cleaner, better-tasting water —
+							independently verified, long-lasting, and easy to replace.
+						</p>
+						<div class="badges">
+							<span class="badge">WQA Standards</span
+							><span class="badge">Broad Coverage</span>
+						</div>
+						<div class="price">$159–$169</div>
+						<a class="cta" href="#">Shop Foundation</a>
+					</article>
+
+					<article class="product">
+						<span class="ribbon">Complete System</span>
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/481941305_671527778564352_4932945213936566000_n.webp"
+							alt="BOROUX Legacy or Compact system with Foundation filters"
+						/>
+
+						<h3 class="title">BOROUX System + Foundation™ Filters</h3>
+						<div class="subtitle">
+							Broad contaminant reduction for everyday water
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>Removes PFAS, metals, VOCs, pharmaceuticals & more</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Long-life carbon blocks for steady flow</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Built from 304 stainless steel</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Ideal for households wanting clean, chemical-free water —
+							simplicity, durability, and real-world performance.
+						</p>
+						<div class="badges">
+							<span class="badge">WQA Standards</span
+							><span class="badge">1-Year Plan</span>
+						</div>
+						<div class="price">$299–$349</div>
+						<a class="cta" href="#">Shop the System</a>
+					</article>
+					<article class="product">
+						<span class="ribbon">New Arrival</span>
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
+							alt="BOROUX Proactive Fluoride Filters"
+						/>
+						<h3 class="title">Proactive™ Fluoride Filters (Set of 2)</h3>
+						<div class="subtitle">
+							Alumina-free, dedicated fluoride reduction
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>Removes fluoride safely — no aluminum or bone char</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Pairs with Foundation™ for full protection</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Simple annual replacement cycle</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Next-generation fluoride filtration using clean, non-toxic media —
+							a perfect complement to the Foundation™ stage.
+						</p>
+						<div class="badges">
+							<span class="badge">Alumina-Free</span
+							><span class="badge">1-Year Plan</span>
+						</div>
+						<div class="price">$129–$139</div>
+						<a class="cta" href="#">Shop Proactive</a>
+					</article>
+					<article class="product">
+						<span class="ribbon">Customer Favorite</span>
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/large_front_1.webp"
+							alt="BOROUX Water View Spigot with glass level indicator"
+						/>
+						<h3 class="title">BOROUX Water View Spigot</h3>
+						<div class="subtitle">
+							See water level at a glance — no lid lifting
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>Glass sight-tube + clear level marker</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Stainless spigot hardware with ceramic valve</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Fast install, includes gaskets & locknut</span>
+							</li>
+							<li>
+								<span class="tick">✓</span><span>Compatible with Berkey</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Daily convenience without compromising purity — know exactly when
+							to refill.
+						</p>
+						<div class="badges">
+							<span class="badge">Level Indicator</span
+							><span class="badge">304 Stainless</span>
+						</div>
+						<div class="price">$39–$49</div>
+						<a class="cta" href="#">Shop Water View</a>
+					</article>
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/bx-stand-l.webp"
+							alt="BOROUX Small & Medium Stainless Stands"
+						/>
+						<h3 class="title">BOROUX Stainless Stands</h3>
+						<div class="subtitle">Raise & display your system beautifully</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>Small fits Travel & Compact (≈8.5″ diameter)</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Medium fits Big Berkey & Legacy (≈10″ diameter)</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span
+									>Rust-resistant stainless, rubber feet for stability</span
+								>
+							</li>
+						</ul>
+						<p class="copy">
+							Lift your system for easy glass filling and a clean, organized
+							look on any counter or table.
+						</p>
+						<div class="badges">
+							<span class="badge">304 Stainless</span
+							><span class="badge">Slip-Resistant</span>
+						</div>
+						<div class="price">$29–$39</div>
+						<a class="cta" href="#">Shop Stands</a>
+					</article>
+					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Maintenance_Kit_PDP.webp"
+							alt="BOROUX Gravity System Maintenance Kit"
+						/>
+						<h3 class="title">BOROUX Maintenance Kit</h3>
+						<div class="subtitle">
+							Everything you need to keep performance dialed
+						</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>Replacement gaskets, O-rings & chamber plugs</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Priming tool, scrub pad & care guide</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Fits BOROUX & most threaded gravity systems</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Prevent drips, keep seals fresh, and make routine cleaning fast
+							and simple.
+						</p>
+						<div class="badges">
+							<span class="badge">All-in-One</span
+							><span class="badge">Universal Fit</span>
+						</div>
+						<div class="price">$14–$24</div>
+						<a class="cta" href="#">Get the Kit</a>
+					</article>
 					<article class="product">
 						<span class="ribbon">Best Value</span>
 						<img
@@ -737,9 +951,9 @@
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
 							alt="BOROUX Foundation + Proactive Fluoride Filters bundle"
 						/>
-						<h3 class="title">Foundation™ + Proactive™ Fluoride Bundle</h3>
+						<h3 class="title">Foundation™ + Proactive™ Bundle</h3>
 						<div class="subtitle">
-							Dual-stage protection for PFAS, fluoride, heavy metals & more
+							Dual-stage protection for PFAS, fluoride & more
 						</div>
 						<ul class="bullets">
 							<li>
@@ -751,17 +965,11 @@
 							</li>
 							<li>
 								<span class="tick">✓</span
-								><span
-									>Alumina-free fluoride reduction (ceramic & carbon
-									design)</span
-								>
+								><span>Alumina-free fluoride reduction</span>
 							</li>
 							<li>
 								<span class="tick">✓</span
-								><span
-									>Steady flow + 12-month replacement rhythm for worry-free
-									use</span
-								>
+								><span>12-month steady-flow lifespan</span>
 							</li>
 						</ul>
 						<p class="copy">
@@ -776,205 +984,79 @@
 						<div class="price">$279–$299</div>
 						<a class="cta" href="#">Shop the Bundle</a>
 					</article>
-
-					<!-- 2 -->
 					<article class="product">
+						<img
+							class="img"
+							loading="lazy"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Boroux_ORiginal_Glass_Water_Bottle_5226cdbe-151a-45df-8468-731d495dabdb.webp"
+							alt="BOROUX Stainless Steel Bottle"
+						/>
+						<h3 class="title">BOROUX Stainless Bottle (22–32oz)</h3>
+						<div class="subtitle">Keep that fresh, clean taste on the go</div>
+						<ul class="bullets">
+							<li>
+								<span class="tick">✓</span
+								><span>Food-grade stainless — no plastic aftertaste</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Leak-resistant cap; wide mouth for easy cleaning</span>
+							</li>
+							<li>
+								<span class="tick">✓</span
+								><span>Sized for cup holders & packs</span>
+							</li>
+						</ul>
+						<p class="copy">
+							Pair your filtered water with a durable, taste-neutral bottle
+							built for everyday carry.
+						</p>
+						<div class="badges">
+							<span class="badge">304 Stainless</span
+							><span class="badge">BPA-Free</span>
+						</div>
+						<div class="price">$19–$29</div>
+						<a class="cta" href="#">Choose Bottle</a>
+					</article>
+					<article class="product">
+						<span class="ribbon">Complete System</span>
 						<img
 							class="img"
 							loading="lazy"
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/518343094_766068579110271_745630887962843740_n.webp"
-							alt="BOROUX Foundation Filters set of two"
+							alt="BOROUX Legacy or Compact stainless system with Foundation + Proactive filters"
 						/>
-						<h3 class="title">Foundation™ Filters — Set of 2</h3>
+						<h3 class="title">BOROUX System + Foundation™ + Proactive™</h3>
 						<div class="subtitle">
-							Certified carbon block for everyday confidence
+							Full stainless gravity system with dual-stage filtration
 						</div>
 						<ul class="bullets">
 							<li>
 								<span class="tick">✓</span
-								><span
-									>NSF/ANSI 42, 401 & 372 (WQA) — taste, emerging contaminants,
-									lead-free</span
-								>
+								><span>Removes PFAS, fluoride, heavy metals, VOCs & more</span>
 							</li>
 							<li>
 								<span class="tick">✓</span
-								><span>Targets PFAS, chlorine byproducts, VOCs, and more</span>
+								><span>Alumina-free fluoride reduction</span>
 							</li>
 							<li>
 								<span class="tick">✓</span
-								><span>Designed for 12 months of consistent performance</span>
+								><span>Built for a lifetime of clean, balanced water</span>
 							</li>
 						</ul>
 						<p class="copy">
-							Start with strong, broad reduction and clean taste that lasts.
-							Compatible with most gravity systems.
+							The ultimate setup — complete stainless system with dual-stage
+							filtration for peace of mind at every pour.
 						</p>
 						<div class="badges">
-							<span class="badge">PFAS Focus</span
-							><span class="badge">Great Taste</span
-							><span class="badge">Low Waste</span>
+							<span class="badge">Lifetime Housing</span
+							><span class="badge">Dual-Stage</span
+							><span class="badge">WQA Tested</span>
 						</div>
-						<div class="price">$160</div>
-						<a class="cta" href="#">Add Foundation™</a>
-					</article>
-
-					<!-- 3 -->
-					<article class="product">
-						<span class="ribbon">Fluoride Safe</span>
-						<img
-							class="img"
-							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactive-all_fdab213b-6be5-4dcd-8c95-4201ad18faa8.webp"
-							alt="BOROUX Proactive Fluoride Filters"
-						/>
-						<h3 class="title">Proactive™ Fluoride Filters</h3>
-						<div class="subtitle">Alumina-free, ceramic-carbon design</div>
-						<ul class="bullets">
-							<li>
-								<span class="tick">✓</span
-								><span
-									>Purpose-built for fluoride reduction without aluminum
-									media</span
-								>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span
-									>Pairs under Foundation™ for a clean, balanced finish</span
-								>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Simple add-on install; replace annually</span>
-							</li>
-						</ul>
-						<p class="copy">
-							Protect what matters most with a safer approach to fluoride
-							reduction — engineered for modern water.
-						</p>
-						<div class="badges">
-							<span class="badge">Alumina-Free</span
-							><span class="badge">Balanced Taste</span>
-						</div>
-						<div class="price">$139</div>
-						<a class="cta" href="#">Add Fluoride Filters</a>
-					</article>
-
-					<!-- 4 -->
-					<article class="product">
-						<img
-							class="img"
-							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/legacy_system.webp"
-							alt="BOROUX Legacy Stainless System"
-						/>
-						<h3 class="title">Legacy™ Stainless System</h3>
-						<div class="subtitle">
-							304 stainless housing + Foundation™ filtration
-						</div>
-						<ul class="bullets">
-							<li>
-								<span class="tick">✓</span
-								><span>Durable, kitchen-grade steel with timeless look</span>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Large capacity + effortless daily operation</span>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Built for years of reliable service</span>
-							</li>
-						</ul>
-						<p class="copy">
-							Make it the centerpiece of clean living — performance,
-							craftsmanship, and easy maintenance in one.
-						</p>
-						<div class="badges">
-							<span class="badge">304 Steel</span
-							><span class="badge">Family-Ready</span>
-						</div>
-						<div class="price">from $349</div>
-						<a class="cta" href="#">Shop Legacy</a>
-					</article>
-
-					<!-- 5 -->
-					<article class="product">
-						<img
-							class="img"
-							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/Shower_head_17.webp"
-							alt="BOROUX Shower Filter"
-						/>
-						<h3 class="title">Shower Filter System</h3>
-						<div class="subtitle">
-							Up to 98% chlorine reduction — softer skin & hair
-						</div>
-						<ul class="bullets">
-							<li>
-								<span class="tick">✓</span
-								><span>High-grade copper-zinc + calcium sulfite media</span>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Quick, tool-free install; chrome finish</span>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Feel the difference from the first rinse</span>
-							</li>
-						</ul>
-						<p class="copy">
-							Turn everyday showers into a clean, gentle reset. Great for
-							sensitive skin and treated city water.
-						</p>
-						<div class="badges">
-							<span class="badge">Chlorine ↓</span
-							><span class="badge">Fast Install</span>
-						</div>
-						<div class="price">$60</div>
-						<a class="cta" href="#">Shop Shower Filter</a>
-					</article>
-
-					<!-- 6 -->
-					<article class="product">
-						<img
-							class="img"
-							loading="lazy"
-							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/spigot.webp"
-							alt="BOROUX Stainless Spigot"
-						/>
-						<h3 class="title">Original Stainless Spigot</h3>
-						<div class="subtitle">No-drip, all-metal, food-grade build</div>
-						<ul class="bullets">
-							<li>
-								<span class="tick">✓</span
-								><span
-									>Solid stainless + ceramic seal — zero plastic contact</span
-								>
-							</li>
-							<li>
-								<span class="tick">✓</span
-								><span>Smooth lever action; installs in minutes</span>
-							</li>
-							<li>
-								<span class="tick">✓</span><span>Perfect pour, every time</span>
-							</li>
-						</ul>
-						<p class="copy">
-							Finish your setup with the spigot that matches your standards —
-							durable, precise, and beautiful.
-						</p>
-						<div class="badges">
-							<span class="badge">Food-Grade</span
-							><span class="badge">Drip-Free</span>
-						</div>
-						<div class="price">$39</div>
-						<a class="cta" href="#">Add Spigot</a>
+						<div class="price">$379–$449</div>
+						<a class="cta" href="#">Shop the System</a>
 					</article>
 				</div>
-
 				<div class="trust" role="note" aria-label="Assurance badges">
 					<span><i class="dot"></i> Made in USA (filters)</span>
 					<span><i class="dot"></i> WQA-Referenced Standards</span>
