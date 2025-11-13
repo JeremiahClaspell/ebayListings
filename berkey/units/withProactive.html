@@ -276,7 +276,6 @@
 					height: auto;
 					object-fit: contain;
 					border-radius: var(--radius);
-					background: #fff;
 				}
 
 				.bx-hero-section a[href^='#'] {
@@ -294,16 +293,17 @@
 						padding: 0 0.1rem;
 					}
 					.bx-hero-section .grid {
-						flex-direction: column;
+						flex-direction: column-reverse;
 						align-items: center;
 					}
 					.bx-hero-section .card {
 						max-width: 95vw;
 						width: 100%;
 						overflow: unset;
+						flex: 1;
 					}
 					.bx-hero-section .img {
-						max-height: 480px;
+						max-height: unset;
 					}
 					.hero-split .img {
 						max-width: 100%;
@@ -399,24 +399,20 @@
 							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/berkeyInfo.webp"
 							alt="Berkey stainless housing paired with BOROUX Foundation & Proactive filters"
 						/>
-
-						<!-- Filters side-by-side (desktop) -->
-						<div class="hero-split">
-							<img
-								class="img"
-								loading="lazy"
-								decoding="async"
-								src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/foundationInfo-1.webp"
-								alt="BOROUX Proactive™ Fluoride Filters — alumina-free second stage"
-							/>
-							<img
-								class="img"
-								loading="lazy"
-								decoding="async"
-								src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactiveInfo-2.webp"
-								alt="BOROUX Foundation™ Filter pair for broad contaminant reduction"
-							/>
-						</div>
+						<img
+							class="img"
+							loading="lazy"
+							decoding="async"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/foundationInfo.webp"
+							alt="BOROUX Foundation™ Filter pair for broad contaminant reduction"
+						/>
+						<img
+							class="img"
+							loading="lazy"
+							decoding="async"
+							src="https://d2gtkivtn347aj.cloudfront.net/assets/assets/proactiveInfo-1.webp"
+							alt="BOROUX Proactive™ Fluoride Filters — alumina-free second stage"
+						/>
 					</div>
 				</div>
 			</div>
